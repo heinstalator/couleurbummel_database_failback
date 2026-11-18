@@ -10,6 +10,7 @@ import log from '../log';
 import {SettingsScreenProps} from '../types/screens';
 import {ActionKind, Language} from '../types/state';
 import {StateContext} from './contexts/GlobalStateContext';
+import {DatabaseSettings} from './DatabaseSettings';
 
 const changeLanguage = (lng: string) => {
   if (lng === 'auto') {
@@ -87,6 +88,8 @@ export const SettingsScreen = ({}: SettingsScreenProps) => {
           }}
         />
       </ListItem>
+
+      <DatabaseSettings />
     </View>
   );
 };

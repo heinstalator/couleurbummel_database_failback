@@ -41,8 +41,37 @@ const en: Translation = {
   APP_CHECK_DIALOGUE_TEXT:
     "The device's or app's integrity couldn't be verified. It might not work as expected." +
     '\n\n' +
-    'Please make sure to install it from the official store.',
+    'Please make sure to install it from the official store.' +
+    '\n\n' +
+    "If it still doesn't work, you can import your own database in the settings.",
   APP_CHECK_DIALOGUE_BUTTON_TEXT: 'Close',
+  DATABASE_TITLE: 'Database',
+  DATABASE_STATUS_UNAVAILABLE:
+    "The online database isn't available on this device. You can import your own database instead.",
+  DATABASE_STATUS_IN_USE: 'The app is using the database you imported.',
+  DATABASE_STATUS_STORED:
+    "You have imported a database. It will only be used if the online database isn't available.",
+  DATABASE_IMPORT_BUTTON: 'Import database',
+  DATABASE_REMOVE_BUTTON: 'Remove imported database',
+  DATABASE_IMPORT_TITLE: 'Import database',
+  DATABASE_IMPORT_HELP:
+    'Choose a file with the database, paste its content as JSON, or enter the https address of a JSON file. Only import data from sources you trust.',
+  DATABASE_IMPORT_PLACEHOLDER: 'https://… or {…}',
+  DATABASE_IMPORT_CONFIRM: 'Import',
+  DATABASE_IMPORT_CANCEL: 'Cancel',
+  DATABASE_IMPORT_SUCCESS: 'Database imported. Corporations: {{corporations}}',
+  DATABASE_ERROR_INVALID_JSON: "This isn't a valid database in JSON format.",
+  DATABASE_ERROR_INCOMPLETE:
+    'The database needs at least one address and one corporation.',
+  DATABASE_ERROR_INVALID_ENTRY: 'The entry "{{entry}}" is invalid.',
+  DATABASE_ERROR_TOO_LARGE:
+    'The database is too large to be stored on this device.',
+  DATABASE_ERROR_DOWNLOAD_FAILED:
+    "The file couldn't be downloaded. Only https addresses work.",
+  DATABASE_ERROR_STORAGE_FAILED:
+    "The database couldn't be saved on this device.",
+  DATABASE_IMPORT_CHOOSE_FILE: 'Choose file…',
+  DATABASE_ERROR_READ_FAILED: "The file couldn't be read.",
   CHANGE_REQUEST_SUBJECT: 'Change request for {{name}}',
   SEARCH_COLOURS_ANY_COLOUR: 'any',
   SEARCH_COLOURS_ACCORDION: 'Search parameters',

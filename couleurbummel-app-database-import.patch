@@ -1,0 +1,1557 @@
+--- a/__tests__/components/DatabaseSettings-test.tsx
++++ b/__tests__/components/DatabaseSettings-test.tsx
+@@ -0,0 +1,169 @@
++import '../../src/i18n';
++
++import {ThemeProvider} from '@rneui/themed';
++import {
++  act,
++  fireEvent,
++  render,
++  screen,
++  waitFor,
++} from '@testing-library/react-native';
++import React from 'react';
++import {Keyboard} from 'react-native';
++
++import {
++  DatabaseContext,
++  DatabaseContextValue,
++} from '../../src/components/contexts/ModelContext';
++import {DatabaseSettings} from '../../src/components/DatabaseSettings';
++import {theme} from '../../src/style/themes';
++
++const renderSettings = (overrides: Partial<DatabaseContextValue> = {}) => {
++  const value: DatabaseContextValue = {
++    remoteUnavailable: false,
++    hasCustomDatabase: false,
++    usingCustomDatabase: false,
++    importDatabase: jest.fn().mockResolvedValue({ok: true, corporations: 3}),
++    removeCustomDatabase: jest.fn().mockResolvedValue(undefined),
++    ...overrides,
++  };
++
++  render(
++    <ThemeProvider theme={theme}>
++      <DatabaseContext.Provider value={value}>
++        <DatabaseSettings />
++      </DatabaseContext.Provider>
++    </ThemeProvider>,
++  );
++
++  return value;
++};
++
++const openDialogAndEnter = async (text: string) => {
++  fireEvent.press(screen.getByTestId('Settings:ImportDatabase'));
++  fireEvent.changeText(
++    await screen.findByTestId('Settings:DatabaseInput'),
++    text,
++  );
++};
++
++describe('DatabaseSettings', () => {
++  beforeEach(() => {
++    // The jest mock of the keyboard returns no subscription, which the dialog expects when it is unmounted
++    jest
++      .spyOn(Keyboard, 'addListener')
++      .mockReturnValue({remove: jest.fn()} as any);
++  });
++
++  it('is hidden while the online database works and nothing was imported', () => {
++    renderSettings();
++
++    expect(screen.queryByTestId('Settings:Database')).toBeNull();
++    expect(screen.queryByText('Database')).toBeNull();
++  });
++
++  it('offers the import if the online database is unavailable', () => {
++    renderSettings({remoteUnavailable: true});
++
++    expect(screen.getByText(/isn't available on this device/)).toBeTruthy();
++    expect(screen.getByTestId('Settings:ImportDatabase')).toBeTruthy();
++    expect(screen.queryByTestId('Settings:RemoveDatabase')).toBeNull();
++  });
++
++  it('says that the imported database is in use and offers to remove it', () => {
++    renderSettings({
++      remoteUnavailable: true,
++      hasCustomDatabase: true,
++      usingCustomDatabase: true,
++    });
++
++    expect(screen.getByText(/using the database you imported/)).toBeTruthy();
++    expect(screen.getByTestId('Settings:RemoveDatabase')).toBeTruthy();
++  });
++
++  it('stays available to remove an imported database that is currently not in use', () => {
++    renderSettings({hasCustomDatabase: true});
++
++    expect(
++      screen.getByText(/only be used if the online database/),
++    ).toBeTruthy();
++    expect(screen.getByTestId('Settings:RemoveDatabase')).toBeTruthy();
++  });
++
++  it('removes the imported database', () => {
++    const value = renderSettings({hasCustomDatabase: true});
++
++    fireEvent.press(screen.getByTestId('Settings:RemoveDatabase'));
++
++    expect(value.removeCustomDatabase).toHaveBeenCalledTimes(1);
++  });
++
++  it('imports what the user entered and reports the result', async () => {
++    const value = renderSettings({remoteUnavailable: true});
++
++    await openDialogAndEnter('  https://example.com/db.json ');
++    await act(async () => {
++      fireEvent.press(screen.getByTestId('Settings:ImportConfirm'));
++    });
++
++    expect(value.importDatabase).toHaveBeenCalledWith(
++      '  https://example.com/db.json ',
++    );
++    expect(
++      await screen.findByText('Database imported. Corporations: 3'),
++    ).toBeTruthy();
++  });
++
++  it('does not allow importing nothing', async () => {
++    const value = renderSettings({remoteUnavailable: true});
++
++    await openDialogAndEnter('   ');
++    fireEvent.press(screen.getByTestId('Settings:ImportConfirm'));
++
++    expect(value.importDatabase).not.toHaveBeenCalled();
++  });
++
++  it.each([
++    [{ok: false, error: 'INVALID_JSON'}, /valid database in JSON format/],
++    [
++      {ok: false, error: 'INCOMPLETE'},
++      /at least one address and one corporation/,
++    ],
++    [
++      {ok: false, error: 'INVALID_ENTRY', entry: 'addresses/a1'},
++      /entry "addresses\/a1" is invalid/,
++    ],
++    [{ok: false, error: 'TOO_LARGE'}, /too large/],
++    [{ok: false, error: 'DOWNLOAD_FAILED'}, /Only https addresses work/],
++    [{ok: false, error: 'STORAGE_FAILED'}, /couldn't be saved/],
++  ])(
++    'explains the failure %p and keeps the dialog open',
++    async (result, message) => {
++      const value = renderSettings({
++        remoteUnavailable: true,
++        importDatabase: jest.fn().mockResolvedValue(result),
++      });
++
++      await openDialogAndEnter('{}');
++      await act(async () => {
++        fireEvent.press(screen.getByTestId('Settings:ImportConfirm'));
++      });
++
++      expect(await screen.findByText(message)).toBeTruthy();
++      expect(value.importDatabase).toHaveBeenCalledTimes(1);
++      expect(screen.getByTestId('Settings:DatabaseInput')).toBeTruthy();
++    },
++  );
++
++  it('closes the dialog without importing when cancelled', async () => {
++    const value = renderSettings({remoteUnavailable: true});
++
++    await openDialogAndEnter('{}');
++    fireEvent.press(screen.getByTestId('Settings:ImportCancel'));
++
++    await waitFor(() =>
++      expect(screen.queryByTestId('Settings:DatabaseInput')).toBeNull(),
++    );
++    expect(value.importDatabase).not.toHaveBeenCalled();
++  });
++});
+--- a/__tests__/components/Settings-test.tsx
++++ b/__tests__/components/Settings-test.tsx
+@@ -0,0 +1,13 @@
++import React from 'react';
++
++import {SettingsScreen} from '../../src/components/Settings';
++import {render, screen} from '../__helpers__/test-utils';
++
++describe('Settings', () => {
++  it('renders language and theme without the database section when the online database is not in use', async () => {
++    render(<SettingsScreen {...({} as any)} />);
++
++    expect(await screen.findByTestId('Screen:Settings')).toBeTruthy();
++    expect(screen.queryByTestId('Settings:Database')).toBeNull();
++  });
++});
+--- a/__tests__/components/contexts/ModelContext-test.tsx
++++ b/__tests__/components/contexts/ModelContext-test.tsx
+@@ -0,0 +1,256 @@
++import '../../../src/i18n';
++
++import AsyncStorage from '@react-native-async-storage/async-storage';
++import {ThemeProvider} from '@rneui/themed';
++import {act, render, screen, waitFor} from '@testing-library/react-native';
++import React, {useContext} from 'react';
++import {Keyboard} from 'react-native';
++
++import testDatabase from '../../../resources/testDatabase.json';
++import {
++  DatabaseContext,
++  DatabaseContextValue,
++  ModelContext,
++  ModelContextProvider,
++} from '../../../src/components/contexts/ModelContext';
++import {CouleurbummelModel} from '../../../src/model/model';
++import {theme} from '../../../src/style/themes';
++
++// Run the provider as it does in production, with a mocked Firebase
++jest.mock('react-native-config', () => ({
++  __esModule: true,
++  default: {
++    DATABASE_TYPE: 'prod',
++    DATABASE_URL: 'https://example.firebaseio.com',
++    DATABASE_PATH: '/database',
++  },
++}));
++
++const mockActivate = jest.fn();
++const mockGetToken = jest.fn();
++const mockOn = jest.fn();
++const mockOff = jest.fn();
++const mockSetPersistenceEnabled = jest.fn();
++
++jest.mock('@react-native-firebase/app', () => ({
++  __esModule: true,
++  default: {
++    appCheck: () => ({
++      activate: (...args: unknown[]) => mockActivate(...args),
++      getToken: () => mockGetToken(),
++    }),
++    app: () => ({
++      database: () => ({
++        ref: () => ({
++          on: (...args: unknown[]) => mockOn(...args),
++          off: (...args: unknown[]) => mockOff(...args),
++        }),
++        setPersistenceEnabled: (...args: unknown[]) =>
++          mockSetPersistenceEnabled(...args),
++      }),
++    }),
++  },
++}));
++
++const storageKey = '@customDatabase/v1';
++
++const customDatabase = {
++  addresses: {
++    address_custom: {
++      id: 'address_custom',
++      latitude: 50.1,
++      longitude: 6.1,
++      corporationIds: ['corporation_custom'],
++    },
++  },
++  corporations: {
++    corporation_custom: {
++      id: 'corporation_custom',
++      shortName: 'Custom',
++      longName: 'Custom corporation',
++      addressId: 'address_custom',
++      coloursPrinciple: 1,
++      fencingPrinciple: 1,
++    },
++  },
++};
++
++let current: {model: CouleurbummelModel; database: DatabaseContextValue};
++
++const Probe = () => {
++  current = {
++    model: useContext(ModelContext),
++    database: useContext(DatabaseContext),
++  };
++  return null;
++};
++
++const renderProvider = () =>
++  render(
++    <ThemeProvider theme={theme}>
++      <ModelContextProvider>
++        <Probe />
++      </ModelContextProvider>
++    </ThemeProvider>,
++  );
++
++const integrityFails = () => {
++  mockActivate.mockRejectedValue(new Error('Integrity check failed'));
++};
++
++const integrityPasses = () => {
++  mockActivate.mockResolvedValue(undefined);
++  mockGetToken.mockResolvedValue({token: 'token'});
++};
++
++/** Delivers a snapshot of the online database to the listener the provider registered */
++const deliverOnlineDatabase = (db: object) =>
++  act(() => mockOn.mock.calls[0][1]({val: () => db}));
++
++describe('ModelContextProvider with the online database', () => {
++  beforeEach(async () => {
++    jest.clearAllMocks();
++    // The jest mock of the keyboard returns no subscription, which the dialog expects when it is unmounted
++    jest
++      .spyOn(Keyboard, 'addListener')
++      .mockReturnValue({remove: jest.fn()} as any);
++    await AsyncStorage.clear();
++  });
++
++  it('uses the online database if the integrity check passes', async () => {
++    integrityPasses();
++    renderProvider();
++
++    await waitFor(() => expect(mockOn).toHaveBeenCalledTimes(1));
++    deliverOnlineDatabase(testDatabase);
++
++    expect(
++      current.model.corporation('corporation_de_aachen_kdstv_bergland'),
++    ).toBeDefined();
++    expect(current.database.remoteUnavailable).toBe(false);
++    expect(screen.queryByText('App integrity check failed')).toBeNull();
++  });
++
++  it('warns and still tries the online database if the check fails and nothing was imported', async () => {
++    integrityFails();
++    renderProvider();
++
++    await screen.findByText('App integrity check failed');
++    await waitFor(() => expect(mockOn).toHaveBeenCalledTimes(1));
++    expect(current.database.remoteUnavailable).toBe(true);
++    expect(current.database.hasCustomDatabase).toBe(false);
++  });
++
++  it('switches to a database imported after the check failed, and remembers it', async () => {
++    integrityFails();
++    renderProvider();
++    await waitFor(() => expect(current.database.remoteUnavailable).toBe(true));
++
++    let result;
++    await act(async () => {
++      result = await current.database.importDatabase(
++        JSON.stringify(customDatabase),
++      );
++    });
++
++    expect(result).toMatchObject({ok: true, corporations: 1});
++    expect(current.database.usingCustomDatabase).toBe(true);
++    expect(current.model.corporation('corporation_custom')?.shortName).toBe(
++      'Custom',
++    );
++    expect(await AsyncStorage.getItem(storageKey)).not.toBeNull();
++  });
++
++  it('does not store or use a database that is invalid', async () => {
++    integrityFails();
++    renderProvider();
++    await waitFor(() => expect(current.database.remoteUnavailable).toBe(true));
++
++    let result;
++    await act(async () => {
++      result = await current.database.importDatabase('{"corporations": {}}');
++    });
++
++    expect(result).toMatchObject({ok: false});
++    expect(current.database.hasCustomDatabase).toBe(false);
++    expect(await AsyncStorage.getItem(storageKey)).toBeNull();
++  });
++
++  it('uses a stored database right away, without a warning or the online database, if the check fails', async () => {
++    await AsyncStorage.setItem(storageKey, JSON.stringify(customDatabase));
++    integrityFails();
++    renderProvider();
++
++    await waitFor(() =>
++      expect(current.database.usingCustomDatabase).toBe(true),
++    );
++    expect(current.model.corporation('corporation_custom')).toBeDefined();
++    expect(screen.queryByText('App integrity check failed')).toBeNull();
++    expect(mockOn).not.toHaveBeenCalled();
++  });
++
++  it('prefers the online database over a stored one when the check passes', async () => {
++    await AsyncStorage.setItem(storageKey, JSON.stringify(customDatabase));
++    integrityPasses();
++    renderProvider();
++
++    await waitFor(() => expect(mockOn).toHaveBeenCalledTimes(1));
++    deliverOnlineDatabase(testDatabase);
++
++    await waitFor(() => expect(current.database.hasCustomDatabase).toBe(true));
++    expect(current.database.usingCustomDatabase).toBe(false);
++    expect(current.model.corporation('corporation_custom')).toBeUndefined();
++    expect(
++      current.model.corporation('corporation_de_aachen_kdstv_bergland'),
++    ).toBeDefined();
++  });
++
++  it('falls back to a stored database if access to the online database is denied', async () => {
++    await AsyncStorage.setItem(storageKey, JSON.stringify(customDatabase));
++    integrityPasses();
++    renderProvider();
++
++    await waitFor(() => expect(mockOn).toHaveBeenCalledTimes(1));
++    await waitFor(() => expect(current.database.hasCustomDatabase).toBe(true));
++    act(() => mockOn.mock.calls[0][2](new Error('permission-denied')));
++
++    expect(current.database.usingCustomDatabase).toBe(true);
++    expect(current.model.corporation('corporation_custom')).toBeDefined();
++  });
++
++  it('ignores a stored database that has become invalid', async () => {
++    await AsyncStorage.setItem(storageKey, '{"corporations": []}');
++    integrityFails();
++    renderProvider();
++
++    await screen.findByText('App integrity check failed');
++    expect(current.database.hasCustomDatabase).toBe(false);
++  });
++
++  it('removes the imported database', async () => {
++    await AsyncStorage.setItem(storageKey, JSON.stringify(customDatabase));
++    integrityFails();
++    renderProvider();
++    await waitFor(() =>
++      expect(current.database.usingCustomDatabase).toBe(true),
++    );
++
++    await act(async () => {
++      await current.database.removeCustomDatabase();
++    });
++
++    expect(current.database.hasCustomDatabase).toBe(false);
++    expect(current.model.corporation('corporation_custom')).toBeUndefined();
++    expect(await AsyncStorage.getItem(storageKey)).toBeNull();
++  });
++
++  it('stops listening for updates when it is removed', async () => {
++    integrityPasses();
++    const {unmount} = renderProvider();
++    await waitFor(() => expect(mockOn).toHaveBeenCalledTimes(1));
++
++    unmount();
++
++    expect(mockOff).toHaveBeenCalledWith('value', mockOn.mock.calls[0][1]);
++  });
++});
+--- a/__tests__/model/import-test.ts
++++ b/__tests__/model/import-test.ts
+@@ -0,0 +1,104 @@
++import testDatabase from '../../resources/testDatabase.json';
++import {looksLikeUrl, readDatabase} from '../../src/model/import';
++import {MAX_DATABASE_LENGTH} from '../../src/model/validation';
++
++const json = JSON.stringify(testDatabase);
++
++const mockFetch = (response: Partial<Response> | Error) => {
++  const fetchMock = jest.fn().mockImplementation(() =>
++    response instanceof Error
++      ? Promise.reject(response)
++      : Promise.resolve({
++          ok: true,
++          status: 200,
++          headers: {get: () => null},
++          text: () => Promise.resolve(json),
++          ...response,
++        }),
++  );
++  global.fetch = fetchMock as unknown as typeof fetch;
++  return fetchMock;
++};
++
++describe('looksLikeUrl', () => {
++  it.each([
++    'https://example.com/db.json',
++    'HTTP://example.com',
++    ' https://a.b/c ',
++  ])('recognises %p', input => expect(looksLikeUrl(input)).toBe(true));
++
++  it.each(['{"a": 1}', 'example.com/db.json', 'https://a b', ''])(
++    'does not mistake %p for an address',
++    input => expect(looksLikeUrl(input)).toBe(false),
++  );
++});
++
++describe('readDatabase', () => {
++  const originalFetch = global.fetch;
++  afterEach(() => {
++    global.fetch = originalFetch;
++  });
++
++  it('parses pasted JSON without any network access', async () => {
++    const fetchMock = mockFetch(new Error('should not be called'));
++
++    const result = await readDatabase(`  ${json}\n`);
++
++    expect(result.ok).toBe(true);
++    expect(fetchMock).not.toHaveBeenCalled();
++  });
++
++  it('downloads and parses a database from an https address', async () => {
++    const fetchMock = mockFetch({});
++
++    const result = await readDatabase('https://example.com/db.json');
++
++    expect(result.ok).toBe(true);
++    expect(fetchMock).toHaveBeenCalledWith(
++      'https://example.com/db.json',
++      expect.objectContaining({headers: {Accept: 'application/json'}}),
++    );
++  });
++
++  it('refuses plain http addresses without connecting', async () => {
++    const fetchMock = mockFetch({});
++
++    expect(await readDatabase('http://example.com/db.json')).toEqual({
++      ok: false,
++      error: 'DOWNLOAD_FAILED',
++    });
++    expect(fetchMock).not.toHaveBeenCalled();
++  });
++
++  it('reports failed requests', async () => {
++    mockFetch({ok: false, status: 404});
++    expect(await readDatabase('https://example.com/db.json')).toEqual({
++      ok: false,
++      error: 'DOWNLOAD_FAILED',
++    });
++
++    mockFetch(new Error('Network request failed'));
++    expect(await readDatabase('https://example.com/db.json')).toEqual({
++      ok: false,
++      error: 'DOWNLOAD_FAILED',
++    });
++  });
++
++  it('refuses files that announce a size that is too large', async () => {
++    mockFetch({headers: {get: () => String(MAX_DATABASE_LENGTH + 1)} as any});
++
++    expect(await readDatabase('https://example.com/db.json')).toEqual({
++      ok: false,
++      error: 'TOO_LARGE',
++    });
++  });
++
++  it('validates what it downloaded', async () => {
++    mockFetch({text: () => Promise.resolve('<html>Not found</html>')});
++
++    expect(await readDatabase('https://example.com/db.json')).toEqual({
++      ok: false,
++      error: 'INVALID_JSON',
++    });
++  });
++});
+--- a/__tests__/model/validation-test.ts
++++ b/__tests__/model/validation-test.ts
+@@ -0,0 +1,143 @@
++import testDatabase from '../../resources/testDatabase.json';
++import {MAX_DATABASE_LENGTH, parseDatabase} from '../../src/model/validation';
++
++const clone = () => JSON.parse(JSON.stringify(testDatabase));
++
++describe('parseDatabase', () => {
++  it('accepts the test database', () => {
++    const result = parseDatabase(JSON.stringify(testDatabase));
++
++    expect(result).toMatchObject({
++      ok: true,
++      corporations: Object.keys(testDatabase.corporations).length,
++    });
++  });
++
++  it('accepts a database wrapped in a single parent key', () => {
++    const result = parseDatabase(JSON.stringify({prod: testDatabase}));
++
++    expect(result.ok).toBe(true);
++    expect(result.ok && Object.keys(result.database)).toContain('corporations');
++  });
++
++  it('drops keys that are not tables', () => {
++    const db = {...clone(), somethingElse: {a: 1}};
++    const result = parseDatabase(JSON.stringify(db));
++
++    expect(result.ok && Object.keys(result.database)).not.toContain(
++      'somethingElse',
++    );
++  });
++
++  it.each(['', 'not json', '[]', '42', 'null', '"text"'])(
++    'rejects %p as invalid JSON',
++    text => {
++      expect(parseDatabase(text)).toEqual({ok: false, error: 'INVALID_JSON'});
++    },
++  );
++
++  it('rejects an object without any known table', () => {
++    expect(parseDatabase('{"foo": {"bar": 1}}')).toEqual({
++      ok: false,
++      error: 'INCOMPLETE',
++    });
++  });
++
++  it('rejects a database without corporations or without addresses', () => {
++    const withoutCorporations = clone();
++    delete withoutCorporations.corporations;
++    const withoutAddresses = clone();
++    withoutAddresses.addresses = {};
++
++    expect(parseDatabase(JSON.stringify(withoutCorporations))).toEqual({
++      ok: false,
++      error: 'INCOMPLETE',
++    });
++    expect(parseDatabase(JSON.stringify(withoutAddresses))).toEqual({
++      ok: false,
++      error: 'INCOMPLETE',
++    });
++  });
++
++  it('rejects a table that is a list', () => {
++    const db = clone();
++    db.cities = [];
++
++    expect(parseDatabase(JSON.stringify(db))).toEqual({
++      ok: false,
++      error: 'INVALID_ENTRY',
++      entry: 'cities',
++    });
++  });
++
++  it('rejects an entry whose ID differs from its key', () => {
++    const db = clone();
++    const [key] = Object.keys(db.addresses);
++    db.addresses[key].id = 'something_else';
++
++    expect(parseDatabase(JSON.stringify(db))).toEqual({
++      ok: false,
++      error: 'INVALID_ENTRY',
++      entry: `addresses/${key}`,
++    });
++  });
++
++  it.each([
++    ['latitude is out of range', {latitude: 91}],
++    ['longitude is not a number', {longitude: '6.0'}],
++    ['latitude is missing', {latitude: undefined}],
++  ])('rejects an address if the %s', (_description, changes) => {
++    const db = clone();
++    const [key] = Object.keys(db.addresses);
++    Object.assign(db.addresses[key], changes);
++
++    expect(parseDatabase(JSON.stringify(db))).toEqual({
++      ok: false,
++      error: 'INVALID_ENTRY',
++      entry: `addresses/${key}`,
++    });
++  });
++
++  it.each([
++    ['has no short name', {shortName: undefined}],
++    ['has no address', {addressId: undefined}],
++    ['has colours that are not a list', {colours: 'green'}],
++    ['has a sash without colour IDs', {colours: [{}]}],
++  ])('rejects a corporation that %s', (_description, changes) => {
++    const db = clone();
++    const [key] = Object.keys(db.corporations);
++    Object.assign(db.corporations[key], changes);
++
++    expect(parseDatabase(JSON.stringify(db))).toEqual({
++      ok: false,
++      error: 'INVALID_ENTRY',
++      entry: `corporations/${key}`,
++    });
++  });
++
++  it('rejects a city or organisation without a name', () => {
++    const city = clone();
++    const [cityKey] = Object.keys(city.cities);
++    delete city.cities[cityKey].name;
++
++    const organisation = clone();
++    const [organisationKey] = Object.keys(organisation.organisations);
++    delete organisation.organisations[organisationKey].name;
++
++    expect(parseDatabase(JSON.stringify(city))).toMatchObject({
++      error: 'INVALID_ENTRY',
++      entry: `cities/${cityKey}`,
++    });
++    expect(parseDatabase(JSON.stringify(organisation))).toMatchObject({
++      error: 'INVALID_ENTRY',
++      entry: `organisations/${organisationKey}`,
++    });
++  });
++
++  it('rejects input that is too large', () => {
++    expect(parseDatabase(' '.repeat(MAX_DATABASE_LENGTH + 1))).toEqual({
++      ok: false,
++      error: 'TOO_LARGE',
++    });
++  });
++});
+--- a/src/components/DatabaseSettings.tsx
++++ b/src/components/DatabaseSettings.tsx
+@@ -0,0 +1,172 @@
++import {Button, Dialog, Input, ListItem, makeStyles, Text} from '@rneui/themed';
++import {TFunction} from 'i18next';
++import React, {useContext, useState} from 'react';
++import {useTranslation} from 'react-i18next';
++import {View} from 'react-native';
++
++import {ImportResult} from '../model/import';
++import {DatabaseContext} from './contexts/ModelContext';
++
++const errorMessage = (
++  result: Extract<ImportResult, {ok: false}>,
++  t: TFunction,
++) => {
++  switch (result.error) {
++    case 'INVALID_JSON':
++      return t('DATABASE_ERROR_INVALID_JSON');
++    case 'INCOMPLETE':
++      return t('DATABASE_ERROR_INCOMPLETE');
++    case 'INVALID_ENTRY':
++      return t('DATABASE_ERROR_INVALID_ENTRY', {entry: result.entry});
++    case 'TOO_LARGE':
++      return t('DATABASE_ERROR_TOO_LARGE');
++    case 'DOWNLOAD_FAILED':
++      return t('DATABASE_ERROR_DOWNLOAD_FAILED');
++    case 'STORAGE_FAILED':
++      return t('DATABASE_ERROR_STORAGE_FAILED');
++  }
++};
++
++/**
++ * The part of the settings that lets users import their own database
++ *
++ * This is only shown if the online database can't be used on the device, for example because the integrity check
++ * failed, or if the user has imported a database before and needs a way to remove it.
++ */
++export const DatabaseSettings = () => {
++  const {t} = useTranslation();
++  const styles = useStyles();
++
++  const {
++    remoteUnavailable,
++    hasCustomDatabase,
++    usingCustomDatabase,
++    importDatabase,
++    removeCustomDatabase,
++  } = useContext(DatabaseContext);
++
++  const [dialogVisible, setDialogVisible] = useState(false);
++  const [input, setInput] = useState('');
++  const [busy, setBusy] = useState(false);
++  const [error, setError] = useState<string | undefined>();
++  const [notice, setNotice] = useState<string | undefined>();
++
++  if (!remoteUnavailable && !hasCustomDatabase) {
++    return null;
++  }
++
++  let status = t('DATABASE_STATUS_UNAVAILABLE');
++  if (usingCustomDatabase) {
++    status = t('DATABASE_STATUS_IN_USE');
++  } else if (hasCustomDatabase) {
++    status = t('DATABASE_STATUS_STORED');
++  }
++
++  const closeDialog = () => {
++    setDialogVisible(false);
++    setError(undefined);
++  };
++
++  const onImport = async () => {
++    setBusy(true);
++    setError(undefined);
++
++    const result = await importDatabase(input);
++
++    setBusy(false);
++    if (result.ok) {
++      setDialogVisible(false);
++      setInput('');
++      setNotice(
++        t('DATABASE_IMPORT_SUCCESS', {corporations: result.corporations}),
++      );
++    } else {
++      setError(errorMessage(result, t));
++    }
++  };
++
++  return (
++    <View testID={'Settings:Database'}>
++      <ListItem key={'settings_database'} bottomDivider>
++        <ListItem.Content>
++          <ListItem.Title>{t('DATABASE_TITLE')}</ListItem.Title>
++          <ListItem.Subtitle>{status}</ListItem.Subtitle>
++          {notice && <Text style={styles.notice}>{notice}</Text>}
++        </ListItem.Content>
++      </ListItem>
++
++      <View style={styles.buttons}>
++        <Button
++          testID={'Settings:ImportDatabase'}
++          title={t('DATABASE_IMPORT_BUTTON')}
++          onPress={() => {
++            setNotice(undefined);
++            setDialogVisible(true);
++          }}
++        />
++        {hasCustomDatabase && (
++          <Button
++            testID={'Settings:RemoveDatabase'}
++            type={'outline'}
++            title={t('DATABASE_REMOVE_BUTTON')}
++            onPress={() => {
++              setNotice(undefined);
++              removeCustomDatabase();
++            }}
++          />
++        )}
++      </View>
++
++      <Dialog
++        testID={'Settings:ImportDialog'}
++        isVisible={dialogVisible}
++        onBackdropPress={busy ? undefined : closeDialog}>
++        <Dialog.Title title={t('DATABASE_IMPORT_TITLE')} />
++        <Text>{t('DATABASE_IMPORT_HELP')}</Text>
++        <Input
++          testID={'Settings:DatabaseInput'}
++          multiline
++          numberOfLines={6}
++          autoCapitalize={'none'}
++          autoCorrect={false}
++          value={input}
++          editable={!busy}
++          placeholder={t('DATABASE_IMPORT_PLACEHOLDER')}
++          errorMessage={error}
++          onChangeText={text => {
++            setInput(text);
++            setError(undefined);
++          }}
++        />
++        {busy && <Dialog.Loading />}
++        <Dialog.Actions>
++          <Dialog.Button
++            testID={'Settings:ImportConfirm'}
++            title={t('DATABASE_IMPORT_CONFIRM')}
++            disabled={busy || !input.trim()}
++            onPress={onImport}
++          />
++          <Dialog.Button
++            testID={'Settings:ImportCancel'}
++            title={t('DATABASE_IMPORT_CANCEL')}
++            disabled={busy}
++            onPress={closeDialog}
++          />
++        </Dialog.Actions>
++      </Dialog>
++    </View>
++  );
++};
++
++const useStyles = makeStyles(() => ({
++  buttons: {
++    flexDirection: 'row',
++    flexWrap: 'wrap',
++    justifyContent: 'space-around',
++    marginVertical: 15,
++    gap: 10,
++  },
++  notice: {
++    marginTop: 8,
++  },
++}));
+--- a/src/components/Settings.tsx
++++ b/src/components/Settings.tsx
+@@ -10,6 +10,7 @@
+ import {SettingsScreenProps} from '../types/screens';
+ import {ActionKind, Language} from '../types/state';
+ import {StateContext} from './contexts/GlobalStateContext';
++import {DatabaseSettings} from './DatabaseSettings';
+ 
+ const changeLanguage = (lng: string) => {
+   if (lng === 'auto') {
+@@ -87,6 +88,8 @@
+           }}
+         />
+       </ListItem>
++
++      <DatabaseSettings />
+     </View>
+   );
+ };
+--- a/src/components/contexts/ModelContext.tsx
++++ b/src/components/contexts/ModelContext.tsx
+@@ -3,13 +3,25 @@
+ 
+ import firebase from '@react-native-firebase/app';
+ import {Dialog, Text} from '@rneui/themed';
+-import React, {PropsWithChildren, useState} from 'react';
++import React, {
++  PropsWithChildren,
++  useCallback,
++  useEffect,
++  useMemo,
++  useState,
++} from 'react';
+ import {useTranslation} from 'react-i18next';
+ import Config from 'react-native-config';
+ 
+ import testDatabase from '../../../resources/testDatabase.json';
+ import log from '../../log';
++import {ImportResult, readDatabase} from '../../model/import';
+ import {CouleurbummelModel} from '../../model/model';
++import {
++  loadCustomDatabase,
++  removeCustomDatabase as removeStoredDatabase,
++  saveCustomDatabase,
++} from '../../storage';
+ 
+ /**
+  * Context providing the latest available model
+@@ -19,6 +31,39 @@
+  */
+ export const ModelContext = React.createContext(new CouleurbummelModel());
+ 
++/**
++ * Information about the database in use and the means to replace it with the user's own database
++ *
++ * The online database can't be used if the app's integrity can't be verified. In that case, users can import their own
++ * database, which the app then uses instead.
++ */
++export interface DatabaseContextValue {
++  /** True if the online database can't be used on this device */
++  remoteUnavailable: boolean;
++  /** True if the user has imported a database, whether or not it's being used right now */
++  hasCustomDatabase: boolean;
++  /** True if the model comes from the imported database */
++  usingCustomDatabase: boolean;
++  /**
++   * Imports a database and starts using it if the online database is unavailable
++   *
++   * @param input - the database as JSON or the https address of a JSON file
++   */
++  importDatabase: (input: string) => Promise<ImportResult>;
++  /** Deletes the imported database */
++  removeCustomDatabase: () => Promise<void>;
++}
++
++export const DatabaseContext = React.createContext<DatabaseContextValue>({
++  remoteUnavailable: false,
++  hasCustomDatabase: false,
++  usingCustomDatabase: false,
++  importDatabase: async () => ({ok: false, error: 'STORAGE_FAILED'}),
++  removeCustomDatabase: async () => {},
++});
++
++const usesOnlineDatabase = () => Config.DATABASE_TYPE === 'prod';
++
+ const activateAppCheck = async () => {
+   await firebase.appCheck().activate('ignored', true);
+   const {token} = await firebase.appCheck().getToken();
+@@ -32,47 +77,136 @@
+   const [appCheckErrorVisible, setAppCheckErrorVisible] = useState(false);
+   const {t} = useTranslation();
+ 
+-  const [model, setModel] = useState<CouleurbummelModel>(() => {
+-    if (Config.DATABASE_TYPE !== 'prod') {
++  // The model built from the online database, or from the test database when not running in production
++  const [remoteModel, setRemoteModel] = useState<CouleurbummelModel>(() =>
++    usesOnlineDatabase()
++      ? new CouleurbummelModel()
++      : new CouleurbummelModel(testDatabase),
++  );
++  // The model built from the database the user imported
++  const [customModel, setCustomModel] = useState<CouleurbummelModel>();
++  // Whether the integrity check or access to the online database failed
++  const [remoteUnavailable, setRemoteUnavailable] = useState(false);
++
++  useEffect(() => {
++    if (!usesOnlineDatabase()) {
+       log.debug('Using mock database');
+-      return new CouleurbummelModel(testDatabase);
++      return;
+     }
+ 
+-    activateAppCheck()
+-      .catch(e => {
+-        log.error('Error activating App Check', e);
++    let cancelled = false;
++    let unsubscribe: (() => void) | undefined;
++
++    const start = async () => {
++      const [storedDatabase, integrityVerified] = await Promise.all([
++        loadCustomDatabase(),
++        activateAppCheck().then(
++          () => true,
++          e => {
++            log.error('Error activating App Check', e);
++            return false;
++          },
++        ),
++      ]);
++
++      if (cancelled) {
++        return;
++      }
++
++      if (storedDatabase) {
++        setCustomModel(new CouleurbummelModel(storedDatabase));
++      }
++
++      if (!integrityVerified) {
++        setRemoteUnavailable(true);
++
++        if (storedDatabase) {
++          log.info('Using the imported database instead of the online one');
++          return;
++        }
+         setAppCheckErrorVisible(true);
+-      })
+-      .finally(() => {
+-        log.debug('Subscribing to database updates');
+-        const db = firebase.app().database(Config.DATABASE_URL);
+-
+-        db.ref(Config.DATABASE_PATH).on('value', snap => {
+-              log.debug('Database update received');
+-              setModel(new CouleurbummelModel(snap.val()));
+-            },
+-            err => log.error(err),
+-        );
++      }
+ 
+-        db.setPersistenceEnabled(true);
++      log.debug('Subscribing to database updates');
++      const db = firebase.app().database(Config.DATABASE_URL);
++      const ref = db.ref(Config.DATABASE_PATH);
++
++      const onValue = (snap: {val: () => any}) => {
++        log.debug('Database update received');
++        setRemoteModel(new CouleurbummelModel(snap.val()));
++      };
++
++      ref.on('value', onValue, err => {
++        log.error(err);
++        setRemoteUnavailable(true);
+       });
++      unsubscribe = () => ref.off('value', onValue);
+ 
+-    return new CouleurbummelModel();
+-  });
++      db.setPersistenceEnabled(true);
++    };
++
++    start().catch(e => log.error('Failed to load the database', e));
++
++    return () => {
++      cancelled = true;
++      unsubscribe?.();
++    };
++  }, []);
++
++  const importDatabase = useCallback(async (input: string) => {
++    const result = await readDatabase(input);
++    if (!result.ok) {
++      return result;
++    }
++
++    if (!(await saveCustomDatabase(result.database))) {
++      return {ok: false, error: 'STORAGE_FAILED'} as const;
++    }
++
++    setCustomModel(new CouleurbummelModel(result.database));
++    return result;
++  }, []);
++
++  const removeCustomDatabase = useCallback(async () => {
++    await removeStoredDatabase();
++    setCustomModel(undefined);
++  }, []);
++
++  const usingCustomDatabase = remoteUnavailable && customModel !== undefined;
++  const model = usingCustomDatabase ? customModel : remoteModel;
++
++  const databaseContext = useMemo(
++    () => ({
++      remoteUnavailable,
++      hasCustomDatabase: customModel !== undefined,
++      usingCustomDatabase,
++      importDatabase,
++      removeCustomDatabase,
++    }),
++    [
++      remoteUnavailable,
++      customModel,
++      usingCustomDatabase,
++      importDatabase,
++      removeCustomDatabase,
++    ],
++  );
+ 
+   return (
+-    <ModelContext.Provider value={model}>
+-      {children}
+-      <Dialog isVisible={appCheckErrorVisible}>
+-        <Dialog.Title title={t('APP_CHECK_DIALOGUE_TITLE')} />
+-        <Text>{t('APP_CHECK_DIALOGUE_TEXT')}</Text>
+-        <Dialog.Actions>
+-          <Dialog.Button
+-            title={t('APP_CHECK_DIALOGUE_BUTTON_TEXT')}
+-            onPress={() => setAppCheckErrorVisible(false)}
+-          />
+-        </Dialog.Actions>
+-      </Dialog>
+-    </ModelContext.Provider>
++    <DatabaseContext.Provider value={databaseContext}>
++      <ModelContext.Provider value={model}>
++        {children}
++        <Dialog isVisible={appCheckErrorVisible}>
++          <Dialog.Title title={t('APP_CHECK_DIALOGUE_TITLE')} />
++          <Text>{t('APP_CHECK_DIALOGUE_TEXT')}</Text>
++          <Dialog.Actions>
++            <Dialog.Button
++              title={t('APP_CHECK_DIALOGUE_BUTTON_TEXT')}
++              onPress={() => setAppCheckErrorVisible(false)}
++            />
++          </Dialog.Actions>
++        </Dialog>
++      </ModelContext.Provider>
++    </DatabaseContext.Provider>
+   );
+ };
+--- a/src/locales/de.ts
++++ b/src/locales/de.ts
+@@ -41,8 +41,38 @@
+   APP_CHECK_DIALOGUE_TEXT:
+     'Das Gerät oder die App konnte nicht als echt verifiziert werden. Sie funktioniert möglicherweise nicht korrekt.' +
+     '\n\n' +
+-    'Bitte stelle sicher, dass du die App aus dem Store installiert hast.',
++    'Bitte stelle sicher, dass du die App aus dem Store installiert hast.' +
++    '\n\n' +
++    'Falls es trotzdem nicht funktioniert, kannst du in den Einstellungen eine eigene Datenbank importieren.',
+   APP_CHECK_DIALOGUE_BUTTON_TEXT: 'Schließen',
++  DATABASE_TITLE: 'Datenbank',
++  DATABASE_STATUS_UNAVAILABLE:
++    'Die Online-Datenbank ist auf diesem Gerät nicht verfügbar. Du kannst stattdessen eine eigene Datenbank importieren.',
++  DATABASE_STATUS_IN_USE:
++    'Die App verwendet die Datenbank, die du importiert hast.',
++  DATABASE_STATUS_STORED:
++    'Du hast eine Datenbank importiert. Sie wird nur verwendet, wenn die Online-Datenbank nicht verfügbar ist.',
++  DATABASE_IMPORT_BUTTON: 'Datenbank importieren',
++  DATABASE_REMOVE_BUTTON: 'Importierte Datenbank entfernen',
++  DATABASE_IMPORT_TITLE: 'Datenbank importieren',
++  DATABASE_IMPORT_HELP:
++    'Füge die Datenbank als JSON ein oder gib die https-Adresse einer JSON-Datei ein. Importiere nur Daten aus vertrauenswürdigen Quellen.',
++  DATABASE_IMPORT_PLACEHOLDER: 'https://… oder {…}',
++  DATABASE_IMPORT_CONFIRM: 'Importieren',
++  DATABASE_IMPORT_CANCEL: 'Abbrechen',
++  DATABASE_IMPORT_SUCCESS:
++    'Datenbank importiert. Verbindungen: {{corporations}}',
++  DATABASE_ERROR_INVALID_JSON:
++    'Das ist keine gültige Datenbank im JSON-Format.',
++  DATABASE_ERROR_INCOMPLETE:
++    'Die Datenbank braucht mindestens eine Adresse und eine Verbindung.',
++  DATABASE_ERROR_INVALID_ENTRY: 'Der Eintrag „{{entry}}“ ist ungültig.',
++  DATABASE_ERROR_TOO_LARGE:
++    'Die Datenbank ist zu groß, um auf diesem Gerät gespeichert zu werden.',
++  DATABASE_ERROR_DOWNLOAD_FAILED:
++    'Die Datei konnte nicht heruntergeladen werden. Es funktionieren nur https-Adressen.',
++  DATABASE_ERROR_STORAGE_FAILED:
++    'Die Datenbank konnte nicht auf diesem Gerät gespeichert werden.',
+   CHANGE_REQUEST_SUBJECT: 'Änderungswunsch für {{name}}',
+   SEARCH_COLOURS_ANY_COLOUR: 'irgendeine',
+   SEARCH_COLOURS_ACCORDION: 'Sucheinstellungen',
+--- a/src/locales/en.ts
++++ b/src/locales/en.ts
+@@ -41,8 +41,35 @@
+   APP_CHECK_DIALOGUE_TEXT:
+     "The device's or app's integrity couldn't be verified. It might not work as expected." +
+     '\n\n' +
+-    'Please make sure to install it from the official store.',
++    'Please make sure to install it from the official store.' +
++    '\n\n' +
++    "If it still doesn't work, you can import your own database in the settings.",
+   APP_CHECK_DIALOGUE_BUTTON_TEXT: 'Close',
++  DATABASE_TITLE: 'Database',
++  DATABASE_STATUS_UNAVAILABLE:
++    "The online database isn't available on this device. You can import your own database instead.",
++  DATABASE_STATUS_IN_USE: 'The app is using the database you imported.',
++  DATABASE_STATUS_STORED:
++    "You have imported a database. It will only be used if the online database isn't available.",
++  DATABASE_IMPORT_BUTTON: 'Import database',
++  DATABASE_REMOVE_BUTTON: 'Remove imported database',
++  DATABASE_IMPORT_TITLE: 'Import database',
++  DATABASE_IMPORT_HELP:
++    'Paste the database as JSON or enter the https address of a JSON file. Only import data from sources you trust.',
++  DATABASE_IMPORT_PLACEHOLDER: 'https://… or {…}',
++  DATABASE_IMPORT_CONFIRM: 'Import',
++  DATABASE_IMPORT_CANCEL: 'Cancel',
++  DATABASE_IMPORT_SUCCESS: 'Database imported. Corporations: {{corporations}}',
++  DATABASE_ERROR_INVALID_JSON: "This isn't a valid database in JSON format.",
++  DATABASE_ERROR_INCOMPLETE:
++    'The database needs at least one address and one corporation.',
++  DATABASE_ERROR_INVALID_ENTRY: 'The entry "{{entry}}" is invalid.',
++  DATABASE_ERROR_TOO_LARGE:
++    'The database is too large to be stored on this device.',
++  DATABASE_ERROR_DOWNLOAD_FAILED:
++    "The file couldn't be downloaded. Only https addresses work.",
++  DATABASE_ERROR_STORAGE_FAILED:
++    "The database couldn't be saved on this device.",
+   CHANGE_REQUEST_SUBJECT: 'Change request for {{name}}',
+   SEARCH_COLOURS_ANY_COLOUR: 'any',
+   SEARCH_COLOURS_ACCORDION: 'Search parameters',
+--- a/src/model/import.ts
++++ b/src/model/import.ts
+@@ -0,0 +1,77 @@
++import log from '../log';
++import {MAX_DATABASE_LENGTH, parseDatabase,ParsedDatabase} from './validation';
++
++const DOWNLOAD_TIMEOUT_MS = 20_000;
++
++export type ImportResult =
++  | ParsedDatabase
++  // The file couldn't be downloaded
++  | {ok: false; error: 'DOWNLOAD_FAILED'}
++  // The database was valid, but couldn't be stored on the device
++  | {ok: false; error: 'STORAGE_FAILED'};
++
++type ReadResult =
++  | {ok: true; text: string}
++  | {ok: false; error: 'DOWNLOAD_FAILED' | 'TOO_LARGE'};
++
++/**
++ * Whether the input is an address of a web page rather than JSON
++ */
++export const looksLikeUrl = (input: string) =>
++  /^https?:\/\/\S+$/i.test(input.trim());
++
++const download = async (url: string): Promise<ReadResult> => {
++  // Plain HTTP is blocked by both platforms by default, and we don't want to load data over an insecure connection.
++  if (!/^https:\/\//i.test(url)) {
++    log.warn('Refusing to download a database over an insecure connection');
++    return {ok: false, error: 'DOWNLOAD_FAILED'};
++  }
++
++  const controller = new AbortController();
++  const timeout = setTimeout(() => controller.abort(), DOWNLOAD_TIMEOUT_MS);
++
++  try {
++    const response = await fetch(url, {
++      // React Native and the DOM typings each declare their own AbortSignal
++      signal: controller.signal as RequestInit['signal'],
++      headers: {Accept: 'application/json'},
++    });
++
++    if (!response.ok) {
++      log.warn(
++        `Downloading the database failed with status ${response.status}`,
++      );
++      return {ok: false, error: 'DOWNLOAD_FAILED'};
++    }
++
++    const declaredLength = Number(response.headers.get('content-length'));
++    if (declaredLength > MAX_DATABASE_LENGTH) {
++      return {ok: false, error: 'TOO_LARGE'};
++    }
++
++    return {ok: true, text: await response.text()};
++  } catch (e) {
++    log.error('Failed to download the database', e);
++    return {ok: false, error: 'DOWNLOAD_FAILED'};
++  } finally {
++    clearTimeout(timeout);
++  }
++};
++
++/**
++ * Reads a database from what the user entered, which is either JSON or the https address of a JSON file, and validates
++ * it.
++ *
++ * @param input - the text that the user entered
++ * @returns the validated database or the reason why it can't be used
++ */
++export const readDatabase = async (input: string): Promise<ImportResult> => {
++  const trimmed = input.trim();
++
++  if (!looksLikeUrl(trimmed)) {
++    return parseDatabase(trimmed);
++  }
++
++  const downloaded = await download(trimmed);
++  return downloaded.ok ? parseDatabase(downloaded.text) : downloaded;
++};
+--- a/src/model/validation.ts
++++ b/src/model/validation.ts
+@@ -0,0 +1,154 @@
++/**
++ * The names of the top-level tables of the database.
++ *
++ * These mirror `resources/couleurbummel.schema.json` and the fields of `CouleurbummelModel`.
++ */
++const TABLES = [
++  'addresses',
++  'cities',
++  'colours',
++  'colourFamilies',
++  'corporations',
++  'countries',
++  'events',
++  'organisations',
++  'pointsOfInterest',
++] as const;
++
++type Table = (typeof TABLES)[number];
++
++/**
++ * The maximum length of a database, in characters.
++ *
++ * Imported databases are kept in AsyncStorage, which has size limits (6 MB for the whole storage by default on
++ * Android), so we refuse anything that is unlikely to fit.
++ */
++export const MAX_DATABASE_LENGTH = 5_000_000;
++
++export type Database = Partial<Record<Table, Record<string, any>>>;
++
++export type DatabaseError =
++  // The input is not valid JSON or isn't a JSON object
++  | {error: 'INVALID_JSON'}
++  // The database doesn't contain at least one address and at least one corporation
++  | {error: 'INCOMPLETE'}
++  // An entry has an unexpected shape. `entry` says where, e.g. `corporations/corporation_de_aachen_x`
++  | {error: 'INVALID_ENTRY'; entry: string}
++  | {error: 'TOO_LARGE'};
++
++export type ParsedDatabase =
++  | {ok: true; database: Database; corporations: number}
++  | ({ok: false} & DatabaseError);
++
++const isPlainObject = (o: unknown): o is Record<string, any> =>
++  typeof o === 'object' && o !== null && !Array.isArray(o);
++
++const isString = (o: unknown): o is string => typeof o === 'string';
++
++const isCoordinate = (o: unknown, limit: number) =>
++  typeof o === 'number' && Number.isFinite(o) && Math.abs(o) <= limit;
++
++const hasTables = (o: Record<string, unknown>) =>
++  TABLES.some(table => table in o);
++
++/**
++ * Checks the properties that the app relies on when it sorts, searches and draws entries.
++ *
++ * This is deliberately not a full schema validation. It only guards against data that would make the app crash.
++ */
++const isValidEntry = (table: Table, id: string, entry: unknown) => {
++  if (!isPlainObject(entry) || entry.id !== id) {
++    return false;
++  }
++
++  switch (table) {
++    case 'addresses':
++      return (
++        isCoordinate(entry.latitude, 90) && isCoordinate(entry.longitude, 180)
++      );
++    case 'corporations':
++      return (
++        isString(entry.shortName) &&
++        isString(entry.addressId) &&
++        (entry.colours == null ||
++          (Array.isArray(entry.colours) &&
++            entry.colours.every(
++              (c: unknown) => isPlainObject(c) && Array.isArray(c.colourIds),
++            )))
++      );
++    case 'cities':
++    case 'organisations':
++      return isString(entry.name);
++    default:
++      return true;
++  }
++};
++
++/**
++ * Parses and validates the text of a database that the user provided.
++ *
++ * Besides a database in the format that the app uses, this also accepts one that is wrapped in a single parent key,
++ * which is what an export of a path in the Firebase console looks like.
++ *
++ * @param text - the JSON text
++ * @returns the database restricted to the known tables, or the reason why it can't be used
++ */
++export const parseDatabase = (text: string): ParsedDatabase => {
++  if (text.length > MAX_DATABASE_LENGTH) {
++    return {ok: false, error: 'TOO_LARGE'};
++  }
++
++  let json: unknown;
++  try {
++    json = JSON.parse(text);
++  } catch {
++    return {ok: false, error: 'INVALID_JSON'};
++  }
++
++  if (!isPlainObject(json)) {
++    return {ok: false, error: 'INVALID_JSON'};
++  }
++
++  let root: Record<string, any> = json;
++  if (!hasTables(root)) {
++    const children = Object.values(root);
++    if (
++      children.length === 1 &&
++      isPlainObject(children[0]) &&
++      hasTables(children[0])
++    ) {
++      root = children[0];
++    }
++  }
++
++  const database: Database = {};
++
++  for (const table of TABLES) {
++    const entries = root[table];
++
++    if (entries == null) {
++      continue;
++    }
++
++    if (!isPlainObject(entries)) {
++      return {ok: false, error: 'INVALID_ENTRY', entry: table};
++    }
++
++    for (const id of Object.keys(entries)) {
++      if (!isValidEntry(table, id, entries[id])) {
++        return {ok: false, error: 'INVALID_ENTRY', entry: `${table}/${id}`};
++      }
++    }
++
++    database[table] = entries;
++  }
++
++  const corporations = Object.keys(database.corporations ?? {}).length;
++  const addresses = Object.keys(database.addresses ?? {}).length;
++
++  if (corporations === 0 || addresses === 0) {
++    return {ok: false, error: 'INCOMPLETE'};
++  }
++
++  return {ok: true, database, corporations};
++};
+--- a/src/storage.ts
++++ b/src/storage.ts
+@@ -2,6 +2,7 @@
+ 
+ import constants from './constants';
+ import log from './log';
++import {Database, parseDatabase} from './model/validation';
+ import {
+   GlobalState,
+   Language,
+@@ -17,6 +18,7 @@
+ const sortOptionsKey = '@globalState/v1/sort';
+ const uiStateKey = '@globalState/v1/uiState';
+ const settingsKey = '@globalState/v1/userSettings';
++const customDatabaseKey = '@customDatabase/v1';
+ 
+ const defaultState = {...constants.defaultState};
+ 
+@@ -187,3 +189,60 @@
+ 
+   return !!Theme[o.theme];
+ };
++
++/**
++ * Stores a database that the user imported, so that it can be used when the online database is unavailable
++ *
++ * @param database - the validated database
++ * @returns true if the database was stored
++ */
++export const saveCustomDatabase = async (database: Database) => {
++  try {
++    await AsyncStorage.setItem(customDatabaseKey, JSON.stringify(database));
++    return true;
++  } catch (e) {
++    log.error('Failed to store the imported database', e);
++    return false;
++  }
++};
++
++/**
++ * Gets the database that the user imported, if any
++ *
++ * The stored data is validated again, so a corrupted or outdated entry is ignored instead of breaking the app.
++ */
++export const loadCustomDatabase = async (): Promise<Database | undefined> => {
++  try {
++    const text = await AsyncStorage.getItem(customDatabaseKey);
++
++    if (!text) {
++      return undefined;
++    }
++
++    const result = parseDatabase(text);
++    if (!result.ok) {
++      log.warn('Ignoring the stored database, which is invalid', result);
++      return undefined;
++    }
++
++    return result.database;
++  } catch (e) {
++    log.error('Failed to load the imported database', e);
++    return undefined;
++  }
++};
++
++/**
++ * Removes the database that the user imported
++ *
++ * @returns true if no imported database is stored anymore
++ */
++export const removeCustomDatabase = async () => {
++  try {
++    await AsyncStorage.removeItem(customDatabaseKey);
++    return true;
++  } catch (e) {
++    log.error('Failed to remove the imported database', e);
++    return false;
++  }
++};
+--- a/src/types/i18n.ts
++++ b/src/types/i18n.ts
+@@ -38,6 +38,24 @@
+   | 'APP_CHECK_DIALOGUE_TITLE'
+   | 'APP_CHECK_DIALOGUE_TEXT'
+   | 'APP_CHECK_DIALOGUE_BUTTON_TEXT'
++  | 'DATABASE_TITLE'
++  | 'DATABASE_STATUS_UNAVAILABLE'
++  | 'DATABASE_STATUS_IN_USE'
++  | 'DATABASE_STATUS_STORED'
++  | 'DATABASE_IMPORT_BUTTON'
++  | 'DATABASE_REMOVE_BUTTON'
++  | 'DATABASE_IMPORT_TITLE'
++  | 'DATABASE_IMPORT_HELP'
++  | 'DATABASE_IMPORT_PLACEHOLDER'
++  | 'DATABASE_IMPORT_CONFIRM'
++  | 'DATABASE_IMPORT_CANCEL'
++  | 'DATABASE_IMPORT_SUCCESS'
++  | 'DATABASE_ERROR_INVALID_JSON'
++  | 'DATABASE_ERROR_INCOMPLETE'
++  | 'DATABASE_ERROR_INVALID_ENTRY'
++  | 'DATABASE_ERROR_TOO_LARGE'
++  | 'DATABASE_ERROR_DOWNLOAD_FAILED'
++  | 'DATABASE_ERROR_STORAGE_FAILED'
+   | 'CHANGE_REQUEST_SUBJECT'
+   | 'SEARCH_COLOURS_ANY_COLOUR'
+   | 'SEARCH_COLOURS_ACCORDION'

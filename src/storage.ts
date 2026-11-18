@@ -2,6 +2,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import constants from './constants';
 import log from './log';
+import {Database, parseDatabase} from './model/validation';
 import {
   GlobalState,
   Language,
@@ -17,6 +18,7 @@ const favouritesKey = '@globalState/v1/favourites';
 const sortOptionsKey = '@globalState/v1/sort';
 const uiStateKey = '@globalState/v1/uiState';
 const settingsKey = '@globalState/v1/userSettings';
+const customDatabaseKey = '@customDatabase/v1';
 
 const defaultState = {...constants.defaultState};
 
@@ -186,4 +188,61 @@ const isSettings = (o: any): o is UserSettings => {
   }
 
   return !!Theme[o.theme];
+};
+
+/**
+ * Stores a database that the user imported, so that it can be used when the online database is unavailable
+ *
+ * @param database - the validated database
+ * @returns true if the database was stored
+ */
+export const saveCustomDatabase = async (database: Database) => {
+  try {
+    await AsyncStorage.setItem(customDatabaseKey, JSON.stringify(database));
+    return true;
+  } catch (e) {
+    log.error('Failed to store the imported database', e);
+    return false;
+  }
+};
+
+/**
+ * Gets the database that the user imported, if any
+ *
+ * The stored data is validated again, so a corrupted or outdated entry is ignored instead of breaking the app.
+ */
+export const loadCustomDatabase = async (): Promise<Database | undefined> => {
+  try {
+    const text = await AsyncStorage.getItem(customDatabaseKey);
+
+    if (!text) {
+      return undefined;
+    }
+
+    const result = parseDatabase(text);
+    if (!result.ok) {
+      log.warn('Ignoring the stored database, which is invalid', result);
+      return undefined;
+    }
+
+    return result.database;
+  } catch (e) {
+    log.error('Failed to load the imported database', e);
+    return undefined;
+  }
+};
+
+/**
+ * Removes the database that the user imported
+ *
+ * @returns true if no imported database is stored anymore
+ */
+export const removeCustomDatabase = async () => {
+  try {
+    await AsyncStorage.removeItem(customDatabaseKey);
+    return true;
+  } catch (e) {
+    log.error('Failed to remove the imported database', e);
+    return false;
+  }
 };

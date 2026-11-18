@@ -41,8 +41,40 @@ const de: Translation = {
   APP_CHECK_DIALOGUE_TEXT:
     'Das Gerät oder die App konnte nicht als echt verifiziert werden. Sie funktioniert möglicherweise nicht korrekt.' +
     '\n\n' +
-    'Bitte stelle sicher, dass du die App aus dem Store installiert hast.',
+    'Bitte stelle sicher, dass du die App aus dem Store installiert hast.' +
+    '\n\n' +
+    'Falls es trotzdem nicht funktioniert, kannst du in den Einstellungen eine eigene Datenbank importieren.',
   APP_CHECK_DIALOGUE_BUTTON_TEXT: 'Schließen',
+  DATABASE_TITLE: 'Datenbank',
+  DATABASE_STATUS_UNAVAILABLE:
+    'Die Online-Datenbank ist auf diesem Gerät nicht verfügbar. Du kannst stattdessen eine eigene Datenbank importieren.',
+  DATABASE_STATUS_IN_USE:
+    'Die App verwendet die Datenbank, die du importiert hast.',
+  DATABASE_STATUS_STORED:
+    'Du hast eine Datenbank importiert. Sie wird nur verwendet, wenn die Online-Datenbank nicht verfügbar ist.',
+  DATABASE_IMPORT_BUTTON: 'Datenbank importieren',
+  DATABASE_REMOVE_BUTTON: 'Importierte Datenbank entfernen',
+  DATABASE_IMPORT_TITLE: 'Datenbank importieren',
+  DATABASE_IMPORT_HELP:
+    'Wähle eine Datei mit der Datenbank, füge ihren Inhalt als JSON ein oder gib die https-Adresse einer JSON-Datei ein. Importiere nur Daten aus vertrauenswürdigen Quellen.',
+  DATABASE_IMPORT_PLACEHOLDER: 'https://… oder {…}',
+  DATABASE_IMPORT_CONFIRM: 'Importieren',
+  DATABASE_IMPORT_CANCEL: 'Abbrechen',
+  DATABASE_IMPORT_SUCCESS:
+    'Datenbank importiert. Verbindungen: {{corporations}}',
+  DATABASE_ERROR_INVALID_JSON:
+    'Das ist keine gültige Datenbank im JSON-Format.',
+  DATABASE_ERROR_INCOMPLETE:
+    'Die Datenbank braucht mindestens eine Adresse und eine Verbindung.',
+  DATABASE_ERROR_INVALID_ENTRY: 'Der Eintrag „{{entry}}“ ist ungültig.',
+  DATABASE_ERROR_TOO_LARGE:
+    'Die Datenbank ist zu groß, um auf diesem Gerät gespeichert zu werden.',
+  DATABASE_ERROR_DOWNLOAD_FAILED:
+    'Die Datei konnte nicht heruntergeladen werden. Es funktionieren nur https-Adressen.',
+  DATABASE_ERROR_STORAGE_FAILED:
+    'Die Datenbank konnte nicht auf diesem Gerät gespeichert werden.',
+  DATABASE_IMPORT_CHOOSE_FILE: 'Datei auswählen …',
+  DATABASE_ERROR_READ_FAILED: 'Die Datei konnte nicht gelesen werden.',
   CHANGE_REQUEST_SUBJECT: 'Änderungswunsch für {{name}}',
   SEARCH_COLOURS_ANY_COLOUR: 'irgendeine',
   SEARCH_COLOURS_ACCORDION: 'Sucheinstellungen',

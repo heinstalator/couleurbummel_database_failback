@@ -1,0 +1,1819 @@
+diff --git a/node_modules/react-native-vector-icons/android/build/generated/source/buildConfig/release/com/oblador/vectoricons/BuildConfig.java b/node_modules/react-native-vector-icons/android/build/generated/source/buildConfig/release/com/oblador/vectoricons/BuildConfig.java
+new file mode 100644
+index 0000000..8f0dce5
+--- /dev/null
++++ b/node_modules/react-native-vector-icons/android/build/generated/source/buildConfig/release/com/oblador/vectoricons/BuildConfig.java
+@@ -0,0 +1,10 @@
++/**
++ * Automatically generated file. DO NOT MODIFY
++ */
++package com.oblador.vectoricons;
++
++public final class BuildConfig {
++  public static final boolean DEBUG = false;
++  public static final String LIBRARY_PACKAGE_NAME = "com.oblador.vectoricons";
++  public static final String BUILD_TYPE = "release";
++}
+diff --git a/node_modules/react-native-vector-icons/android/build/intermediates/aapt_friendly_merged_manifests/release/processReleaseManifest/aapt/AndroidManifest.xml b/node_modules/react-native-vector-icons/android/build/intermediates/aapt_friendly_merged_manifests/release/processReleaseManifest/aapt/AndroidManifest.xml
+new file mode 100644
+index 0000000..c5c667b
+--- /dev/null
++++ b/node_modules/react-native-vector-icons/android/build/intermediates/aapt_friendly_merged_manifests/release/processReleaseManifest/aapt/AndroidManifest.xml
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="utf-8"?>
++<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++    package="com.oblador.vectoricons" >
++
++    <uses-sdk android:minSdkVersion="24" />
++
++</manifest>
+\ No newline at end of file
+diff --git a/node_modules/react-native-vector-icons/android/build/intermediates/aapt_friendly_merged_manifests/release/processReleaseManifest/aapt/output-metadata.json b/node_modules/react-native-vector-icons/android/build/intermediates/aapt_friendly_merged_manifests/release/processReleaseManifest/aapt/output-metadata.json
+new file mode 100644
+index 0000000..33c1765
+--- /dev/null
++++ b/node_modules/react-native-vector-icons/android/build/intermediates/aapt_friendly_merged_manifests/release/processReleaseManifest/aapt/output-metadata.json
+@@ -0,0 +1,18 @@
++{
++  "version": 3,
++  "artifactType": {
++    "type": "AAPT_FRIENDLY_MERGED_MANIFESTS",
++    "kind": "Directory"
++  },
++  "applicationId": "com.oblador.vectoricons",
++  "variantName": "release",
++  "elements": [
++    {
++      "type": "SINGLE",
++      "filters": [],
++      "attributes": [],
++      "outputFile": "AndroidManifest.xml"
++    }
++  ],
++  "elementType": "File"
++}
+\ No newline at end of file
+diff --git a/node_modules/react-native-vector-icons/android/build/intermediates/aar_metadata/release/writeReleaseAarMetadata/aar-metadata.properties b/node_modules/react-native-vector-icons/android/build/intermediates/aar_metadata/release/writeReleaseAarMetadata/aar-metadata.properties
+new file mode 100644
+index 0000000..1211b1e
+--- /dev/null
++++ b/node_modules/react-native-vector-icons/android/build/intermediates/aar_metadata/release/writeReleaseAarMetadata/aar-metadata.properties
+@@ -0,0 +1,6 @@
++aarFormatVersion=1.0
++aarMetadataVersion=1.0
++minCompileSdk=1
++minCompileSdkExtension=0
++minAndroidGradlePluginVersion=1.0.0
++coreLibraryDesugaringEnabled=false
+diff --git a/node_modules/react-native-vector-icons/android/build/intermediates/annotation_processor_list/release/javaPreCompileRelease/annotationProcessors.json b/node_modules/react-native-vector-icons/android/build/intermediates/annotation_processor_list/release/javaPreCompileRelease/annotationProcessors.json
+new file mode 100644
+index 0000000..9e26dfe
+--- /dev/null
++++ b/node_modules/react-native-vector-icons/android/build/intermediates/annotation_processor_list/release/javaPreCompileRelease/annotationProcessors.json
+@@ -0,0 +1 @@
++{}
+\ No newline at end of file
+diff --git a/node_modules/react-native-vector-icons/android/build/intermediates/compile_library_classes_jar/release/bundleLibCompileToJarRelease/classes.jar b/node_modules/react-native-vector-icons/android/build/intermediates/compile_library_classes_jar/release/bundleLibCompileToJarRelease/classes.jar
+new file mode 100644
+index 0000000..f0ae1ea
+Binary files /dev/null and b/node_modules/react-native-vector-icons/android/build/intermediates/compile_library_classes_jar/release/bundleLibCompileToJarRelease/classes.jar differ
+diff --git a/node_modules/react-native-vector-icons/android/build/intermediates/compile_r_class_jar/release/generateReleaseRFile/R.jar b/node_modules/react-native-vector-icons/android/build/intermediates/compile_r_class_jar/release/generateReleaseRFile/R.jar
+new file mode 100644
+index 0000000..6531d76
+Binary files /dev/null and b/node_modules/react-native-vector-icons/android/build/intermediates/compile_r_class_jar/release/generateReleaseRFile/R.jar differ
+diff --git a/node_modules/react-native-vector-icons/android/build/intermediates/compile_symbol_list/release/generateReleaseRFile/R.txt b/node_modules/react-native-vector-icons/android/build/intermediates/compile_symbol_list/release/generateReleaseRFile/R.txt
+new file mode 100644
+index 0000000..e69de29
+diff --git a/node_modules/react-native-vector-icons/android/build/intermediates/default_proguard_files/global/proguard-android-optimize.txt-8.12.0 b/node_modules/react-native-vector-icons/android/build/intermediates/default_proguard_files/global/proguard-android-optimize.txt-8.12.0
+new file mode 100644
+index 0000000..5a3e3a5
+--- /dev/null
++++ b/node_modules/react-native-vector-icons/android/build/intermediates/default_proguard_files/global/proguard-android-optimize.txt-8.12.0
+@@ -0,0 +1,89 @@
++# This is a configuration file for ProGuard.
++# http://proguard.sourceforge.net/index.html#manual/usage.html
++#
++# Starting with version 2.2 of the Android plugin for Gradle, this file is distributed together with
++# the plugin and unpacked at build-time. The files in $ANDROID_HOME are no longer maintained and
++# will be ignored by new version of the Android plugin for Gradle.
++
++# Optimizations: If you don't want to optimize, use the proguard-android.txt configuration file
++# instead of this one, which turns off the optimization flags.
++-allowaccessmodification
++
++# Preserve some attributes that may be required for reflection.
++-keepattributes AnnotationDefault,
++                EnclosingMethod,
++                InnerClasses,
++                RuntimeVisibleAnnotations,
++                RuntimeVisibleParameterAnnotations,
++                RuntimeVisibleTypeAnnotations,
++                Signature
++
++-keep public class com.google.vending.licensing.ILicensingService
++-keep public class com.android.vending.licensing.ILicensingService
++-keep public class com.google.android.vending.licensing.ILicensingService
++-dontnote com.android.vending.licensing.ILicensingService
++-dontnote com.google.vending.licensing.ILicensingService
++-dontnote com.google.android.vending.licensing.ILicensingService
++
++# For native methods, see https://www.guardsquare.com/manual/configuration/examples#native
++-keepclasseswithmembernames,includedescriptorclasses class * {
++    native <methods>;
++}
++
++# Keep setters in Views so that animations can still work.
++-keepclassmembers public class * extends android.view.View {
++    void set*(***);
++    *** get*();
++}
++
++# We want to keep methods in Activity that could be used in the XML attribute onClick.
++-keepclassmembers class * extends android.app.Activity {
++    public void *(android.view.View);
++}
++
++# For enumeration classes, see https://www.guardsquare.com/manual/configuration/examples#enumerations
++-keepclassmembers enum * {
++    public static **[] values();
++    public static ** valueOf(java.lang.String);
++}
++
++-keepclassmembers class * implements android.os.Parcelable {
++    public static final ** CREATOR;
++}
++
++# Preserve annotated Javascript interface methods.
++-keepclassmembers class * {
++    @android.webkit.JavascriptInterface <methods>;
++}
++
++# The support libraries contains references to newer platform versions.
++# Don't warn about those in case this app is linking against an older
++# platform version. We know about them, and they are safe.
++-dontnote android.support.**
++-dontnote androidx.**
++-dontwarn android.support.**
++-dontwarn androidx.**
++
++# Understand the @Keep support annotation.
++-keep class android.support.annotation.Keep
++
++-keep @android.support.annotation.Keep class * {*;}
++
++-keepclasseswithmembers class * {
++    @android.support.annotation.Keep <methods>;
++}
++
++-keepclasseswithmembers class * {
++    @android.support.annotation.Keep <fields>;
++}
++
++-keepclasseswithmembers class * {
++    @android.support.annotation.Keep <init>(...);
++}
++
++# These classes are duplicated between android.jar and org.apache.http.legacy.jar.
++-dontnote org.apache.http.**
++-dontnote android.net.http.**
++
++# These classes are duplicated between android.jar and core-lambda-stubs.jar.
++-dontnote java.lang.invoke.**
+diff --git a/node_modules/react-native-vector-icons/android/build/intermediates/default_proguard_files/global/proguard-android.txt-8.12.0 b/node_modules/react-native-vector-icons/android/build/intermediates/default_proguard_files/global/proguard-android.txt-8.12.0
+new file mode 100644
+index 0000000..6f7e4ef
+--- /dev/null
++++ b/node_modules/react-native-vector-icons/android/build/intermediates/default_proguard_files/global/proguard-android.txt-8.12.0
+@@ -0,0 +1,95 @@
++# This is a configuration file for ProGuard.
++# http://proguard.sourceforge.net/index.html#manual/usage.html
++#
++# Starting with version 2.2 of the Android plugin for Gradle, this file is distributed together with
++# the plugin and unpacked at build-time. The files in $ANDROID_HOME are no longer maintained and
++# will be ignored by new version of the Android plugin for Gradle.
++
++# Optimization is turned off by default. Dex does not like code run
++# through the ProGuard optimize steps (and performs some
++# of these optimizations on its own).
++# Note that if you want to enable optimization, you cannot just
++# include optimization flags in your own project configuration file;
++# instead you will need to point to the
++# "proguard-android-optimize.txt" file instead of this one from your
++# project.properties file.
++-dontoptimize
++
++# Preserve some attributes that may be required for reflection.
++-keepattributes AnnotationDefault,
++                EnclosingMethod,
++                InnerClasses,
++                RuntimeVisibleAnnotations,
++                RuntimeVisibleParameterAnnotations,
++                RuntimeVisibleTypeAnnotations,
++                Signature
++
++-keep public class com.google.vending.licensing.ILicensingService
++-keep public class com.android.vending.licensing.ILicensingService
++-keep public class com.google.android.vending.licensing.ILicensingService
++-dontnote com.android.vending.licensing.ILicensingService
++-dontnote com.google.vending.licensing.ILicensingService
++-dontnote com.google.android.vending.licensing.ILicensingService
++
++# For native methods, see https://www.guardsquare.com/manual/configuration/examples#native
++-keepclasseswithmembernames,includedescriptorclasses class * {
++    native <methods>;
++}
++
++# Keep setters in Views so that animations can still work.
++-keepclassmembers public class * extends android.view.View {
++    void set*(***);
++    *** get*();
++}
++
++# We want to keep methods in Activity that could be used in the XML attribute onClick.
++-keepclassmembers class * extends android.app.Activity {
++    public void *(android.view.View);
++}
++
++# For enumeration classes, see https://www.guardsquare.com/manual/configuration/examples#enumerations
++-keepclassmembers enum * {
++    public static **[] values();
++    public static ** valueOf(java.lang.String);
++}
++
++-keepclassmembers class * implements android.os.Parcelable {
++    public static final ** CREATOR;
++}
++
++# Preserve annotated Javascript interface methods.
++-keepclassmembers class * {
++    @android.webkit.JavascriptInterface <methods>;
++}
++
++# The support libraries contains references to newer platform versions.
++# Don't warn about those in case this app is linking against an older
++# platform version. We know about them, and they are safe.
++-dontnote android.support.**
++-dontnote androidx.**
++-dontwarn android.support.**
++-dontwarn androidx.**
++
++# Understand the @Keep support annotation.
++-keep class android.support.annotation.Keep
++
++-keep @android.support.annotation.Keep class * {*;}
++
++-keepclasseswithmembers class * {
++    @android.support.annotation.Keep <methods>;
++}
++
++-keepclasseswithmembers class * {
++    @android.support.annotation.Keep <fields>;
++}
++
++-keepclasseswithmembers class * {
++    @android.support.annotation.Keep <init>(...);
++}
++
++# These classes are duplicated between android.jar and org.apache.http.legacy.jar.
++-dontnote org.apache.http.**
++-dontnote android.net.http.**
++
++# These classes are duplicated between android.jar and core-lambda-stubs.jar.
++-dontnote java.lang.invoke.**
+diff --git a/node_modules/react-native-vector-icons/android/build/intermediates/default_proguard_files/global/proguard-defaults.txt-8.12.0 b/node_modules/react-native-vector-icons/android/build/intermediates/default_proguard_files/global/proguard-defaults.txt-8.12.0
+new file mode 100644
+index 0000000..7bbb228
+--- /dev/null
++++ b/node_modules/react-native-vector-icons/android/build/intermediates/default_proguard_files/global/proguard-defaults.txt-8.12.0
+@@ -0,0 +1,89 @@
++# This is a configuration file for ProGuard.
++# http://proguard.sourceforge.net/index.html#manual/usage.html
++#
++# Starting with version 2.2 of the Android plugin for Gradle, this file is distributed together with
++# the plugin and unpacked at build-time. The files in $ANDROID_HOME are no longer maintained and
++# will be ignored by new version of the Android plugin for Gradle.
++
++# Optimizations can be turned on and off in the 'postProcessing' DSL block.
++# The configuration below is applied if optimizations are enabled.
++-allowaccessmodification
++
++# Preserve some attributes that may be required for reflection.
++-keepattributes AnnotationDefault,
++                EnclosingMethod,
++                InnerClasses,
++                RuntimeVisibleAnnotations,
++                RuntimeVisibleParameterAnnotations,
++                RuntimeVisibleTypeAnnotations,
++                Signature
++
++-keep public class com.google.vending.licensing.ILicensingService
++-keep public class com.android.vending.licensing.ILicensingService
++-keep public class com.google.android.vending.licensing.ILicensingService
++-dontnote com.android.vending.licensing.ILicensingService
++-dontnote com.google.vending.licensing.ILicensingService
++-dontnote com.google.android.vending.licensing.ILicensingService
++
++# For native methods, see https://www.guardsquare.com/manual/configuration/examples#native
++-keepclasseswithmembernames,includedescriptorclasses class * {
++    native <methods>;
++}
++
++# Keep setters in Views so that animations can still work.
++-keepclassmembers public class * extends android.view.View {
++    void set*(***);
++    *** get*();
++}
++
++# We want to keep methods in Activity that could be used in the XML attribute onClick.
++-keepclassmembers class * extends android.app.Activity {
++    public void *(android.view.View);
++}
++
++# For enumeration classes, see https://www.guardsquare.com/manual/configuration/examples#enumerations
++-keepclassmembers enum * {
++    public static **[] values();
++    public static ** valueOf(java.lang.String);
++}
++
++-keepclassmembers class * implements android.os.Parcelable {
++    public static final ** CREATOR;
++}
++
++# Preserve annotated Javascript interface methods.
++-keepclassmembers class * {
++    @android.webkit.JavascriptInterface <methods>;
++}
++
++# The support libraries contains references to newer platform versions.
++# Don't warn about those in case this app is linking against an older
++# platform version. We know about them, and they are safe.
++-dontnote android.support.**
++-dontnote androidx.**
++-dontwarn android.support.**
++-dontwarn androidx.**
++
++# Understand the @Keep support annotation.
++-keep class android.support.annotation.Keep
++
++-keep @android.support.annotation.Keep class * {*;}
++
++-keepclasseswithmembers class * {
++    @android.support.annotation.Keep <methods>;
++}
++
++-keepclasseswithmembers class * {
++    @android.support.annotation.Keep <fields>;
++}
++
++-keepclasseswithmembers class * {
++    @android.support.annotation.Keep <init>(...);
++}
++
++# These classes are duplicated between android.jar and org.apache.http.legacy.jar.
++-dontnote org.apache.http.**
++-dontnote android.net.http.**
++
++# These classes are duplicated between android.jar and core-lambda-stubs.jar.
++-dontnote java.lang.invoke.**
+diff --git a/node_modules/react-native-vector-icons/android/build/intermediates/full_jar/release/createFullJarRelease/full.jar b/node_modules/react-native-vector-icons/android/build/intermediates/full_jar/release/createFullJarRelease/full.jar
+new file mode 100644
+index 0000000..e5f7d70
+Binary files /dev/null and b/node_modules/react-native-vector-icons/android/build/intermediates/full_jar/release/createFullJarRelease/full.jar differ
+diff --git a/node_modules/react-native-vector-icons/android/build/intermediates/incremental/mergeReleaseAssets/merger.xml b/node_modules/react-native-vector-icons/android/build/intermediates/incremental/mergeReleaseAssets/merger.xml
+new file mode 100644
+index 0000000..de904bb
+--- /dev/null
++++ b/node_modules/react-native-vector-icons/android/build/intermediates/incremental/mergeReleaseAssets/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/ilian/Downloads/self/coleur/couleurbummel-main/node_modules/react-native-vector-icons/android/src/main/assets"/></dataSet><dataSet config="release" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/ilian/Downloads/self/coleur/couleurbummel-main/node_modules/react-native-vector-icons/android/src/release/assets"/></dataSet><dataSet config="generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/ilian/Downloads/self/coleur/couleurbummel-main/node_modules/react-native-vector-icons/android/build/intermediates/shader_assets/release/compileReleaseShaders/out"/></dataSet></merger>
+\ No newline at end of file
+diff --git a/node_modules/react-native-vector-icons/android/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml b/node_modules/react-native-vector-icons/android/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml
+new file mode 100644
+index 0000000..84f0ce4
+--- /dev/null
++++ b/node_modules/react-native-vector-icons/android/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/ilian/Downloads/self/coleur/couleurbummel-main/node_modules/react-native-vector-icons/android/src/main/jniLibs"/></dataSet><dataSet config="release" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/ilian/Downloads/self/coleur/couleurbummel-main/node_modules/react-native-vector-icons/android/src/release/jniLibs"/></dataSet></merger>
+\ No newline at end of file
+diff --git a/node_modules/react-native-vector-icons/android/build/intermediates/incremental/mergeReleaseShaders/merger.xml b/node_modules/react-native-vector-icons/android/build/intermediates/incremental/mergeReleaseShaders/merger.xml
+new file mode 100644
+index 0000000..c577359
+--- /dev/null
++++ b/node_modules/react-native-vector-icons/android/build/intermediates/incremental/mergeReleaseShaders/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/ilian/Downloads/self/coleur/couleurbummel-main/node_modules/react-native-vector-icons/android/src/main/shaders"/></dataSet><dataSet config="release" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/ilian/Downloads/self/coleur/couleurbummel-main/node_modules/react-native-vector-icons/android/src/release/shaders"/></dataSet></merger>
+\ No newline at end of file
+diff --git a/node_modules/react-native-vector-icons/android/build/intermediates/incremental/release/packageReleaseResources/compile-file-map.properties b/node_modules/react-native-vector-icons/android/build/intermediates/incremental/release/packageReleaseResources/compile-file-map.properties
+new file mode 100644
+index 0000000..bd012e1
+--- /dev/null
++++ b/node_modules/react-native-vector-icons/android/build/intermediates/incremental/release/packageReleaseResources/compile-file-map.properties
+@@ -0,0 +1 @@
++#Tue Nov 17 10:37:56 CET 2026
+diff --git a/node_modules/react-native-vector-icons/android/build/intermediates/incremental/release/packageReleaseResources/merger.xml b/node_modules/react-native-vector-icons/android/build/intermediates/incremental/release/packageReleaseResources/merger.xml
+new file mode 100644
+index 0000000..285a5ac
+--- /dev/null
++++ b/node_modules/react-native-vector-icons/android/build/intermediates/incremental/release/packageReleaseResources/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/ilian/Downloads/self/coleur/couleurbummel-main/node_modules/react-native-vector-icons/android/src/main/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/ilian/Downloads/self/coleur/couleurbummel-main/node_modules/react-native-vector-icons/android/src/main/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="release$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/ilian/Downloads/self/coleur/couleurbummel-main/node_modules/react-native-vector-icons/android/src/release/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="release" generated-set="release$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/ilian/Downloads/self/coleur/couleurbummel-main/node_modules/react-native-vector-icons/android/src/release/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/ilian/Downloads/self/coleur/couleurbummel-main/node_modules/react-native-vector-icons/android/build/generated/res/resValues/release"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/ilian/Downloads/self/coleur/couleurbummel-main/node_modules/react-native-vector-icons/android/build/generated/res/resValues/release"/></dataSet><mergedItems/></merger>
+\ No newline at end of file
+diff --git a/node_modules/react-native-vector-icons/android/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/com/oblador/vectoricons/BuildConfig.class b/node_modules/react-native-vector-icons/android/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/com/oblador/vectoricons/BuildConfig.class
+new file mode 100644
+index 0000000..227d5bf
+Binary files /dev/null and b/node_modules/react-native-vector-icons/android/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/com/oblador/vectoricons/BuildConfig.class differ
+diff --git a/node_modules/react-native-vector-icons/android/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/com/oblador/vectoricons/VectorIconsModule$Errors.class b/node_modules/react-native-vector-icons/android/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/com/oblador/vectoricons/VectorIconsModule$Errors.class
+new file mode 100644
+index 0000000..963d751
+Binary files /dev/null and b/node_modules/react-native-vector-icons/android/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/com/oblador/vectoricons/VectorIconsModule$Errors.class differ
+diff --git a/node_modules/react-native-vector-icons/android/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/com/oblador/vectoricons/VectorIconsModule.class b/node_modules/react-native-vector-icons/android/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/com/oblador/vectoricons/VectorIconsModule.class
+new file mode 100644
+index 0000000..f1d3e48
+Binary files /dev/null and b/node_modules/react-native-vector-icons/android/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/com/oblador/vectoricons/VectorIconsModule.class differ
+diff --git a/node_modules/react-native-vector-icons/android/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/com/oblador/vectoricons/VectorIconsPackage.class b/node_modules/react-native-vector-icons/android/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/com/oblador/vectoricons/VectorIconsPackage.class
+new file mode 100644
+index 0000000..58b72f6
+Binary files /dev/null and b/node_modules/react-native-vector-icons/android/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/com/oblador/vectoricons/VectorIconsPackage.class differ
+diff --git a/node_modules/react-native-vector-icons/android/build/intermediates/lint_model/release/generateReleaseLintModel/module.xml b/node_modules/react-native-vector-icons/android/build/intermediates/lint_model/release/generateReleaseLintModel/module.xml
+new file mode 100644
+index 0000000..e5b8a46
+--- /dev/null
++++ b/node_modules/react-native-vector-icons/android/build/intermediates/lint_model/release/generateReleaseLintModel/module.xml
+@@ -0,0 +1,18 @@
++<lint-module
++    format="1"
++    dir="/home/ilian/Downloads/self/coleur/couleurbummel-main/node_modules/react-native-vector-icons/android"
++    name=":react-native-vector-icons"
++    type="LIBRARY"
++    maven="Couleurbummel:react-native-vector-icons:unspecified"
++    agpVersion="8.12.0"
++    buildFolder="build"
++    bootClassPath="/home/ilian/Android/Sdk/platforms/android-36/android.jar:/home/ilian/Android/Sdk/build-tools/35.0.0/core-lambda-stubs.jar"
++    javaSourceLevel="17"
++    compileTarget="android-36"
++    neverShrinking="true">
++  <lintOptions
++      absolutePaths="true"
++      checkReleaseBuilds="true"
++      explainIssues="true"/>
++  <variant name="release"/>
++</lint-module>
+diff --git a/node_modules/react-native-vector-icons/android/build/intermediates/lint_model/release/generateReleaseLintModel/release-artifact-dependencies.xml b/node_modules/react-native-vector-icons/android/build/intermediates/lint_model/release/generateReleaseLintModel/release-artifact-dependencies.xml
+new file mode 100644
+index 0000000..57401da
+--- /dev/null
++++ b/node_modules/react-native-vector-icons/android/build/intermediates/lint_model/release/generateReleaseLintModel/release-artifact-dependencies.xml
+@@ -0,0 +1,428 @@
++<dependencies>
++  <compile
++      roots="com.facebook.react:react-android:0.82.1:release@aar,androidx.appcompat:appcompat-resources:1.7.0@aar,androidx.appcompat:appcompat:1.7.0@aar,androidx.fragment:fragment:1.5.4@aar,androidx.activity:activity:1.7.0@aar,androidx.swiperefreshlayout:swiperefreshlayout:1.1.0@aar,androidx.drawerlayout:drawerlayout:1.0.0@aar,androidx.vectordrawable:vectordrawable-animated:1.1.0@aar,androidx.vectordrawable:vectordrawable:1.1.0@aar,androidx.viewpager:viewpager:1.0.0@aar,androidx.customview:customview:1.0.0@aar,androidx.loader:loader:1.0.0@aar,androidx.lifecycle:lifecycle-livedata:2.6.2@aar,androidx.lifecycle:lifecycle-common:2.6.2@jar,androidx.lifecycle:lifecycle-livedata-core:2.6.2@aar,androidx.lifecycle:lifecycle-viewmodel:2.6.2@aar,androidx.lifecycle:lifecycle-viewmodel:2.6.2@aar,androidx.lifecycle:lifecycle-runtime:2.6.2@aar,androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2@aar,androidx.core:core-ktx:1.13.1@aar,androidx.core:core:1.13.1@aar,androidx.core:core:1.13.1@aar,androidx.cursoradapter:cursoradapter:1.0.0@aar,androidx.savedstate:savedstate:1.2.1@aar,androidx.interpolator:interpolator:1.0.0@aar,androidx.versionedparcelable:versionedparcelable:1.1.1@aar,androidx.collection:collection:1.1.0@jar,androidx.arch.core:core-runtime:2.2.0@aar,androidx.arch.core:core-common:2.2.0@jar,androidx.annotation:annotation-jvm:1.6.0@jar,com.facebook.fresco:fresco:3.6.0@aar,com.facebook.fresco:imagepipeline-okhttp3:3.6.0@aar,com.facebook.fresco:middleware:3.6.0@aar,com.facebook.fresco:ui-common:3.6.0@aar,com.squareup.okhttp3:okhttp-urlconnection:4.9.2@jar,com.squareup.okhttp3:okhttp:4.9.2@jar,com.squareup.okio:okio:2.9.0@jar,com.facebook.fresco:fbcore:3.6.0@aar,com.facebook.fresco:drawee:3.6.0@aar,org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.4@jar,org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4@jar,org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0@jar,androidx.annotation:annotation-experimental:1.4.0@aar,com.facebook.fresco:ui-core:3.6.0@aar,com.facebook.fresco:imagepipeline:3.6.0@aar,com.facebook.fresco:imagepipeline-base:3.6.0@aar,org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0@jar,org.jetbrains.kotlin:kotlin-stdlib:2.1.20@jar,org.jetbrains:annotations:13.0@jar,androidx.tracing:tracing:1.1.0@aar,androidx.autofill:autofill:1.1.0@aar,com.facebook.fbjni:fbjni:0.7.0@aar,com.facebook.soloader:soloader:0.12.1@aar,com.facebook.soloader:nativeloader:0.12.1@jar,com.facebook.soloader:annotation:0.12.1@jar,com.facebook.infer.annotation:infer-annotation:0.18.0@jar,com.google.code.findbugs:jsr305:3.0.2@jar,org.jetbrains.kotlin:kotlin-annotations-jvm:1.3.72@jar,com.facebook.fresco:imagepipeline-native:3.6.0@aar,com.facebook.fresco:memory-type-ashmem:3.6.0@aar,com.facebook.fresco:memory-type-native:3.6.0@aar,com.facebook.fresco:memory-type-java:3.6.0@aar,com.facebook.fresco:nativeimagefilters:3.6.0@aar,com.facebook.fresco:nativeimagetranscoder:3.6.0@aar,com.facebook.yoga:proguard-annotations:1.19.0@jar,javax.inject:javax.inject:1@jar">
++    <dependency
++        name="com.facebook.react:react-android:0.82.1:release@aar"
++        simpleName="com.facebook.react:react-android"/>
++    <dependency
++        name="androidx.appcompat:appcompat-resources:1.7.0@aar"
++        simpleName="androidx.appcompat:appcompat-resources"/>
++    <dependency
++        name="androidx.appcompat:appcompat:1.7.0@aar"
++        simpleName="androidx.appcompat:appcompat"/>
++    <dependency
++        name="androidx.fragment:fragment:1.5.4@aar"
++        simpleName="androidx.fragment:fragment"/>
++    <dependency
++        name="androidx.activity:activity:1.7.0@aar"
++        simpleName="androidx.activity:activity"/>
++    <dependency
++        name="androidx.swiperefreshlayout:swiperefreshlayout:1.1.0@aar"
++        simpleName="androidx.swiperefreshlayout:swiperefreshlayout"/>
++    <dependency
++        name="androidx.drawerlayout:drawerlayout:1.0.0@aar"
++        simpleName="androidx.drawerlayout:drawerlayout"/>
++    <dependency
++        name="androidx.vectordrawable:vectordrawable-animated:1.1.0@aar"
++        simpleName="androidx.vectordrawable:vectordrawable-animated"/>
++    <dependency
++        name="androidx.vectordrawable:vectordrawable:1.1.0@aar"
++        simpleName="androidx.vectordrawable:vectordrawable"/>
++    <dependency
++        name="androidx.viewpager:viewpager:1.0.0@aar"
++        simpleName="androidx.viewpager:viewpager"/>
++    <dependency
++        name="androidx.customview:customview:1.0.0@aar"
++        simpleName="androidx.customview:customview"/>
++    <dependency
++        name="androidx.loader:loader:1.0.0@aar"
++        simpleName="androidx.loader:loader"/>
++    <dependency
++        name="androidx.lifecycle:lifecycle-livedata:2.6.2@aar"
++        simpleName="androidx.lifecycle:lifecycle-livedata"/>
++    <dependency
++        name="androidx.lifecycle:lifecycle-common:2.6.2@jar"
++        simpleName="androidx.lifecycle:lifecycle-common"/>
++    <dependency
++        name="androidx.lifecycle:lifecycle-livedata-core:2.6.2@aar"
++        simpleName="androidx.lifecycle:lifecycle-livedata-core"/>
++    <dependency
++        name="androidx.lifecycle:lifecycle-viewmodel:2.6.2@aar"
++        simpleName="androidx.lifecycle:lifecycle-viewmodel"/>
++    <dependency
++        name="androidx.lifecycle:lifecycle-runtime:2.6.2@aar"
++        simpleName="androidx.lifecycle:lifecycle-runtime"/>
++    <dependency
++        name="androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2@aar"
++        simpleName="androidx.lifecycle:lifecycle-viewmodel-savedstate"/>
++    <dependency
++        name="androidx.core:core-ktx:1.13.1@aar"
++        simpleName="androidx.core:core-ktx"/>
++    <dependency
++        name="androidx.core:core:1.13.1@aar"
++        simpleName="androidx.core:core"/>
++    <dependency
++        name="androidx.cursoradapter:cursoradapter:1.0.0@aar"
++        simpleName="androidx.cursoradapter:cursoradapter"/>
++    <dependency
++        name="androidx.savedstate:savedstate:1.2.1@aar"
++        simpleName="androidx.savedstate:savedstate"/>
++    <dependency
++        name="androidx.interpolator:interpolator:1.0.0@aar"
++        simpleName="androidx.interpolator:interpolator"/>
++    <dependency
++        name="androidx.versionedparcelable:versionedparcelable:1.1.1@aar"
++        simpleName="androidx.versionedparcelable:versionedparcelable"/>
++    <dependency
++        name="androidx.collection:collection:1.1.0@jar"
++        simpleName="androidx.collection:collection"/>
++    <dependency
++        name="androidx.arch.core:core-runtime:2.2.0@aar"
++        simpleName="androidx.arch.core:core-runtime"/>
++    <dependency
++        name="androidx.arch.core:core-common:2.2.0@jar"
++        simpleName="androidx.arch.core:core-common"/>
++    <dependency
++        name="androidx.annotation:annotation-jvm:1.6.0@jar"
++        simpleName="androidx.annotation:annotation-jvm"/>
++    <dependency
++        name="com.facebook.fresco:fresco:3.6.0@aar"
++        simpleName="com.facebook.fresco:fresco"/>
++    <dependency
++        name="com.facebook.fresco:imagepipeline-okhttp3:3.6.0@aar"
++        simpleName="com.facebook.fresco:imagepipeline-okhttp3"/>
++    <dependency
++        name="com.facebook.fresco:middleware:3.6.0@aar"
++        simpleName="com.facebook.fresco:middleware"/>
++    <dependency
++        name="com.facebook.fresco:ui-common:3.6.0@aar"
++        simpleName="com.facebook.fresco:ui-common"/>
++    <dependency
++        name="com.squareup.okhttp3:okhttp-urlconnection:4.9.2@jar"
++        simpleName="com.squareup.okhttp3:okhttp-urlconnection"/>
++    <dependency
++        name="com.squareup.okhttp3:okhttp:4.9.2@jar"
++        simpleName="com.squareup.okhttp3:okhttp"/>
++    <dependency
++        name="com.squareup.okio:okio:2.9.0@jar"
++        simpleName="com.squareup.okio:okio"/>
++    <dependency
++        name="com.facebook.fresco:fbcore:3.6.0@aar"
++        simpleName="com.facebook.fresco:fbcore"/>
++    <dependency
++        name="com.facebook.fresco:drawee:3.6.0@aar"
++        simpleName="com.facebook.fresco:drawee"/>
++    <dependency
++        name="org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.4@jar"
++        simpleName="org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm"/>
++    <dependency
++        name="org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4@jar"
++        simpleName="org.jetbrains.kotlinx:kotlinx-coroutines-android"/>
++    <dependency
++        name="org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0@jar"
++        simpleName="org.jetbrains.kotlin:kotlin-stdlib-jdk8"/>
++    <dependency
++        name="androidx.annotation:annotation-experimental:1.4.0@aar"
++        simpleName="androidx.annotation:annotation-experimental"/>
++    <dependency
++        name="com.facebook.fresco:ui-core:3.6.0@aar"
++        simpleName="com.facebook.fresco:ui-core"/>
++    <dependency
++        name="com.facebook.fresco:imagepipeline:3.6.0@aar"
++        simpleName="com.facebook.fresco:imagepipeline"/>
++    <dependency
++        name="com.facebook.fresco:imagepipeline-base:3.6.0@aar"
++        simpleName="com.facebook.fresco:imagepipeline-base"/>
++    <dependency
++        name="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0@jar"
++        simpleName="org.jetbrains.kotlin:kotlin-stdlib-jdk7"/>
++    <dependency
++        name="org.jetbrains.kotlin:kotlin-stdlib:2.1.20@jar"
++        simpleName="org.jetbrains.kotlin:kotlin-stdlib"/>
++    <dependency
++        name="org.jetbrains:annotations:13.0@jar"
++        simpleName="org.jetbrains:annotations"/>
++    <dependency
++        name="androidx.tracing:tracing:1.1.0@aar"
++        simpleName="androidx.tracing:tracing"/>
++    <dependency
++        name="androidx.autofill:autofill:1.1.0@aar"
++        simpleName="androidx.autofill:autofill"/>
++    <dependency
++        name="com.facebook.fbjni:fbjni:0.7.0@aar"
++        simpleName="com.facebook.fbjni:fbjni"/>
++    <dependency
++        name="com.facebook.soloader:soloader:0.12.1@aar"
++        simpleName="com.facebook.soloader:soloader"/>
++    <dependency
++        name="com.facebook.soloader:nativeloader:0.12.1@jar"
++        simpleName="com.facebook.soloader:nativeloader"/>
++    <dependency
++        name="com.facebook.soloader:annotation:0.12.1@jar"
++        simpleName="com.facebook.soloader:annotation"/>
++    <dependency
++        name="com.facebook.infer.annotation:infer-annotation:0.18.0@jar"
++        simpleName="com.facebook.infer.annotation:infer-annotation"/>
++    <dependency
++        name="com.google.code.findbugs:jsr305:3.0.2@jar"
++        simpleName="com.google.code.findbugs:jsr305"/>
++    <dependency
++        name="org.jetbrains.kotlin:kotlin-annotations-jvm:1.3.72@jar"
++        simpleName="org.jetbrains.kotlin:kotlin-annotations-jvm"/>
++    <dependency
++        name="com.facebook.fresco:imagepipeline-native:3.6.0@aar"
++        simpleName="com.facebook.fresco:imagepipeline-native"/>
++    <dependency
++        name="com.facebook.fresco:memory-type-ashmem:3.6.0@aar"
++        simpleName="com.facebook.fresco:memory-type-ashmem"/>
++    <dependency
++        name="com.facebook.fresco:memory-type-native:3.6.0@aar"
++        simpleName="com.facebook.fresco:memory-type-native"/>
++    <dependency
++        name="com.facebook.fresco:memory-type-java:3.6.0@aar"
++        simpleName="com.facebook.fresco:memory-type-java"/>
++    <dependency
++        name="com.facebook.fresco:nativeimagefilters:3.6.0@aar"
++        simpleName="com.facebook.fresco:nativeimagefilters"/>
++    <dependency
++        name="com.facebook.fresco:nativeimagetranscoder:3.6.0@aar"
++        simpleName="com.facebook.fresco:nativeimagetranscoder"/>
++    <dependency
++        name="com.facebook.yoga:proguard-annotations:1.19.0@jar"
++        simpleName="com.facebook.yoga:proguard-annotations"/>
++    <dependency
++        name="javax.inject:javax.inject:1@jar"
++        simpleName="javax.inject:javax.inject"/>
++  </compile>
++  <package
++      roots="com.facebook.react:react-android:0.82.1:release@aar,androidx.appcompat:appcompat-resources:1.7.0@aar,androidx.appcompat:appcompat:1.7.0@aar,androidx.autofill:autofill:1.1.0@aar,androidx.swiperefreshlayout:swiperefreshlayout:1.1.0@aar,androidx.fragment:fragment:1.5.4@aar,androidx.activity:activity:1.7.0@aar,androidx.emoji2:emoji2-views-helper:1.3.0@aar,androidx.emoji2:emoji2:1.3.0@aar,androidx.drawerlayout:drawerlayout:1.0.0@aar,androidx.vectordrawable:vectordrawable-animated:1.1.0@aar,androidx.vectordrawable:vectordrawable:1.1.0@aar,com.facebook.fresco:fresco:3.6.0@aar,com.facebook.fresco:imagepipeline-okhttp3:3.6.0@aar,com.facebook.fresco:drawee:3.6.0@aar,com.facebook.fresco:nativeimagefilters:3.6.0@aar,com.facebook.fresco:memory-type-native:3.6.0@aar,com.facebook.fresco:memory-type-java:3.6.0@aar,com.facebook.fresco:imagepipeline-native:3.6.0@aar,com.facebook.fresco:memory-type-ashmem:3.6.0@aar,com.facebook.fresco:imagepipeline:3.6.0@aar,com.facebook.fresco:nativeimagetranscoder:3.6.0@aar,com.facebook.fresco:imagepipeline-base:3.6.0@aar,com.facebook.fresco:urimod:3.6.0@aar,com.facebook.fresco:vito-source:3.6.0@aar,com.facebook.fresco:middleware:3.6.0@aar,com.facebook.fresco:ui-common:3.6.0@aar,com.facebook.fresco:soloader:3.6.0@aar,com.facebook.fresco:fbcore:3.6.0@aar,androidx.viewpager:viewpager:1.0.0@aar,androidx.customview:customview:1.0.0@aar,androidx.loader:loader:1.0.0@aar,androidx.savedstate:savedstate:1.2.1@aar,androidx.lifecycle:lifecycle-viewmodel:2.6.2@aar,androidx.lifecycle:lifecycle-viewmodel:2.6.2@aar,androidx.lifecycle:lifecycle-process:2.6.2@aar,androidx.lifecycle:lifecycle-livedata-core:2.6.2@aar,androidx.lifecycle:lifecycle-livedata:2.6.2@aar,androidx.lifecycle:lifecycle-common:2.6.2@jar,androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2@aar,androidx.core:core-ktx:1.13.1@aar,androidx.core:core:1.13.1@aar,androidx.core:core:1.13.1@aar,androidx.lifecycle:lifecycle-runtime:2.6.2@aar,androidx.profileinstaller:profileinstaller:1.3.1@aar,androidx.startup:startup-runtime:1.1.1@aar,androidx.tracing:tracing:1.1.0@aar,com.facebook.fbjni:fbjni:0.7.0@aar,com.facebook.infer.annotation:infer-annotation:0.18.0@jar,com.facebook.soloader:soloader:0.12.1@aar,com.facebook.yoga:proguard-annotations:1.19.0@jar,com.google.code.findbugs:jsr305:3.0.2@jar,com.squareup.okhttp3:okhttp-urlconnection:4.9.2@jar,com.squareup.okhttp3:okhttp:4.9.2@jar,com.squareup.okio:okio:2.9.0@jar,javax.inject:javax.inject:1@jar,com.facebook.fresco:ui-core:3.6.0@aar,org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4@jar,org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.4@jar,org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0@jar,org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0@jar,androidx.annotation:annotation-experimental:1.4.0@aar,androidx.cursoradapter:cursoradapter:1.0.0@aar,androidx.resourceinspection:resourceinspection-annotation:1.0.1@jar,androidx.interpolator:interpolator:1.0.0@aar,androidx.versionedparcelable:versionedparcelable:1.1.1@aar,androidx.collection:collection:1.1.0@jar,androidx.concurrent:concurrent-futures:1.1.0@jar,androidx.arch.core:core-runtime:2.2.0@aar,androidx.arch.core:core-common:2.2.0@jar,androidx.annotation:annotation-jvm:1.6.0@jar,org.jetbrains.kotlin:kotlin-stdlib:2.1.20@jar,com.facebook.soloader:nativeloader:0.12.1@jar,org.jetbrains.kotlin:kotlin-annotations-jvm:1.3.72@jar,com.facebook.soloader:annotation:0.12.1@jar,org.jetbrains:annotations:13.0@jar,com.google.guava:listenablefuture:1.0@jar,com.parse.bolts:bolts-tasks:1.4.0@jar">
++    <dependency
++        name="com.facebook.react:react-android:0.82.1:release@aar"
++        simpleName="com.facebook.react:react-android"/>
++    <dependency
++        name="androidx.appcompat:appcompat-resources:1.7.0@aar"
++        simpleName="androidx.appcompat:appcompat-resources"/>
++    <dependency
++        name="androidx.appcompat:appcompat:1.7.0@aar"
++        simpleName="androidx.appcompat:appcompat"/>
++    <dependency
++        name="androidx.autofill:autofill:1.1.0@aar"
++        simpleName="androidx.autofill:autofill"/>
++    <dependency
++        name="androidx.swiperefreshlayout:swiperefreshlayout:1.1.0@aar"
++        simpleName="androidx.swiperefreshlayout:swiperefreshlayout"/>
++    <dependency
++        name="androidx.fragment:fragment:1.5.4@aar"
++        simpleName="androidx.fragment:fragment"/>
++    <dependency
++        name="androidx.activity:activity:1.7.0@aar"
++        simpleName="androidx.activity:activity"/>
++    <dependency
++        name="androidx.emoji2:emoji2-views-helper:1.3.0@aar"
++        simpleName="androidx.emoji2:emoji2-views-helper"/>
++    <dependency
++        name="androidx.emoji2:emoji2:1.3.0@aar"
++        simpleName="androidx.emoji2:emoji2"/>
++    <dependency
++        name="androidx.drawerlayout:drawerlayout:1.0.0@aar"
++        simpleName="androidx.drawerlayout:drawerlayout"/>
++    <dependency
++        name="androidx.vectordrawable:vectordrawable-animated:1.1.0@aar"
++        simpleName="androidx.vectordrawable:vectordrawable-animated"/>
++    <dependency
++        name="androidx.vectordrawable:vectordrawable:1.1.0@aar"
++        simpleName="androidx.vectordrawable:vectordrawable"/>
++    <dependency
++        name="com.facebook.fresco:fresco:3.6.0@aar"
++        simpleName="com.facebook.fresco:fresco"/>
++    <dependency
++        name="com.facebook.fresco:imagepipeline-okhttp3:3.6.0@aar"
++        simpleName="com.facebook.fresco:imagepipeline-okhttp3"/>
++    <dependency
++        name="com.facebook.fresco:drawee:3.6.0@aar"
++        simpleName="com.facebook.fresco:drawee"/>
++    <dependency
++        name="com.facebook.fresco:nativeimagefilters:3.6.0@aar"
++        simpleName="com.facebook.fresco:nativeimagefilters"/>
++    <dependency
++        name="com.facebook.fresco:memory-type-native:3.6.0@aar"
++        simpleName="com.facebook.fresco:memory-type-native"/>
++    <dependency
++        name="com.facebook.fresco:memory-type-java:3.6.0@aar"
++        simpleName="com.facebook.fresco:memory-type-java"/>
++    <dependency
++        name="com.facebook.fresco:imagepipeline-native:3.6.0@aar"
++        simpleName="com.facebook.fresco:imagepipeline-native"/>
++    <dependency
++        name="com.facebook.fresco:memory-type-ashmem:3.6.0@aar"
++        simpleName="com.facebook.fresco:memory-type-ashmem"/>
++    <dependency
++        name="com.facebook.fresco:imagepipeline:3.6.0@aar"
++        simpleName="com.facebook.fresco:imagepipeline"/>
++    <dependency
++        name="com.facebook.fresco:nativeimagetranscoder:3.6.0@aar"
++        simpleName="com.facebook.fresco:nativeimagetranscoder"/>
++    <dependency
++        name="com.facebook.fresco:imagepipeline-base:3.6.0@aar"
++        simpleName="com.facebook.fresco:imagepipeline-base"/>
++    <dependency
++        name="com.facebook.fresco:urimod:3.6.0@aar"
++        simpleName="com.facebook.fresco:urimod"/>
++    <dependency
++        name="com.facebook.fresco:vito-source:3.6.0@aar"
++        simpleName="com.facebook.fresco:vito-source"/>
++    <dependency
++        name="com.facebook.fresco:middleware:3.6.0@aar"
++        simpleName="com.facebook.fresco:middleware"/>
++    <dependency
++        name="com.facebook.fresco:ui-common:3.6.0@aar"
++        simpleName="com.facebook.fresco:ui-common"/>
++    <dependency
++        name="com.facebook.fresco:soloader:3.6.0@aar"
++        simpleName="com.facebook.fresco:soloader"/>
++    <dependency
++        name="com.facebook.fresco:fbcore:3.6.0@aar"
++        simpleName="com.facebook.fresco:fbcore"/>
++    <dependency
++        name="androidx.viewpager:viewpager:1.0.0@aar"
++        simpleName="androidx.viewpager:viewpager"/>
++    <dependency
++        name="androidx.customview:customview:1.0.0@aar"
++        simpleName="androidx.customview:customview"/>
++    <dependency
++        name="androidx.loader:loader:1.0.0@aar"
++        simpleName="androidx.loader:loader"/>
++    <dependency
++        name="androidx.savedstate:savedstate:1.2.1@aar"
++        simpleName="androidx.savedstate:savedstate"/>
++    <dependency
++        name="androidx.lifecycle:lifecycle-viewmodel:2.6.2@aar"
++        simpleName="androidx.lifecycle:lifecycle-viewmodel"/>
++    <dependency
++        name="androidx.lifecycle:lifecycle-process:2.6.2@aar"
++        simpleName="androidx.lifecycle:lifecycle-process"/>
++    <dependency
++        name="androidx.lifecycle:lifecycle-livedata-core:2.6.2@aar"
++        simpleName="androidx.lifecycle:lifecycle-livedata-core"/>
++    <dependency
++        name="androidx.lifecycle:lifecycle-livedata:2.6.2@aar"
++        simpleName="androidx.lifecycle:lifecycle-livedata"/>
++    <dependency
++        name="androidx.lifecycle:lifecycle-common:2.6.2@jar"
++        simpleName="androidx.lifecycle:lifecycle-common"/>
++    <dependency
++        name="androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2@aar"
++        simpleName="androidx.lifecycle:lifecycle-viewmodel-savedstate"/>
++    <dependency
++        name="androidx.core:core-ktx:1.13.1@aar"
++        simpleName="androidx.core:core-ktx"/>
++    <dependency
++        name="androidx.core:core:1.13.1@aar"
++        simpleName="androidx.core:core"/>
++    <dependency
++        name="androidx.lifecycle:lifecycle-runtime:2.6.2@aar"
++        simpleName="androidx.lifecycle:lifecycle-runtime"/>
++    <dependency
++        name="androidx.profileinstaller:profileinstaller:1.3.1@aar"
++        simpleName="androidx.profileinstaller:profileinstaller"/>
++    <dependency
++        name="androidx.startup:startup-runtime:1.1.1@aar"
++        simpleName="androidx.startup:startup-runtime"/>
++    <dependency
++        name="androidx.tracing:tracing:1.1.0@aar"
++        simpleName="androidx.tracing:tracing"/>
++    <dependency
++        name="com.facebook.fbjni:fbjni:0.7.0@aar"
++        simpleName="com.facebook.fbjni:fbjni"/>
++    <dependency
++        name="com.facebook.infer.annotation:infer-annotation:0.18.0@jar"
++        simpleName="com.facebook.infer.annotation:infer-annotation"/>
++    <dependency
++        name="com.facebook.soloader:soloader:0.12.1@aar"
++        simpleName="com.facebook.soloader:soloader"/>
++    <dependency
++        name="com.facebook.yoga:proguard-annotations:1.19.0@jar"
++        simpleName="com.facebook.yoga:proguard-annotations"/>
++    <dependency
++        name="com.google.code.findbugs:jsr305:3.0.2@jar"
++        simpleName="com.google.code.findbugs:jsr305"/>
++    <dependency
++        name="com.squareup.okhttp3:okhttp-urlconnection:4.9.2@jar"
++        simpleName="com.squareup.okhttp3:okhttp-urlconnection"/>
++    <dependency
++        name="com.squareup.okhttp3:okhttp:4.9.2@jar"
++        simpleName="com.squareup.okhttp3:okhttp"/>
++    <dependency
++        name="com.squareup.okio:okio:2.9.0@jar"
++        simpleName="com.squareup.okio:okio"/>
++    <dependency
++        name="javax.inject:javax.inject:1@jar"
++        simpleName="javax.inject:javax.inject"/>
++    <dependency
++        name="com.facebook.fresco:ui-core:3.6.0@aar"
++        simpleName="com.facebook.fresco:ui-core"/>
++    <dependency
++        name="org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4@jar"
++        simpleName="org.jetbrains.kotlinx:kotlinx-coroutines-android"/>
++    <dependency
++        name="org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.4@jar"
++        simpleName="org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm"/>
++    <dependency
++        name="org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0@jar"
++        simpleName="org.jetbrains.kotlin:kotlin-stdlib-jdk8"/>
++    <dependency
++        name="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0@jar"
++        simpleName="org.jetbrains.kotlin:kotlin-stdlib-jdk7"/>
++    <dependency
++        name="androidx.annotation:annotation-experimental:1.4.0@aar"
++        simpleName="androidx.annotation:annotation-experimental"/>
++    <dependency
++        name="androidx.cursoradapter:cursoradapter:1.0.0@aar"
++        simpleName="androidx.cursoradapter:cursoradapter"/>
++    <dependency
++        name="androidx.resourceinspection:resourceinspection-annotation:1.0.1@jar"
++        simpleName="androidx.resourceinspection:resourceinspection-annotation"/>
++    <dependency
++        name="androidx.interpolator:interpolator:1.0.0@aar"
++        simpleName="androidx.interpolator:interpolator"/>
++    <dependency
++        name="androidx.versionedparcelable:versionedparcelable:1.1.1@aar"
++        simpleName="androidx.versionedparcelable:versionedparcelable"/>
++    <dependency
++        name="androidx.collection:collection:1.1.0@jar"
++        simpleName="androidx.collection:collection"/>
++    <dependency
++        name="androidx.concurrent:concurrent-futures:1.1.0@jar"
++        simpleName="androidx.concurrent:concurrent-futures"/>
++    <dependency
++        name="androidx.arch.core:core-runtime:2.2.0@aar"
++        simpleName="androidx.arch.core:core-runtime"/>
++    <dependency
++        name="androidx.arch.core:core-common:2.2.0@jar"
++        simpleName="androidx.arch.core:core-common"/>
++    <dependency
++        name="androidx.annotation:annotation-jvm:1.6.0@jar"
++        simpleName="androidx.annotation:annotation-jvm"/>
++    <dependency
++        name="org.jetbrains.kotlin:kotlin-stdlib:2.1.20@jar"
++        simpleName="org.jetbrains.kotlin:kotlin-stdlib"/>
++    <dependency
++        name="com.facebook.soloader:nativeloader:0.12.1@jar"
++        simpleName="com.facebook.soloader:nativeloader"/>
++    <dependency
++        name="org.jetbrains.kotlin:kotlin-annotations-jvm:1.3.72@jar"
++        simpleName="org.jetbrains.kotlin:kotlin-annotations-jvm"/>
++    <dependency
++        name="com.facebook.soloader:annotation:0.12.1@jar"
++        simpleName="com.facebook.soloader:annotation"/>
++    <dependency
++        name="org.jetbrains:annotations:13.0@jar"
++        simpleName="org.jetbrains:annotations"/>
++    <dependency
++        name="com.google.guava:listenablefuture:1.0@jar"
++        simpleName="com.google.guava:listenablefuture"/>
++    <dependency
++        name="com.parse.bolts:bolts-tasks:1.4.0@jar"
++        simpleName="com.parse.bolts:bolts-tasks"/>
++  </package>
++</dependencies>
+diff --git a/node_modules/react-native-vector-icons/android/build/intermediates/lint_model/release/generateReleaseLintModel/release-artifact-libraries.xml b/node_modules/react-native-vector-icons/android/build/intermediates/lint_model/release/generateReleaseLintModel/release-artifact-libraries.xml
+new file mode 100644
+index 0000000..af22930
+--- /dev/null
++++ b/node_modules/react-native-vector-icons/android/build/intermediates/lint_model/release/generateReleaseLintModel/release-artifact-libraries.xml
+@@ -0,0 +1,774 @@
++<libraries>
++  <library
++      name="com.facebook.react:react-android:0.82.1:release@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/aba1e45d1df4378962fb7a378396cdd7/transformed/react-android-0.82.1-release/jars/classes.jar"
++      resolved="com.facebook.react:react-android:0.82.1"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/aba1e45d1df4378962fb7a378396cdd7/transformed/react-android-0.82.1-release"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="androidx.appcompat:appcompat-resources:1.7.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/a1f37b3c05281c7271a00b710ffe8c7b/transformed/appcompat-resources-1.7.0/jars/classes.jar"
++      resolved="androidx.appcompat:appcompat-resources:1.7.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/a1f37b3c05281c7271a00b710ffe8c7b/transformed/appcompat-resources-1.7.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="androidx.appcompat:appcompat:1.7.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/34f0f0eba910404f8188731714fac10d/transformed/appcompat-1.7.0/jars/classes.jar"
++      resolved="androidx.appcompat:appcompat:1.7.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/34f0f0eba910404f8188731714fac10d/transformed/appcompat-1.7.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="androidx.fragment:fragment:1.5.4@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/5672f5d9c2d5a90c22ecc2af53934ff1/transformed/fragment-1.5.4/jars/classes.jar"
++      resolved="androidx.fragment:fragment:1.5.4"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/5672f5d9c2d5a90c22ecc2af53934ff1/transformed/fragment-1.5.4"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="androidx.activity:activity:1.7.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/a37bf5179d94fa6a83ddde21a14115d5/transformed/activity-1.7.0/jars/classes.jar"
++      resolved="androidx.activity:activity:1.7.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/a37bf5179d94fa6a83ddde21a14115d5/transformed/activity-1.7.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="androidx.swiperefreshlayout:swiperefreshlayout:1.1.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/8019280a0575c34f8dd5467052d41902/transformed/swiperefreshlayout-1.1.0/jars/classes.jar"
++      resolved="androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/8019280a0575c34f8dd5467052d41902/transformed/swiperefreshlayout-1.1.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="androidx.drawerlayout:drawerlayout:1.0.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/a857fa69e6c9e1c356dce5c70cd09a5b/transformed/drawerlayout-1.0.0/jars/classes.jar"
++      resolved="androidx.drawerlayout:drawerlayout:1.0.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/a857fa69e6c9e1c356dce5c70cd09a5b/transformed/drawerlayout-1.0.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="androidx.vectordrawable:vectordrawable-animated:1.1.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/caf023fbebc576037209bcbb596d57ed/transformed/vectordrawable-animated-1.1.0/jars/classes.jar"
++      resolved="androidx.vectordrawable:vectordrawable-animated:1.1.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/caf023fbebc576037209bcbb596d57ed/transformed/vectordrawable-animated-1.1.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="androidx.vectordrawable:vectordrawable:1.1.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/4cc1f91ec9ac00afafc9870a9ba83aee/transformed/vectordrawable-1.1.0/jars/classes.jar"
++      resolved="androidx.vectordrawable:vectordrawable:1.1.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/4cc1f91ec9ac00afafc9870a9ba83aee/transformed/vectordrawable-1.1.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="androidx.viewpager:viewpager:1.0.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/aef8c9816da741a9ace49e00aa87f437/transformed/viewpager-1.0.0/jars/classes.jar"
++      resolved="androidx.viewpager:viewpager:1.0.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/aef8c9816da741a9ace49e00aa87f437/transformed/viewpager-1.0.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="androidx.customview:customview:1.0.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/7c6d7c633181af5f56726cd8de1c9c7f/transformed/customview-1.0.0/jars/classes.jar"
++      resolved="androidx.customview:customview:1.0.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/7c6d7c633181af5f56726cd8de1c9c7f/transformed/customview-1.0.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="androidx.loader:loader:1.0.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/d100a93df7cac6eaf056e67363b3746d/transformed/loader-1.0.0/jars/classes.jar"
++      resolved="androidx.loader:loader:1.0.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/d100a93df7cac6eaf056e67363b3746d/transformed/loader-1.0.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="androidx.lifecycle:lifecycle-livedata:2.6.2@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/de0cb7e9b5345cf37ce917ebd89f27bd/transformed/lifecycle-livedata-2.6.2/jars/classes.jar"
++      resolved="androidx.lifecycle:lifecycle-livedata:2.6.2"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/de0cb7e9b5345cf37ce917ebd89f27bd/transformed/lifecycle-livedata-2.6.2"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="androidx.lifecycle:lifecycle-common:2.6.2@jar"
++      jars="/home/ilian/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.6.2/10f354fdb64868baecd67128560c5a0d6312c495/lifecycle-common-2.6.2.jar"
++      resolved="androidx.lifecycle:lifecycle-common:2.6.2"/>
++  <library
++      name="androidx.lifecycle:lifecycle-livedata-core:2.6.2@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/364a0877f5a7582c7c35f3ac9e2c3b2a/transformed/lifecycle-livedata-core-2.6.2/jars/classes.jar"
++      resolved="androidx.lifecycle:lifecycle-livedata-core:2.6.2"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/364a0877f5a7582c7c35f3ac9e2c3b2a/transformed/lifecycle-livedata-core-2.6.2"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="androidx.lifecycle:lifecycle-viewmodel:2.6.2@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/67584d4256a80837cd02d22c34a0ccaf/transformed/lifecycle-viewmodel-2.6.2/jars/classes.jar"
++      resolved="androidx.lifecycle:lifecycle-viewmodel:2.6.2"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/67584d4256a80837cd02d22c34a0ccaf/transformed/lifecycle-viewmodel-2.6.2"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="androidx.lifecycle:lifecycle-runtime:2.6.2@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/26fcd1a0727cbdc218aee4ab454282d4/transformed/lifecycle-runtime-2.6.2/jars/classes.jar"
++      resolved="androidx.lifecycle:lifecycle-runtime:2.6.2"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/26fcd1a0727cbdc218aee4ab454282d4/transformed/lifecycle-runtime-2.6.2"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/6e6887b23746ecfd6adc44f5ea649f4e/transformed/lifecycle-viewmodel-savedstate-2.6.2/jars/classes.jar"
++      resolved="androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/6e6887b23746ecfd6adc44f5ea649f4e/transformed/lifecycle-viewmodel-savedstate-2.6.2"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="androidx.core:core-ktx:1.13.1@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/8ba5ffcf0b618d0a84205809fdea5b65/transformed/core-ktx-1.13.1/jars/classes.jar"
++      resolved="androidx.core:core-ktx:1.13.1"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/8ba5ffcf0b618d0a84205809fdea5b65/transformed/core-ktx-1.13.1"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="androidx.core:core:1.13.1@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/379c2d322d7886ec62a449f40aa9e81a/transformed/core-1.13.1/jars/classes.jar"
++      resolved="androidx.core:core:1.13.1"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/379c2d322d7886ec62a449f40aa9e81a/transformed/core-1.13.1"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="androidx.cursoradapter:cursoradapter:1.0.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/056dee84cda70f58c915931ac2a9bb81/transformed/cursoradapter-1.0.0/jars/classes.jar"
++      resolved="androidx.cursoradapter:cursoradapter:1.0.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/056dee84cda70f58c915931ac2a9bb81/transformed/cursoradapter-1.0.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="androidx.savedstate:savedstate:1.2.1@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/8a71c4ec6a2489828fc759aef2d0f917/transformed/savedstate-1.2.1/jars/classes.jar"
++      resolved="androidx.savedstate:savedstate:1.2.1"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/8a71c4ec6a2489828fc759aef2d0f917/transformed/savedstate-1.2.1"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="androidx.interpolator:interpolator:1.0.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/c938ce7831f96e8c4e4fd5eb1c4a27c0/transformed/interpolator-1.0.0/jars/classes.jar"
++      resolved="androidx.interpolator:interpolator:1.0.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/c938ce7831f96e8c4e4fd5eb1c4a27c0/transformed/interpolator-1.0.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="androidx.versionedparcelable:versionedparcelable:1.1.1@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/a93b0229ae2f697dfa5ff7c71330a86d/transformed/versionedparcelable-1.1.1/jars/classes.jar"
++      resolved="androidx.versionedparcelable:versionedparcelable:1.1.1"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/a93b0229ae2f697dfa5ff7c71330a86d/transformed/versionedparcelable-1.1.1"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="androidx.collection:collection:1.1.0@jar"
++      jars="/home/ilian/.gradle/caches/modules-2/files-2.1/androidx.collection/collection/1.1.0/1f27220b47669781457de0d600849a5de0e89909/collection-1.1.0.jar"
++      resolved="androidx.collection:collection:1.1.0"/>
++  <library
++      name="androidx.arch.core:core-runtime:2.2.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/52d319e2f78331607cdb15439a3496f2/transformed/core-runtime-2.2.0/jars/classes.jar"
++      resolved="androidx.arch.core:core-runtime:2.2.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/52d319e2f78331607cdb15439a3496f2/transformed/core-runtime-2.2.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="androidx.arch.core:core-common:2.2.0@jar"
++      jars="/home/ilian/.gradle/caches/modules-2/files-2.1/androidx.arch.core/core-common/2.2.0/5e1b8b81dfd5f52c56a8d53b18ca759c19a301f3/core-common-2.2.0.jar"
++      resolved="androidx.arch.core:core-common:2.2.0"/>
++  <library
++      name="androidx.annotation:annotation-jvm:1.6.0@jar"
++      jars="/home/ilian/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation-jvm/1.6.0/a7257339a052df0f91433cf9651231bbb802b502/annotation-jvm-1.6.0.jar"
++      resolved="androidx.annotation:annotation-jvm:1.6.0"/>
++  <library
++      name="com.facebook.fresco:fresco:3.6.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/951be1eee59f35eeaa85b0476ae2bfe7/transformed/fresco-3.6.0/jars/classes.jar"
++      resolved="com.facebook.fresco:fresco:3.6.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/951be1eee59f35eeaa85b0476ae2bfe7/transformed/fresco-3.6.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="com.facebook.fresco:imagepipeline-okhttp3:3.6.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/4e48b762786512602b6a99ffcdc32c38/transformed/imagepipeline-okhttp3-3.6.0/jars/classes.jar"
++      resolved="com.facebook.fresco:imagepipeline-okhttp3:3.6.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/4e48b762786512602b6a99ffcdc32c38/transformed/imagepipeline-okhttp3-3.6.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="com.facebook.fresco:middleware:3.6.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/f22ea8862384b968a2ede5f821ce5561/transformed/middleware-3.6.0/jars/classes.jar"
++      resolved="com.facebook.fresco:middleware:3.6.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/f22ea8862384b968a2ede5f821ce5561/transformed/middleware-3.6.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="com.facebook.fresco:ui-common:3.6.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/b6aa4a0dd4f8fc1dc328af7cbf4f9325/transformed/ui-common-3.6.0/jars/classes.jar"
++      resolved="com.facebook.fresco:ui-common:3.6.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/b6aa4a0dd4f8fc1dc328af7cbf4f9325/transformed/ui-common-3.6.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="com.squareup.okhttp3:okhttp-urlconnection:4.9.2@jar"
++      jars="/home/ilian/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/4.9.2/3b9e64d3d56370bc7488ed8b336d17a8013cb336/okhttp-urlconnection-4.9.2.jar"
++      resolved="com.squareup.okhttp3:okhttp-urlconnection:4.9.2"/>
++  <library
++      name="com.squareup.okhttp3:okhttp:4.9.2@jar"
++      jars="/home/ilian/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/4.9.2/5302714ee9320b64cf65ed865e5f65981ef9ba46/okhttp-4.9.2.jar"
++      resolved="com.squareup.okhttp3:okhttp:4.9.2"/>
++  <library
++      name="com.squareup.okio:okio:2.9.0@jar"
++      jars="/home/ilian/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/2.9.0/dcc813b08ce5933f8bdfd1dfbab4ad4bd170e7a/okio-jvm-2.9.0.jar"
++      resolved="com.squareup.okio:okio:2.9.0"/>
++  <library
++      name="com.facebook.fresco:fbcore:3.6.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/d90e31f587e6cc10f062f9b19e911e2d/transformed/fbcore-3.6.0/jars/classes.jar"
++      resolved="com.facebook.fresco:fbcore:3.6.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/d90e31f587e6cc10f062f9b19e911e2d/transformed/fbcore-3.6.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="com.facebook.fresco:drawee:3.6.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/43a1af86b24af887f607e8b8c03c1f57/transformed/drawee-3.6.0/jars/classes.jar"
++      resolved="com.facebook.fresco:drawee:3.6.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/43a1af86b24af887f607e8b8c03c1f57/transformed/drawee-3.6.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.4@jar"
++      jars="/home/ilian/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.6.4/2c997cd1c0ef33f3e751d3831929aeff1390cb30/kotlinx-coroutines-core-jvm-1.6.4.jar"
++      resolved="org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.4"/>
++  <library
++      name="org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4@jar"
++      jars="/home/ilian/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-android/1.6.4/f955fc8b2ad196e2f4429598440e15f7492eeb2b/kotlinx-coroutines-android-1.6.4.jar"
++      resolved="org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4"/>
++  <library
++      name="org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0@jar"
++      jars="/home/ilian/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.8.0/ed04f49e186a116753ad70d34f0ac2925d1d8020/kotlin-stdlib-jdk8-1.8.0.jar"
++      resolved="org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0"/>
++  <library
++      name="androidx.annotation:annotation-experimental:1.4.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/d9757730bb8b56b2f7a15f42a2c88b05/transformed/annotation-experimental-1.4.0/jars/classes.jar"
++      resolved="androidx.annotation:annotation-experimental:1.4.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/d9757730bb8b56b2f7a15f42a2c88b05/transformed/annotation-experimental-1.4.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="com.facebook.fresco:ui-core:3.6.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/b23cd424361182899ef7e9255705567d/transformed/ui-core-3.6.0/jars/classes.jar"
++      resolved="com.facebook.fresco:ui-core:3.6.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/b23cd424361182899ef7e9255705567d/transformed/ui-core-3.6.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="com.facebook.fresco:imagepipeline:3.6.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/c5bada9590ac148ef985d9527b784724/transformed/imagepipeline-3.6.0/jars/classes.jar"
++      resolved="com.facebook.fresco:imagepipeline:3.6.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/c5bada9590ac148ef985d9527b784724/transformed/imagepipeline-3.6.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="com.facebook.fresco:imagepipeline-base:3.6.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/01a00dc20d44a61052ffa98daacf610e/transformed/imagepipeline-base-3.6.0/jars/classes.jar"
++      resolved="com.facebook.fresco:imagepipeline-base:3.6.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/01a00dc20d44a61052ffa98daacf610e/transformed/imagepipeline-base-3.6.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0@jar"
++      jars="/home/ilian/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.8.0/3c91271347f678c239607abb676d4032a7898427/kotlin-stdlib-jdk7-1.8.0.jar"
++      resolved="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0"/>
++  <library
++      name="org.jetbrains.kotlin:kotlin-stdlib:2.1.20@jar"
++      jars="/home/ilian/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.1.20/aa8ca79cd50578314f6d1180c47cbe14c0fee567/kotlin-stdlib-2.1.20.jar"
++      resolved="org.jetbrains.kotlin:kotlin-stdlib:2.1.20"/>
++  <library
++      name="org.jetbrains:annotations:13.0@jar"
++      jars="/home/ilian/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar"
++      resolved="org.jetbrains:annotations:13.0"/>
++  <library
++      name="androidx.tracing:tracing:1.1.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/00f9cdf19de8adc4173e652fb86ab49b/transformed/tracing-1.1.0/jars/classes.jar"
++      resolved="androidx.tracing:tracing:1.1.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/00f9cdf19de8adc4173e652fb86ab49b/transformed/tracing-1.1.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="androidx.autofill:autofill:1.1.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/b169abfeae1e92be0aaad729bfd0d87b/transformed/autofill-1.1.0/jars/classes.jar"
++      resolved="androidx.autofill:autofill:1.1.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/b169abfeae1e92be0aaad729bfd0d87b/transformed/autofill-1.1.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="com.facebook.fbjni:fbjni:0.7.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/21b521e6c42a9a40c9862ea2d3ef1b06/transformed/fbjni-0.7.0/jars/classes.jar"
++      resolved="com.facebook.fbjni:fbjni:0.7.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/21b521e6c42a9a40c9862ea2d3ef1b06/transformed/fbjni-0.7.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="com.facebook.soloader:soloader:0.12.1@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/2654eddd8fde785f2b7c1fa084998fbc/transformed/soloader-0.12.1/jars/classes.jar"
++      resolved="com.facebook.soloader:soloader:0.12.1"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/2654eddd8fde785f2b7c1fa084998fbc/transformed/soloader-0.12.1"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="com.facebook.soloader:nativeloader:0.12.1@jar"
++      jars="/home/ilian/.gradle/caches/modules-2/files-2.1/com.facebook.soloader/nativeloader/0.12.1/492cc5082540e19b29328f2f56c53255cb6e7cc6/nativeloader-0.12.1.jar"
++      resolved="com.facebook.soloader:nativeloader:0.12.1"/>
++  <library
++      name="com.facebook.soloader:annotation:0.12.1@jar"
++      jars="/home/ilian/.gradle/caches/modules-2/files-2.1/com.facebook.soloader/annotation/0.12.1/945ada76f62253ba8e72cbf755d0e85ea7362cfe/annotation-0.12.1.jar"
++      resolved="com.facebook.soloader:annotation:0.12.1"/>
++  <library
++      name="com.facebook.infer.annotation:infer-annotation:0.18.0@jar"
++      jars="/home/ilian/.gradle/caches/modules-2/files-2.1/com.facebook.infer.annotation/infer-annotation/0.18.0/27539793fe93ed7d92b6376281c16cda8278ab2f/infer-annotation-0.18.0.jar"
++      resolved="com.facebook.infer.annotation:infer-annotation:0.18.0"/>
++  <library
++      name="com.google.code.findbugs:jsr305:3.0.2@jar"
++      jars="/home/ilian/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar"
++      resolved="com.google.code.findbugs:jsr305:3.0.2"/>
++  <library
++      name="org.jetbrains.kotlin:kotlin-annotations-jvm:1.3.72@jar"
++      jars="/home/ilian/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotations-jvm/1.3.72/7dba6c57de526588d8080317bda0c14cd88c8055/kotlin-annotations-jvm-1.3.72.jar"
++      resolved="org.jetbrains.kotlin:kotlin-annotations-jvm:1.3.72"/>
++  <library
++      name="com.facebook.fresco:imagepipeline-native:3.6.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/f272122ba176cf05432d42bbf1ad2ec4/transformed/imagepipeline-native-3.6.0/jars/classes.jar"
++      resolved="com.facebook.fresco:imagepipeline-native:3.6.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/f272122ba176cf05432d42bbf1ad2ec4/transformed/imagepipeline-native-3.6.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="com.facebook.fresco:memory-type-ashmem:3.6.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/cb36a4ddceba13cc6aef798bd0b37af8/transformed/memory-type-ashmem-3.6.0/jars/classes.jar"
++      resolved="com.facebook.fresco:memory-type-ashmem:3.6.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/cb36a4ddceba13cc6aef798bd0b37af8/transformed/memory-type-ashmem-3.6.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="com.facebook.fresco:memory-type-native:3.6.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/f13b92c9b90bc56b3f4aa44f3e656b04/transformed/memory-type-native-3.6.0/jars/classes.jar"
++      resolved="com.facebook.fresco:memory-type-native:3.6.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/f13b92c9b90bc56b3f4aa44f3e656b04/transformed/memory-type-native-3.6.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="com.facebook.fresco:memory-type-java:3.6.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/1bc4adfcf8fc4ce0026da6a2ecdd3f90/transformed/memory-type-java-3.6.0/jars/classes.jar"
++      resolved="com.facebook.fresco:memory-type-java:3.6.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/1bc4adfcf8fc4ce0026da6a2ecdd3f90/transformed/memory-type-java-3.6.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="com.facebook.fresco:nativeimagefilters:3.6.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/2ffbac976a26586d6fa059508b422bad/transformed/nativeimagefilters-3.6.0/jars/classes.jar"
++      resolved="com.facebook.fresco:nativeimagefilters:3.6.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/2ffbac976a26586d6fa059508b422bad/transformed/nativeimagefilters-3.6.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="com.facebook.fresco:nativeimagetranscoder:3.6.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/480ceb1682659d492e65bee19fcd3fb7/transformed/nativeimagetranscoder-3.6.0/jars/classes.jar"
++      resolved="com.facebook.fresco:nativeimagetranscoder:3.6.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/480ceb1682659d492e65bee19fcd3fb7/transformed/nativeimagetranscoder-3.6.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="com.facebook.yoga:proguard-annotations:1.19.0@jar"
++      jars="/home/ilian/.gradle/caches/modules-2/files-2.1/com.facebook.yoga/proguard-annotations/1.19.0/fcbbb39052e6490eaaf6a6959c49c3a4fbe87c63/proguard-annotations-1.19.0.jar"
++      resolved="com.facebook.yoga:proguard-annotations:1.19.0"/>
++  <library
++      name="javax.inject:javax.inject:1@jar"
++      jars="/home/ilian/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
++      resolved="javax.inject:javax.inject:1"/>
++  <library
++      name="androidx.emoji2:emoji2-views-helper:1.3.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/a9aa64858602c5b3b949d532dc814b13/transformed/emoji2-views-helper-1.3.0/jars/classes.jar"
++      resolved="androidx.emoji2:emoji2-views-helper:1.3.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/a9aa64858602c5b3b949d532dc814b13/transformed/emoji2-views-helper-1.3.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="androidx.emoji2:emoji2:1.3.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/e551ae63ac9371e537d550581d3b7878/transformed/emoji2-1.3.0/jars/classes.jar:/home/ilian/.gradle/caches/9.0.0/transforms/e551ae63ac9371e537d550581d3b7878/transformed/emoji2-1.3.0/jars/libs/repackaged.jar"
++      resolved="androidx.emoji2:emoji2:1.3.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/e551ae63ac9371e537d550581d3b7878/transformed/emoji2-1.3.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="com.facebook.fresco:urimod:3.6.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/b8d2730019e098c235cfaa960b65c29f/transformed/urimod-3.6.0/jars/classes.jar"
++      resolved="com.facebook.fresco:urimod:3.6.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/b8d2730019e098c235cfaa960b65c29f/transformed/urimod-3.6.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="com.facebook.fresco:vito-source:3.6.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/616f83ab50578cb0774d7d633fc1bd4a/transformed/vito-source-3.6.0/jars/classes.jar"
++      resolved="com.facebook.fresco:vito-source:3.6.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/616f83ab50578cb0774d7d633fc1bd4a/transformed/vito-source-3.6.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="com.facebook.fresco:soloader:3.6.0@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/cfd744878d3355038d7b7f002e30bdd4/transformed/soloader-3.6.0/jars/classes.jar"
++      resolved="com.facebook.fresco:soloader:3.6.0"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/cfd744878d3355038d7b7f002e30bdd4/transformed/soloader-3.6.0"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="androidx.lifecycle:lifecycle-process:2.6.2@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/0ccb908f872d60ce6884fd939b77d8c0/transformed/lifecycle-process-2.6.2/jars/classes.jar"
++      resolved="androidx.lifecycle:lifecycle-process:2.6.2"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/0ccb908f872d60ce6884fd939b77d8c0/transformed/lifecycle-process-2.6.2"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="androidx.profileinstaller:profileinstaller:1.3.1@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/ac9411a1502afdbbe01b12ea87a20555/transformed/profileinstaller-1.3.1/jars/classes.jar"
++      resolved="androidx.profileinstaller:profileinstaller:1.3.1"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/ac9411a1502afdbbe01b12ea87a20555/transformed/profileinstaller-1.3.1"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="androidx.startup:startup-runtime:1.1.1@aar"
++      jars="/home/ilian/.gradle/caches/9.0.0/transforms/0e6fb430442dd407951590068b48fa43/transformed/startup-runtime-1.1.1/jars/classes.jar"
++      resolved="androidx.startup:startup-runtime:1.1.1"
++      folder="/home/ilian/.gradle/caches/9.0.0/transforms/0e6fb430442dd407951590068b48fa43/transformed/startup-runtime-1.1.1"
++      manifest="AndroidManifest.xml"
++      resFolder="res"
++      assetsFolder="assets"
++      lintJar="lint.jar"
++      publicResources="public.txt"
++      symbolFile="R.txt"
++      externalAnnotations="annotations.zip"
++      proguardRules="proguard.txt"/>
++  <library
++      name="androidx.resourceinspection:resourceinspection-annotation:1.0.1@jar"
++      jars="/home/ilian/.gradle/caches/modules-2/files-2.1/androidx.resourceinspection/resourceinspection-annotation/1.0.1/8c21f8ff5d96d5d52c948707f7e4d6ca6773feef/resourceinspection-annotation-1.0.1.jar"
++      resolved="androidx.resourceinspection:resourceinspection-annotation:1.0.1"/>
++  <library
++      name="androidx.concurrent:concurrent-futures:1.1.0@jar"
++      jars="/home/ilian/.gradle/caches/modules-2/files-2.1/androidx.concurrent/concurrent-futures/1.1.0/50b7fb98350d5f42a4e49704b03278542293ba48/concurrent-futures-1.1.0.jar"
++      resolved="androidx.concurrent:concurrent-futures:1.1.0"/>
++  <library
++      name="com.google.guava:listenablefuture:1.0@jar"
++      jars="/home/ilian/.gradle/caches/modules-2/files-2.1/com.google.guava/listenablefuture/1.0/c949a840a6acbc5268d088e47b04177bf90b3cad/listenablefuture-1.0.jar"
++      resolved="com.google.guava:listenablefuture:1.0"/>
++  <library
++      name="com.parse.bolts:bolts-tasks:1.4.0@jar"
++      jars="/home/ilian/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
++      resolved="com.parse.bolts:bolts-tasks:1.4.0"/>
++</libraries>
+diff --git a/node_modules/react-native-vector-icons/android/build/intermediates/lint_model/release/generateReleaseLintModel/release.xml b/node_modules/react-native-vector-icons/android/build/intermediates/lint_model/release/generateReleaseLintModel/release.xml
+new file mode 100644
+index 0000000..1cfa785
+--- /dev/null
++++ b/node_modules/react-native-vector-icons/android/build/intermediates/lint_model/release/generateReleaseLintModel/release.xml
+@@ -0,0 +1,31 @@
++<variant
++    name="release"
++    package="com.oblador.vectoricons"
++    minSdkVersion="24"
++    targetSdkVersion="36.0"
++    mergedManifest="build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml"
++    manifestMergeReport="build/outputs/logs/manifest-merger-release-report.txt"
++    proguardFiles="build/intermediates/default_proguard_files/global/proguard-android.txt-8.12.0"
++    partialResultsDir="build/intermediates/lint_partial_results/release/lintAnalyzeRelease/out">
++  <buildFeatures
++      namespacing="REQUIRED"/>
++  <sourceProviders>
++    <sourceProvider
++        manifests="src/main/AndroidManifest.xml"
++        javaDirectories="src/main/java:src/release/java:src/main/kotlin:src/release/kotlin"
++        resDirectories="src/main/res:src/release/res"
++        assetsDirectories="src/main/assets:src/release/assets"/>
++  </sourceProviders>
++  <testSourceProviders>
++  </testSourceProviders>
++  <testFixturesSourceProviders>
++  </testFixturesSourceProviders>
++  <artifact
++      classOutputs="build/intermediates/javac/release/compileReleaseJavaWithJavac/classes:build/intermediates/compile_r_class_jar/release/generateReleaseRFile/R.jar"
++      type="MAIN"
++      applicationId="com.oblador.vectoricons"
++      generatedSourceFolders="build/generated/ap_generated_sources/release/out:build/generated/source/buildConfig/release"
++      generatedResourceFolders="build/generated/res/resValues/release"
++      desugaredMethodsFiles="/home/ilian/.gradle/caches/9.0.0/transforms/12237746af7f819ed077fe8b3926dfa3/transformed/D8BackportedDesugaredMethods.txt">
++  </artifact>
++</variant>
+diff --git a/node_modules/react-native-vector-icons/android/build/intermediates/local_only_symbol_list/release/parseReleaseLocalResources/R-def.txt b/node_modules/react-native-vector-icons/android/build/intermediates/local_only_symbol_list/release/parseReleaseLocalResources/R-def.txt
+new file mode 100644
+index 0000000..78ac5b8
+--- /dev/null
++++ b/node_modules/react-native-vector-icons/android/build/intermediates/local_only_symbol_list/release/parseReleaseLocalResources/R-def.txt
+@@ -0,0 +1,2 @@
++R_DEF: Internal format may change without notice
++local
+diff --git a/node_modules/react-native-vector-icons/android/build/intermediates/manifest_merge_blame_file/release/processReleaseManifest/manifest-merger-blame-release-report.txt b/node_modules/react-native-vector-icons/android/build/intermediates/manifest_merge_blame_file/release/processReleaseManifest/manifest-merger-blame-release-report.txt
+new file mode 100644
+index 0000000..64542e4
+--- /dev/null
++++ b/node_modules/react-native-vector-icons/android/build/intermediates/manifest_merge_blame_file/release/processReleaseManifest/manifest-merger-blame-release-report.txt
+@@ -0,0 +1,7 @@
++1<?xml version="1.0" encoding="utf-8"?>
++2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++3    package="com.oblador.vectoricons" >
++4
++5    <uses-sdk android:minSdkVersion="24" />
++6
++7</manifest>
+diff --git a/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml b/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml
+new file mode 100644
+index 0000000..c5c667b
+--- /dev/null
++++ b/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="utf-8"?>
++<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++    package="com.oblador.vectoricons" >
++
++    <uses-sdk android:minSdkVersion="24" />
++
++</manifest>
+\ No newline at end of file
+diff --git a/node_modules/react-native-vector-icons/android/build/intermediates/navigation_json/release/extractDeepLinksRelease/navigation.json b/node_modules/react-native-vector-icons/android/build/intermediates/navigation_json/release/extractDeepLinksRelease/navigation.json
+new file mode 100644
+index 0000000..0637a08
+--- /dev/null
++++ b/node_modules/react-native-vector-icons/android/build/intermediates/navigation_json/release/extractDeepLinksRelease/navigation.json
+@@ -0,0 +1 @@
++[]
+\ No newline at end of file
+diff --git a/node_modules/react-native-vector-icons/android/build/intermediates/nested_resources_validation_report/release/generateReleaseResources/nestedResourcesValidationReport.txt b/node_modules/react-native-vector-icons/android/build/intermediates/nested_resources_validation_report/release/generateReleaseResources/nestedResourcesValidationReport.txt
+new file mode 100644
+index 0000000..08f4ebe
+--- /dev/null
++++ b/node_modules/react-native-vector-icons/android/build/intermediates/nested_resources_validation_report/release/generateReleaseResources/nestedResourcesValidationReport.txt
+@@ -0,0 +1 @@
++0 Warning/Error
+\ No newline at end of file
+diff --git a/node_modules/react-native-vector-icons/android/build/intermediates/runtime_library_classes_jar/release/bundleLibRuntimeToJarRelease/classes.jar b/node_modules/react-native-vector-icons/android/build/intermediates/runtime_library_classes_jar/release/bundleLibRuntimeToJarRelease/classes.jar
+new file mode 100644
+index 0000000..78677a7
+Binary files /dev/null and b/node_modules/react-native-vector-icons/android/build/intermediates/runtime_library_classes_jar/release/bundleLibRuntimeToJarRelease/classes.jar differ
+diff --git a/node_modules/react-native-vector-icons/android/build/intermediates/symbol_list_with_package_name/release/generateReleaseRFile/package-aware-r.txt b/node_modules/react-native-vector-icons/android/build/intermediates/symbol_list_with_package_name/release/generateReleaseRFile/package-aware-r.txt
+new file mode 100644
+index 0000000..fc7e952
+--- /dev/null
++++ b/node_modules/react-native-vector-icons/android/build/intermediates/symbol_list_with_package_name/release/generateReleaseRFile/package-aware-r.txt
+@@ -0,0 +1 @@
++com.oblador.vectoricons
+diff --git a/node_modules/react-native-vector-icons/android/build/outputs/logs/manifest-merger-release-report.txt b/node_modules/react-native-vector-icons/android/build/outputs/logs/manifest-merger-release-report.txt
+new file mode 100644
+index 0000000..9cd7d59
+--- /dev/null
++++ b/node_modules/react-native-vector-icons/android/build/outputs/logs/manifest-merger-release-report.txt
+@@ -0,0 +1,17 @@
++-- Merging decision tree log ---
++manifest
++ADDED from /home/ilian/Downloads/self/coleur/couleurbummel-main/node_modules/react-native-vector-icons/android/src/main/AndroidManifest.xml:1:1-2:12
++INJECTED from /home/ilian/Downloads/self/coleur/couleurbummel-main/node_modules/react-native-vector-icons/android/src/main/AndroidManifest.xml:1:1-2:12
++	package
++		ADDED from /home/ilian/Downloads/self/coleur/couleurbummel-main/node_modules/react-native-vector-icons/android/src/main/AndroidManifest.xml:1:70-103
++		INJECTED from /home/ilian/Downloads/self/coleur/couleurbummel-main/node_modules/react-native-vector-icons/android/src/main/AndroidManifest.xml
++	xmlns:android
++		ADDED from /home/ilian/Downloads/self/coleur/couleurbummel-main/node_modules/react-native-vector-icons/android/src/main/AndroidManifest.xml:1:11-69
++uses-sdk
++INJECTED from /home/ilian/Downloads/self/coleur/couleurbummel-main/node_modules/react-native-vector-icons/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
++INJECTED from /home/ilian/Downloads/self/coleur/couleurbummel-main/node_modules/react-native-vector-icons/android/src/main/AndroidManifest.xml
++INJECTED from /home/ilian/Downloads/self/coleur/couleurbummel-main/node_modules/react-native-vector-icons/android/src/main/AndroidManifest.xml
++	android:targetSdkVersion
++		INJECTED from /home/ilian/Downloads/self/coleur/couleurbummel-main/node_modules/react-native-vector-icons/android/src/main/AndroidManifest.xml
++	android:minSdkVersion
++		INJECTED from /home/ilian/Downloads/self/coleur/couleurbummel-main/node_modules/react-native-vector-icons/android/src/main/AndroidManifest.xml
+diff --git a/node_modules/react-native-vector-icons/android/build/tmp/compileReleaseJavaWithJavac/previous-compilation-data.bin b/node_modules/react-native-vector-icons/android/build/tmp/compileReleaseJavaWithJavac/previous-compilation-data.bin
+new file mode 100644
+index 0000000..9a352b1
+Binary files /dev/null and b/node_modules/react-native-vector-icons/android/build/tmp/compileReleaseJavaWithJavac/previous-compilation-data.bin differ
+diff --git a/node_modules/react-native-vector-icons/fonts.gradle b/node_modules/react-native-vector-icons/fonts.gradle
+index 5485fac..39be2b7 100644
+--- a/node_modules/react-native-vector-icons/fonts.gradle
++++ b/node_modules/react-native-vector-icons/fonts.gradle
+@@ -26,6 +26,10 @@ afterEvaluate {
+ 
+     android.applicationVariants.all { def variant ->
+         def targetName = variant.name.capitalize()
++        def lintVitalAnalyzeTask = tasks.findByName("lintVitalAnalyze${targetName}")
++            if (lintVitalAnalyzeTask) {
++                lintVitalAnalyzeTask.dependsOn(fontCopyTask)
++            }
+         def generateAssetsTask = tasks.findByName("generate${targetName}Assets")
+         generateAssetsTask.dependsOn(fontCopyTask)
+     }

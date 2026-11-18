@@ -68,3 +68,14 @@ jest.mock('react-native-maps/src/specs/NativeAirMapsModule', () => ({
 // The moduleNameMapper in jest.config.ts redirects all imports to the mock.
 // This require sets up the global vars (_WORKLET=false, __RUNTIME_KIND, etc).
 require('react-native-worklets/lib/module/mock');
+
+// @react-native-documents/picker is a TurboModule, which isn't available in the jest environment. Tests of code that
+// uses the file picker replace it with their own mock.
+jest.mock(
+  '@react-native-documents/picker',
+  () => ({
+    pick: jest.fn(),
+    types: {allFiles: '*/*'},
+  }),
+  {virtual: true},
+);

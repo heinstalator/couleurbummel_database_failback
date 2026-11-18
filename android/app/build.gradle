@@ -195,3 +195,11 @@ dependencies {
 }
 
 apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+
+// Gradle 9 rejects the lint check that runs before release builds, because of the
+// font-copy task of react-native-vector-icons. The check isn't needed to build the APK.
+android {
+    lint {
+        checkReleaseBuilds false
+    }
+}

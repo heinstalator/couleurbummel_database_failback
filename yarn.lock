@@ -3568,6 +3568,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-native-documents/picker@npm:^12.1.0":
+  version: 12.1.0
+  resolution: "@react-native-documents/picker@npm:12.1.0"
+  peerDependencies:
+    react: "*"
+    react-native: ">=0.79.0"
+  checksum: 93cde0a9f1f83a84ed6ba721e99029b52e8992ca429b4b5c29e3a11fb32f6cc579fc091e22f40562b2cf190be61c38f4319d5ca59595a1cec25ee7fc28376044
+  languageName: node
+  linkType: hard
+
 "@react-native-firebase/app-check@npm:21.14.0":
   version: 21.14.0
   resolution: "@react-native-firebase/app-check@npm:21.14.0"
@@ -4721,6 +4731,7 @@ __metadata:
     "@react-native-community/cli-platform-android": 20.0.0
     "@react-native-community/cli-platform-ios": 20.0.0
     "@react-native-community/geolocation": 3.4.0
+    "@react-native-documents/picker": ^12.1.0
     "@react-native-firebase/app": 21.14.0
     "@react-native-firebase/app-check": 21.14.0
     "@react-native-firebase/database": 21.14.0
