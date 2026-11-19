@@ -13,6 +13,7 @@
     "android:release": "react-native build-android --mode=release"
   },
   "dependencies": {
+    "@dr.pogodin/react-native-fs": "^2.41.0",
     "@react-native-async-storage/async-storage": "^2.0.0",
     "@react-native-community/geolocation": "3.4.0",
     "@react-native-documents/picker": "^12.1.0",

@@ -221,17 +221,26 @@ describe('DatabaseSettings with a file', () => {
   });
 
   it.each([
-    ['READ_FAILED', /The file couldn't be read/],
-    ['TOO_LARGE', /too large/],
-  ])('explains it when the file has the problem %s', async (error, message) => {
-    mockPickDatabaseFile.mockResolvedValue({ok: false, error});
-    const value = renderSettings({remoteUnavailable: true});
+    [
+      {
+        error: 'READ_FAILED',
+        detail: 'copying: no space; direct: Network request failed',
+      },
+      /The file couldn't be read\. \(copying: no space; direct: Network request failed\)/,
+    ],
+    [{error: 'TOO_LARGE'}, /too large/],
+  ])(
+    'explains it when the file has the problem %p',
+    async (problem, message) => {
+      mockPickDatabaseFile.mockResolvedValue({ok: false, ...problem});
+      const value = renderSettings({remoteUnavailable: true});
 
-    await openDialogAndChooseFile();
+      await openDialogAndChooseFile();
 
-    expect(await screen.findByText(message)).toBeTruthy();
-    expect(value.importDatabase).not.toHaveBeenCalled();
-  });
+      expect(await screen.findByText(message)).toBeTruthy();
+      expect(value.importDatabase).not.toHaveBeenCalled();
+    },
+  );
 
   it('explains it when the content of the file cannot be used, and keeps the dialog open', async () => {
     mockPickDatabaseFile.mockResolvedValue({ok: true, text: 'not json'});

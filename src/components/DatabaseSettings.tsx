@@ -98,7 +98,10 @@ export const DatabaseSettings = () => {
     } else if (picked.error === 'TOO_LARGE') {
       setError(t('DATABASE_ERROR_TOO_LARGE'));
     } else if (picked.error === 'READ_FAILED') {
-      setError(t('DATABASE_ERROR_READ_FAILED'));
+      // The reason is shown, because it is the only way to find out why a particular phone can't read the file
+      setError(
+        `${t('DATABASE_ERROR_READ_FAILED')} (${picked.detail.slice(0, 300)})`,
+      );
     }
     // If the user closed the picker, there is nothing to say
   };
