@@ -1,3 +1,4 @@
+import {readFile} from '@dr.pogodin/react-native-fs';
 import {keepLocalCopy, pick, types} from '@react-native-documents/picker';
 
 import log from '../log';
@@ -22,26 +23,39 @@ const describe = (e: unknown) => {
   return code ? `${String(code)}: ${text}` : text;
 };
 
-const readText = async (uri: string) => {
-  const text = await (await fetch(uri)).text();
+const readText = async (location: string) => {
+  const text = await readFile(location, 'utf8');
   if (!text) {
     throw new Error('the file is empty');
   }
   return text;
 };
 
+/** The path of a file:// address, without the scheme and with its special characters decoded */
+const toPath = (uri: string) => {
+  const path = uri.replace(/^file:\/\//, '');
+  try {
+    return decodeURIComponent(path);
+  } catch {
+    return path;
+  }
+};
+
 /**
  * Reads the text of a file that the picker returned
  *
- * On Android the picker returns a content:// address, which is a handle on a file that may live in another app. The
- * documented way to get a real file is to keep a local copy, so that is tried first. If that doesn't work, the address
- * is read directly. What went wrong is collected, because a phone doesn't tell us otherwise.
+ * React Native's own fetch can't read files on the device (it fails with "Network request failed"), so a file system
+ * module does it. On Android the picker returns a content:// address, which is a handle on a file that may live in
+ * another app. The documented way to get a real file is to keep a local copy, so that is read first, as a path and as an
+ * address. If no copy can be made, the original address is read directly. What went wrong is collected, because a phone
+ * doesn't tell us otherwise.
  */
 const readPickedFile = async (file: {
   uri: string;
   name: string | null;
 }): Promise<{text: string} | {problems: string[]}> => {
   const problems: string[] = [];
+  const places: [string, string][] = [];
 
   try {
     const [copy] = await keepLocalCopy({
@@ -49,17 +63,24 @@ const readPickedFile = async (file: {
       destination: 'cachesDirectory',
     });
     if (copy.status === 'success') {
-      return {text: await readText(copy.localUri)};
+      places.push(
+        ['local path', toPath(copy.localUri)],
+        ['local uri', copy.localUri],
+      );
+    } else {
+      problems.push(`copy: ${copy.copyError}`);
     }
-    problems.push(`copying: ${copy.copyError}`);
   } catch (e) {
     problems.push(`copy: ${describe(e)}`);
   }
+  places.push(['direct', file.uri]);
 
-  try {
-    return {text: await readText(file.uri)};
-  } catch (e) {
-    problems.push(`direct: ${describe(e)}`);
+  for (const [name, location] of places) {
+    try {
+      return {text: await readText(location)};
+    } catch (e) {
+      problems.push(`${name}: ${describe(e)}`);
+    }
   }
 
   return {problems};

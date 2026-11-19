@@ -2008,16 +2008,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dr.pogodin/react-native-fs@npm:^2.41.0":
-  version: 2.41.0
-  resolution: "@dr.pogodin/react-native-fs@npm:2.41.0"
+"@dr.pogodin/react-native-fs@npm:2.40.4":
+  version: 2.40.4
+  resolution: "@dr.pogodin/react-native-fs@npm:2.40.4"
   dependencies:
     buffer: ^6.0.3
     http-status-codes: ^2.3.0
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: efc3496e387a889e4469ccdefaa6a6d50febd402fc25f417520174242408de8d9471c850a91911a645199c3123a04c0b4015dd32dab2e6e3ddd794c1d8fb3126
+  checksum: 8a1c0d043817e61949f7ab559a85c089f11cf410a6b9497f3b666e67f1a1a29d0025dce5031dad7cc8d779fbb5cf42864ee4d1f8cdfdc480d7004579119302a5
   languageName: node
   linkType: hard
 
@@ -4738,7 +4738,7 @@ __metadata:
     "@babel/core": ^7.25.2
     "@babel/preset-env": ^7.25.3
     "@babel/runtime": ^7.25.0
-    "@dr.pogodin/react-native-fs": ^2.41.0
+    "@dr.pogodin/react-native-fs": 2.40.4
     "@jest/globals": ^29.3.1
     "@react-native-async-storage/async-storage": ^2.0.0
     "@react-native-community/cli": 20.0.0
