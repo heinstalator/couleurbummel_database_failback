@@ -1,26 +1,20 @@
-import {readFile} from '@dr.pogodin/react-native-fs';
 import {keepLocalCopy, pick, types} from '@react-native-documents/picker';
 
 import {pickDatabaseFile} from '../../src/model/pickDatabaseFile';
 import {MAX_DATABASE_LENGTH} from '../../src/model/validation';
 
-// The native modules aren't available in tests
+// The native module isn't available in tests
 jest.mock(
   '@react-native-documents/picker',
   () => ({pick: jest.fn(), keepLocalCopy: jest.fn(), types: {allFiles: '*/*'}}),
   {virtual: true},
 );
-jest.mock('@dr.pogodin/react-native-fs', () => ({readFile: jest.fn()}), {
-  virtual: true,
-});
 
 const mockPick = pick as unknown as jest.Mock;
 const mockKeepLocalCopy = keepLocalCopy as unknown as jest.Mock;
-const mockReadFile = readFile as unknown as jest.Mock;
 
 const SOURCE = 'content://files/db%3A1.json';
-const LOCAL_URI = 'file:///data/cache/my%20db.json';
-const LOCAL_PATH = '/data/cache/my db.json';
+const LOCAL = 'file:///data/cache/db.json';
 
 const chooses = (file: object = {}) =>
   mockPick.mockResolvedValue([
@@ -29,30 +23,36 @@ const chooses = (file: object = {}) =>
 
 const copySucceeds = () =>
   mockKeepLocalCopy.mockResolvedValue([
-    {status: 'success', localUri: LOCAL_URI, sourceUri: SOURCE},
+    {status: 'success', localUri: LOCAL, sourceUri: SOURCE},
   ]);
 
-/** What reading a location returns; an Error means that reading it fails. Anything else can't be read. */
-const files = (contents: Record<string, string | Error>) =>
-  mockReadFile.mockImplementation(async (location: string) => {
-    const content = contents[location];
-    if (typeof content === 'string') {
-      return content;
+/** What reading an address returns, by address; an Error means that reading fails */
+const files = (contents: Record<string, string | Error>) => {
+  const fetchMock = jest.fn(async (uri: string) => {
+    const content = contents[uri];
+    if (content === undefined || content instanceof Error) {
+      throw content ?? new Error('Network request failed');
     }
-    throw content ?? new Error(`ENOENT: ${location}`);
+    return {text: async () => content};
   });
+  global.fetch = fetchMock as unknown as typeof fetch;
+  return fetchMock;
+};
 
 describe('pickDatabaseFile', () => {
+  const originalFetch = global.fetch;
   beforeEach(() => {
     mockPick.mockReset();
     mockKeepLocalCopy.mockReset();
-    mockReadFile.mockReset();
+  });
+  afterEach(() => {
+    global.fetch = originalFetch;
   });
 
-  it('reads the local copy of the file as text', async () => {
+  it('reads the file from the local copy that was made of it', async () => {
     chooses();
     copySucceeds();
-    files({[LOCAL_PATH]: '{"corporations": {}}'});
+    const fetchMock = files({[LOCAL]: '{"corporations": {}}'});
 
     const result = await pickDatabaseFile();
 
@@ -65,28 +65,14 @@ describe('pickDatabaseFile', () => {
       files: [{uri: SOURCE, fileName: 'db.json'}],
       destination: 'cachesDirectory',
     });
-    expect(mockReadFile).toHaveBeenCalledTimes(1);
-    expect(mockReadFile).toHaveBeenCalledWith(LOCAL_PATH, 'utf8');
-  });
-
-  it('does not use fetch, which cannot read files on the device', async () => {
-    chooses();
-    copySucceeds();
-    files({[LOCAL_PATH]: '{}'});
-    const originalFetch = global.fetch;
-    const fetchMock = jest.fn();
-    global.fetch = fetchMock as unknown as typeof fetch;
-
-    await pickDatabaseFile();
-
-    global.fetch = originalFetch;
-    expect(fetchMock).not.toHaveBeenCalled();
+    expect(fetchMock).toHaveBeenCalledTimes(1);
+    expect(fetchMock).toHaveBeenCalledWith(LOCAL);
   });
 
   it('lets the user choose any kind of file, because file managers disagree on what JSON files are', async () => {
     chooses();
     copySucceeds();
-    files({[LOCAL_PATH]: '{}'});
+    files({[LOCAL]: '{}'});
 
     await pickDatabaseFile();
 
@@ -96,7 +82,7 @@ describe('pickDatabaseFile', () => {
   it('names the copy even if the file has no name', async () => {
     chooses({name: null});
     copySucceeds();
-    files({[LOCAL_PATH]: '{}'});
+    files({[LOCAL]: '{}'});
 
     expect(await pickDatabaseFile()).toMatchObject({ok: true, name: undefined});
     expect(mockKeepLocalCopy.mock.calls[0][0].files[0].fileName).toBe(
@@ -104,82 +90,48 @@ describe('pickDatabaseFile', () => {
     );
   });
 
-  it('reads the copy as an address if reading it as a path fails', async () => {
-    chooses();
-    copySucceeds();
-    files({[LOCAL_PATH]: new Error('ENOENT'), [LOCAL_URI]: '{"a": 1}'});
-
-    expect(await pickDatabaseFile()).toMatchObject({
-      ok: true,
-      text: '{"a": 1}',
-    });
-    expect(mockReadFile.mock.calls.map(c => c[0])).toEqual([
-      LOCAL_PATH,
-      LOCAL_URI,
-    ]);
-  });
-
-  it('reads the original address if the copy cannot be read at all', async () => {
-    chooses();
-    copySucceeds();
-    files({[SOURCE]: '{"a": 1}'});
-
-    expect(await pickDatabaseFile()).toMatchObject({
-      ok: true,
-      text: '{"a": 1}',
-    });
-    expect(mockReadFile.mock.calls.map(c => c[0])).toEqual([
-      LOCAL_PATH,
-      LOCAL_URI,
-      SOURCE,
-    ]);
-  });
-
   describe('if no local copy can be made', () => {
-    it('reads the original address when the copy is reported as failed', async () => {
+    const readsTheOriginalInstead = async (
+      contents: Record<string, string | Error>,
+    ) => {
       chooses();
+      const fetchMock = files({[SOURCE]: '{"a": 1}', ...contents});
+
+      expect(await pickDatabaseFile()).toEqual({
+        ok: true,
+        text: '{"a": 1}',
+        name: 'db.json',
+      });
+      expect(fetchMock).toHaveBeenLastCalledWith(SOURCE);
+    };
+
+    it('reads the original address instead when the copy is reported as failed', async () => {
       mockKeepLocalCopy.mockResolvedValue([
         {status: 'error', copyError: 'no space', sourceUri: SOURCE},
       ]);
-      files({[SOURCE]: '{"a": 1}'});
 
-      expect(await pickDatabaseFile()).toMatchObject({
-        ok: true,
-        text: '{"a": 1}',
-      });
-      expect(mockReadFile.mock.calls.map(c => c[0])).toEqual([SOURCE]);
+      await readsTheOriginalInstead({});
     });
 
-    it('reads the original address when making the copy throws', async () => {
-      chooses();
+    it('reads the original address instead when making the copy throws', async () => {
       mockKeepLocalCopy.mockRejectedValue(new Error('not linked'));
-      files({[SOURCE]: '{"a": 1}'});
 
-      expect(await pickDatabaseFile()).toMatchObject({
-        ok: true,
-        text: '{"a": 1}',
+      await readsTheOriginalInstead({});
+    });
+
+    it('reads the original address instead when the copy cannot be read', async () => {
+      copySucceeds();
+
+      await readsTheOriginalInstead({
+        [LOCAL]: new Error('Network request failed'),
       });
     });
   });
 
-  it('keeps special characters of the path of the copy decoded, and tolerates broken ones', async () => {
-    chooses();
-    mockKeepLocalCopy.mockResolvedValue([
-      {
-        status: 'success',
-        localUri: 'file:///data/100%.json',
-        sourceUri: SOURCE,
-      },
-    ]);
-    files({'/data/100%.json': '{}'});
-
-    expect(await pickDatabaseFile()).toMatchObject({ok: true});
-  });
-
-  it('treats an empty file as a failure and tries the other ways', async () => {
+  it('treats an empty result as a failure and tries the other way', async () => {
     chooses();
     copySucceeds();
-    files({[LOCAL_PATH]: '', [SOURCE]: '{"a": 1}'});
+    files({[LOCAL]: '', [SOURCE]: '{"a": 1}'});
 
     expect(await pickDatabaseFile()).toMatchObject({
       ok: true,
@@ -192,29 +144,27 @@ describe('pickDatabaseFile', () => {
     mockKeepLocalCopy.mockResolvedValue([
       {status: 'error', copyError: 'permission denied', sourceUri: SOURCE},
     ]);
-    files({[SOURCE]: new Error('EACCES: Permission denied')});
+    files({[SOURCE]: new Error('Network request failed')});
 
-    expect(await pickDatabaseFile()).toEqual({
+    const result = await pickDatabaseFile();
+
+    expect(result).toEqual({
       ok: false,
       error: 'READ_FAILED',
-      detail: 'copy: permission denied; direct: EACCES: Permission denied',
+      detail: 'copying: permission denied; direct: Network request failed',
     });
   });
 
-  it('reports every attempt, with the error code of the problem if there is one', async () => {
+  it('includes the error code of the problem, if there is one', async () => {
     chooses();
-    copySucceeds();
-    files({
-      [LOCAL_PATH]: Object.assign(new Error('No such file'), {code: 'ENOENT'}),
-      [LOCAL_URI]: new Error('bad uri'),
-      [SOURCE]: new Error('not allowed'),
-    });
+    mockKeepLocalCopy.mockRejectedValue(
+      Object.assign(new Error('Module not found'), {code: 'E_NOT_LINKED'}),
+    );
+    files({[SOURCE]: new Error('Network request failed')});
 
-    expect(await pickDatabaseFile()).toEqual({
-      ok: false,
-      error: 'READ_FAILED',
+    expect(await pickDatabaseFile()).toMatchObject({
       detail:
-        'local path: ENOENT: No such file; local uri: bad uri; direct: not allowed',
+        'copy: E_NOT_LINKED: Module not found; direct: Network request failed',
     });
   });
 
@@ -225,10 +175,11 @@ describe('pickDatabaseFile', () => {
     'recognises that the user closed the picker by %s',
     async (_how, error) => {
       mockPick.mockRejectedValue(error);
+      const fetchMock = files({});
 
       expect(await pickDatabaseFile()).toEqual({ok: false, error: 'CANCELLED'});
+      expect(fetchMock).not.toHaveBeenCalled();
       expect(mockKeepLocalCopy).not.toHaveBeenCalled();
-      expect(mockReadFile).not.toHaveBeenCalled();
     },
   );
 
@@ -244,16 +195,17 @@ describe('pickDatabaseFile', () => {
 
   it('refuses files that are far too large without reading them', async () => {
     chooses({size: MAX_DATABASE_LENGTH * 3 + 1});
+    const fetchMock = files({});
 
     expect(await pickDatabaseFile()).toEqual({ok: false, error: 'TOO_LARGE'});
+    expect(fetchMock).not.toHaveBeenCalled();
     expect(mockKeepLocalCopy).not.toHaveBeenCalled();
-    expect(mockReadFile).not.toHaveBeenCalled();
   });
 
   it('leaves the exact size limit to the validation of the content', async () => {
     chooses({size: MAX_DATABASE_LENGTH * 2});
     copySucceeds();
-    files({[LOCAL_PATH]: '{}'});
+    files({[LOCAL]: '{}'});
 
     expect(await pickDatabaseFile()).toMatchObject({ok: true});
   });

@@ -80,9 +80,3 @@ jest.mock(
   }),
   {virtual: true},
 );
-
-// @dr.pogodin/react-native-fs is a native module, which isn't available in the jest environment. Tests of code that
-// reads files replace it with their own mock.
-jest.mock('@dr.pogodin/react-native-fs', () => ({readFile: jest.fn()}), {
-  virtual: true,
-});
