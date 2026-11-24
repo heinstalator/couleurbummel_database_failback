@@ -1,0 +1,556 @@
+Import from the German Wikipedia
+
+Lists read: 111, tables with corporations: 245
+Corporations: 1664 (11 duplicates merged)
+Left out: 1395 inactive, 104 school fraternities
+Coordinates from articles: 84
+Corporations still without coordinates: 1580
+
+Words that need your attention (the number is how many corporations they occur in):
+  Colours that could not be read, so the colours were left empty:
+    "auf" x40
+    "ff" x17
+    "vu" x11
+    "keine" x8
+    "und" x7
+    "verbindung" x5
+    "farben" x4
+    "tuerkis" x2
+    "violet" x2
+    "amaranth" x1
+    "blume" x1
+    "cyan" x1
+    "ehem" x1
+    "flieder" x1
+    "germania" x1
+    "kupfer" x1
+    "lichtes" x1
+    "magenta" x1
+    "ohne" x1
+    "pense" x1
+    "petrol" x1
+    "s" x1
+    "u" x1
+    "v" x1
+  Shades replaced by the closest colour of the palette:
+    "hellrot" x8
+    "altrot" x6
+    "karminrot" x6
+    "lindgruen" x6
+    "tannengruen" x5
+    "anthrazit" x3
+    "blutrot" x3
+    "cyaanblau" x3
+    "kirschrot" x3
+    "koenigsblau" x3
+    "kornblumenblau" x3
+    "nachtblau" x3
+    "stahlblau" x3
+    "zinnoberrot" x3
+    "aetherblau" x2
+    "altrosa" x2
+    "blassrot" x2
+    "feuerrot" x2
+    "kohle" x2
+    "marineblau" x2
+    "meergruen" x2
+    "silberweiss" x2
+    "veilchenblau" x2
+    "vergissmeinnichtblau" x2
+    "alpenrosenrot" x1
+    "amaranthrot" x1
+    "amarantrot" x1
+    "apfelgruen" x1
+    "berggruen" x1
+    "buchentriebgruen" x1
+    "dunkelbraun" x1
+    "enzianblau" x1
+    "europablau" x1
+    "feldgrau" x1
+    "grenadinerot" x1
+    "hellgelb" x1
+    "himbeerrot" x1
+    "hochrot" x1
+    "kardinalsrot" x1
+    "karmoisinrot" x1
+    "korianderrot" x1
+    "lichtblau" x1
+    "maigruen" x1
+    "meeresgruen" x1
+    "nilgruen" x1
+    "oranierorange" x1
+    "pfirsichrot" x1
+    "purpurrot" x1
+    "rosenrot" x1
+    "sachsengruen" x1
+    "saechsischblau" x1
+    "schillerrot" x1
+    "schwarzblau" x1
+    "schwefelgelb" x1
+    "schweizerrot" x1
+    "seladongruen" x1
+    "smaragdgruen" x1
+    "tiefblau" x1
+    "tuerkisblau" x1
+    "tuerkisgruen" x1
+    "violettrot" x1
+    "wettinergruen" x1
+    "zinnrot" x1
+  Fencing principles that were not understood:
+    "schlagend" x109
+    "schlagend (frei)" x1
+    "schlagend (pflicht)" x1
+
+Other remarks in brackets after the colours, which are ignored:
+  (Nadeltragend) x4
+  (Schleife) x3
+  (s) x2
+  (CLZ) x1
+  (HAL) x1
+  (v.o.) x1
+  (Traditionsband orange-weiß-grün) x1
+  (mit Albertus-Spange) x1
+  (von unten) x1
+  (Zweitband: schwarz-rot-schwarz) x1
+  (ehem. Teutonia) x1
+  (schwarze Verbindung) x1
+  (mit schwarzem Strich) x1
+
+Warnings (322):
+  - Liste der Studenten- und Schülerverbindungen in Aschaffenburg: "Corps Hubertia": replaced tannengruen, lindgruen by the closest colour in the palette
+  - Liste der Studenten- und Schülerverbindungen in Klagenfurt: "Akad. Burschenschaft Eisen": didn't understand the fencing principle "schlagend"
+  - Liste der Studenten- und Schülerverbindungen in München: "Corps Hubertia": replaced tannengruen, lindgruen by the closest colour in the palette
+  - Liste der Studenten- und Schülerverbindungen in München: "Burschenschaft Danubia": replaced lindgruen, rosenrot by the closest colour in the palette
+  - Liste der Studenten- und Schülerverbindungen in München: "Corps Cisaria": replaced altrot by the closest colour in the palette
+  - Liste der Studenten- und Schülerverbindungen in München: "Akad. Gesangverein": replaced altrot by the closest colour in the palette
+  - Liste der Studenten- und Schülerverbindungen in München: "Akad. Ingenieur-Verbindung Brücke": replaced altrot by the closest colour in the palette
+  - Liste der Studenten- und Schülerverbindungen in München: "KBStV Rhaetia": replaced kirschrot by the closest colour in the palette
+  - Liste der Studenten- und Schülerverbindungen in München: "KDStV Burgundia": replaced altrot by the closest colour in the palette
+  - Liste der Studenten- und Schülerverbindungen in München: "KStV Rheno-Bavaria": replaced zinnoberrot by the closest colour in the palette
+  - Liste der Studenten- und Schülerverbindungen in Salzburg: "akad. Burschenschaft Germania": couldn't read the colours "schwarz-weiß-rot auf blau" (unknown: auf)
+  - Liste der Studenten- und Schülerverbindungen in Wien: "Fachstudentische Burschenschaft Markomannia": didn't understand the fencing principle "schlagend"
+  - Liste der Studenten- und Schülerverbindungen in Wien: "Akad. Corps Ottonen": didn't understand the fencing principle "schlagend"
+  - Liste der Studenten- und Schülerverbindungen in Wien: "Akad. Jägerschaft Silvania": couldn't read the colours "grün-weiß auf schwarz" (unknown: auf)
+  - Liste der Studenten- und Schülerverbindungen in Wien: "KaJ Sankt Hubertus": couldn't read the colours "schwarz-grün auf gold" (unknown: auf)
+  - Liste der Studenten- und Schülerverbindungen in Wien: "pennale Burschenschaft Franco-Cherusker": didn't understand the fencing principle "schlagend"
+  - Liste der Studenten- und Schülerverbindungen in Wien: "Fachstudentenschaft Rugia Eisgrub": didn't understand the fencing principle "schlagend"
+  - Liste der Studenten- und Schülerverbindungen in Wien: "pennale Burschenschaft Germania": didn't understand the fencing principle "schlagend"
+  - Liste der Studenten- und Schülerverbindungen in Wien: "pennale Burschenschaft Vandalia": didn't understand the fencing principle "schlagend"
+  - Liste der Studenten- und Schülerverbindungen in Wien: "pennale Burschenschaft Ghibellinia": didn't understand the fencing principle "schlagend"
+  - Liste der Studenten- und Schülerverbindungen in Würzburg: "Corps Franconia": replaced apfelgruen, pfirsichrot by the closest colour in the palette
+  - Liste der Studenten- und Schülerverbindungen in Würzburg: "Corps Moenania": replaced berggruen, schwefelgelb, hochrot by the closest colour in the palette
+  - Liste der Studenten- und Schülerverbindungen in Würzburg: "Corps Rhenania": replaced marineblau, korianderrot by the closest colour in the palette
+  - Liste der Studenten- und Schülerverbindungen in Würzburg: "Burschenschaft Arminia": replaced karminrot by the closest colour in the palette
+  - Liste der Studenten- und Schülerverbindungen in Würzburg: "Corps Makaria-Guestphalia": couldn't read the colours "hellblau-gold-rot auf weiß" (unknown: auf)
+  - Liste der Studenten- und Schülerverbindungen in Würzburg: "Landsmannschaft Alemannia Makaria": couldn't read the colours "schwarz-weiß-rot auf hellblau" (unknown: auf)
+  - Liste der Studenten- und Schülerverbindungen in Würzburg: "ADV Salia": replaced koenigsblau by the closest colour in the palette
+  - Liste der Studentenverbindungen in Aachen: "Corps Borussia Breslau zu Köln und Aachen": replaced blassrot by the closest colour in the palette
+  - Liste der Studentenverbindungen in Aachen: "Berg- und Hüttenmännischer Verein": replaced kohle by the closest colour in the palette
+  - Liste der Studentenverbindungen in Aalen: no table of corporations was found. Wikipedia's layout may have changed.
+  - Liste der Studentenverbindungen in Augsburg: "Corps Rhaetia Innsbruck": replaced tannengruen, tannengruen by the closest colour in the palette
+  - Liste der Studentenverbindungen in Bamberg: "KStV Mainfranken": couldn't read the colours "blau-gold-rot f.f." (unknown: ff)
+  - Liste der Studentenverbindungen in Bamberg: "WKStV Unitas Henricia": couldn't read the colours "blau-weiß-gold f.f." (unknown: ff)
+  - Liste der Studentenverbindungen in Basel: "Helvetia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Basel: "Rauracia": replaced schillerrot by the closest colour in the palette
+  - Liste der Studentenverbindungen in Berlin: "AV Motiv": replaced schwarzblau by the closest colour in the palette
+  - Liste der Studentenverbindungen in Berlin: "Corps Vandalia-Teutonia": replaced feuerrot by the closest colour in the palette
+  - Liste der Studentenverbindungen in Berlin: "Landsmannschaft Preußen": replaced oranierorange by the closest colour in the palette
+  - Liste der Studentenverbindungen in Berlin: "BStV Felia": couldn't read the colours "petrol-silber-schwarz" (unknown: petrol)
+  - Liste der Studentenverbindungen in Berlin: "Burschenschaft Libertas": couldn't read the colours "schwarz-rot-gold v.u." (unknown: vu)
+  - Liste der Studentenverbindungen in Bern: "Akademische Turnerschaft Rhenania": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Bern: "Helvetia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Bielefeld: "AV Sparrenberg": couldn't read the colours "rot-weiß-blau auf weiß" (unknown: auf)
+  - Liste der Studentenverbindungen in Bochum: "KStV Rheno-Merovingia": replaced hellrot by the closest colour in the palette
+  - Liste der Studentenverbindungen in Bonn: "WKStV Unitas-Salia": couldn't read the colours "blau-weiß-gold f.f." (unknown: ff)
+  - Liste der Studentenverbindungen in Bonn: "AMV Makaria": couldn't read the colours "hellblau-weiß-rot f.f." (unknown: ff)
+  - Liste der Studentenverbindungen in Bonn: "VDSt zu Bonn": couldn't read the colours "schwarz-weiß-rot f.f." (unknown: ff)
+  - Liste der Studentenverbindungen in Bonn: "Akad. Ruder-Club Rhenus": couldn't read the colours "blau-weiß-rot f.f." (unknown: ff)
+  - Liste der Studentenverbindungen in Bonn: "ATV Gothia-Suevia": couldn't read the colours "schwarz-weiß-grün f.f." (unknown: ff)
+  - Liste der Studentenverbindungen in Bonn: "KStV Rheno-Borussia": couldn't read the colours "schwarz-gold-grün f.f." (unknown: ff)
+  - Liste der Studentenverbindungen in Bonn: "KDB Winfridia": replaced altrosa by the closest colour in the palette
+  - Liste der Studentenverbindungen in Bonn: "KStV Vandalia": couldn't read the colours "schwarz-weiß-blau f.f." (unknown: ff)
+  - Liste der Studentenverbindungen in Bonn: "WKStV Unitas Stolzenfels": couldn't read the colours "weiß-blau-gold f.f." (unknown: ff)
+  - Liste der Studentenverbindungen in Bonn: "WKStV Unitas-Rhenania": couldn't read the colours "blau-weiß-gold f.f." (unknown: ff)
+  - Liste der Studentenverbindungen in Bonn: "KStV Westmark": couldn't read the colours "weiß-violett-weiß f.f." (unknown: ff)
+  - Liste der Studentenverbindungen in Bonn: "KStV Flamberg": couldn't read the colours "weiß-schwarz-weiß s." (unknown: s)
+  - Liste der Studentenverbindungen in Bonn: "WKStV Unitas Clara Schumann": couldn't read the colours "gold-blau-weiß f.f." (unknown: ff)
+  - Liste der Studentenverbindungen in Bonn: "AV Leaena": couldn't read the colours "dunkelblau-weiß-türkis" (unknown: tuerkis)
+  - Liste der Studentenverbindungen in Braunschweig: "Akademischer Bauingenieur Club (ABC)": couldn't read the colours "keine" (unknown: keine)
+  - Liste der Studentenverbindungen in Braunschweig: "Scholarbund Brunsviga": couldn't read the colours "grün-kupfer-blau" (unknown: kupfer)
+  - Liste der Studentenverbindungen in Breslau: "Cresovia Leopoliensis": couldn't read the colours "amaranth-grün-silber" (unknown: amaranth)
+  - Liste der Studentenverbindungen in Breslau: "Burschenbund Alemannia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Verbindung Normannia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Burschenschaft der Raczeks": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Burschenschaft Arminia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Burschenschaft Germania": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Burschenschaft Cheruskia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Breslauer Burschenschaft Saxonia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Burschenschaft Askania": couldn't read the colours "Schwarz-Rot auf Gold" (unknown: auf)
+  - Liste der Studentenverbindungen in Breslau: "Burschenschaft Askania": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Corps Borussia": replaced blassrot by the closest colour in the palette
+  - Liste der Studentenverbindungen in Breslau: "Corps Borussia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Corps Marchia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Corps Lusatia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Corps Marcomannia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Corps Silesia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Corps Frisia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Corps Neo-Franconia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Corps Montania": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Corps Silingia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Corps Lugia": replaced zinnoberrot by the closest colour in the palette
+  - Liste der Studentenverbindungen in Breslau: "Corps Lugia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Corps Agronomia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Akad. Landw. Verbindung Teutonia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Jagdcorps Hubertia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Corps Bavaria": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Landsmannschaft Macaria": replaced hellrot by the closest colour in the palette
+  - Liste der Studentenverbindungen in Breslau: "Landsmannschaft Macaria": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Landsmannschaft Nissia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Landsmannschaft Vandalia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Deutsch-Akademischer Club Baltia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Landsmannschaft Teutonia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Landsmannschaft Marcho-Borussia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Sängerschaft Leopoldina": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Sängerschaft Burgundia": couldn't read the colours "hellblau-rot auf weiß" (unknown: auf)
+  - Liste der Studentenverbindungen in Breslau: "Sängerschaft Burgundia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Sängerschaft Rheinfranken": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Turnerschaft Suevia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Turnerschaft Frankonia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Turnerschaft Guestphalia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Landsmannschaft Ostfalia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Altschlesische Wehrschaft Nibelungia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Wehrschaft „Die Lützower“": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Wehrschaft Tuisconia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "ATV Breslau": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "ATV Saxo-Silesia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "ATV Gotia in der Ostmark": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "KDStV Salia": couldn't read the colours "orange-schwarz auf weiß" (unknown: auf)
+  - Liste der Studentenverbindungen in Breslau: "KDStV Greiffenstein": replaced stahlblau by the closest colour in the palette
+  - Liste der Studentenverbindungen in Breslau: "KStV Zollern": couldn't read the colours "silber-schwarz auf weiß" (unknown: auf)
+  - Liste der Studentenverbindungen in Breslau: "Hochland-Ring": couldn't read the colours "blaue Blume auf Silber" (unknown: blume, auf)
+  - Liste der Studentenverbindungen in Breslau: "AEV Wartburg": couldn't read the colours "violet-weiß-violett" (unknown: violet)
+  - Liste der Studentenverbindungen in Breslau: "Jüdische Verbindung Viadrina": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Jüdisch-Akademischer Fechtclub Saxonia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Jüdische Verbindung Thuringia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "VJSt Hasmonaea": replaced hellgelb by the closest colour in the palette
+  - Liste der Studentenverbindungen in Breslau: "Evangelisch-Theologische Verbindung Vittembergia": couldn't read the colours "violet-weiß-schwarz" (unknown: violet)
+  - Liste der Studentenverbindungen in Breslau: "Akademisch-Literarischer Verein": replaced zinnoberrot by the closest colour in the palette
+  - Liste der Studentenverbindungen in Breslau: "Akademisch-Literarischer Verein": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Freie Wissenschaftliche Verbindung Wikingia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Wehrschaft Theodor Körner": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Polnische Verbindung Polonia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Breslau: "Akademisch-rechtswissenschaftlicher Verein": replaced hellrot by the closest colour in the palette
+  - Liste der Studentenverbindungen in Brünn: "VDSt Sudetia": replaced lichtblau by the closest colour in the palette
+  - Liste der Studentenverbindungen in Brünn: "Nibelungia": replaced hellrot by the closest colour in the palette
+  - Liste der Studentenverbindungen in Clausthal-Zellerfeld: "Berg- und Hüttenmännischer Verein zu Clausthal": replaced kohle by the closest colour in the palette
+  - Liste der Studentenverbindungen in Clausthal-Zellerfeld: "Landsmannschaft Alemannia-Silesia": couldn't read the colours "rot-hellblau auf weiß" (unknown: auf)
+  - Liste der Studentenverbindungen in Clausthal-Zellerfeld: "Akademische Verbindung Glückauf-Salia": couldn't read the colours "schwarz-weiß auf rot" (unknown: auf)
+  - Liste der Studentenverbindungen in Clausthal-Zellerfeld: "Akademische Vereinigung Kristall": couldn't read the colours "Schwarze Verbindung" (unknown: verbindung)
+  - Liste der Studentenverbindungen in Clausthal-Zellerfeld: "Clausthaler Wingolf „Catena“": couldn't read the colours "schwarz-weiß-gold v.u." (unknown: vu)
+  - Liste der Studentenverbindungen in Czernowitz: no table of corporations was found. Wikipedia's layout may have changed.
+  - Liste der Studentenverbindungen in Danzig: no table of corporations was found. Wikipedia's layout may have changed.
+  - Liste der Studentenverbindungen in Darmstadt: "Corps Franconia": replaced lindgruen by the closest colour in the palette
+  - Liste der Studentenverbindungen in Dresden: "Corps Silvania": replaced buchentriebgruen by the closest colour in the palette
+  - Liste der Studentenverbindungen in Dresden: "Corps Altsachsen": replaced wettinergruen by the closest colour in the palette
+  - Liste der Studentenverbindungen in Dresden: "Turnerschaft Germania": replaced purpurrot by the closest colour in the palette
+  - Liste der Studentenverbindungen in Dresden: "KDStV Chursachsen": couldn't read the colours "schwarz-gold auf sachsengrün" (unknown: auf)
+  - Liste der Studentenverbindungen in Dresden: "KDStV Chursachsen": replaced sachsengruen by the closest colour in the palette
+  - Liste der Studentenverbindungen in Dresden: "Akademische Damenverbindung Saxonia": replaced saechsischblau by the closest colour in the palette
+  - Liste der Studentenverbindungen in Duisburg: "KDStV Nordmark": couldn't read the colours "schwarz-rot auf weiß" (unknown: auf)
+  - Liste der Studentenverbindungen in Düsseldorf: "Mädchenschaft Loreley": replaced kornblumenblau by the closest colour in the palette
+  - Liste der Studentenverbindungen in Erlangen: "Corps Onoldia": replaced blutrot by the closest colour in the palette
+  - Liste der Studentenverbindungen in Erlangen: "ADV Eostarae": replaced nachtblau by the closest colour in the palette
+  - Liste der Studentenverbindungen in Essen: "KDStV Nordmark": couldn't read the colours "schwarz-rot auf weiß" (unknown: auf)
+  - Liste der Studentenverbindungen in Esslingen: "Verbindung Motor": couldn't read the colours "pense-gold-blau" (unknown: pense)
+  - Liste der Studentenverbindungen in Frankfurt am Main: "Frankfurt-Leipziger Burschenschaft Arminia": couldn't read the colours "schwarz-rot-gold v. u." (unknown: v, u)
+  - Liste der Studentenverbindungen in Frankfurt am Main: "KDStV Greiffenstein Breslau": replaced stahlblau by the closest colour in the palette
+  - Liste der Studentenverbindungen in Freiburg im Breisgau: "KDStV Arminia": replaced veilchenblau by the closest colour in the palette
+  - Liste der Studentenverbindungen in Freiburg im Breisgau: "Turnerschaft Markomanno-Albertia": couldn't read the colours "blau-karmoisinrot auf weiß" (unknown: auf)
+  - Liste der Studentenverbindungen in Freiburg im Breisgau: "Turnerschaft Markomanno-Albertia": replaced karmoisinrot by the closest colour in the palette
+  - Liste der Studentenverbindungen in Freising: "Landsmannschaft Bavaria zu Weihenstephan": replaced dunkelbraun by the closest colour in the palette
+  - Liste der Studentenverbindungen in Gießen: "Akademische Gesellschaft Das Kloster": couldn't read the colours "ohne" (unknown: ohne)
+  - Liste der Studentenverbindungen in Gießen: "Gießener Burschenschaft Wartburg": couldn't read the colours "schwarz-karmesinrot auf gold" (unknown: auf)
+  - Liste der Studentenverbindungen in Graz: "Grazer Akad. Burschenschaft Stiria": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Graz: "Burschenschaft Arminia": replaced karminrot by the closest colour in the palette
+  - Liste der Studentenverbindungen in Graz: "Akad. Burschenschaft Frankonia": replaced hellrot by the closest colour in the palette
+  - Liste der Studentenverbindungen in Graz: "Akad. Burschenschaft Frankonia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Graz: "Akad. Burschenschaft Marcho Teutonia": replaced nilgruen by the closest colour in the palette
+  - Liste der Studentenverbindungen in Graz: "Akad. Burschenschaft Marcho Teutonia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Graz: "Burschenschaft Germania": replaced karminrot by the closest colour in the palette
+  - Liste der Studentenverbindungen in Graz: "Akademisch-Technischer Radfahrverein": replaced altrot, altrot by the closest colour in the palette
+  - Liste der Studentenverbindungen in Graz: "Akad. Landsmannschaft Viruna": replaced feldgrau by the closest colour in the palette
+  - Liste der Studentenverbindungen in Graz: "Akad. Landsmannschaft Viruna": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Graz: "KEStV Minerva": replaced tuerkisblau by the closest colour in the palette
+  - Liste der Studentenverbindungen in Graz: "KÖL Tegetthoff Graz": replaced meergruen by the closest colour in the palette
+  - Liste der Studentenverbindungen in Greifswald: "Corps Pomerania": replaced aetherblau, aetherblau by the closest colour in the palette
+  - Liste der Studentenverbindungen in Göttingen: "Corps Hildeso-Guestphalia": replaced lindgruen by the closest colour in the palette
+  - Liste der Studentenverbindungen in Göttingen: "Andree’sche Tischgesellschaft (ATG) Münden zu Göttingen": couldn't read the colours "Keine Farben (Nadeltragend)" (unknown: keine, farben)
+  - Liste der Studentenverbindungen in Göttingen: "Mündener Gesellschaft (MG) Tanne": couldn't read the colours "Keine Farben (Nadeltragend)" (unknown: keine, farben)
+  - Liste der Studentenverbindungen in Göttingen: "Forstakademische Gesellschaft (FAG) Freia": couldn't read the colours "Keine Farben (Nadeltragend)" (unknown: keine, farben)
+  - Liste der Studentenverbindungen in Göttingen: "Sängerschaft Gotia et Baltia Kiel zu Göttingen": couldn't read the colours "orange-weiß-grün und blau-rot-gold" (unknown: und)
+  - Liste der Studentenverbindungen in Göttingen: "Akademische Vereinigung (AVF) Feldjäger": couldn't read the colours "Keine Farben (Nadeltragend)" (unknown: keine, farben)
+  - Liste der Studentenverbindungen in Göttingen: "Göttinger Gesellschaft Max Eyth (GGME)": couldn't read the colours "Schwarze Verbindung" (unknown: verbindung)
+  - Liste der Studentenverbindungen in Göttingen: "Akademische Turnverbindung (ATV) Gothia Alemania Göttingen": couldn't read the colours "schwarz-grün-weiß und dunkelblau-weiß-hellblau" (unknown: und)
+  - Liste der Studentenverbindungen in Halle (Saale): "Corps Palaiomarchia": couldn't read the colours "orange-weiß-schwarz v.u." (unknown: vu)
+  - Liste der Studentenverbindungen in Halle (Saale): "Landsmannschaft Vitebergia": couldn't read the colours "dunkelgrün-weiß-moosgrün v.u." (unknown: vu)
+  - Liste der Studentenverbindungen in Halle (Saale): "Verein Deutscher Studenten (VDSt) Halle-Wittenberg": couldn't read the colours "schwarz-weiß-rot f.f." (unknown: ff)
+  - Liste der Studentenverbindungen in Halle (Saale): "ATV Gothia": couldn't read the colours "hellblau-weiß-dunkelblau f.f., v.u." (unknown: ff, vu)
+  - Liste der Studentenverbindungen in Halle (Saale): "Damenverbindung Ariadne": couldn't read the colours "gold-weiß-bordeaux v.u." (unknown: vu)
+  - Liste der Studentenverbindungen in Hamburg: "Alte Turnerschaft Slesvigia-Niedersachsen": couldn't read the colours "schwarz-silber-grün auf weiß" (unknown: auf)
+  - Liste der Studentenverbindungen in Hamburg: "KDStV Wiking Hamburg": couldn't read the colours "grün-rot auf weiß" (unknown: auf)
+  - Liste der Studentenverbindungen in Hamburg: "AMV Nordmark": replaced kornblumenblau by the closest colour in the palette
+  - Liste der Studentenverbindungen in Hamburg: "Corps Albertina": replaced zinnrot by the closest colour in the palette
+  - Liste der Studentenverbindungen in Hamburg: "AMDV Caecilia": replaced grenadinerot by the closest colour in the palette
+  - Liste der Studentenverbindungen in Hamburg: "ADV Felicitas Hammonia": couldn't read the colours "cyan-gold-rot" (unknown: cyan)
+  - Liste der Studentenverbindungen in Hannover: "Turnerschaft Armino-Hercynia": couldn't read the colours "schwarz-gold auf rot" (unknown: auf)
+  - Liste der Studentenverbindungen in Hannover: "Hannoversche Burschenschaft Arminia": couldn't read the colours "schwarz-rot-gold auf weiß" (unknown: auf)
+  - Liste der Studentenverbindungen in Hannover: "AV Frisia": couldn't read the colours "grün-schwarz auf weiß" (unknown: auf)
+  - Liste der Studentenverbindungen in Innsbruck: "Corps Athesia": replaced vergissmeinnichtblau by the closest colour in the palette
+  - Liste der Studentenverbindungen in Innsbruck: "Corps Gothia": replaced enzianblau, alpenrosenrot by the closest colour in the palette
+  - Liste der Studentenverbindungen in Innsbruck: "Landsmannschaft Tyrol": couldn't read the colours "veilchenblau-weiß-rot auf schwarz" (unknown: auf)
+  - Liste der Studentenverbindungen in Innsbruck: "Landsmannschaft Tyrol": replaced veilchenblau by the closest colour in the palette
+  - Liste der Studentenverbindungen in Innsbruck: "KaV Rheno-Danubia": couldn't read the colours "gold-blau auf weiß" (unknown: auf)
+  - Liste der Studentenverbindungen in Innsbruck: "AV Stella Vindelicia": couldn't read the colours "rosa-gold auf blau" (unknown: auf)
+  - Liste der Studentenverbindungen in Innsbruck: "AV Oenipontana": couldn't read the colours "weiß-gold auf blau" (unknown: auf)
+  - Liste der Studentenverbindungen in Jena: "Jenaische Burschenschaft Germania": couldn't read the colours "schwarz-rot-gold auf weiß" (unknown: auf)
+  - Liste der Studentenverbindungen in Jena: "Corps Thuringia": replaced kardinalsrot by the closest colour in the palette
+  - Liste der Studentenverbindungen in Jena: "KDStV Saarland (Saarbrücken)": couldn't read the colours "gelb-weiß auf blau" (unknown: auf)
+  - Liste der Studentenverbindungen in Jena: "ADV Aletheia": replaced smaragdgruen by the closest colour in the palette
+  - Liste der Studentenverbindungen in Kaiserslautern: "KDStV Vasgovia": couldn't read the colours "schwarz-gold auf weiß" (unknown: auf)
+  - Liste der Studentenverbindungen in Karlsruhe: "Burschenschaft Teutonia": couldn't read the colours "rot-schwarz auf gold" (unknown: auf)
+  - Liste der Studentenverbindungen in Karlsruhe: "Kathol. Dt. Studentenverbindung (KDStV) Normannia": replaced silberweiss by the closest colour in the palette
+  - Liste der Studentenverbindungen in Karlsruhe: "Kathol. Dt. Studentenverbindung (KDStV) Schwarzwald": couldn't read the colours "schwarz-grün auf weiß" (unknown: auf)
+  - Liste der Studentenverbindungen in Karlsruhe: "Akademische Damenverbindung (ADV) Badenia-Andina": replaced nachtblau by the closest colour in the palette
+  - Liste der Studentenverbindungen in Kiel: "Landsmannschaft Troglodytia": couldn't read the colours "schwarz-weiß-rot v.u." (unknown: vu)
+  - Liste der Studentenverbindungen in Kiel: "Akademische Verbindung Frisia": couldn't read the colours "Schwarze Verbindung" (unknown: verbindung)
+  - Liste der Studentenverbindungen in Kiel: "Landsmannschaft Slesvico-Holsatia et Cheruskia": couldn't read the colours "schwarz-weiß-hellblau und blau-weiß-rot" (unknown: und)
+  - Liste der Studentenverbindungen in Kiel: "Corps Palaiomarchia-Masovia": couldn't read the colours "hellblau-weiß-rot und orange-weiß-schwarz v.u. (mit Albertus-Spange)" (unknown: und, vu)
+  - Liste der Studentenverbindungen in Koblenz und Vallendar: "KDStV Nordgau-Prag" is placed in Koblenz; the list covers Koblenz und Vallendar. Check the city.
+  - Liste der Studentenverbindungen in Koblenz und Vallendar: "Burschenschaft Rheno-Westfalia" is placed in Koblenz; the list covers Koblenz und Vallendar. Check the city.
+  - Liste der Studentenverbindungen in Koblenz und Vallendar: "AV Confluentia" is placed in Koblenz; the list covers Koblenz und Vallendar. Check the city.
+  - Liste der Studentenverbindungen in Koblenz und Vallendar: "ADV Vivacitas" is placed in Koblenz; the list covers Koblenz und Vallendar. Check the city.
+  - Liste der Studentenverbindungen in Koblenz und Vallendar: "ADV Vivacitas": couldn't read the colours "weiß-gold-türkis" (unknown: tuerkis)
+  - Liste der Studentenverbindungen in Konstanz: "KDStV Bodensee": replaced silberweiss by the closest colour in the palette
+  - Liste der Studentenverbindungen in Köln: "Burschenschaft Wartburg-Suevia Leipzig": couldn't read the colours "schwarz-rot-gold v.u." (unknown: vu)
+  - Liste der Studentenverbindungen in Köln: "ATV Markomannia-Westmark": couldn't read the colours "grün-rot-gold f.f." (unknown: ff)
+  - Liste der Studentenverbindungen in Köln: "WKStV Landshut": couldn't read the colours "blau-weiß-gold f.f." (unknown: ff)
+  - Liste der Studentenverbindungen in Köln: "Studentische Jagdverbindung Hubertus": couldn't read the colours "weiß-grün auf schwarz" (unknown: auf)
+  - Liste der Studentenverbindungen in Köln: "ADV Agrippinia": replaced koenigsblau by the closest colour in the palette
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Königsberger Burschenschaft": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Landsmannschaft Pomesania": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Corps Littuania": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Corps Masovia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Corpslandsmannschaft Normannia (ɪ)": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Burschenschaft Germania": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Corps Litthuania": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Progressistische Burschenschaft Palmburgia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Corps Baltia": couldn't read the colours "hellblau-schwarz auf weiß" (unknown: auf)
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Corps Baltia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Burschenschaft Gothia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Corps Normannia (ɪɪ)": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Corps Hansea": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Corps Agronomia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Burschenschaft Alemannia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Landsmannschaft Marko-Natangia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Landsmannschaft Arminia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Turnerschaft Markomannia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Turnerschaft Franconia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Corps Vandalia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "AV Albertia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Burschenschaft Teutonia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Burschenschaft Cheruskia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Turnerschaft Frisia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Turnerschaft Cimbria": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Turnerschaft Arminia": couldn't read the colours "schwarz-grün auf weiß" (unknown: auf)
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Turnerschaft Arminia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "ATV Ostmark": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "VJSt Maccabaea / Makkabäa": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Akademische Ruderverbindung Alania": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Corps Palaio-Borussia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Jüdische Verbindung Friburgia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Turnerschaft Austro-Borussia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Landsmannschaft Prussia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Landsmannschaft Zollern": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Wehrschaft Sugambria": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Wehrbund Harringa": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Grenzmannschaft Ostpreußen": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Königsberg (Preußen): "Burschenschaft Normannia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Köthen: "Landsmannschaft Askania": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Köthen: "Burschenschaft Marchia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Köthen: "Landsmannschaft Germania": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Köthen: "Landsmannschaft Arminia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Köthen: "Burschenschaft Guestphalia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Köthen: "Burschenschaft Bavaria": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Köthen: "Turnerschaft Borussia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Landau: "KDStV Vasgovia": couldn't read the colours "schwarz-gold auf weiß" (unknown: auf)
+  - Liste der Studentenverbindungen in Leipzig: "Corps Lusatia": replaced stahlblau by the closest colour in the palette
+  - Liste der Studentenverbindungen in Leipzig: "Burschenschaft Alemannia": couldn't read the colours "schwarz-rot auf gold (v.u.)" (unknown: auf)
+  - Liste der Studentenverbindungen in Leipzig: "Burschenschaft Normannia": replaced kirschrot by the closest colour in the palette
+  - Liste der Studentenverbindungen in Leipzig: "Akademische Damenverbindung Minerva": replaced koenigsblau by the closest colour in the palette
+  - Liste der Studentenverbindungen in Leoben: "KÖStV Glückauf": replaced violettrot by the closest colour in the palette
+  - Liste der Studentenverbindungen in Linz: "akad. Mädelschaft Iduna": replaced kornblumenblau by the closest colour in the palette
+  - Liste der Studentenverbindungen in Linz: "CEHV Magellania": replaced europablau by the closest colour in the palette
+  - Liste der Studentenverbindungen in Linz: "CÖStV Lauriaca": couldn't read the colours "gold-flieder-blau" (unknown: flieder)
+  - Liste der Studentenverbindungen in Löwen: "Corps Flaminea Löwen": didn't understand the fencing principle "schlagend (pflicht)"
+  - Liste der Studentenverbindungen in Löwen: "Katholiek Vlaams Hoogstudentenverbond Leuven (KVHV-Leuven)": replaced cyaanblau by the closest colour in the palette
+  - Liste der Studentenverbindungen in Löwen: "Nationalistische Studentenvereniging Leuven (NSV-Leuven)": didn't understand the fencing principle "schlagend (frei)"
+  - Liste der Studentenverbindungen in Löwen: "Koninklijke Oost- en Westvlaamsche Kring (Vla-Vla)": replaced cyaanblau by the closest colour in the palette
+  - Liste der Studentenverbindungen in Löwen: "Vlaamse Studentenfanfare Leuven": replaced cyaanblau by the closest colour in the palette
+  - Liste der Studentenverbindungen in Lübeck: "Musische Verbindung Liubicia": replaced meergruen by the closest colour in the palette
+  - Liste der Studentenverbindungen in Mainz: "Akademische Künstlerschaft Preetoria": replaced tannengruen by the closest colour in the palette
+  - Liste der Studentenverbindungen in Marburg: "Corps Teutonia": replaced feuerrot by the closest colour in the palette
+  - Liste der Studentenverbindungen in Marburg: "Corps Hasso-Nassovia": couldn't read the colours "lichtes maigrün-weiß-himmelblau" (unknown: lichtes)
+  - Liste der Studentenverbindungen in Marburg: "Corps Hasso-Nassovia": replaced maigruen by the closest colour in the palette
+  - Liste der Studentenverbindungen in Marburg: "Burschenschaft Teutonia-Germania": couldn't read the colours "rot-weiß-violett (ehem. Teutonia) und gold-rot-schwarz (v.u.; ehem. Germania)" (unknown: und, vu, ehem, germania)
+  - Liste der Studentenverbindungen in Mittweida: "Turnerschaft Tuiskonia zu Siegen": replaced hellrot, hellrot by the closest colour in the palette
+  - Liste der Studentenverbindungen in Münster: "Landsmannschaft Sorabia-Westfalen": couldn't read the colours "blau-gold-blau und weiß-schwarz-grün-weiß" (unknown: und)
+  - Liste der Studentenverbindungen in Münster: "Sängerschaft zu St. Pauli Jena et Burgundia Breslau": couldn't read the colours "hellblau-weiß-dunkelblau v.u. und weiß-blau-rot-weiß" (unknown: vu, und)
+  - Liste der Studentenverbindungen in Münster: "AV Zollern": couldn't read the colours "rot-schwarz auf weiß" (unknown: auf)
+  - Liste der Studentenverbindungen in Münster: "Akademisch-Musischer Bund Ingvaeonia": couldn't read the colours "gelb-schwarz-gelb auf rot (f.f.)" (unknown: auf)
+  - Liste der Studentenverbindungen in Münster: "ADV Helenia Monasteria": replaced tuerkisgruen by the closest colour in the palette
+  - Liste der Studentenverbindungen in Nürnberg: "Bund deutscher Studenten Saxonia Prag": replaced lindgruen by the closest colour in the palette
+  - Liste der Studentenverbindungen in Nürnberg: "ADV Eostarae": replaced nachtblau by the closest colour in the palette
+  - Liste der Studentenverbindungen in Paderborn: "KDStV Guestfalo-Silesia": couldn't read the colours "rot-gold auf weiß" (unknown: auf)
+  - Liste der Studentenverbindungen in Passau: "Delta Psi Omega": replaced vergissmeinnichtblau by the closest colour in the palette
+  - Liste der Studentenverbindungen in Posen: "Korporacja Akademicka Magna-Polonia": replaced amarantrot by the closest colour in the palette
+  - Liste der Studentenverbindungen in Prag: no table of corporations was found. Wikipedia's layout may have changed.
+  - Liste der Studentenverbindungen in Rostock: "Corps Vandalia": replaced blutrot by the closest colour in the palette
+  - Liste der Studentenverbindungen in Rostock: "Alte Rostocker Burschenschaft Obotritia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Rostock: "Burschenschaft Redaria-Allemannia": didn't understand the fencing principle "schlagend"
+  - Liste der Studentenverbindungen in Rostock: "AV Asteria": replaced meeresgruen by the closest colour in the palette
+  - Liste der Studentenverbindungen in Saarbrücken: "Corps Frankonia-Prag": replaced blutrot by the closest colour in the palette
+  - Liste der Studentenverbindungen in Schweinfurt: "Technische Damenverbindung (TDv) Feminae e Franconia": couldn't read the colours "grün-magenta-blau" (unknown: magenta)
+  - Liste der Studentenverbindungen in Stuttgart: "Corps Rhenania": replaced altrosa by the closest colour in the palette
+  - Liste der Studentenverbindungen in Stuttgart: "Akademische Gesellschaft Sonderbund": couldn't read the colours "keine" (unknown: keine)
+  - Liste der Studentenverbindungen in Stuttgart: "AG Burse": couldn't read the colours "keine" (unknown: keine)
+  - Liste der Studentenverbindungen in Stuttgart: "AV Leibniz": couldn't read the colours "keine" (unknown: keine)
+  - Liste der Studentenverbindungen in Suderburg: "Studentische Damenverbindung (StDv) Hellena Suderburg": replaced anthrazit by the closest colour in the palette
+  - Liste der Studentenverbindungen in Tübingen: "AV Igel": couldn't read the colours "Schwarze Verbindung" (unknown: verbindung)
+  - Liste der Studentenverbindungen in Tübingen: "AV Föhrberg (Tübinger Bibelkreis)": couldn't read the colours "Schwarze Verbindung" (unknown: verbindung)
+  - Liste der Studentenverbindungen in Tübingen: "ATV Arminia": replaced hellrot, karminrot by the closest colour in the palette
+  - Liste der Studentenverbindungen in Warschau: "Korporacja Akademicka Arkonia": replaced marineblau by the closest colour in the palette
+  - Liste der Studentenverbindungen in Warschau: "Korporacja Akademicka Sarmatia": replaced seladongruen by the closest colour in the palette
+  - Liste der Studentenverbindungen in Warschau: "Korporacja Akademicka Aquilonia": replaced kirschrot by the closest colour in the palette
+  - Liste der Studentenverbindungen in Warschau: "Korporacja Akademicka Jagiellonia": replaced amaranthrot by the closest colour in the palette
+  - Liste der Studentenverbindungen in Weingarten: no table of corporations was found. Wikipedia's layout may have changed.
+  - Liste der Studentenverbindungen in Wolfenbüttel: "Studentische Damenverbindung (StDv) Hellena Suderburg": replaced anthrazit by the closest colour in the palette
+  - Liste der Studentenverbindungen in Wolfsburg: "Studentische Damenverbindung (StDv) Hellena Suderburg": replaced anthrazit by the closest colour in the palette
+  - Liste der Studentenverbindungen in Zürich: "Studentenverbindung Helvetia": replaced karminrot, karminrot by the closest colour in the palette
+  - Liste der Studentenverbindungen in Zürich: "Sängerschaft Rodensteiner": replaced schweizerrot by the closest colour in the palette
+  - Liste der Studentenverbindungen in Zürich: "Corps Tigurinia": replaced tiefblau by the closest colour in the palette
+  - Liste der Studentenverbindungen in Zürich: "AV Filetia": replaced himbeerrot by the closest colour in the palette
+
+Lists:
+     3  Liste der Studenten- und Schülerverbindungen in Aschaffenburg
+     7  Liste der Studenten- und Schülerverbindungen in Bayreuth
+     2  Liste der Studenten- und Schülerverbindungen in Burgdorf
+     5  Liste der Studenten- und Schülerverbindungen in Coburg
+     1  Liste der Studenten- und Schülerverbindungen in Hof
+     4  Liste der Studenten- und Schülerverbindungen in Klagenfurt
+     2  Liste der Studenten- und Schülerverbindungen in Krems
+    63  Liste der Studenten- und Schülerverbindungen in München
+     3  Liste der Studenten- und Schülerverbindungen in Oldenburg
+     1  Liste der Studenten- und Schülerverbindungen in Rosenheim
+    12  Liste der Studenten- und Schülerverbindungen in Salzburg
+    10  Liste der Studenten- und Schülerverbindungen in St. Gallen
+   103  Liste der Studenten- und Schülerverbindungen in Wien
+    30  Liste der Studenten- und Schülerverbindungen in Würzburg
+    36  Liste der Studentenverbindungen in Aachen
+     0  Liste der Studentenverbindungen in Aalen
+     8  Liste der Studentenverbindungen in Augsburg
+     6  Liste der Studentenverbindungen in Bamberg
+     7  Liste der Studentenverbindungen in Basel
+    40  Liste der Studentenverbindungen in Berlin
+    14  Liste der Studentenverbindungen in Bern
+     6  Liste der Studentenverbindungen in Bielefeld
+     5  Liste der Studentenverbindungen in Bingen am Rhein
+     9  Liste der Studentenverbindungen in Bochum
+    43  Liste der Studentenverbindungen in Bonn
+    24  Liste der Studentenverbindungen in Braunschweig
+     4  Liste der Studentenverbindungen in Bremen
+   106  Liste der Studentenverbindungen in Breslau
+    20  Liste der Studentenverbindungen in Brünn
+    16  Liste der Studentenverbindungen in Clausthal-Zellerfeld
+     0  Liste der Studentenverbindungen in Czernowitz
+     0  Liste der Studentenverbindungen in Danzig
+    31  Liste der Studentenverbindungen in Darmstadt
+    16  Liste der Studentenverbindungen in Dresden
+     3  Liste der Studentenverbindungen in Duisburg
+    10  Liste der Studentenverbindungen in Düsseldorf
+     2  Liste der Studentenverbindungen in Erfurt
+    21  Liste der Studentenverbindungen in Erlangen
+     3  Liste der Studentenverbindungen in Essen
+     6  Liste der Studentenverbindungen in Esslingen
+     3  Liste der Studentenverbindungen in Frankfurt (Oder)
+    17  Liste der Studentenverbindungen in Frankfurt am Main
+     4  Liste der Studentenverbindungen in Frauenfeld
+     4  Liste der Studentenverbindungen in Freiberg
+    33  Liste der Studentenverbindungen in Freiburg im Breisgau
+     9  Liste der Studentenverbindungen in Freiburg im Üechtland
+    10  Liste der Studentenverbindungen in Freising
+     5  Liste der Studentenverbindungen in Friedberg (Hessen)
+     5  Liste der Studentenverbindungen in Genf
+    21  Liste der Studentenverbindungen in Gießen
+    34  Liste der Studentenverbindungen in Graz
+    12  Liste der Studentenverbindungen in Greifswald
+    43  Liste der Studentenverbindungen in Göttingen
+    11  Liste der Studentenverbindungen in Halle (Saale)
+    20  Liste der Studentenverbindungen in Hamburg
+    26  Liste der Studentenverbindungen in Hannover
+    28  Liste der Studentenverbindungen in Heidelberg
+     4  Liste der Studentenverbindungen in Hildburghausen
+     6  Liste der Studentenverbindungen in Holzminden
+     4  Liste der Studentenverbindungen in Höxter
+     4  Liste der Studentenverbindungen in Ilmenau
+    25  Liste der Studentenverbindungen in Innsbruck
+    16  Liste der Studentenverbindungen in Jena
+     6  Liste der Studentenverbindungen in Kaiserslautern
+    35  Liste der Studentenverbindungen in Karlsruhe
+     2  Liste der Studentenverbindungen in Kassel
+    19  Liste der Studentenverbindungen in Kiel
+     4  Liste der Studentenverbindungen in Koblenz und Vallendar
+    10  Liste der Studentenverbindungen in Konstanz
+    30  Liste der Studentenverbindungen in Köln
+    62  Liste der Studentenverbindungen in Königsberg (Preußen)
+    14  Liste der Studentenverbindungen in Köthen
+     0  Liste der Studentenverbindungen in Lage
+     6  Liste der Studentenverbindungen in Landau
+     7  Liste der Studentenverbindungen in Lausanne
+    15  Liste der Studentenverbindungen in Leipzig
+     1  Liste der Studentenverbindungen in Lemgo
+    14  Liste der Studentenverbindungen in Leoben
+    14  Liste der Studentenverbindungen in Linz
+    68  Liste der Studentenverbindungen in Löwen
+     3  Liste der Studentenverbindungen in Lübeck
+     3  Liste der Studentenverbindungen in Magdeburg
+    23  Liste der Studentenverbindungen in Mainz
+    10  Liste der Studentenverbindungen in Mannheim
+    27  Liste der Studentenverbindungen in Marburg
+    12  Liste der Studentenverbindungen in Mittweida
+    29  Liste der Studentenverbindungen in Münster
+    17  Liste der Studentenverbindungen in Nürnberg
+     6  Liste der Studentenverbindungen in Osnabrück
+     3  Liste der Studentenverbindungen in Paderborn
+     5  Liste der Studentenverbindungen in Passau
+     8  Liste der Studentenverbindungen in Posen
+     0  Liste der Studentenverbindungen in Prag
+    11  Liste der Studentenverbindungen in Regensburg
+     3  Liste der Studentenverbindungen in Reutlingen
+     9  Liste der Studentenverbindungen in Rostock
+     9  Liste der Studentenverbindungen in Saarbrücken
+     3  Liste der Studentenverbindungen in Schweinfurt
+     3  Liste der Studentenverbindungen in Siegen
+     0  Liste der Studentenverbindungen in St. Gallen
+     1  Liste der Studentenverbindungen in Straßburg
+    38  Liste der Studentenverbindungen in Stuttgart
+     7  Liste der Studentenverbindungen in Suderburg
+     5  Liste der Studentenverbindungen in Trier
+    35  Liste der Studentenverbindungen in Tübingen
+     7  Liste der Studentenverbindungen in Warschau
+     0  Liste der Studentenverbindungen in Weingarten
+    21  Liste der Studentenverbindungen in Wismar
+     7  Liste der Studentenverbindungen in Wolfenbüttel
+     7  Liste der Studentenverbindungen in Wolfsburg
+    19  Liste der Studentenverbindungen in Zürich
+
+The content of Wikipedia is available under the Creative Commons Attribution-ShareAlike license (CC BY-SA 4.0).

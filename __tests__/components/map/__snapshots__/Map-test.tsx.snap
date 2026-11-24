@@ -1,0 +1,379 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Map renders and matches the snapshot 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "bottom": 0,
+      "justifyContent": "flex-end",
+      "left": 0,
+      "position": "absolute",
+      "right": 0,
+      "top": 0,
+    }
+  }
+  testID="Screen:Map"
+>
+  <RNMapsMapView
+    initialRegion={
+      {
+        "latitude": 51.3127342,
+        "latitudeDelta": 11.576627411414329,
+        "longitude": 10.355706,
+        "longitudeDelta": 9.483221,
+      }
+    }
+    loadingEnabled={true}
+    mapType="standard"
+    onIndoorBuildingFocused={[Function]}
+    onIndoorLevelActivated={[Function]}
+    onKmlReady={[Function]}
+    onLongPress={[Function]}
+    onMapReady={[Function]}
+    onMarkerDeselect={[Function]}
+    onMarkerPress={[Function]}
+    onMarkerSelect={[Function]}
+    onPress={[Function]}
+    onRegionChange={[Function]}
+    onRegionChangeComplete={[Function]}
+    onRegionChangeStart={[Function]}
+    onUserLocationChange={[Function]}
+    region={
+      {
+        "latitude": 51.2750092,
+        "latitudeDelta": 9.188462399999992,
+        "longitude": 11.217411795,
+        "longitudeDelta": 15.454563014999998,
+      }
+    }
+    showsMyLocationButton={true}
+    showsPointsOfInterests={true}
+    showsUserLocation={true}
+    style={
+      {
+        "bottom": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    testID="Map:MapView"
+    tintColor="#008040"
+    userInterfaceStyle="system"
+    userLocationPriority="balanced"
+  />
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "justifyContent": "space-evenly",
+        "marginBottom": 20,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      collapsable={false}
+      style={
+        {
+          "alignItems": "center",
+          "borderRadius": 28,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "opacity": 1,
+          "transform": [
+            {
+              "scale": 1,
+            },
+          ],
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "overflow": "hidden",
+            },
+            {
+              "borderRadius": 2,
+            },
+            {
+              "borderRadius": 28,
+              "elevation": 4,
+            },
+            false,
+          ]
+        }
+        testID="RNE_BUTTON_WRAPPER"
+      >
+        <View
+          accessibilityRole="button"
+          accessibilityState={
+            {
+              "busy": false,
+              "checked": undefined,
+              "disabled": false,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#e1e8ee",
+                "borderColor": "#008040",
+                "borderRadius": 2,
+                "borderWidth": 0,
+                "flexDirection": "row",
+                "height": 56,
+                "justifyContent": "center",
+                "padding": 16,
+                "paddingHorizontal": 10,
+                "width": 56,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "overflow": "hidden",
+                }
+              }
+              testID="RNE__ICON__CONTAINER"
+            >
+              <View
+                accessibilityRole="button"
+                android_ripple={
+                  {
+                    "borderless": false,
+                    "color": "rgba(0, 0, 0, 0.3)",
+                    "radius": -5,
+                  }
+                }
+                disabled={false}
+                replaceTheme={[Function]}
+                testID="RNE__ICON__CONTAINER_ACTION"
+                updateTheme={[Function]}
+              >
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "backgroundColor": "transparent",
+                      "justifyContent": "center",
+                    }
+                  }
+                  testID="RNE__ICON"
+                >
+                  <Text
+                    allowFontScaling={false}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "color": "#393e42",
+                          "fontSize": 24,
+                        },
+                        {
+                          "backgroundColor": "transparent",
+                        },
+                        {
+                          "fontFamily": "Material Design Icons",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        {},
+                      ]
+                    }
+                    testID="RNE__ICON__Component"
+                  >
+                    󰍜
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      collapsable={false}
+      style={
+        {
+          "alignItems": "center",
+          "borderRadius": 28,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "opacity": 0,
+          "transform": [
+            {
+              "scale": 0,
+            },
+          ],
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "overflow": "hidden",
+            },
+            {
+              "borderRadius": 2,
+            },
+            {
+              "borderRadius": 28,
+              "elevation": 4,
+            },
+            false,
+          ]
+        }
+        testID="RNE_BUTTON_WRAPPER"
+      >
+        <View
+          accessibilityRole="button"
+          accessibilityState={
+            {
+              "busy": false,
+              "checked": undefined,
+              "disabled": false,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#e1e8ee",
+                "borderColor": "#008040",
+                "borderRadius": 2,
+                "borderWidth": 0,
+                "flexDirection": "row",
+                "height": 56,
+                "justifyContent": "center",
+                "padding": 16,
+                "paddingHorizontal": 10,
+                "width": 56,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "overflow": "hidden",
+                }
+              }
+              testID="RNE__ICON__CONTAINER"
+            >
+              <View
+                accessibilityRole="button"
+                android_ripple={
+                  {
+                    "borderless": false,
+                    "color": "rgba(0, 0, 0, 0.3)",
+                    "radius": -5,
+                  }
+                }
+                disabled={false}
+                replaceTheme={[Function]}
+                testID="RNE__ICON__CONTAINER_ACTION"
+                updateTheme={[Function]}
+              >
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "backgroundColor": "transparent",
+                      "justifyContent": "center",
+                    }
+                  }
+                  testID="RNE__ICON"
+                >
+                  <Text
+                    allowFontScaling={false}
+                    selectable={false}
+                    style={
+                      [
+                        {
+                          "color": "#393e42",
+                          "fontSize": 24,
+                        },
+                        {
+                          "backgroundColor": "transparent",
+                        },
+                        {
+                          "fontFamily": "Material Design Icons",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                        {},
+                      ]
+                    }
+                    testID="RNE__ICON__Component"
+                  >
+                    󰆤
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

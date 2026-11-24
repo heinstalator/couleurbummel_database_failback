@@ -1,0 +1,681 @@
+{
+  "addresses": {
+    "address_innsbruck_0": {
+      "id": "address_innsbruck_0",
+      "latitude": 47.2692,
+      "longitude": 11.4041,
+      "fullAddress": "Probeweg 7\nA-6020\nInnsbruck",
+      "cityIds": [
+        "city_at_innsbruck"
+      ],
+      "corporationIds": [
+        "corporation_at_innsbruck_burschenschaft_probe"
+      ]
+    },
+    "address_musterstadt_0": {
+      "id": "address_musterstadt_0",
+      "name": "Beispielhaus",
+      "latitude": 51,
+      "longitude": 10,
+      "fullAddress": "Musterstraße 1\nD-12345\nMusterstadt",
+      "cityIds": [
+        "city_de_musterstadt"
+      ],
+      "corporationIds": [
+        "corporation_de_musterstadt_corps_beispiel",
+        "corporation_de_musterstadt_kdstv_muster"
+      ]
+    },
+    "address_teststadt_0": {
+      "id": "address_teststadt_0",
+      "latitude": 47,
+      "longitude": 8,
+      "fullAddress": "Testgasse 3\nCH-8001\nTeststadt",
+      "cityIds": [
+        "city_ch_teststadt"
+      ],
+      "corporationIds": [
+        "corporation_ch_beispiel_ver_teststadt"
+      ]
+    }
+  },
+  "cities": {
+    "city_at_innsbruck": {
+      "id": "city_at_innsbruck",
+      "name": "Innsbruck",
+      "translationKey": "LOC_CITY_INNSBRUCK",
+      "countryId": "country_at",
+      "addressIds": [
+        "address_innsbruck_0"
+      ]
+    },
+    "city_ch_teststadt": {
+      "id": "city_ch_teststadt",
+      "name": "Teststadt",
+      "translationKey": "LOC_CITY_TESTSTADT",
+      "countryId": "country_ch",
+      "addressIds": [
+        "address_teststadt_0"
+      ]
+    },
+    "city_de_musterstadt": {
+      "id": "city_de_musterstadt",
+      "name": "Musterstadt",
+      "translationKey": "LOC_CITY_MUSTERSTADT",
+      "countryId": "country_de",
+      "addressIds": [
+        "address_musterstadt_0"
+      ]
+    }
+  },
+  "colours": {
+    "colour_black": {
+      "id": "colour_black",
+      "colourFamilyIds": [
+        "colour_family_black"
+      ],
+      "translationKey": "COLOUR_BLACK",
+      "colourValue": "rgba(0, 0, 0, 1.0)",
+      "inColours": [
+        "corporation_de_musterstadt_corps_beispiel"
+      ]
+    },
+    "colour_blue": {
+      "id": "colour_blue",
+      "colourFamilyIds": [
+        "colour_family_blue"
+      ],
+      "translationKey": "COLOUR_BLUE",
+      "colourValue": "rgba(0, 0, 205, 1.0)",
+      "inColours": [
+        "corporation_de_musterstadt_corps_beispiel"
+      ]
+    },
+    "colour_blue_dark": {
+      "id": "colour_blue_dark",
+      "colourFamilyIds": [
+        "colour_family_blue"
+      ],
+      "translationKey": "COLOUR_BLUE_DARK",
+      "colourValue": "rgba(0, 0, 139, 1.0)",
+      "inColours": []
+    },
+    "colour_blue_light": {
+      "id": "colour_blue_light",
+      "colourFamilyIds": [
+        "colour_family_blue"
+      ],
+      "translationKey": "COLOUR_BLUE_LIGHT",
+      "colourValue": "rgba(0, 150, 255, 1.0)",
+      "inColours": []
+    },
+    "colour_brown": {
+      "id": "colour_brown",
+      "colourFamilyIds": [
+        "colour_family_brown"
+      ],
+      "translationKey": "COLOUR_BROWN",
+      "colourValue": "rgba(139, 69, 19, 1.0)",
+      "inColours": []
+    },
+    "colour_gold": {
+      "id": "colour_gold",
+      "colourFamilyIds": [
+        "colour_family_gold"
+      ],
+      "translationKey": "COLOUR_GOLD",
+      "colourValue": "rgba(255, 215, 0, 1.0)",
+      "inColours": [
+        "corporation_de_musterstadt_corps_beispiel",
+        "corporation_de_musterstadt_kdstv_muster"
+      ]
+    },
+    "colour_green": {
+      "id": "colour_green",
+      "colourFamilyIds": [
+        "colour_family_green"
+      ],
+      "translationKey": "COLOUR_GREEN",
+      "colourValue": "rgba(0, 100, 0, 1.0)",
+      "inColours": [
+        "corporation_de_musterstadt_kdstv_muster"
+      ]
+    },
+    "colour_green_dark": {
+      "id": "colour_green_dark",
+      "colourFamilyIds": [
+        "colour_family_green"
+      ],
+      "translationKey": "COLOUR_GREEN_DARK",
+      "colourValue": "rgba(0, 60, 0, 1.0)",
+      "inColours": []
+    },
+    "colour_green_light": {
+      "id": "colour_green_light",
+      "colourFamilyIds": [
+        "colour_family_green"
+      ],
+      "translationKey": "COLOUR_GREEN_LIGHT",
+      "colourValue": "rgba(144, 238, 144, 1.0)",
+      "inColours": []
+    },
+    "colour_green_moss": {
+      "id": "colour_green_moss",
+      "colourFamilyIds": [
+        "colour_family_green"
+      ],
+      "translationKey": "COLOUR_GREEN_MOSS",
+      "colourValue": "rgba(179, 238, 58, 1.0)",
+      "inColours": []
+    },
+    "colour_grey": {
+      "id": "colour_grey",
+      "colourFamilyIds": [
+        "colour_family_grey"
+      ],
+      "translationKey": "COLOUR_GREY",
+      "colourValue": "rgba(128, 128, 128, 1.0)",
+      "inColours": []
+    },
+    "colour_grey_light": {
+      "id": "colour_grey_light",
+      "colourFamilyIds": [
+        "colour_family_grey"
+      ],
+      "translationKey": "COLOUR_GREY_LIGHT",
+      "colourValue": "rgba(211, 211, 211, 1.0)",
+      "inColours": []
+    },
+    "colour_orange": {
+      "id": "colour_orange",
+      "colourFamilyIds": [
+        "colour_family_orange"
+      ],
+      "translationKey": "COLOUR_ORANGE",
+      "colourValue": "rgba(238, 118, 33, 1.0)",
+      "inColours": []
+    },
+    "colour_pink": {
+      "id": "colour_pink",
+      "colourFamilyIds": [
+        "colour_family_pink"
+      ],
+      "translationKey": "COLOUR_PINK",
+      "colourValue": "rgba(255, 130, 171, 1.0)",
+      "inColours": []
+    },
+    "colour_purple": {
+      "id": "colour_purple",
+      "colourFamilyIds": [
+        "colour_family_purple"
+      ],
+      "translationKey": "COLOUR_PURPLE",
+      "colourValue": "rgba(128, 0, 128, 1.0)",
+      "inColours": []
+    },
+    "colour_red": {
+      "id": "colour_red",
+      "colourFamilyIds": [
+        "colour_family_red"
+      ],
+      "translationKey": "COLOUR_RED",
+      "colourValue": "rgba(150, 0, 0, 1.0)",
+      "inColours": [
+        "corporation_de_musterstadt_corps_beispiel"
+      ]
+    },
+    "colour_red_bordeaux": {
+      "id": "colour_red_bordeaux",
+      "colourFamilyIds": [
+        "colour_family_red"
+      ],
+      "translationKey": "COLOUR_RED_BORDEAUX",
+      "colourValue": "rgba(110, 0, 30, 1.0)",
+      "inColours": []
+    },
+    "colour_red_crimson": {
+      "id": "colour_red_crimson",
+      "colourFamilyIds": [
+        "colour_family_red"
+      ],
+      "translationKey": "COLOUR_RED_CRIMSON",
+      "colourValue": "rgba(170, 58, 98, 1.0)",
+      "inColours": []
+    },
+    "colour_red_dark": {
+      "id": "colour_red_dark",
+      "colourFamilyIds": [
+        "colour_family_red"
+      ],
+      "translationKey": "COLOUR_RED_DARK",
+      "colourValue": "rgba(100, 0, 0, 1.0)",
+      "inColours": []
+    },
+    "colour_red_wine": {
+      "id": "colour_red_wine",
+      "colourFamilyIds": [
+        "colour_family_red"
+      ],
+      "translationKey": "COLOUR_RED_WINE",
+      "colourValue": "rgba(114, 47, 55, 1.0)",
+      "inColours": []
+    },
+    "colour_silver": {
+      "id": "colour_silver",
+      "colourFamilyIds": [
+        "colour_family_silver"
+      ],
+      "translationKey": "COLOUR_SILVER",
+      "colourValue": "rgba(192, 192, 192, 1.0)",
+      "inColours": []
+    },
+    "colour_white": {
+      "id": "colour_white",
+      "colourFamilyIds": [
+        "colour_family_white"
+      ],
+      "translationKey": "COLOUR_WHITE",
+      "colourValue": "rgba(255, 255, 255, 1.0)",
+      "inColours": [
+        "corporation_de_musterstadt_corps_beispiel",
+        "corporation_de_musterstadt_kdstv_muster"
+      ]
+    },
+    "colour_yellow": {
+      "id": "colour_yellow",
+      "colourFamilyIds": [
+        "colour_family_yellow"
+      ],
+      "translationKey": "COLOUR_YELLOW",
+      "colourValue": "rgba(255, 235, 0, 1.0)",
+      "inColours": []
+    },
+    "ind_black": {
+      "id": "ind_black",
+      "colourFamilyIds": [
+        "colour_family_black"
+      ],
+      "translationKey": "COLOUR_IND_BLACK",
+      "colourValue": "rgba(51, 51, 51, 1.0)",
+      "inColours": []
+    },
+    "ind_blue": {
+      "id": "ind_blue",
+      "colourFamilyIds": [
+        "colour_family_blue"
+      ],
+      "translationKey": "COLOUR_IND_BLUE",
+      "colourValue": "rgba(51, 102, 204, 1.0)",
+      "inColours": []
+    },
+    "ind_brown": {
+      "id": "ind_brown",
+      "colourFamilyIds": [
+        "colour_family_brown"
+      ],
+      "translationKey": "COLOUR_IND_BROWN",
+      "colourValue": "rgba(139, 69, 19, 1.0)",
+      "inColours": []
+    },
+    "ind_gold": {
+      "id": "ind_gold",
+      "colourFamilyIds": [
+        "colour_family_gold"
+      ],
+      "translationKey": "COLOUR_IND_GOLD",
+      "colourValue": "rgba(255, 215, 0, 1.0)",
+      "inColours": []
+    },
+    "ind_green": {
+      "id": "ind_green",
+      "colourFamilyIds": [
+        "colour_family_green"
+      ],
+      "translationKey": "COLOUR_IND_GREEN",
+      "colourValue": "rgba(51, 153, 51, 1.0)",
+      "inColours": []
+    },
+    "ind_grey": {
+      "id": "ind_grey",
+      "colourFamilyIds": [
+        "colour_family_grey"
+      ],
+      "translationKey": "COLOUR_IND_GREY",
+      "colourValue": "rgba(204, 204, 204, 1.0)",
+      "inColours": []
+    },
+    "ind_orange": {
+      "id": "ind_orange",
+      "colourFamilyIds": [
+        "colour_family_orange"
+      ],
+      "translationKey": "COLOUR_IND_ORANGE",
+      "colourValue": "rgba(238, 118, 33, 1.0)",
+      "inColours": []
+    },
+    "ind_pink": {
+      "id": "ind_pink",
+      "colourFamilyIds": [
+        "colour_family_pink"
+      ],
+      "translationKey": "COLOUR_IND_PINK",
+      "colourValue": "rgba(255, 130, 171, 1.0)",
+      "inColours": []
+    },
+    "ind_purple": {
+      "id": "ind_purple",
+      "colourFamilyIds": [
+        "colour_family_purple"
+      ],
+      "translationKey": "COLOUR_IND_PURPLE",
+      "colourValue": "rgba(128, 0, 128, 1.0)",
+      "inColours": []
+    },
+    "ind_red": {
+      "id": "ind_red",
+      "colourFamilyIds": [
+        "colour_family_red"
+      ],
+      "translationKey": "COLOUR_IND_RED",
+      "colourValue": "rgba(204, 51, 51, 1.0)",
+      "inColours": []
+    },
+    "ind_silver": {
+      "id": "ind_silver",
+      "colourFamilyIds": [
+        "colour_family_silver"
+      ],
+      "translationKey": "COLOUR_IND_SILVER",
+      "colourValue": "rgba(192, 192, 192, 1.0)",
+      "inColours": []
+    },
+    "ind_white": {
+      "id": "ind_white",
+      "colourFamilyIds": [
+        "colour_family_white"
+      ],
+      "translationKey": "COLOUR_IND_WHITE",
+      "colourValue": "rgba(255, 255, 255, 1.0)",
+      "inColours": []
+    },
+    "ind_yellow": {
+      "id": "ind_yellow",
+      "colourFamilyIds": [
+        "colour_family_yellow"
+      ],
+      "translationKey": "COLOUR_IND_YELLOW",
+      "colourValue": "rgba(255, 255, 0, 1.0)",
+      "inColours": []
+    }
+  },
+  "colourFamilies": {
+    "colour_family_black": {
+      "id": "colour_family_black",
+      "memberColourIds": [
+        "colour_black",
+        "ind_black"
+      ],
+      "translationKey": "COLOUR_FAMILY_BLACK",
+      "sampleColourValue": "black"
+    },
+    "colour_family_blue": {
+      "id": "colour_family_blue",
+      "memberColourIds": [
+        "colour_blue",
+        "colour_blue_dark",
+        "colour_blue_light",
+        "ind_blue"
+      ],
+      "translationKey": "COLOUR_FAMILY_BLUE",
+      "sampleColourValue": "blue"
+    },
+    "colour_family_brown": {
+      "id": "colour_family_brown",
+      "memberColourIds": [
+        "colour_brown",
+        "ind_brown"
+      ],
+      "translationKey": "COLOUR_FAMILY_BROWN",
+      "sampleColourValue": "brown"
+    },
+    "colour_family_gold": {
+      "id": "colour_family_gold",
+      "memberColourIds": [
+        "colour_gold",
+        "ind_gold"
+      ],
+      "translationKey": "COLOUR_FAMILY_GOLD",
+      "sampleColourValue": "gold"
+    },
+    "colour_family_green": {
+      "id": "colour_family_green",
+      "memberColourIds": [
+        "colour_green",
+        "colour_green_dark",
+        "colour_green_light",
+        "colour_green_moss",
+        "ind_green"
+      ],
+      "translationKey": "COLOUR_FAMILY_GREEN",
+      "sampleColourValue": "green"
+    },
+    "colour_family_grey": {
+      "id": "colour_family_grey",
+      "memberColourIds": [
+        "colour_grey",
+        "colour_grey_light",
+        "ind_grey"
+      ],
+      "translationKey": "COLOUR_FAMILY_GREY",
+      "sampleColourValue": "grey"
+    },
+    "colour_family_orange": {
+      "id": "colour_family_orange",
+      "memberColourIds": [
+        "colour_orange",
+        "ind_orange"
+      ],
+      "translationKey": "COLOUR_FAMILY_ORANGE",
+      "sampleColourValue": "orange"
+    },
+    "colour_family_pink": {
+      "id": "colour_family_pink",
+      "memberColourIds": [
+        "colour_pink",
+        "ind_pink"
+      ],
+      "translationKey": "COLOUR_FAMILY_PINK",
+      "sampleColourValue": "pink"
+    },
+    "colour_family_purple": {
+      "id": "colour_family_purple",
+      "memberColourIds": [
+        "colour_purple",
+        "ind_purple"
+      ],
+      "translationKey": "COLOUR_FAMILY_PURPLE",
+      "sampleColourValue": "purple"
+    },
+    "colour_family_red": {
+      "id": "colour_family_red",
+      "memberColourIds": [
+        "colour_red",
+        "colour_red_dark",
+        "colour_red_bordeaux",
+        "colour_red_crimson",
+        "colour_red_wine",
+        "ind_red"
+      ],
+      "translationKey": "COLOUR_FAMILY_RED",
+      "sampleColourValue": "red"
+    },
+    "colour_family_silver": {
+      "id": "colour_family_silver",
+      "memberColourIds": [
+        "colour_silver",
+        "ind_silver"
+      ],
+      "translationKey": "COLOUR_FAMILY_SILVER",
+      "sampleColourValue": "silver"
+    },
+    "colour_family_white": {
+      "id": "colour_family_white",
+      "memberColourIds": [
+        "colour_white",
+        "ind_white"
+      ],
+      "translationKey": "COLOUR_FAMILY_WHITE",
+      "sampleColourValue": "white"
+    },
+    "colour_family_yellow": {
+      "id": "colour_family_yellow",
+      "memberColourIds": [
+        "colour_yellow",
+        "ind_yellow"
+      ],
+      "translationKey": "COLOUR_FAMILY_YELLOW",
+      "sampleColourValue": "yellow"
+    }
+  },
+  "corporations": {
+    "corporation_at_innsbruck_burschenschaft_probe": {
+      "id": "corporation_at_innsbruck_burschenschaft_probe",
+      "shortName": "Burschenschaft Probe",
+      "longName": "Musterburschenschaft Probe",
+      "addressId": "address_innsbruck_0",
+      "coloursPrinciple": 0,
+      "fencingPrinciple": 0,
+      "indicatorColourId": "ind_grey"
+    },
+    "corporation_ch_beispiel_ver_teststadt": {
+      "id": "corporation_ch_beispiel_ver_teststadt",
+      "shortName": "Ver Teststadt",
+      "longName": "Studentenverein Teststadt",
+      "addressId": "address_teststadt_0",
+      "coloursPrinciple": 1,
+      "fencingPrinciple": 1,
+      "indicatorColourId": "ind_purple",
+      "hidden": true
+    },
+    "corporation_de_musterstadt_corps_beispiel": {
+      "id": "corporation_de_musterstadt_corps_beispiel",
+      "shortName": "Corps Beispiel",
+      "longName": "Corps Beispiel zu Musterstadt",
+      "addressId": "address_musterstadt_0",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1850",
+      "motto": "Beispielhaft!",
+      "jourFixe": "Donnerstag",
+      "mail": "info@example.org",
+      "phone": "+49 123 456789",
+      "website": "www.example.org",
+      "remark": "Nur ein Beispiel",
+      "organisationIds": [
+        "organisation_kscv"
+      ],
+      "indicatorColourId": "ind_orange",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_blue",
+            "colour_white",
+            "colour_red"
+          ],
+          "baseColourId": "colour_black",
+          "percussionColourId": "colour_gold"
+        },
+        {
+          "colourIds": [
+            "colour_white",
+            "colour_blue",
+            "colour_white"
+          ]
+        }
+      ]
+    },
+    "corporation_de_musterstadt_kdstv_muster": {
+      "id": "corporation_de_musterstadt_kdstv_muster",
+      "shortName": "KDStV Muster",
+      "longName": "KDStV Muster zu Musterstadt im CV",
+      "addressId": "address_musterstadt_0",
+      "coloursPrinciple": 4,
+      "fencingPrinciple": 0,
+      "foundationDate": "1921-05-23",
+      "jourFixe": "Montag",
+      "remark": "Zweite Verbindung im selben Haus",
+      "organisationIds": [
+        "organisation_cv",
+        "organisation_kv"
+      ],
+      "indicatorColourId": "ind_green",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_green",
+            "colour_white",
+            "colour_gold"
+          ]
+        }
+      ]
+    }
+  },
+  "countries": {
+    "country_at": {
+      "id": "country_at",
+      "isoCode": "at",
+      "translationKey": "COUNTRY_AT",
+      "name": "Österreich",
+      "cityIds": [
+        "city_at_innsbruck"
+      ]
+    },
+    "country_ch": {
+      "id": "country_ch",
+      "isoCode": "ch",
+      "translationKey": "COUNTRY_CH",
+      "name": "Schweiz",
+      "cityIds": [
+        "city_ch_teststadt"
+      ]
+    },
+    "country_de": {
+      "id": "country_de",
+      "isoCode": "de",
+      "translationKey": "COUNTRY_DE",
+      "name": "Deutschland",
+      "cityIds": [
+        "city_de_musterstadt"
+      ]
+    }
+  },
+  "organisations": {
+    "organisation_cv": {
+      "id": "organisation_cv",
+      "abbreviation": "CV",
+      "name": "Cartellverband der Katholischen Deutschen Studentenverbindungen",
+      "mapDisplayableIds": [
+        "corporation_de_musterstadt_kdstv_muster"
+      ],
+      "indicatorColourId": "ind_green"
+    },
+    "organisation_kscv": {
+      "id": "organisation_kscv",
+      "abbreviation": "KSCV",
+      "name": "Kösener Senioren-Convents-Verband",
+      "mapDisplayableIds": [
+        "corporation_de_musterstadt_corps_beispiel"
+      ],
+      "indicatorColourId": "ind_orange"
+    },
+    "organisation_kv": {
+      "id": "organisation_kv",
+      "abbreviation": "KV",
+      "name": "Kartellverband katholischer deutscher Studentenvereine",
+      "mapDisplayableIds": [
+        "corporation_de_musterstadt_kdstv_muster"
+      ],
+      "indicatorColourId": "ind_yellow"
+    }
+  }
+}

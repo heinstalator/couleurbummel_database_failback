@@ -1,0 +1,443 @@
+--- a/__tests__/components/DatabaseSettings-test.tsx
++++ b/__tests__/components/DatabaseSettings-test.tsx
+@@ -16,8 +16,15 @@
+   DatabaseContextValue,
+ } from '../../src/components/contexts/ModelContext';
+ import {DatabaseSettings} from '../../src/components/DatabaseSettings';
++import {pickDatabaseFile} from '../../src/model/pickDatabaseFile';
+ import {theme} from '../../src/style/themes';
+ 
++jest.mock('../../src/model/pickDatabaseFile', () => ({
++  pickDatabaseFile: jest.fn(),
++}));
++
++const mockPickDatabaseFile = pickDatabaseFile as jest.Mock;
++
+ const renderSettings = (overrides: Partial<DatabaseContextValue> = {}) => {
+   const value: DatabaseContextValue = {
+     remoteUnavailable: false,
+@@ -167,3 +174,98 @@
+     expect(value.importDatabase).not.toHaveBeenCalled();
+   });
+ });
++
++describe('DatabaseSettings with a file', () => {
++  beforeEach(() => {
++    mockPickDatabaseFile.mockReset();
++    jest
++      .spyOn(Keyboard, 'addListener')
++      .mockReturnValue({remove: jest.fn()} as any);
++  });
++
++  const openDialogAndChooseFile = async () => {
++    fireEvent.press(screen.getByTestId('Settings:ImportDatabase'));
++    await act(async () => {
++      fireEvent.press(await screen.findByTestId('Settings:ChooseFile'));
++    });
++  };
++
++  it('imports the content of the file that was chosen and reports the result', async () => {
++    mockPickDatabaseFile.mockResolvedValue({
++      ok: true,
++      text: '{"corporations": {}}',
++      name: 'db.json',
++    });
++    const value = renderSettings({remoteUnavailable: true});
++
++    await openDialogAndChooseFile();
++
++    expect(value.importDatabase).toHaveBeenCalledWith('{"corporations": {}}');
++    expect(
++      await screen.findByText('Database imported. Corporations: 3'),
++    ).toBeTruthy();
++    await waitFor(() =>
++      expect(screen.queryByTestId('Settings:DatabaseInput')).toBeNull(),
++    );
++  });
++
++  it('does nothing if the user closes the picker', async () => {
++    mockPickDatabaseFile.mockResolvedValue({ok: false, error: 'CANCELLED'});
++    const value = renderSettings({remoteUnavailable: true});
++
++    await openDialogAndChooseFile();
++
++    expect(value.importDatabase).not.toHaveBeenCalled();
++    expect(screen.getByTestId('Settings:DatabaseInput')).toBeTruthy();
++    expect(screen.queryByText(/couldn't be read|too large/)).toBeNull();
++  });
++
++  it.each([
++    ['READ_FAILED', /The file couldn't be read/],
++    ['TOO_LARGE', /too large/],
++  ])('explains it when the file has the problem %s', async (error, message) => {
++    mockPickDatabaseFile.mockResolvedValue({ok: false, error});
++    const value = renderSettings({remoteUnavailable: true});
++
++    await openDialogAndChooseFile();
++
++    expect(await screen.findByText(message)).toBeTruthy();
++    expect(value.importDatabase).not.toHaveBeenCalled();
++  });
++
++  it('explains it when the content of the file cannot be used, and keeps the dialog open', async () => {
++    mockPickDatabaseFile.mockResolvedValue({ok: true, text: 'not json'});
++    const value = renderSettings({
++      remoteUnavailable: true,
++      importDatabase: jest
++        .fn()
++        .mockResolvedValue({ok: false, error: 'INVALID_JSON'}),
++    });
++
++    await openDialogAndChooseFile();
++
++    expect(value.importDatabase).toHaveBeenCalledWith('not json');
++    expect(
++      await screen.findByText(/valid database in JSON format/),
++    ).toBeTruthy();
++    expect(screen.getByTestId('Settings:ChooseFile')).toBeTruthy();
++  });
++
++  it('still lets the user paste JSON or an address instead', async () => {
++    const value = renderSettings({remoteUnavailable: true});
++
++    fireEvent.press(screen.getByTestId('Settings:ImportDatabase'));
++    fireEvent.changeText(
++      await screen.findByTestId('Settings:DatabaseInput'),
++      'https://example.com/db.json',
++    );
++    await act(async () => {
++      fireEvent.press(screen.getByTestId('Settings:ImportConfirm'));
++    });
++
++    expect(mockPickDatabaseFile).not.toHaveBeenCalled();
++    expect(value.importDatabase).toHaveBeenCalledWith(
++      'https://example.com/db.json',
++    );
++  });
++});
+--- a/__tests__/model/pickDatabaseFile-test.ts
++++ b/__tests__/model/pickDatabaseFile-test.ts
+@@ -0,0 +1,118 @@
++import {pick, types} from '@react-native-documents/picker';
++
++import {pickDatabaseFile} from '../../src/model/pickDatabaseFile';
++import {MAX_DATABASE_LENGTH} from '../../src/model/validation';
++
++// The native module isn't available in tests
++jest.mock(
++  '@react-native-documents/picker',
++  () => ({pick: jest.fn(), types: {allFiles: '*/*'}}),
++  {virtual: true},
++);
++
++const mockPick = pick as unknown as jest.Mock;
++
++const chooses = (file: object) =>
++  mockPick.mockResolvedValue([
++    {uri: 'content://files/db.json', name: 'db.json', size: 1000, ...file},
++  ]);
++
++const fileContains = (text: string) => {
++  const fetchMock = jest.fn().mockResolvedValue({text: async () => text});
++  global.fetch = fetchMock as unknown as typeof fetch;
++  return fetchMock;
++};
++
++describe('pickDatabaseFile', () => {
++  const originalFetch = global.fetch;
++  beforeEach(() => {
++    mockPick.mockReset();
++  });
++  afterEach(() => {
++    global.fetch = originalFetch;
++  });
++
++  it('reads the content of the file that was chosen', async () => {
++    chooses({});
++    const fetchMock = fileContains('{"corporations": {}}');
++
++    const result = await pickDatabaseFile();
++
++    expect(result).toEqual({
++      ok: true,
++      text: '{"corporations": {}}',
++      name: 'db.json',
++    });
++    expect(fetchMock).toHaveBeenCalledWith('content://files/db.json');
++  });
++
++  it('lets the user choose any kind of file, because file managers disagree on what JSON files are', async () => {
++    chooses({});
++    fileContains('{}');
++
++    await pickDatabaseFile();
++
++    expect(mockPick).toHaveBeenCalledWith({type: [types.allFiles]});
++  });
++
++  it('copes with a file that has no name', async () => {
++    chooses({name: null});
++    fileContains('{}');
++
++    expect(await pickDatabaseFile()).toMatchObject({ok: true, name: undefined});
++  });
++
++  it.each([
++    ['an error code', {code: 'OPERATION_CANCELED', message: 'x'}],
++    ['an error message', new Error('User canceled document picker')],
++  ])(
++    'recognises that the user closed the picker by %s',
++    async (_how, error) => {
++      mockPick.mockRejectedValue(error);
++      const fetchMock = fileContains('{}');
++
++      expect(await pickDatabaseFile()).toEqual({ok: false, error: 'CANCELLED'});
++      expect(fetchMock).not.toHaveBeenCalled();
++    },
++  );
++
++  it('reports other problems with the picker', async () => {
++    mockPick.mockRejectedValue(new Error('Something broke'));
++
++    expect(await pickDatabaseFile()).toEqual({ok: false, error: 'READ_FAILED'});
++  });
++
++  it('refuses files that are far too large without reading them', async () => {
++    chooses({size: MAX_DATABASE_LENGTH * 3 + 1});
++    const fetchMock = fileContains('{}');
++
++    expect(await pickDatabaseFile()).toEqual({ok: false, error: 'TOO_LARGE'});
++    expect(fetchMock).not.toHaveBeenCalled();
++  });
++
++  it('leaves the exact size limit to the validation of the content', async () => {
++    chooses({size: MAX_DATABASE_LENGTH * 2});
++    fileContains('{}');
++
++    expect(await pickDatabaseFile()).toMatchObject({ok: true});
++  });
++
++  it.each([
++    [
++      'reading fails to start',
++      () => jest.fn().mockRejectedValue(new Error('No such file')),
++    ],
++    [
++      'reading the text fails',
++      () =>
++        jest.fn().mockResolvedValue({
++          text: () => Promise.reject(new Error('Unreadable')),
++        }),
++    ],
++  ])('reports it when %s', async (_what, makeFetch) => {
++    chooses({});
++    global.fetch = makeFetch() as unknown as typeof fetch;
++
++    expect(await pickDatabaseFile()).toEqual({ok: false, error: 'READ_FAILED'});
++  });
++});
+--- a/jest.setup.ts
++++ b/jest.setup.ts
+@@ -68,3 +68,14 @@
+ // The moduleNameMapper in jest.config.ts redirects all imports to the mock.
+ // This require sets up the global vars (_WORKLET=false, __RUNTIME_KIND, etc).
+ require('react-native-worklets/lib/module/mock');
++
++// @react-native-documents/picker is a TurboModule, which isn't available in the jest environment. Tests of code that
++// uses the file picker replace it with their own mock.
++jest.mock(
++  '@react-native-documents/picker',
++  () => ({
++    pick: jest.fn(),
++    types: {allFiles: '*/*'},
++  }),
++  {virtual: true},
++);
+--- a/src/components/DatabaseSettings.tsx
++++ b/src/components/DatabaseSettings.tsx
+@@ -5,6 +5,7 @@
+ import {View} from 'react-native';
+ 
+ import {ImportResult} from '../model/import';
++import {pickDatabaseFile} from '../model/pickDatabaseFile';
+ import {DatabaseContext} from './contexts/ModelContext';
+ 
+ const errorMessage = (
+@@ -67,11 +68,11 @@
+     setError(undefined);
+   };
+ 
+-  const onImport = async () => {
++  const runImport = async (text: string) => {
+     setBusy(true);
+     setError(undefined);
+ 
+-    const result = await importDatabase(input);
++    const result = await importDatabase(text);
+ 
+     setBusy(false);
+     if (result.ok) {
+@@ -85,6 +86,23 @@
+     }
+   };
+ 
++  const onChooseFile = async () => {
++    setBusy(true);
++    setError(undefined);
++
++    const picked = await pickDatabaseFile();
++
++    setBusy(false);
++    if (picked.ok) {
++      await runImport(picked.text);
++    } else if (picked.error === 'TOO_LARGE') {
++      setError(t('DATABASE_ERROR_TOO_LARGE'));
++    } else if (picked.error === 'READ_FAILED') {
++      setError(t('DATABASE_ERROR_READ_FAILED'));
++    }
++    // If the user closed the picker, there is nothing to say
++  };
++
+   return (
+     <View testID={'Settings:Database'}>
+       <ListItem key={'settings_database'} bottomDivider>
+@@ -123,6 +141,14 @@
+         onBackdropPress={busy ? undefined : closeDialog}>
+         <Dialog.Title title={t('DATABASE_IMPORT_TITLE')} />
+         <Text>{t('DATABASE_IMPORT_HELP')}</Text>
++        <Button
++          testID={'Settings:ChooseFile'}
++          type={'outline'}
++          title={t('DATABASE_IMPORT_CHOOSE_FILE')}
++          disabled={busy}
++          containerStyle={styles.chooseFile}
++          onPress={onChooseFile}
++        />
+         <Input
+           testID={'Settings:DatabaseInput'}
+           multiline
+@@ -144,7 +170,7 @@
+             testID={'Settings:ImportConfirm'}
+             title={t('DATABASE_IMPORT_CONFIRM')}
+             disabled={busy || !input.trim()}
+-            onPress={onImport}
++            onPress={() => runImport(input)}
+           />
+           <Dialog.Button
+             testID={'Settings:ImportCancel'}
+@@ -169,4 +195,7 @@
+   notice: {
+     marginTop: 8,
+   },
++  chooseFile: {
++    marginVertical: 12,
++  },
+ }));
+--- a/src/locales/de.ts
++++ b/src/locales/de.ts
+@@ -56,7 +56,7 @@
+   DATABASE_REMOVE_BUTTON: 'Importierte Datenbank entfernen',
+   DATABASE_IMPORT_TITLE: 'Datenbank importieren',
+   DATABASE_IMPORT_HELP:
+-    'Füge die Datenbank als JSON ein oder gib die https-Adresse einer JSON-Datei ein. Importiere nur Daten aus vertrauenswürdigen Quellen.',
++    'Wähle eine Datei mit der Datenbank, füge ihren Inhalt als JSON ein oder gib die https-Adresse einer JSON-Datei ein. Importiere nur Daten aus vertrauenswürdigen Quellen.',
+   DATABASE_IMPORT_PLACEHOLDER: 'https://… oder {…}',
+   DATABASE_IMPORT_CONFIRM: 'Importieren',
+   DATABASE_IMPORT_CANCEL: 'Abbrechen',
+@@ -73,6 +73,8 @@
+     'Die Datei konnte nicht heruntergeladen werden. Es funktionieren nur https-Adressen.',
+   DATABASE_ERROR_STORAGE_FAILED:
+     'Die Datenbank konnte nicht auf diesem Gerät gespeichert werden.',
++  DATABASE_IMPORT_CHOOSE_FILE: 'Datei auswählen …',
++  DATABASE_ERROR_READ_FAILED: 'Die Datei konnte nicht gelesen werden.',
+   CHANGE_REQUEST_SUBJECT: 'Änderungswunsch für {{name}}',
+   SEARCH_COLOURS_ANY_COLOUR: 'irgendeine',
+   SEARCH_COLOURS_ACCORDION: 'Sucheinstellungen',
+--- a/src/locales/en.ts
++++ b/src/locales/en.ts
+@@ -55,7 +55,7 @@
+   DATABASE_REMOVE_BUTTON: 'Remove imported database',
+   DATABASE_IMPORT_TITLE: 'Import database',
+   DATABASE_IMPORT_HELP:
+-    'Paste the database as JSON or enter the https address of a JSON file. Only import data from sources you trust.',
++    'Choose a file with the database, paste its content as JSON, or enter the https address of a JSON file. Only import data from sources you trust.',
+   DATABASE_IMPORT_PLACEHOLDER: 'https://… or {…}',
+   DATABASE_IMPORT_CONFIRM: 'Import',
+   DATABASE_IMPORT_CANCEL: 'Cancel',
+@@ -70,6 +70,8 @@
+     "The file couldn't be downloaded. Only https addresses work.",
+   DATABASE_ERROR_STORAGE_FAILED:
+     "The database couldn't be saved on this device.",
++  DATABASE_IMPORT_CHOOSE_FILE: 'Choose file…',
++  DATABASE_ERROR_READ_FAILED: "The file couldn't be read.",
+   CHANGE_REQUEST_SUBJECT: 'Change request for {{name}}',
+   SEARCH_COLOURS_ANY_COLOUR: 'any',
+   SEARCH_COLOURS_ACCORDION: 'Search parameters',
+--- a/src/model/pickDatabaseFile.ts
++++ b/src/model/pickDatabaseFile.ts
+@@ -0,0 +1,54 @@
++import {pick, types} from '@react-native-documents/picker';
++
++import log from '../log';
++import {MAX_DATABASE_LENGTH} from './validation';
++
++export type PickResult =
++  | {ok: true; text: string; name?: string}
++  // The user closed the picker without choosing a file
++  | {ok: false; error: 'CANCELLED'}
++  | {ok: false; error: 'TOO_LARGE'}
++  | {ok: false; error: 'READ_FAILED'};
++
++const isCancellation = (e: unknown) => {
++  const {code, message} = (e ?? {}) as {code?: unknown; message?: unknown};
++  return /cancel/i.test(`${code ?? ''} ${message ?? ''}`);
++};
++
++/**
++ * Lets the user choose a file on their device and reads it as text
++ *
++ * Any kind of file can be chosen, because file managers don't agree on how to describe JSON files. What is in the file
++ * is checked afterwards, like everything else that is imported.
++ */
++export const pickDatabaseFile = async (): Promise<PickResult> => {
++  let file;
++  try {
++    [file] = await pick({type: [types.allFiles]});
++  } catch (e) {
++    if (isCancellation(e)) {
++      return {ok: false, error: 'CANCELLED'};
++    }
++    log.error('Failed to choose a file', e);
++    return {ok: false, error: 'READ_FAILED'};
++  }
++
++  // The size is in bytes, which is at least the number of characters. Refuse files that are far too large before
++  // reading them; the exact limit is checked when the content is validated.
++  if ((file.size ?? 0) > MAX_DATABASE_LENGTH * 3) {
++    return {ok: false, error: 'TOO_LARGE'};
++  }
++
++  try {
++    // React Native's fetch can read the content:// addresses that the picker returns on Android
++    const response = await fetch(file.uri);
++    return {
++      ok: true,
++      text: await response.text(),
++      name: file.name ?? undefined,
++    };
++  } catch (e) {
++    log.error('Failed to read the chosen file', e);
++    return {ok: false, error: 'READ_FAILED'};
++  }
++};
+--- a/src/types/i18n.ts
++++ b/src/types/i18n.ts
+@@ -56,6 +56,8 @@
+   | 'DATABASE_ERROR_TOO_LARGE'
+   | 'DATABASE_ERROR_DOWNLOAD_FAILED'
+   | 'DATABASE_ERROR_STORAGE_FAILED'
++  | 'DATABASE_IMPORT_CHOOSE_FILE'
++  | 'DATABASE_ERROR_READ_FAILED'
+   | 'CHANGE_REQUEST_SUBJECT'
+   | 'SEARCH_COLOURS_ANY_COLOUR'
+   | 'SEARCH_COLOURS_ACCORDION'

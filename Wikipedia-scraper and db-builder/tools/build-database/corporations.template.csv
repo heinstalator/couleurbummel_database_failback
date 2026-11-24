@@ -1,0 +1,5 @@
+id,shortName,longName,street,postalCode,city,country,latitude,longitude,addressName,organisations,indicatorColour,coloursPrinciple,fencingPrinciple,foundationDate,motto,jourFixe,mail,phone,website,remark,postalAddress,colours,hidden
+,Corps Beispiel,Corps Beispiel zu Musterstadt,Musterstraße 1,12345,Musterstadt,DE,51.0000,10.0000,Beispielhaus,KSCV,,mandatory,mandatory,1850,Beispielhaft!,Donnerstag,info@example.org,+49 123 456789,www.example.org,Nur ein Beispiel,,blue-white-red@black+gold|white-blue-white,
+,KDStV Muster,KDStV Muster zu Musterstadt im CV,Musterstraße 1,12345,Musterstadt,DE,51.0000,10.0000,Beispielhaus,CV|KV,green,optional,0,23.05.1921,,Montag,,,,Zweite Verbindung im selben Haus,,green-white-gold,
+,Burschenschaft Probe,Musterburschenschaft Probe,Probeweg 7,6020,Innsbruck,Österreich,47.2692,11.4041,,,,unknown,unknown,,,,,,,,,,
+corporation_ch_beispiel_ver_teststadt,Ver Teststadt,Studentenverein Teststadt,Testgasse 3,8001,Teststadt,CH,47,8,,,purple,none,no,,,,,,,,,,ja

@@ -1,0 +1,4902 @@
+{
+  "addresses": {
+    "address_aachen_0": {
+      "id": "address_aachen_0",
+      "latitude": 50.78260278,
+      "longitude": 6.07604722,
+      "fullAddress": "Aachen",
+      "cityIds": [
+        "city_de_aachen"
+      ],
+      "corporationIds": [
+        "corporation_de_aachen_landsmannschaft_pomerania_halle_aachen"
+      ]
+    },
+    "address_berlin_0": {
+      "id": "address_berlin_0",
+      "latitude": 52.46823,
+      "longitude": 13.288479,
+      "fullAddress": "Berlin",
+      "cityIds": [
+        "city_de_berlin"
+      ],
+      "corporationIds": [
+        "corporation_de_berlin_corps_marchia"
+      ]
+    },
+    "address_berlin_1": {
+      "id": "address_berlin_1",
+      "latitude": 52.51139,
+      "longitude": 13.315011,
+      "fullAddress": "Berlin",
+      "cityIds": [
+        "city_de_berlin"
+      ],
+      "corporationIds": [
+        "corporation_de_berlin_av_motiv"
+      ]
+    },
+    "address_berlin_2": {
+      "id": "address_berlin_2",
+      "latitude": 52.43507,
+      "longitude": 13.28574,
+      "fullAddress": "Berlin",
+      "cityIds": [
+        "city_de_berlin"
+      ],
+      "corporationIds": [
+        "corporation_de_berlin_kdstv_borusso_saxonia"
+      ]
+    },
+    "address_bonn_0": {
+      "id": "address_bonn_0",
+      "latitude": 50.742783,
+      "longitude": 7.104941,
+      "fullAddress": "Bonn",
+      "cityIds": [
+        "city_de_bonn"
+      ],
+      "corporationIds": [
+        "corporation_de_bonn_burschenschaft_alemannia"
+      ]
+    },
+    "address_bonn_1": {
+      "id": "address_bonn_1",
+      "latitude": 50.725031,
+      "longitude": 7.102231,
+      "fullAddress": "Bonn",
+      "cityIds": [
+        "city_de_bonn"
+      ],
+      "corporationIds": [
+        "corporation_de_bonn_amv_makaria"
+      ]
+    },
+    "address_bonn_2": {
+      "id": "address_bonn_2",
+      "latitude": 50.724205,
+      "longitude": 7.103034,
+      "fullAddress": "Bonn",
+      "cityIds": [
+        "city_de_bonn"
+      ],
+      "corporationIds": [
+        "corporation_de_bonn_vdst_zu_bonn"
+      ]
+    },
+    "address_bonn_3": {
+      "id": "address_bonn_3",
+      "latitude": 50.733992,
+      "longitude": 7.009814,
+      "fullAddress": "Bonn",
+      "cityIds": [
+        "city_de_bonn"
+      ],
+      "corporationIds": [
+        "corporation_de_bonn_kdstv_staufia"
+      ]
+    },
+    "address_breslau_0": {
+      "id": "address_breslau_0",
+      "latitude": 51.96444444,
+      "longitude": 7.62652778,
+      "fullAddress": "Breslau",
+      "cityIds": [
+        "city_de_breslau"
+      ],
+      "corporationIds": [
+        "corporation_de_breslau_kdstv_winfridia"
+      ]
+    },
+    "address_darmstadt_0": {
+      "id": "address_darmstadt_0",
+      "latitude": 49.875622,
+      "longitude": 8.664287,
+      "fullAddress": "Darmstadt",
+      "cityIds": [
+        "city_de_darmstadt"
+      ],
+      "corporationIds": [
+        "corporation_de_darmstadt_alte_darmstädter_burschenschaft_germania"
+      ]
+    },
+    "address_darmstadt_1": {
+      "id": "address_darmstadt_1",
+      "latitude": 49.875703,
+      "longitude": 8.665266,
+      "fullAddress": "Darmstadt",
+      "cityIds": [
+        "city_de_darmstadt"
+      ],
+      "corporationIds": [
+        "corporation_de_darmstadt_darmstädter_burschenschaft_frisia"
+      ]
+    },
+    "address_darmstadt_2": {
+      "id": "address_darmstadt_2",
+      "latitude": 49.87511,
+      "longitude": 8.65948,
+      "fullAddress": "Darmstadt",
+      "cityIds": [
+        "city_de_darmstadt"
+      ],
+      "corporationIds": [
+        "corporation_de_darmstadt_kdstv_nassovia"
+      ]
+    },
+    "address_dresden_0": {
+      "id": "address_dresden_0",
+      "latitude": 51.027059,
+      "longitude": 13.729415,
+      "fullAddress": "Dresden",
+      "cityIds": [
+        "city_de_dresden"
+      ],
+      "corporationIds": [
+        "corporation_de_dresden_corps_altsachsen"
+      ]
+    },
+    "address_duisburg_0": {
+      "id": "address_duisburg_0",
+      "latitude": 50.76913,
+      "longitude": 14.23669611,
+      "fullAddress": "Duisburg",
+      "cityIds": [
+        "city_de_duisburg"
+      ],
+      "corporationIds": [
+        "corporation_de_duisburg_kdstv_elbmark_tetschen_liebwerd_zu_duisburg"
+      ]
+    },
+    "address_düsseldorf_0": {
+      "id": "address_düsseldorf_0",
+      "latitude": 51.216378,
+      "longitude": 6.771305,
+      "fullAddress": "Düsseldorf",
+      "cityIds": [
+        "city_de_düsseldorf"
+      ],
+      "corporationIds": [
+        "corporation_de_düsseldorf_ahb_rhenania_salingia"
+      ]
+    },
+    "address_erlangen_0": {
+      "id": "address_erlangen_0",
+      "latitude": 49.59945556,
+      "longitude": 11.01435,
+      "fullAddress": "Erlangen",
+      "cityIds": [
+        "city_de_erlangen"
+      ],
+      "corporationIds": [
+        "corporation_de_erlangen_amv_fridericiana"
+      ]
+    },
+    "address_essen_0": {
+      "id": "address_essen_0",
+      "latitude": 50.76913,
+      "longitude": 14.23669611,
+      "fullAddress": "Essen",
+      "cityIds": [
+        "city_de_essen"
+      ],
+      "corporationIds": [
+        "corporation_de_essen_kdstv_elbmark_tetschen_liebwerd_zu_duisburg"
+      ]
+    },
+    "address_frankfurt_am_main_0": {
+      "id": "address_frankfurt_am_main_0",
+      "latitude": 50.098101,
+      "longitude": 8.669492,
+      "fullAddress": "Frankfurt am Main",
+      "cityIds": [
+        "city_de_frankfurt_am_main"
+      ],
+      "corporationIds": [
+        "corporation_de_frankfurt_am_main_frankfurt_leipziger_burschenschaft_arminia"
+      ]
+    },
+    "address_freiburg_im_breisgau_0": {
+      "id": "address_freiburg_im_breisgau_0",
+      "latitude": 48.002346,
+      "longitude": 7.846014,
+      "fullAddress": "Freiburg im Breisgau",
+      "cityIds": [
+        "city_de_freiburg_im_breisgau"
+      ],
+      "corporationIds": [
+        "corporation_de_freiburg_im_breisgau_corps_palatia_guestphalia"
+      ]
+    },
+    "address_freiburg_im_breisgau_1": {
+      "id": "address_freiburg_im_breisgau_1",
+      "latitude": 47.982543,
+      "longitude": 7.850815,
+      "fullAddress": "Freiburg im Breisgau",
+      "cityIds": [
+        "city_de_freiburg_im_breisgau"
+      ],
+      "corporationIds": [
+        "corporation_de_freiburg_im_breisgau_burschenschaft_teutonia"
+      ]
+    },
+    "address_freiburg_im_breisgau_2": {
+      "id": "address_freiburg_im_breisgau_2",
+      "latitude": 47.984425,
+      "longitude": 7.847312,
+      "fullAddress": "Freiburg im Breisgau",
+      "cityIds": [
+        "city_de_freiburg_im_breisgau"
+      ],
+      "corporationIds": [
+        "corporation_de_freiburg_im_breisgau_burschenschaft_alemannia"
+      ]
+    },
+    "address_freiburg_im_breisgau_3": {
+      "id": "address_freiburg_im_breisgau_3",
+      "latitude": 47.9967,
+      "longitude": 7.856768,
+      "fullAddress": "Freiburg im Breisgau",
+      "cityIds": [
+        "city_de_freiburg_im_breisgau"
+      ],
+      "corporationIds": [
+        "corporation_de_freiburg_im_breisgau_corps_hasso_borussia"
+      ]
+    },
+    "address_freiburg_im_breisgau_4": {
+      "id": "address_freiburg_im_breisgau_4",
+      "latitude": 47.982934,
+      "longitude": 7.838267,
+      "fullAddress": "Freiburg im Breisgau",
+      "cityIds": [
+        "city_de_freiburg_im_breisgau"
+      ],
+      "corporationIds": [
+        "corporation_de_freiburg_im_breisgau_kdstv_ripuaria"
+      ]
+    },
+    "address_giessen_0": {
+      "id": "address_giessen_0",
+      "latitude": 50.57619,
+      "longitude": 8.67117,
+      "fullAddress": "Gießen",
+      "cityIds": [
+        "city_de_giessen"
+      ],
+      "corporationIds": [
+        "corporation_de_giessen_corps_starkenburgia"
+      ]
+    },
+    "address_giessen_1": {
+      "id": "address_giessen_1",
+      "latitude": 50.58068,
+      "longitude": 8.68408,
+      "fullAddress": "Gießen",
+      "cityIds": [
+        "city_de_giessen"
+      ],
+      "corporationIds": [
+        "corporation_de_giessen_corps_teutonia"
+      ]
+    },
+    "address_giessen_2": {
+      "id": "address_giessen_2",
+      "latitude": 50.57764,
+      "longitude": 8.67091,
+      "fullAddress": "Gießen",
+      "cityIds": [
+        "city_de_giessen"
+      ],
+      "corporationIds": [
+        "corporation_de_giessen_corps_normannia_halle"
+      ]
+    },
+    "address_giessen_3": {
+      "id": "address_giessen_3",
+      "latitude": 50.57793,
+      "longitude": 8.66187,
+      "fullAddress": "Gießen",
+      "cityIds": [
+        "city_de_giessen"
+      ],
+      "corporationIds": [
+        "corporation_de_giessen_burschenschaft_germania"
+      ]
+    },
+    "address_giessen_4": {
+      "id": "address_giessen_4",
+      "latitude": 50.57624,
+      "longitude": 8.67169,
+      "fullAddress": "Gießen",
+      "cityIds": [
+        "city_de_giessen"
+      ],
+      "corporationIds": [
+        "corporation_de_giessen_giessener_wingolf"
+      ]
+    },
+    "address_giessen_5": {
+      "id": "address_giessen_5",
+      "latitude": 50.58248,
+      "longitude": 8.68428,
+      "fullAddress": "Gießen",
+      "cityIds": [
+        "city_de_giessen"
+      ],
+      "corporationIds": [
+        "corporation_de_giessen_burschenschaft_alemannia"
+      ]
+    },
+    "address_giessen_6": {
+      "id": "address_giessen_6",
+      "latitude": 50.57733,
+      "longitude": 8.66105,
+      "fullAddress": "Gießen",
+      "cityIds": [
+        "city_de_giessen"
+      ],
+      "corporationIds": [
+        "corporation_de_giessen_landsmannschaft_darmstadtia"
+      ]
+    },
+    "address_giessen_7": {
+      "id": "address_giessen_7",
+      "latitude": 50.58101,
+      "longitude": 8.68063,
+      "fullAddress": "Gießen",
+      "cityIds": [
+        "city_de_giessen"
+      ],
+      "corporationIds": [
+        "corporation_de_giessen_vkdst_hasso_rhenania"
+      ]
+    },
+    "address_greifswald_0": {
+      "id": "address_greifswald_0",
+      "latitude": 54.10004,
+      "longitude": 13.37904,
+      "fullAddress": "Greifswald",
+      "cityIds": [
+        "city_de_greifswald"
+      ],
+      "corporationIds": [
+        "corporation_de_greifswald_corps_marchia"
+      ]
+    },
+    "address_göttingen_0": {
+      "id": "address_göttingen_0",
+      "latitude": 51.52903333,
+      "longitude": 9.93653889,
+      "fullAddress": "Göttingen",
+      "cityIds": [
+        "city_de_göttingen"
+      ],
+      "corporationIds": [
+        "corporation_de_göttingen_corps_hannovera"
+      ]
+    },
+    "address_halle_saale_0": {
+      "id": "address_halle_saale_0",
+      "latitude": 51.49513,
+      "longitude": 11.96903,
+      "fullAddress": "Halle (Saale)",
+      "cityIds": [
+        "city_de_halle_saale"
+      ],
+      "corporationIds": [
+        "corporation_de_halle_saale_hallenser_wingolf"
+      ]
+    },
+    "address_halle_saale_1": {
+      "id": "address_halle_saale_1",
+      "latitude": 51.49233333,
+      "longitude": 11.97038056,
+      "fullAddress": "Halle (Saale)",
+      "cityIds": [
+        "city_de_halle_saale"
+      ],
+      "corporationIds": [
+        "corporation_de_halle_saale_landsmannschaft_vitebergia"
+      ]
+    },
+    "address_hamburg_0": {
+      "id": "address_hamburg_0",
+      "latitude": 53.57738,
+      "longitude": 9.98447,
+      "fullAddress": "Hamburg",
+      "cityIds": [
+        "city_de_hamburg"
+      ],
+      "corporationIds": [
+        "corporation_de_hamburg_corps_irminsul"
+      ]
+    },
+    "address_hannover_0": {
+      "id": "address_hannover_0",
+      "latitude": 52.37797,
+      "longitude": 9.72662,
+      "fullAddress": "Hannover",
+      "cityIds": [
+        "city_de_hannover"
+      ],
+      "corporationIds": [
+        "corporation_de_hannover_corps_hannovera"
+      ]
+    },
+    "address_hannover_1": {
+      "id": "address_hannover_1",
+      "latitude": 52.376278,
+      "longitude": 9.723602,
+      "fullAddress": "Hannover",
+      "cityIds": [
+        "city_de_hannover"
+      ],
+      "corporationIds": [
+        "corporation_de_hannover_hannoversche_burschenschaft_arminia"
+      ]
+    },
+    "address_heidelberg_0": {
+      "id": "address_heidelberg_0",
+      "latitude": 49.4087,
+      "longitude": 8.705,
+      "fullAddress": "Heidelberg",
+      "cityIds": [
+        "city_de_heidelberg"
+      ],
+      "corporationIds": [
+        "corporation_de_heidelberg_corps_suevia"
+      ]
+    },
+    "address_heidelberg_1": {
+      "id": "address_heidelberg_1",
+      "latitude": 49.408256,
+      "longitude": 8.701373,
+      "fullAddress": "Heidelberg",
+      "cityIds": [
+        "city_de_heidelberg"
+      ],
+      "corporationIds": [
+        "corporation_de_heidelberg_corps_saxo_borussia"
+      ]
+    },
+    "address_heidelberg_10": {
+      "id": "address_heidelberg_10",
+      "latitude": 49.4093,
+      "longitude": 8.7104,
+      "fullAddress": "Heidelberg",
+      "cityIds": [
+        "city_de_heidelberg"
+      ],
+      "corporationIds": [
+        "corporation_de_heidelberg_verbindung_rupertia"
+      ]
+    },
+    "address_heidelberg_11": {
+      "id": "address_heidelberg_11",
+      "latitude": 49.4106,
+      "longitude": 8.71,
+      "fullAddress": "Heidelberg",
+      "cityIds": [
+        "city_de_heidelberg"
+      ],
+      "corporationIds": [
+        "corporation_de_heidelberg_vineta"
+      ]
+    },
+    "address_heidelberg_12": {
+      "id": "address_heidelberg_12",
+      "latitude": 49.413164,
+      "longitude": 8.714439,
+      "fullAddress": "Heidelberg",
+      "cityIds": [
+        "city_de_heidelberg"
+      ],
+      "corporationIds": [
+        "corporation_de_heidelberg_landsmannschaft_teutonia_heidelberg_rostock"
+      ]
+    },
+    "address_heidelberg_13": {
+      "id": "address_heidelberg_13",
+      "latitude": 49.4121,
+      "longitude": 8.7135,
+      "fullAddress": "Heidelberg",
+      "cityIds": [
+        "city_de_heidelberg"
+      ],
+      "corporationIds": [
+        "corporation_de_heidelberg_turnerschaft_ghibellinia"
+      ]
+    },
+    "address_heidelberg_14": {
+      "id": "address_heidelberg_14",
+      "latitude": 49.4078,
+      "longitude": 8.7086,
+      "fullAddress": "Heidelberg",
+      "cityIds": [
+        "city_de_heidelberg"
+      ],
+      "corporationIds": [
+        "corporation_de_heidelberg_kdstv_ferdinandea_prag"
+      ]
+    },
+    "address_heidelberg_15": {
+      "id": "address_heidelberg_15",
+      "latitude": 49.4052,
+      "longitude": 8.7103,
+      "fullAddress": "Heidelberg",
+      "cityIds": [
+        "city_de_heidelberg"
+      ],
+      "corporationIds": [
+        "corporation_de_heidelberg_kdstv_arminia"
+      ]
+    },
+    "address_heidelberg_16": {
+      "id": "address_heidelberg_16",
+      "latitude": 49.4138,
+      "longitude": 8.6988,
+      "fullAddress": "Heidelberg",
+      "cityIds": [
+        "city_de_heidelberg"
+      ],
+      "corporationIds": [
+        "corporation_de_heidelberg_wkstv_unitas_ruperto_carola"
+      ]
+    },
+    "address_heidelberg_17": {
+      "id": "address_heidelberg_17",
+      "latitude": 49.41356,
+      "longitude": 8.7167,
+      "fullAddress": "Heidelberg",
+      "cityIds": [
+        "city_de_heidelberg"
+      ],
+      "corporationIds": [
+        "corporation_de_heidelberg_corps_thuringia"
+      ]
+    },
+    "address_heidelberg_2": {
+      "id": "address_heidelberg_2",
+      "latitude": 49.4094,
+      "longitude": 8.7136,
+      "fullAddress": "Heidelberg",
+      "cityIds": [
+        "city_de_heidelberg"
+      ],
+      "corporationIds": [
+        "corporation_de_heidelberg_alte_leipziger_landsmannschaft_afrania"
+      ]
+    },
+    "address_heidelberg_3": {
+      "id": "address_heidelberg_3",
+      "latitude": 49.413164,
+      "longitude": 8.714439,
+      "fullAddress": "Heidelberg",
+      "cityIds": [
+        "city_de_heidelberg"
+      ],
+      "corporationIds": [
+        "corporation_de_heidelberg_corps_rhenania"
+      ]
+    },
+    "address_heidelberg_4": {
+      "id": "address_heidelberg_4",
+      "latitude": 49.41656774,
+      "longitude": 8.71087074,
+      "fullAddress": "Heidelberg",
+      "cityIds": [
+        "city_de_heidelberg"
+      ],
+      "corporationIds": [
+        "corporation_de_heidelberg_heidelberger_wingolf"
+      ]
+    },
+    "address_heidelberg_5": {
+      "id": "address_heidelberg_5",
+      "latitude": 49.4122,
+      "longitude": 8.7137,
+      "fullAddress": "Heidelberg",
+      "cityIds": [
+        "city_de_heidelberg"
+      ],
+      "corporationIds": [
+        "corporation_de_heidelberg_burschenschaft_allemannia"
+      ]
+    },
+    "address_heidelberg_6": {
+      "id": "address_heidelberg_6",
+      "latitude": 49.41,
+      "longitude": 8.7109,
+      "fullAddress": "Heidelberg",
+      "cityIds": [
+        "city_de_heidelberg"
+      ],
+      "corporationIds": [
+        "corporation_de_heidelberg_burschenschaft_frankonia"
+      ]
+    },
+    "address_heidelberg_7": {
+      "id": "address_heidelberg_7",
+      "latitude": 49.4127,
+      "longitude": 8.703,
+      "fullAddress": "Heidelberg",
+      "cityIds": [
+        "city_de_heidelberg"
+      ],
+      "corporationIds": [
+        "corporation_de_heidelberg_akademisch_theologische_verbindung_wartburg"
+      ]
+    },
+    "address_heidelberg_8": {
+      "id": "address_heidelberg_8",
+      "latitude": 49.4088,
+      "longitude": 8.706,
+      "fullAddress": "Heidelberg",
+      "cityIds": [
+        "city_de_heidelberg"
+      ],
+      "corporationIds": [
+        "corporation_de_heidelberg_verbindung_leonensia"
+      ]
+    },
+    "address_heidelberg_9": {
+      "id": "address_heidelberg_9",
+      "latitude": 49.41645,
+      "longitude": 8.71683,
+      "fullAddress": "Heidelberg",
+      "cityIds": [
+        "city_de_heidelberg"
+      ],
+      "corporationIds": [
+        "corporation_de_heidelberg_kstv_palatia"
+      ]
+    },
+    "address_innsbruck_0": {
+      "id": "address_innsbruck_0",
+      "latitude": 47.27177,
+      "longitude": 11.39295,
+      "fullAddress": "Innsbruck",
+      "cityIds": [
+        "city_at_innsbruck"
+      ],
+      "corporationIds": [
+        "corporation_at_innsbruck_corps_gothia"
+      ]
+    },
+    "address_jena_0": {
+      "id": "address_jena_0",
+      "latitude": 50.925508,
+      "longitude": 11.58842,
+      "fullAddress": "Jena",
+      "cityIds": [
+        "city_de_jena"
+      ],
+      "corporationIds": [
+        "corporation_de_jena_corps_saxonia"
+      ]
+    },
+    "address_karlsruhe_0": {
+      "id": "address_karlsruhe_0",
+      "latitude": 49.011509,
+      "longitude": 8.395041,
+      "fullAddress": "Karlsruhe",
+      "cityIds": [
+        "city_de_karlsruhe"
+      ],
+      "corporationIds": [
+        "corporation_de_karlsruhe_corps_franconia"
+      ]
+    },
+    "address_karlsruhe_1": {
+      "id": "address_karlsruhe_1",
+      "latitude": 49.01443,
+      "longitude": 8.42265,
+      "fullAddress": "Karlsruhe",
+      "cityIds": [
+        "city_de_karlsruhe"
+      ],
+      "corporationIds": [
+        "corporation_de_karlsruhe_burschenschaft_teutonia"
+      ]
+    },
+    "address_karlsruhe_2": {
+      "id": "address_karlsruhe_2",
+      "latitude": 49.01183,
+      "longitude": 8.42327,
+      "fullAddress": "Karlsruhe",
+      "cityIds": [
+        "city_de_karlsruhe"
+      ],
+      "corporationIds": [
+        "corporation_de_karlsruhe_corps_friso_cheruskia"
+      ]
+    },
+    "address_kiel_0": {
+      "id": "address_kiel_0",
+      "latitude": 54.338484,
+      "longitude": 10.149176,
+      "fullAddress": "Kiel",
+      "cityIds": [
+        "city_de_kiel"
+      ],
+      "corporationIds": [
+        "corporation_de_kiel_corps_holsatia"
+      ]
+    },
+    "address_kiel_1": {
+      "id": "address_kiel_1",
+      "latitude": 54.33976,
+      "longitude": 10.14852,
+      "fullAddress": "Kiel",
+      "cityIds": [
+        "city_de_kiel"
+      ],
+      "corporationIds": [
+        "corporation_de_kiel_landsmannschaft_troglodytia"
+      ]
+    },
+    "address_kiel_2": {
+      "id": "address_kiel_2",
+      "latitude": 54.339384,
+      "longitude": 10.127844,
+      "fullAddress": "Kiel",
+      "cityIds": [
+        "city_de_kiel"
+      ],
+      "corporationIds": [
+        "corporation_de_kiel_akademische_turnverbindung_ditmarsia"
+      ]
+    },
+    "address_königsberg_preussen_0": {
+      "id": "address_königsberg_preussen_0",
+      "latitude": 52.404014,
+      "longitude": 13.061786,
+      "fullAddress": "Königsberg (Preußen)",
+      "cityIds": [
+        "city_de_königsberg_preussen"
+      ],
+      "corporationIds": [
+        "corporation_de_königsberg_preussen_corps_masovia"
+      ]
+    },
+    "address_leipzig_0": {
+      "id": "address_leipzig_0",
+      "latitude": 51.332328,
+      "longitude": 12.344636,
+      "fullAddress": "Leipzig",
+      "cityIds": [
+        "city_de_leipzig"
+      ],
+      "corporationIds": [
+        "corporation_de_leipzig_corps_lusatia"
+      ]
+    },
+    "address_leipzig_1": {
+      "id": "address_leipzig_1",
+      "latitude": 51.3746,
+      "longitude": 12.38325,
+      "fullAddress": "Leipzig",
+      "cityIds": [
+        "city_de_leipzig"
+      ],
+      "corporationIds": [
+        "corporation_de_leipzig_corps_saxonia"
+      ]
+    },
+    "address_leipzig_2": {
+      "id": "address_leipzig_2",
+      "latitude": 51.36106667,
+      "longitude": 12.37309444,
+      "fullAddress": "Leipzig",
+      "cityIds": [
+        "city_de_leipzig"
+      ],
+      "corporationIds": [
+        "corporation_de_leipzig_corps_thuringia"
+      ]
+    },
+    "address_mainz_0": {
+      "id": "address_mainz_0",
+      "latitude": 50.00839167,
+      "longitude": 8.24609444,
+      "fullAddress": "Mainz",
+      "cityIds": [
+        "city_de_mainz"
+      ],
+      "corporationIds": [
+        "corporation_de_mainz_vkdst_hasso_rhenania"
+      ]
+    },
+    "address_marburg_0": {
+      "id": "address_marburg_0",
+      "latitude": 50.81527,
+      "longitude": 8.767457,
+      "fullAddress": "Marburg",
+      "cityIds": [
+        "city_de_marburg"
+      ],
+      "corporationIds": [
+        "corporation_de_marburg_landsmannschaft_hasso_borussia"
+      ]
+    },
+    "address_münchen_0": {
+      "id": "address_münchen_0",
+      "latitude": 48.15093333,
+      "longitude": 11.58478611,
+      "fullAddress": "München",
+      "cityIds": [
+        "city_de_münchen"
+      ],
+      "corporationIds": [
+        "corporation_de_münchen_corps_palatia"
+      ]
+    },
+    "address_münchen_1": {
+      "id": "address_münchen_1",
+      "latitude": 48.16028,
+      "longitude": 11.58535,
+      "fullAddress": "München",
+      "cityIds": [
+        "city_de_münchen"
+      ],
+      "corporationIds": [
+        "corporation_de_münchen_landsmannschaft_hansea_auf_dem_wels"
+      ]
+    },
+    "address_münchen_2": {
+      "id": "address_münchen_2",
+      "latitude": 48.137118,
+      "longitude": 11.583382,
+      "fullAddress": "München",
+      "cityIds": [
+        "city_de_münchen"
+      ],
+      "corporationIds": [
+        "corporation_de_münchen_corps_germania"
+      ]
+    },
+    "address_münchen_3": {
+      "id": "address_münchen_3",
+      "latitude": 48.16730556,
+      "longitude": 11.59052778,
+      "fullAddress": "München",
+      "cityIds": [
+        "city_de_münchen"
+      ],
+      "corporationIds": [
+        "corporation_de_münchen_corps_suevo_guestphalia"
+      ]
+    },
+    "address_münchen_4": {
+      "id": "address_münchen_4",
+      "latitude": 48.14472222,
+      "longitude": 11.56277778,
+      "fullAddress": "München",
+      "cityIds": [
+        "city_de_münchen"
+      ],
+      "corporationIds": [
+        "corporation_de_münchen_kbstv_rhaetia"
+      ]
+    },
+    "address_münster_0": {
+      "id": "address_münster_0",
+      "latitude": 51.97229167,
+      "longitude": 7.62104167,
+      "fullAddress": "Münster",
+      "cityIds": [
+        "city_de_münster"
+      ],
+      "corporationIds": [
+        "corporation_de_münster_kdstv_sauerlandia"
+      ]
+    },
+    "address_münster_1": {
+      "id": "address_münster_1",
+      "latitude": 51.96444444,
+      "longitude": 7.62652778,
+      "fullAddress": "Münster",
+      "cityIds": [
+        "city_de_münster"
+      ],
+      "corporationIds": [
+        "corporation_de_münster_kdstv_winfridia_breslau"
+      ]
+    },
+    "address_münster_2": {
+      "id": "address_münster_2",
+      "latitude": 51.94811111,
+      "longitude": 7.61347222,
+      "fullAddress": "Münster",
+      "cityIds": [
+        "city_de_münster"
+      ],
+      "corporationIds": [
+        "corporation_de_münster_vkdst_saxonia"
+      ]
+    },
+    "address_münster_3": {
+      "id": "address_münster_3",
+      "latitude": 51.95069444,
+      "longitude": 7.65083333,
+      "fullAddress": "Münster",
+      "cityIds": [
+        "city_de_münster"
+      ],
+      "corporationIds": [
+        "corporation_de_münster_akademische_ruderverbindung_westfalen"
+      ]
+    },
+    "address_münster_4": {
+      "id": "address_münster_4",
+      "latitude": 51.96861111,
+      "longitude": 7.62422222,
+      "fullAddress": "Münster",
+      "cityIds": [
+        "city_de_münster"
+      ],
+      "corporationIds": [
+        "corporation_de_münster_kstv_markomannia"
+      ]
+    },
+    "address_rostock_0": {
+      "id": "address_rostock_0",
+      "latitude": 54.08886,
+      "longitude": 12.1417,
+      "fullAddress": "Rostock",
+      "cityIds": [
+        "city_de_rostock"
+      ],
+      "corporationIds": [
+        "corporation_de_rostock_rostocker_wingolf"
+      ]
+    },
+    "address_stuttgart_0": {
+      "id": "address_stuttgart_0",
+      "latitude": 48.7826,
+      "longitude": 9.193,
+      "fullAddress": "Stuttgart",
+      "cityIds": [
+        "city_de_stuttgart"
+      ],
+      "corporationIds": [
+        "corporation_de_stuttgart_burschenschaft_alemannia"
+      ]
+    },
+    "address_stuttgart_1": {
+      "id": "address_stuttgart_1",
+      "latitude": 48.710804,
+      "longitude": 9.20275,
+      "fullAddress": "Stuttgart",
+      "cityIds": [
+        "city_de_stuttgart"
+      ],
+      "corporationIds": [
+        "corporation_de_stuttgart_corps_germania_hohenheim"
+      ]
+    },
+    "address_wien_0": {
+      "id": "address_wien_0",
+      "latitude": 48.20972222,
+      "longitude": 16.35416667,
+      "fullAddress": "Wien",
+      "cityIds": [
+        "city_at_wien"
+      ],
+      "corporationIds": [
+        "corporation_at_wien_köstv_rudolfina"
+      ]
+    }
+  },
+  "cities": {
+    "city_at_innsbruck": {
+      "id": "city_at_innsbruck",
+      "name": "Innsbruck",
+      "translationKey": "LOC_CITY_INNSBRUCK",
+      "countryId": "country_at",
+      "addressIds": [
+        "address_innsbruck_0"
+      ]
+    },
+    "city_at_wien": {
+      "id": "city_at_wien",
+      "name": "Wien",
+      "translationKey": "LOC_CITY_WIEN",
+      "countryId": "country_at",
+      "addressIds": [
+        "address_wien_0"
+      ]
+    },
+    "city_de_aachen": {
+      "id": "city_de_aachen",
+      "name": "Aachen",
+      "translationKey": "LOC_CITY_AACHEN",
+      "countryId": "country_de",
+      "addressIds": [
+        "address_aachen_0"
+      ]
+    },
+    "city_de_berlin": {
+      "id": "city_de_berlin",
+      "name": "Berlin",
+      "translationKey": "LOC_CITY_BERLIN",
+      "countryId": "country_de",
+      "addressIds": [
+        "address_berlin_0",
+        "address_berlin_1",
+        "address_berlin_2"
+      ]
+    },
+    "city_de_bonn": {
+      "id": "city_de_bonn",
+      "name": "Bonn",
+      "translationKey": "LOC_CITY_BONN",
+      "countryId": "country_de",
+      "addressIds": [
+        "address_bonn_0",
+        "address_bonn_1",
+        "address_bonn_2",
+        "address_bonn_3"
+      ]
+    },
+    "city_de_breslau": {
+      "id": "city_de_breslau",
+      "name": "Breslau",
+      "translationKey": "LOC_CITY_BRESLAU",
+      "countryId": "country_de",
+      "addressIds": [
+        "address_breslau_0"
+      ]
+    },
+    "city_de_darmstadt": {
+      "id": "city_de_darmstadt",
+      "name": "Darmstadt",
+      "translationKey": "LOC_CITY_DARMSTADT",
+      "countryId": "country_de",
+      "addressIds": [
+        "address_darmstadt_0",
+        "address_darmstadt_1",
+        "address_darmstadt_2"
+      ]
+    },
+    "city_de_dresden": {
+      "id": "city_de_dresden",
+      "name": "Dresden",
+      "translationKey": "LOC_CITY_DRESDEN",
+      "countryId": "country_de",
+      "addressIds": [
+        "address_dresden_0"
+      ]
+    },
+    "city_de_duisburg": {
+      "id": "city_de_duisburg",
+      "name": "Duisburg",
+      "translationKey": "LOC_CITY_DUISBURG",
+      "countryId": "country_de",
+      "addressIds": [
+        "address_duisburg_0"
+      ]
+    },
+    "city_de_düsseldorf": {
+      "id": "city_de_düsseldorf",
+      "name": "Düsseldorf",
+      "translationKey": "LOC_CITY_DÜSSELDORF",
+      "countryId": "country_de",
+      "addressIds": [
+        "address_düsseldorf_0"
+      ]
+    },
+    "city_de_erlangen": {
+      "id": "city_de_erlangen",
+      "name": "Erlangen",
+      "translationKey": "LOC_CITY_ERLANGEN",
+      "countryId": "country_de",
+      "addressIds": [
+        "address_erlangen_0"
+      ]
+    },
+    "city_de_essen": {
+      "id": "city_de_essen",
+      "name": "Essen",
+      "translationKey": "LOC_CITY_ESSEN",
+      "countryId": "country_de",
+      "addressIds": [
+        "address_essen_0"
+      ]
+    },
+    "city_de_frankfurt_am_main": {
+      "id": "city_de_frankfurt_am_main",
+      "name": "Frankfurt am Main",
+      "translationKey": "LOC_CITY_FRANKFURT_AM_MAIN",
+      "countryId": "country_de",
+      "addressIds": [
+        "address_frankfurt_am_main_0"
+      ]
+    },
+    "city_de_freiburg_im_breisgau": {
+      "id": "city_de_freiburg_im_breisgau",
+      "name": "Freiburg im Breisgau",
+      "translationKey": "LOC_CITY_FREIBURG_IM_BREISGAU",
+      "countryId": "country_de",
+      "addressIds": [
+        "address_freiburg_im_breisgau_0",
+        "address_freiburg_im_breisgau_1",
+        "address_freiburg_im_breisgau_2",
+        "address_freiburg_im_breisgau_3",
+        "address_freiburg_im_breisgau_4"
+      ]
+    },
+    "city_de_giessen": {
+      "id": "city_de_giessen",
+      "name": "Gießen",
+      "translationKey": "LOC_CITY_GIESSEN",
+      "countryId": "country_de",
+      "addressIds": [
+        "address_giessen_0",
+        "address_giessen_1",
+        "address_giessen_2",
+        "address_giessen_3",
+        "address_giessen_4",
+        "address_giessen_5",
+        "address_giessen_6",
+        "address_giessen_7"
+      ]
+    },
+    "city_de_greifswald": {
+      "id": "city_de_greifswald",
+      "name": "Greifswald",
+      "translationKey": "LOC_CITY_GREIFSWALD",
+      "countryId": "country_de",
+      "addressIds": [
+        "address_greifswald_0"
+      ]
+    },
+    "city_de_göttingen": {
+      "id": "city_de_göttingen",
+      "name": "Göttingen",
+      "translationKey": "LOC_CITY_GÖTTINGEN",
+      "countryId": "country_de",
+      "addressIds": [
+        "address_göttingen_0"
+      ]
+    },
+    "city_de_halle_saale": {
+      "id": "city_de_halle_saale",
+      "name": "Halle (Saale)",
+      "translationKey": "LOC_CITY_HALLE_SAALE",
+      "countryId": "country_de",
+      "addressIds": [
+        "address_halle_saale_0",
+        "address_halle_saale_1"
+      ]
+    },
+    "city_de_hamburg": {
+      "id": "city_de_hamburg",
+      "name": "Hamburg",
+      "translationKey": "LOC_CITY_HAMBURG",
+      "countryId": "country_de",
+      "addressIds": [
+        "address_hamburg_0"
+      ]
+    },
+    "city_de_hannover": {
+      "id": "city_de_hannover",
+      "name": "Hannover",
+      "translationKey": "LOC_CITY_HANNOVER",
+      "countryId": "country_de",
+      "addressIds": [
+        "address_hannover_0",
+        "address_hannover_1"
+      ]
+    },
+    "city_de_heidelberg": {
+      "id": "city_de_heidelberg",
+      "name": "Heidelberg",
+      "translationKey": "LOC_CITY_HEIDELBERG",
+      "countryId": "country_de",
+      "addressIds": [
+        "address_heidelberg_0",
+        "address_heidelberg_1",
+        "address_heidelberg_2",
+        "address_heidelberg_3",
+        "address_heidelberg_4",
+        "address_heidelberg_5",
+        "address_heidelberg_6",
+        "address_heidelberg_7",
+        "address_heidelberg_8",
+        "address_heidelberg_9",
+        "address_heidelberg_10",
+        "address_heidelberg_11",
+        "address_heidelberg_12",
+        "address_heidelberg_13",
+        "address_heidelberg_14",
+        "address_heidelberg_15",
+        "address_heidelberg_16",
+        "address_heidelberg_17"
+      ]
+    },
+    "city_de_jena": {
+      "id": "city_de_jena",
+      "name": "Jena",
+      "translationKey": "LOC_CITY_JENA",
+      "countryId": "country_de",
+      "addressIds": [
+        "address_jena_0"
+      ]
+    },
+    "city_de_karlsruhe": {
+      "id": "city_de_karlsruhe",
+      "name": "Karlsruhe",
+      "translationKey": "LOC_CITY_KARLSRUHE",
+      "countryId": "country_de",
+      "addressIds": [
+        "address_karlsruhe_0",
+        "address_karlsruhe_1",
+        "address_karlsruhe_2"
+      ]
+    },
+    "city_de_kiel": {
+      "id": "city_de_kiel",
+      "name": "Kiel",
+      "translationKey": "LOC_CITY_KIEL",
+      "countryId": "country_de",
+      "addressIds": [
+        "address_kiel_0",
+        "address_kiel_1",
+        "address_kiel_2"
+      ]
+    },
+    "city_de_königsberg_preussen": {
+      "id": "city_de_königsberg_preussen",
+      "name": "Königsberg (Preußen)",
+      "translationKey": "LOC_CITY_KÖNIGSBERG_PREUSSEN",
+      "countryId": "country_de",
+      "addressIds": [
+        "address_königsberg_preussen_0"
+      ]
+    },
+    "city_de_leipzig": {
+      "id": "city_de_leipzig",
+      "name": "Leipzig",
+      "translationKey": "LOC_CITY_LEIPZIG",
+      "countryId": "country_de",
+      "addressIds": [
+        "address_leipzig_0",
+        "address_leipzig_1",
+        "address_leipzig_2"
+      ]
+    },
+    "city_de_mainz": {
+      "id": "city_de_mainz",
+      "name": "Mainz",
+      "translationKey": "LOC_CITY_MAINZ",
+      "countryId": "country_de",
+      "addressIds": [
+        "address_mainz_0"
+      ]
+    },
+    "city_de_marburg": {
+      "id": "city_de_marburg",
+      "name": "Marburg",
+      "translationKey": "LOC_CITY_MARBURG",
+      "countryId": "country_de",
+      "addressIds": [
+        "address_marburg_0"
+      ]
+    },
+    "city_de_münchen": {
+      "id": "city_de_münchen",
+      "name": "München",
+      "translationKey": "LOC_CITY_MÜNCHEN",
+      "countryId": "country_de",
+      "addressIds": [
+        "address_münchen_0",
+        "address_münchen_1",
+        "address_münchen_2",
+        "address_münchen_3",
+        "address_münchen_4"
+      ]
+    },
+    "city_de_münster": {
+      "id": "city_de_münster",
+      "name": "Münster",
+      "translationKey": "LOC_CITY_MÜNSTER",
+      "countryId": "country_de",
+      "addressIds": [
+        "address_münster_0",
+        "address_münster_1",
+        "address_münster_2",
+        "address_münster_3",
+        "address_münster_4"
+      ]
+    },
+    "city_de_rostock": {
+      "id": "city_de_rostock",
+      "name": "Rostock",
+      "translationKey": "LOC_CITY_ROSTOCK",
+      "countryId": "country_de",
+      "addressIds": [
+        "address_rostock_0"
+      ]
+    },
+    "city_de_stuttgart": {
+      "id": "city_de_stuttgart",
+      "name": "Stuttgart",
+      "translationKey": "LOC_CITY_STUTTGART",
+      "countryId": "country_de",
+      "addressIds": [
+        "address_stuttgart_0",
+        "address_stuttgart_1"
+      ]
+    }
+  },
+  "colours": {
+    "colour_black": {
+      "id": "colour_black",
+      "colourFamilyIds": [
+        "colour_family_black"
+      ],
+      "translationKey": "COLOUR_BLACK",
+      "colourValue": "rgba(0, 0, 0, 1.0)",
+      "inColours": [
+        "corporation_de_aachen_landsmannschaft_pomerania_halle_aachen",
+        "corporation_de_berlin_kdstv_borusso_saxonia",
+        "corporation_de_bonn_burschenschaft_alemannia",
+        "corporation_de_darmstadt_alte_darmstädter_burschenschaft_germania",
+        "corporation_de_darmstadt_darmstädter_burschenschaft_frisia",
+        "corporation_de_düsseldorf_ahb_rhenania_salingia",
+        "corporation_de_freiburg_im_breisgau_burschenschaft_teutonia",
+        "corporation_de_freiburg_im_breisgau_corps_hasso_borussia",
+        "corporation_de_freiburg_im_breisgau_corps_palatia_guestphalia",
+        "corporation_de_giessen_burschenschaft_germania",
+        "corporation_de_giessen_giessener_wingolf",
+        "corporation_de_halle_saale_hallenser_wingolf",
+        "corporation_de_hamburg_corps_irminsul",
+        "corporation_de_hannover_corps_hannovera",
+        "corporation_de_heidelberg_burschenschaft_allemannia",
+        "corporation_de_heidelberg_burschenschaft_frankonia",
+        "corporation_de_heidelberg_corps_saxo_borussia",
+        "corporation_de_heidelberg_corps_suevia",
+        "corporation_de_heidelberg_corps_thuringia",
+        "corporation_de_heidelberg_kdstv_arminia",
+        "corporation_de_heidelberg_kdstv_ferdinandea_prag",
+        "corporation_de_heidelberg_vineta",
+        "corporation_de_leipzig_corps_thuringia",
+        "corporation_de_marburg_landsmannschaft_hasso_borussia",
+        "corporation_de_münchen_corps_suevo_guestphalia",
+        "corporation_de_münchen_landsmannschaft_hansea_auf_dem_wels",
+        "corporation_de_münster_kstv_markomannia",
+        "corporation_de_rostock_rostocker_wingolf",
+        "corporation_de_stuttgart_burschenschaft_alemannia",
+        "corporation_de_stuttgart_corps_germania_hohenheim"
+      ]
+    },
+    "colour_blue": {
+      "id": "colour_blue",
+      "colourFamilyIds": [
+        "colour_family_blue"
+      ],
+      "translationKey": "COLOUR_BLUE",
+      "colourValue": "rgba(0, 0, 205, 1.0)",
+      "inColours": [
+        "corporation_at_innsbruck_corps_gothia",
+        "corporation_de_berlin_av_motiv",
+        "corporation_de_freiburg_im_breisgau_burschenschaft_alemannia",
+        "corporation_de_giessen_corps_normannia_halle",
+        "corporation_de_göttingen_corps_hannovera",
+        "corporation_de_heidelberg_corps_rhenania",
+        "corporation_de_heidelberg_heidelberger_wingolf",
+        "corporation_de_heidelberg_kdstv_arminia",
+        "corporation_de_heidelberg_verbindung_leonensia",
+        "corporation_de_heidelberg_wkstv_unitas_ruperto_carola",
+        "corporation_de_leipzig_corps_lusatia",
+        "corporation_de_münchen_corps_germania",
+        "corporation_de_münchen_corps_palatia",
+        "corporation_de_münster_kdstv_sauerlandia"
+      ]
+    },
+    "colour_blue_dark": {
+      "id": "colour_blue_dark",
+      "colourFamilyIds": [
+        "colour_family_blue"
+      ],
+      "translationKey": "COLOUR_BLUE_DARK",
+      "colourValue": "rgba(0, 0, 139, 1.0)",
+      "inColours": [
+        "corporation_de_darmstadt_kdstv_nassovia",
+        "corporation_de_jena_corps_saxonia",
+        "corporation_de_karlsruhe_corps_friso_cheruskia",
+        "corporation_de_leipzig_corps_saxonia",
+        "corporation_de_münster_akademische_ruderverbindung_westfalen"
+      ]
+    },
+    "colour_blue_light": {
+      "id": "colour_blue_light",
+      "colourFamilyIds": [
+        "colour_family_blue"
+      ],
+      "translationKey": "COLOUR_BLUE_LIGHT",
+      "colourValue": "rgba(0, 150, 255, 1.0)",
+      "inColours": [
+        "corporation_de_aachen_landsmannschaft_pomerania_halle_aachen",
+        "corporation_de_bonn_kdstv_staufia",
+        "corporation_de_darmstadt_darmstädter_burschenschaft_frisia",
+        "corporation_de_giessen_burschenschaft_alemannia",
+        "corporation_de_hamburg_corps_irminsul",
+        "corporation_de_heidelberg_kstv_palatia",
+        "corporation_de_heidelberg_vineta",
+        "corporation_de_jena_corps_saxonia",
+        "corporation_de_karlsruhe_corps_friso_cheruskia",
+        "corporation_de_königsberg_preussen_corps_masovia",
+        "corporation_de_leipzig_corps_saxonia",
+        "corporation_de_marburg_landsmannschaft_hasso_borussia",
+        "corporation_de_münchen_kbstv_rhaetia",
+        "corporation_de_münster_akademische_ruderverbindung_westfalen"
+      ]
+    },
+    "colour_brown": {
+      "id": "colour_brown",
+      "colourFamilyIds": [
+        "colour_family_brown"
+      ],
+      "translationKey": "COLOUR_BROWN",
+      "colourValue": "rgba(139, 69, 19, 1.0)",
+      "inColours": []
+    },
+    "colour_gold": {
+      "id": "colour_gold",
+      "colourFamilyIds": [
+        "colour_family_gold"
+      ],
+      "translationKey": "COLOUR_GOLD",
+      "colourValue": "rgba(255, 215, 0, 1.0)",
+      "inColours": [
+        "corporation_at_wien_köstv_rudolfina",
+        "corporation_de_berlin_av_motiv",
+        "corporation_de_berlin_corps_marchia",
+        "corporation_de_bonn_burschenschaft_alemannia",
+        "corporation_de_breslau_kdstv_winfridia",
+        "corporation_de_darmstadt_alte_darmstädter_burschenschaft_germania",
+        "corporation_de_dresden_corps_altsachsen",
+        "corporation_de_düsseldorf_ahb_rhenania_salingia",
+        "corporation_de_freiburg_im_breisgau_burschenschaft_teutonia",
+        "corporation_de_freiburg_im_breisgau_kdstv_ripuaria",
+        "corporation_de_giessen_burschenschaft_alemannia",
+        "corporation_de_giessen_burschenschaft_germania",
+        "corporation_de_giessen_corps_normannia_halle",
+        "corporation_de_giessen_corps_starkenburgia",
+        "corporation_de_giessen_corps_teutonia",
+        "corporation_de_giessen_giessener_wingolf",
+        "corporation_de_göttingen_corps_hannovera",
+        "corporation_de_halle_saale_hallenser_wingolf",
+        "corporation_de_heidelberg_alte_leipziger_landsmannschaft_afrania",
+        "corporation_de_heidelberg_burschenschaft_frankonia",
+        "corporation_de_heidelberg_heidelberger_wingolf",
+        "corporation_de_heidelberg_kstv_palatia",
+        "corporation_de_heidelberg_verbindung_leonensia",
+        "corporation_de_heidelberg_wkstv_unitas_ruperto_carola",
+        "corporation_de_kiel_akademische_turnverbindung_ditmarsia",
+        "corporation_de_leipzig_corps_lusatia",
+        "corporation_de_münchen_corps_germania",
+        "corporation_de_münster_kdstv_winfridia_breslau",
+        "corporation_de_münster_kstv_markomannia",
+        "corporation_de_rostock_rostocker_wingolf",
+        "corporation_de_stuttgart_burschenschaft_alemannia"
+      ]
+    },
+    "colour_green": {
+      "id": "colour_green",
+      "colourFamilyIds": [
+        "colour_family_green"
+      ],
+      "translationKey": "COLOUR_GREEN",
+      "colourValue": "rgba(0, 100, 0, 1.0)",
+      "inColours": [
+        "corporation_de_breslau_kdstv_winfridia",
+        "corporation_de_dresden_corps_altsachsen",
+        "corporation_de_duisburg_kdstv_elbmark_tetschen_liebwerd_zu_duisburg",
+        "corporation_de_essen_kdstv_elbmark_tetschen_liebwerd_zu_duisburg",
+        "corporation_de_freiburg_im_breisgau_burschenschaft_alemannia",
+        "corporation_de_freiburg_im_breisgau_corps_palatia_guestphalia",
+        "corporation_de_giessen_corps_teutonia",
+        "corporation_de_heidelberg_akademisch_theologische_verbindung_wartburg",
+        "corporation_de_heidelberg_alte_leipziger_landsmannschaft_afrania",
+        "corporation_de_heidelberg_corps_saxo_borussia",
+        "corporation_de_karlsruhe_corps_franconia",
+        "corporation_de_kiel_akademische_turnverbindung_ditmarsia",
+        "corporation_de_münchen_corps_suevo_guestphalia",
+        "corporation_de_münchen_landsmannschaft_hansea_auf_dem_wels",
+        "corporation_de_münster_kdstv_sauerlandia",
+        "corporation_de_münster_kdstv_winfridia_breslau",
+        "corporation_de_münster_vkdst_saxonia"
+      ]
+    },
+    "colour_green_dark": {
+      "id": "colour_green_dark",
+      "colourFamilyIds": [
+        "colour_family_green"
+      ],
+      "translationKey": "COLOUR_GREEN_DARK",
+      "colourValue": "rgba(0, 60, 0, 1.0)",
+      "inColours": []
+    },
+    "colour_green_light": {
+      "id": "colour_green_light",
+      "colourFamilyIds": [
+        "colour_family_green"
+      ],
+      "translationKey": "COLOUR_GREEN_LIGHT",
+      "colourValue": "rgba(144, 238, 144, 1.0)",
+      "inColours": [
+        "corporation_de_darmstadt_kdstv_nassovia"
+      ]
+    },
+    "colour_green_moss": {
+      "id": "colour_green_moss",
+      "colourFamilyIds": [
+        "colour_family_green"
+      ],
+      "translationKey": "COLOUR_GREEN_MOSS",
+      "colourValue": "rgba(179, 238, 58, 1.0)",
+      "inColours": [
+        "corporation_de_heidelberg_turnerschaft_ghibellinia"
+      ]
+    },
+    "colour_grey": {
+      "id": "colour_grey",
+      "colourFamilyIds": [
+        "colour_family_grey"
+      ],
+      "translationKey": "COLOUR_GREY",
+      "colourValue": "rgba(128, 128, 128, 1.0)",
+      "inColours": [
+        "corporation_de_dresden_corps_altsachsen"
+      ]
+    },
+    "colour_grey_light": {
+      "id": "colour_grey_light",
+      "colourFamilyIds": [
+        "colour_family_grey"
+      ],
+      "translationKey": "COLOUR_GREY_LIGHT",
+      "colourValue": "rgba(211, 211, 211, 1.0)",
+      "inColours": [
+        "corporation_de_bonn_kdstv_staufia"
+      ]
+    },
+    "colour_orange": {
+      "id": "colour_orange",
+      "colourFamilyIds": [
+        "colour_family_orange"
+      ],
+      "translationKey": "COLOUR_ORANGE",
+      "colourValue": "rgba(238, 118, 33, 1.0)",
+      "inColours": [
+        "corporation_de_berlin_corps_marchia",
+        "corporation_de_heidelberg_kdstv_ferdinandea_prag"
+      ]
+    },
+    "colour_pink": {
+      "id": "colour_pink",
+      "colourFamilyIds": [
+        "colour_family_pink"
+      ],
+      "translationKey": "COLOUR_PINK",
+      "colourValue": "rgba(255, 130, 171, 1.0)",
+      "inColours": [
+        "corporation_de_erlangen_amv_fridericiana",
+        "corporation_de_greifswald_corps_marchia",
+        "corporation_de_heidelberg_turnerschaft_ghibellinia"
+      ]
+    },
+    "colour_purple": {
+      "id": "colour_purple",
+      "colourFamilyIds": [
+        "colour_family_purple"
+      ],
+      "translationKey": "COLOUR_PURPLE",
+      "colourValue": "rgba(128, 0, 128, 1.0)",
+      "inColours": [
+        "corporation_de_freiburg_im_breisgau_corps_palatia_guestphalia",
+        "corporation_de_freiburg_im_breisgau_kdstv_ripuaria",
+        "corporation_de_giessen_landsmannschaft_darmstadtia",
+        "corporation_de_heidelberg_akademisch_theologische_verbindung_wartburg",
+        "corporation_de_heidelberg_landsmannschaft_teutonia_heidelberg_rostock"
+      ]
+    },
+    "colour_red": {
+      "id": "colour_red",
+      "colourFamilyIds": [
+        "colour_family_red"
+      ],
+      "translationKey": "COLOUR_RED",
+      "colourValue": "rgba(150, 0, 0, 1.0)",
+      "inColours": [
+        "corporation_at_innsbruck_corps_gothia",
+        "corporation_at_wien_köstv_rudolfina",
+        "corporation_de_berlin_kdstv_borusso_saxonia",
+        "corporation_de_bonn_burschenschaft_alemannia",
+        "corporation_de_breslau_kdstv_winfridia",
+        "corporation_de_duisburg_kdstv_elbmark_tetschen_liebwerd_zu_duisburg",
+        "corporation_de_düsseldorf_ahb_rhenania_salingia",
+        "corporation_de_essen_kdstv_elbmark_tetschen_liebwerd_zu_duisburg",
+        "corporation_de_freiburg_im_breisgau_burschenschaft_teutonia",
+        "corporation_de_freiburg_im_breisgau_corps_hasso_borussia",
+        "corporation_de_freiburg_im_breisgau_corps_palatia_guestphalia",
+        "corporation_de_giessen_landsmannschaft_darmstadtia",
+        "corporation_de_giessen_vkdst_hasso_rhenania",
+        "corporation_de_göttingen_corps_hannovera",
+        "corporation_de_hannover_corps_hannovera",
+        "corporation_de_heidelberg_burschenschaft_allemannia",
+        "corporation_de_heidelberg_burschenschaft_frankonia",
+        "corporation_de_heidelberg_corps_rhenania",
+        "corporation_de_heidelberg_kstv_palatia",
+        "corporation_de_heidelberg_landsmannschaft_teutonia_heidelberg_rostock",
+        "corporation_de_heidelberg_verbindung_leonensia",
+        "corporation_de_heidelberg_verbindung_rupertia",
+        "corporation_de_karlsruhe_corps_franconia",
+        "corporation_de_kiel_corps_holsatia",
+        "corporation_de_königsberg_preussen_corps_masovia",
+        "corporation_de_leipzig_corps_lusatia",
+        "corporation_de_mainz_vkdst_hasso_rhenania",
+        "corporation_de_münchen_corps_germania",
+        "corporation_de_münchen_corps_palatia",
+        "corporation_de_münchen_kbstv_rhaetia",
+        "corporation_de_münster_kdstv_winfridia_breslau",
+        "corporation_de_münster_kstv_markomannia",
+        "corporation_de_münster_vkdst_saxonia",
+        "corporation_de_stuttgart_burschenschaft_alemannia",
+        "corporation_de_stuttgart_corps_germania_hohenheim"
+      ]
+    },
+    "colour_red_bordeaux": {
+      "id": "colour_red_bordeaux",
+      "colourFamilyIds": [
+        "colour_family_red"
+      ],
+      "translationKey": "COLOUR_RED_BORDEAUX",
+      "colourValue": "rgba(110, 0, 30, 1.0)",
+      "inColours": []
+    },
+    "colour_red_crimson": {
+      "id": "colour_red_crimson",
+      "colourFamilyIds": [
+        "colour_family_red"
+      ],
+      "translationKey": "COLOUR_RED_CRIMSON",
+      "colourValue": "rgba(170, 58, 98, 1.0)",
+      "inColours": [
+        "corporation_de_giessen_burschenschaft_alemannia",
+        "corporation_de_giessen_burschenschaft_germania",
+        "corporation_de_giessen_corps_starkenburgia",
+        "corporation_de_giessen_corps_teutonia",
+        "corporation_de_heidelberg_corps_thuringia",
+        "corporation_de_leipzig_corps_thuringia"
+      ]
+    },
+    "colour_red_dark": {
+      "id": "colour_red_dark",
+      "colourFamilyIds": [
+        "colour_family_red"
+      ],
+      "translationKey": "COLOUR_RED_DARK",
+      "colourValue": "rgba(100, 0, 0, 1.0)",
+      "inColours": []
+    },
+    "colour_red_wine": {
+      "id": "colour_red_wine",
+      "colourFamilyIds": [
+        "colour_family_red"
+      ],
+      "translationKey": "COLOUR_RED_WINE",
+      "colourValue": "rgba(114, 47, 55, 1.0)",
+      "inColours": [
+        "corporation_de_darmstadt_alte_darmstädter_burschenschaft_germania"
+      ]
+    },
+    "colour_silver": {
+      "id": "colour_silver",
+      "colourFamilyIds": [
+        "colour_family_silver"
+      ],
+      "translationKey": "COLOUR_SILVER",
+      "colourValue": "rgba(192, 192, 192, 1.0)",
+      "inColours": [
+        "corporation_de_duisburg_kdstv_elbmark_tetschen_liebwerd_zu_duisburg",
+        "corporation_de_essen_kdstv_elbmark_tetschen_liebwerd_zu_duisburg",
+        "corporation_de_hamburg_corps_irminsul",
+        "corporation_de_münchen_landsmannschaft_hansea_auf_dem_wels"
+      ]
+    },
+    "colour_white": {
+      "id": "colour_white",
+      "colourFamilyIds": [
+        "colour_family_white"
+      ],
+      "translationKey": "COLOUR_WHITE",
+      "colourValue": "rgba(255, 255, 255, 1.0)",
+      "inColours": [
+        "corporation_at_innsbruck_corps_gothia",
+        "corporation_at_wien_köstv_rudolfina",
+        "corporation_de_aachen_landsmannschaft_pomerania_halle_aachen",
+        "corporation_de_berlin_corps_marchia",
+        "corporation_de_berlin_kdstv_borusso_saxonia",
+        "corporation_de_bonn_kdstv_staufia",
+        "corporation_de_darmstadt_darmstädter_burschenschaft_frisia",
+        "corporation_de_darmstadt_kdstv_nassovia",
+        "corporation_de_düsseldorf_ahb_rhenania_salingia",
+        "corporation_de_erlangen_amv_fridericiana",
+        "corporation_de_freiburg_im_breisgau_burschenschaft_alemannia",
+        "corporation_de_freiburg_im_breisgau_corps_hasso_borussia",
+        "corporation_de_freiburg_im_breisgau_corps_palatia_guestphalia",
+        "corporation_de_freiburg_im_breisgau_kdstv_ripuaria",
+        "corporation_de_giessen_corps_normannia_halle",
+        "corporation_de_giessen_corps_starkenburgia",
+        "corporation_de_giessen_giessener_wingolf",
+        "corporation_de_giessen_landsmannschaft_darmstadtia",
+        "corporation_de_giessen_vkdst_hasso_rhenania",
+        "corporation_de_greifswald_corps_marchia",
+        "corporation_de_halle_saale_hallenser_wingolf",
+        "corporation_de_hannover_corps_hannovera",
+        "corporation_de_heidelberg_akademisch_theologische_verbindung_wartburg",
+        "corporation_de_heidelberg_alte_leipziger_landsmannschaft_afrania",
+        "corporation_de_heidelberg_burschenschaft_allemannia",
+        "corporation_de_heidelberg_corps_rhenania",
+        "corporation_de_heidelberg_corps_saxo_borussia",
+        "corporation_de_heidelberg_corps_suevia",
+        "corporation_de_heidelberg_corps_thuringia",
+        "corporation_de_heidelberg_heidelberger_wingolf",
+        "corporation_de_heidelberg_kdstv_arminia",
+        "corporation_de_heidelberg_kdstv_ferdinandea_prag",
+        "corporation_de_heidelberg_landsmannschaft_teutonia_heidelberg_rostock",
+        "corporation_de_heidelberg_turnerschaft_ghibellinia",
+        "corporation_de_heidelberg_verbindung_rupertia",
+        "corporation_de_heidelberg_vineta",
+        "corporation_de_heidelberg_wkstv_unitas_ruperto_carola",
+        "corporation_de_jena_corps_saxonia",
+        "corporation_de_karlsruhe_corps_franconia",
+        "corporation_de_karlsruhe_corps_friso_cheruskia",
+        "corporation_de_kiel_akademische_turnverbindung_ditmarsia",
+        "corporation_de_kiel_corps_holsatia",
+        "corporation_de_königsberg_preussen_corps_masovia",
+        "corporation_de_leipzig_corps_saxonia",
+        "corporation_de_leipzig_corps_thuringia",
+        "corporation_de_mainz_vkdst_hasso_rhenania",
+        "corporation_de_marburg_landsmannschaft_hasso_borussia",
+        "corporation_de_münchen_corps_palatia",
+        "corporation_de_münchen_corps_suevo_guestphalia",
+        "corporation_de_münchen_kbstv_rhaetia",
+        "corporation_de_münster_akademische_ruderverbindung_westfalen",
+        "corporation_de_münster_kdstv_sauerlandia",
+        "corporation_de_münster_vkdst_saxonia",
+        "corporation_de_rostock_rostocker_wingolf",
+        "corporation_de_stuttgart_corps_germania_hohenheim"
+      ]
+    },
+    "colour_yellow": {
+      "id": "colour_yellow",
+      "colourFamilyIds": [
+        "colour_family_yellow"
+      ],
+      "translationKey": "COLOUR_YELLOW",
+      "colourValue": "rgba(255, 235, 0, 1.0)",
+      "inColours": [
+        "corporation_de_giessen_vkdst_hasso_rhenania",
+        "corporation_de_heidelberg_corps_suevia",
+        "corporation_de_mainz_vkdst_hasso_rhenania"
+      ]
+    },
+    "ind_black": {
+      "id": "ind_black",
+      "colourFamilyIds": [
+        "colour_family_black"
+      ],
+      "translationKey": "COLOUR_IND_BLACK",
+      "colourValue": "rgba(51, 51, 51, 1.0)",
+      "inColours": []
+    },
+    "ind_blue": {
+      "id": "ind_blue",
+      "colourFamilyIds": [
+        "colour_family_blue"
+      ],
+      "translationKey": "COLOUR_IND_BLUE",
+      "colourValue": "rgba(51, 102, 204, 1.0)",
+      "inColours": []
+    },
+    "ind_brown": {
+      "id": "ind_brown",
+      "colourFamilyIds": [
+        "colour_family_brown"
+      ],
+      "translationKey": "COLOUR_IND_BROWN",
+      "colourValue": "rgba(139, 69, 19, 1.0)",
+      "inColours": []
+    },
+    "ind_gold": {
+      "id": "ind_gold",
+      "colourFamilyIds": [
+        "colour_family_gold"
+      ],
+      "translationKey": "COLOUR_IND_GOLD",
+      "colourValue": "rgba(255, 215, 0, 1.0)",
+      "inColours": []
+    },
+    "ind_green": {
+      "id": "ind_green",
+      "colourFamilyIds": [
+        "colour_family_green"
+      ],
+      "translationKey": "COLOUR_IND_GREEN",
+      "colourValue": "rgba(51, 153, 51, 1.0)",
+      "inColours": []
+    },
+    "ind_grey": {
+      "id": "ind_grey",
+      "colourFamilyIds": [
+        "colour_family_grey"
+      ],
+      "translationKey": "COLOUR_IND_GREY",
+      "colourValue": "rgba(204, 204, 204, 1.0)",
+      "inColours": []
+    },
+    "ind_orange": {
+      "id": "ind_orange",
+      "colourFamilyIds": [
+        "colour_family_orange"
+      ],
+      "translationKey": "COLOUR_IND_ORANGE",
+      "colourValue": "rgba(238, 118, 33, 1.0)",
+      "inColours": []
+    },
+    "ind_pink": {
+      "id": "ind_pink",
+      "colourFamilyIds": [
+        "colour_family_pink"
+      ],
+      "translationKey": "COLOUR_IND_PINK",
+      "colourValue": "rgba(255, 130, 171, 1.0)",
+      "inColours": []
+    },
+    "ind_purple": {
+      "id": "ind_purple",
+      "colourFamilyIds": [
+        "colour_family_purple"
+      ],
+      "translationKey": "COLOUR_IND_PURPLE",
+      "colourValue": "rgba(128, 0, 128, 1.0)",
+      "inColours": []
+    },
+    "ind_red": {
+      "id": "ind_red",
+      "colourFamilyIds": [
+        "colour_family_red"
+      ],
+      "translationKey": "COLOUR_IND_RED",
+      "colourValue": "rgba(204, 51, 51, 1.0)",
+      "inColours": []
+    },
+    "ind_silver": {
+      "id": "ind_silver",
+      "colourFamilyIds": [
+        "colour_family_silver"
+      ],
+      "translationKey": "COLOUR_IND_SILVER",
+      "colourValue": "rgba(192, 192, 192, 1.0)",
+      "inColours": []
+    },
+    "ind_white": {
+      "id": "ind_white",
+      "colourFamilyIds": [
+        "colour_family_white"
+      ],
+      "translationKey": "COLOUR_IND_WHITE",
+      "colourValue": "rgba(255, 255, 255, 1.0)",
+      "inColours": []
+    },
+    "ind_yellow": {
+      "id": "ind_yellow",
+      "colourFamilyIds": [
+        "colour_family_yellow"
+      ],
+      "translationKey": "COLOUR_IND_YELLOW",
+      "colourValue": "rgba(255, 255, 0, 1.0)",
+      "inColours": []
+    }
+  },
+  "colourFamilies": {
+    "colour_family_black": {
+      "id": "colour_family_black",
+      "memberColourIds": [
+        "colour_black",
+        "ind_black"
+      ],
+      "translationKey": "COLOUR_FAMILY_BLACK",
+      "sampleColourValue": "black"
+    },
+    "colour_family_blue": {
+      "id": "colour_family_blue",
+      "memberColourIds": [
+        "colour_blue",
+        "colour_blue_dark",
+        "colour_blue_light",
+        "ind_blue"
+      ],
+      "translationKey": "COLOUR_FAMILY_BLUE",
+      "sampleColourValue": "blue"
+    },
+    "colour_family_brown": {
+      "id": "colour_family_brown",
+      "memberColourIds": [
+        "colour_brown",
+        "ind_brown"
+      ],
+      "translationKey": "COLOUR_FAMILY_BROWN",
+      "sampleColourValue": "brown"
+    },
+    "colour_family_gold": {
+      "id": "colour_family_gold",
+      "memberColourIds": [
+        "colour_gold",
+        "ind_gold"
+      ],
+      "translationKey": "COLOUR_FAMILY_GOLD",
+      "sampleColourValue": "gold"
+    },
+    "colour_family_green": {
+      "id": "colour_family_green",
+      "memberColourIds": [
+        "colour_green",
+        "colour_green_dark",
+        "colour_green_light",
+        "colour_green_moss",
+        "ind_green"
+      ],
+      "translationKey": "COLOUR_FAMILY_GREEN",
+      "sampleColourValue": "green"
+    },
+    "colour_family_grey": {
+      "id": "colour_family_grey",
+      "memberColourIds": [
+        "colour_grey",
+        "colour_grey_light",
+        "ind_grey"
+      ],
+      "translationKey": "COLOUR_FAMILY_GREY",
+      "sampleColourValue": "grey"
+    },
+    "colour_family_orange": {
+      "id": "colour_family_orange",
+      "memberColourIds": [
+        "colour_orange",
+        "ind_orange"
+      ],
+      "translationKey": "COLOUR_FAMILY_ORANGE",
+      "sampleColourValue": "orange"
+    },
+    "colour_family_pink": {
+      "id": "colour_family_pink",
+      "memberColourIds": [
+        "colour_pink",
+        "ind_pink"
+      ],
+      "translationKey": "COLOUR_FAMILY_PINK",
+      "sampleColourValue": "pink"
+    },
+    "colour_family_purple": {
+      "id": "colour_family_purple",
+      "memberColourIds": [
+        "colour_purple",
+        "ind_purple"
+      ],
+      "translationKey": "COLOUR_FAMILY_PURPLE",
+      "sampleColourValue": "purple"
+    },
+    "colour_family_red": {
+      "id": "colour_family_red",
+      "memberColourIds": [
+        "colour_red",
+        "colour_red_dark",
+        "colour_red_bordeaux",
+        "colour_red_crimson",
+        "colour_red_wine",
+        "ind_red"
+      ],
+      "translationKey": "COLOUR_FAMILY_RED",
+      "sampleColourValue": "red"
+    },
+    "colour_family_silver": {
+      "id": "colour_family_silver",
+      "memberColourIds": [
+        "colour_silver",
+        "ind_silver"
+      ],
+      "translationKey": "COLOUR_FAMILY_SILVER",
+      "sampleColourValue": "silver"
+    },
+    "colour_family_white": {
+      "id": "colour_family_white",
+      "memberColourIds": [
+        "colour_white",
+        "ind_white"
+      ],
+      "translationKey": "COLOUR_FAMILY_WHITE",
+      "sampleColourValue": "white"
+    },
+    "colour_family_yellow": {
+      "id": "colour_family_yellow",
+      "memberColourIds": [
+        "colour_yellow",
+        "ind_yellow"
+      ],
+      "translationKey": "COLOUR_FAMILY_YELLOW",
+      "sampleColourValue": "yellow"
+    }
+  },
+  "corporations": {
+    "corporation_at_innsbruck_corps_gothia": {
+      "id": "corporation_at_innsbruck_corps_gothia",
+      "shortName": "Corps Gothia",
+      "longName": "Corps Gothia",
+      "addressId": "address_innsbruck_0",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1870",
+      "organisationIds": [
+        "organisation_kscv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_blue",
+            "colour_white",
+            "colour_red"
+          ]
+        }
+      ]
+    },
+    "corporation_at_wien_köstv_rudolfina": {
+      "id": "corporation_at_wien_köstv_rudolfina",
+      "shortName": "KÖStV Rudolfina",
+      "longName": "KÖStV Rudolfina",
+      "addressId": "address_wien_0",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 1,
+      "foundationDate": "1898",
+      "organisationIds": [
+        "organisation_öcv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_gold",
+            "colour_white",
+            "colour_red"
+          ]
+        }
+      ]
+    },
+    "corporation_de_aachen_landsmannschaft_pomerania_halle_aachen": {
+      "id": "corporation_de_aachen_landsmannschaft_pomerania_halle_aachen",
+      "shortName": "Landsmannschaft Pomerania Halle-Aachen",
+      "longName": "Landsmannschaft Pomerania Halle-Aachen",
+      "addressId": "address_aachen_0",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1792",
+      "organisationIds": [
+        "organisation_cc"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_blue_light",
+            "colour_white",
+            "colour_black"
+          ]
+        }
+      ]
+    },
+    "corporation_de_berlin_av_motiv": {
+      "id": "corporation_de_berlin_av_motiv",
+      "shortName": "AV Motiv",
+      "longName": "AV Motiv",
+      "addressId": "address_berlin_1",
+      "coloursPrinciple": 3,
+      "fencingPrinciple": 1,
+      "foundationDate": "1847",
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_blue",
+            "colour_gold"
+          ]
+        }
+      ]
+    },
+    "corporation_de_berlin_corps_marchia": {
+      "id": "corporation_de_berlin_corps_marchia",
+      "shortName": "Corps Marchia",
+      "longName": "Corps Marchia",
+      "addressId": "address_berlin_0",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1810",
+      "organisationIds": [
+        "organisation_kscv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_orange",
+            "colour_white",
+            "colour_gold"
+          ]
+        }
+      ]
+    },
+    "corporation_de_berlin_kdstv_borusso_saxonia": {
+      "id": "corporation_de_berlin_kdstv_borusso_saxonia",
+      "shortName": "KDStV Borusso-Saxonia",
+      "longName": "KDStV Borusso-Saxonia",
+      "addressId": "address_berlin_2",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 1,
+      "foundationDate": "1899",
+      "organisationIds": [
+        "organisation_cv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_red",
+            "colour_white",
+            "colour_black"
+          ]
+        }
+      ]
+    },
+    "corporation_de_bonn_amv_makaria": {
+      "id": "corporation_de_bonn_amv_makaria",
+      "shortName": "AMV Makaria",
+      "longName": "AMV Makaria",
+      "addressId": "address_bonn_1",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 1,
+      "foundationDate": "1878",
+      "organisationIds": [
+        "organisation_sv"
+      ],
+      "indicatorColourId": "ind_grey"
+    },
+    "corporation_de_bonn_burschenschaft_alemannia": {
+      "id": "corporation_de_bonn_burschenschaft_alemannia",
+      "shortName": "Burschenschaft Alemannia",
+      "longName": "Burschenschaft Alemannia",
+      "addressId": "address_bonn_0",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 2,
+      "foundationDate": "1844-07-18",
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_black",
+            "colour_red",
+            "colour_gold"
+          ]
+        }
+      ]
+    },
+    "corporation_de_bonn_kdstv_staufia": {
+      "id": "corporation_de_bonn_kdstv_staufia",
+      "shortName": "KDStV Staufia",
+      "longName": "KDStV Staufia",
+      "addressId": "address_bonn_3",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 1,
+      "foundationDate": "1905-02-28",
+      "organisationIds": [
+        "organisation_cv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_grey_light",
+            "colour_white",
+            "colour_blue_light"
+          ]
+        }
+      ]
+    },
+    "corporation_de_bonn_vdst_zu_bonn": {
+      "id": "corporation_de_bonn_vdst_zu_bonn",
+      "shortName": "VDSt zu Bonn",
+      "longName": "VDSt zu Bonn",
+      "addressId": "address_bonn_2",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 1,
+      "foundationDate": "1882-06-20",
+      "organisationIds": [
+        "organisation_vvdst"
+      ],
+      "indicatorColourId": "ind_grey"
+    },
+    "corporation_de_breslau_kdstv_winfridia": {
+      "id": "corporation_de_breslau_kdstv_winfridia",
+      "shortName": "KDStV Winfridia",
+      "longName": "KDStV Winfridia",
+      "addressId": "address_breslau_0",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 1,
+      "foundationDate": "1856-07-17",
+      "organisationIds": [
+        "organisation_cv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_green",
+            "colour_red",
+            "colour_gold"
+          ]
+        }
+      ]
+    },
+    "corporation_de_darmstadt_alte_darmstädter_burschenschaft_germania": {
+      "id": "corporation_de_darmstadt_alte_darmstädter_burschenschaft_germania",
+      "shortName": "Alte Darmstädter Burschenschaft Germania",
+      "longName": "Alte Darmstädter Burschenschaft Germania",
+      "addressId": "address_darmstadt_0",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1869",
+      "organisationIds": [
+        "organisation_adb"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_black",
+            "colour_red_wine",
+            "colour_gold"
+          ]
+        }
+      ]
+    },
+    "corporation_de_darmstadt_darmstädter_burschenschaft_frisia": {
+      "id": "corporation_de_darmstadt_darmstädter_burschenschaft_frisia",
+      "shortName": "Darmstädter Burschenschaft Frisia",
+      "longName": "Darmstädter Burschenschaft Frisia",
+      "addressId": "address_darmstadt_1",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 2,
+      "foundationDate": "1885",
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_black",
+            "colour_white",
+            "colour_blue_light"
+          ]
+        }
+      ]
+    },
+    "corporation_de_darmstadt_kdstv_nassovia": {
+      "id": "corporation_de_darmstadt_kdstv_nassovia",
+      "shortName": "KDStV Nassovia",
+      "longName": "KDStV Nassovia",
+      "addressId": "address_darmstadt_2",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 1,
+      "foundationDate": "1896",
+      "organisationIds": [
+        "organisation_cv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_blue_dark",
+            "colour_white",
+            "colour_green_light"
+          ]
+        }
+      ]
+    },
+    "corporation_de_dresden_corps_altsachsen": {
+      "id": "corporation_de_dresden_corps_altsachsen",
+      "shortName": "Corps Altsachsen",
+      "longName": "Corps Altsachsen",
+      "addressId": "address_dresden_0",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1861",
+      "organisationIds": [
+        "organisation_wsc"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_grey",
+            "colour_green",
+            "colour_gold"
+          ]
+        }
+      ]
+    },
+    "corporation_de_duisburg_kdstv_elbmark_tetschen_liebwerd_zu_duisburg": {
+      "id": "corporation_de_duisburg_kdstv_elbmark_tetschen_liebwerd_zu_duisburg",
+      "shortName": "KDStV Elbmark (Tetschen-Liebwerd) zu Duisburg",
+      "longName": "KDStV Elbmark (Tetschen-Liebwerd) zu Duisburg",
+      "addressId": "address_duisburg_0",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 1,
+      "foundationDate": "1922-11-29",
+      "organisationIds": [
+        "organisation_cv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_green",
+            "colour_red",
+            "colour_silver"
+          ]
+        }
+      ]
+    },
+    "corporation_de_düsseldorf_ahb_rhenania_salingia": {
+      "id": "corporation_de_düsseldorf_ahb_rhenania_salingia",
+      "shortName": "AHB! Rhenania-Salingia",
+      "longName": "AHB! Rhenania-Salingia",
+      "addressId": "address_düsseldorf_0",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 2,
+      "foundationDate": "1845",
+      "organisationIds": [
+        "organisation_db"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_white",
+            "colour_red",
+            "colour_black",
+            "colour_red",
+            "colour_gold",
+            "colour_black"
+          ]
+        }
+      ]
+    },
+    "corporation_de_erlangen_amv_fridericiana": {
+      "id": "corporation_de_erlangen_amv_fridericiana",
+      "shortName": "AMV Fridericiana",
+      "longName": "AMV Fridericiana",
+      "addressId": "address_erlangen_0",
+      "coloursPrinciple": 3,
+      "fencingPrinciple": 1,
+      "foundationDate": "1878",
+      "organisationIds": [
+        "organisation_sv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_pink",
+            "colour_white"
+          ]
+        }
+      ]
+    },
+    "corporation_de_essen_kdstv_elbmark_tetschen_liebwerd_zu_duisburg": {
+      "id": "corporation_de_essen_kdstv_elbmark_tetschen_liebwerd_zu_duisburg",
+      "shortName": "KDStV Elbmark (Tetschen-Liebwerd) zu Duisburg",
+      "longName": "KDStV Elbmark (Tetschen-Liebwerd) zu Duisburg",
+      "addressId": "address_essen_0",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 1,
+      "foundationDate": "1922-11-29",
+      "organisationIds": [
+        "organisation_cv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_green",
+            "colour_red",
+            "colour_silver"
+          ]
+        }
+      ]
+    },
+    "corporation_de_frankfurt_am_main_frankfurt_leipziger_burschenschaft_arminia": {
+      "id": "corporation_de_frankfurt_am_main_frankfurt_leipziger_burschenschaft_arminia",
+      "shortName": "Frankfurt-Leipziger Burschenschaft Arminia",
+      "longName": "Frankfurt-Leipziger Burschenschaft Arminia",
+      "addressId": "address_frankfurt_am_main_0",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1860",
+      "indicatorColourId": "ind_grey"
+    },
+    "corporation_de_freiburg_im_breisgau_burschenschaft_alemannia": {
+      "id": "corporation_de_freiburg_im_breisgau_burschenschaft_alemannia",
+      "shortName": "Burschenschaft Alemannia",
+      "longName": "Burschenschaft Alemannia",
+      "addressId": "address_freiburg_im_breisgau_2",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 2,
+      "foundationDate": "1860",
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_blue",
+            "colour_white",
+            "colour_green"
+          ]
+        }
+      ]
+    },
+    "corporation_de_freiburg_im_breisgau_burschenschaft_teutonia": {
+      "id": "corporation_de_freiburg_im_breisgau_burschenschaft_teutonia",
+      "shortName": "Burschenschaft Teutonia",
+      "longName": "Burschenschaft Teutonia",
+      "addressId": "address_freiburg_im_breisgau_1",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1851",
+      "organisationIds": [
+        "organisation_adb"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_black",
+            "colour_red",
+            "colour_gold"
+          ]
+        }
+      ]
+    },
+    "corporation_de_freiburg_im_breisgau_corps_hasso_borussia": {
+      "id": "corporation_de_freiburg_im_breisgau_corps_hasso_borussia",
+      "shortName": "Corps Hasso-Borussia",
+      "longName": "Corps Hasso-Borussia",
+      "addressId": "address_freiburg_im_breisgau_3",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1876",
+      "organisationIds": [
+        "organisation_kscv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_white",
+            "colour_red",
+            "colour_black",
+            "colour_white"
+          ]
+        }
+      ]
+    },
+    "corporation_de_freiburg_im_breisgau_corps_palatia_guestphalia": {
+      "id": "corporation_de_freiburg_im_breisgau_corps_palatia_guestphalia",
+      "shortName": "Corps Palatia-Guestphalia",
+      "longName": "Corps Palatia-Guestphalia",
+      "addressId": "address_freiburg_im_breisgau_0",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1841",
+      "organisationIds": [
+        "organisation_kscv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_black",
+            "colour_white",
+            "colour_green",
+            "colour_purple",
+            "colour_white",
+            "colour_red"
+          ]
+        }
+      ]
+    },
+    "corporation_de_freiburg_im_breisgau_kdstv_ripuaria": {
+      "id": "corporation_de_freiburg_im_breisgau_kdstv_ripuaria",
+      "shortName": "KDStV Ripuaria",
+      "longName": "KDStV Ripuaria",
+      "addressId": "address_freiburg_im_breisgau_4",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 1,
+      "foundationDate": "1899",
+      "organisationIds": [
+        "organisation_cv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_purple",
+            "colour_white",
+            "colour_gold"
+          ]
+        }
+      ]
+    },
+    "corporation_de_giessen_burschenschaft_alemannia": {
+      "id": "corporation_de_giessen_burschenschaft_alemannia",
+      "shortName": "Burschenschaft Alemannia",
+      "longName": "Burschenschaft Alemannia",
+      "addressId": "address_giessen_5",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1861",
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_blue_light",
+            "colour_red_crimson",
+            "colour_gold"
+          ]
+        }
+      ]
+    },
+    "corporation_de_giessen_burschenschaft_germania": {
+      "id": "corporation_de_giessen_burschenschaft_germania",
+      "shortName": "Burschenschaft Germania",
+      "longName": "Burschenschaft Germania",
+      "addressId": "address_giessen_3",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1851",
+      "organisationIds": [
+        "organisation_adb"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_black",
+            "colour_red_crimson",
+            "colour_gold"
+          ]
+        }
+      ]
+    },
+    "corporation_de_giessen_corps_normannia_halle": {
+      "id": "corporation_de_giessen_corps_normannia_halle",
+      "shortName": "Corps Normannia-Halle",
+      "longName": "Corps Normannia-Halle",
+      "addressId": "address_giessen_2",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1846",
+      "organisationIds": [
+        "organisation_kscv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_gold",
+            "colour_white",
+            "colour_blue"
+          ]
+        }
+      ]
+    },
+    "corporation_de_giessen_corps_starkenburgia": {
+      "id": "corporation_de_giessen_corps_starkenburgia",
+      "shortName": "Corps Starkenburgia",
+      "longName": "Corps Starkenburgia",
+      "addressId": "address_giessen_0",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1826",
+      "organisationIds": [
+        "organisation_kscv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_red_crimson",
+            "colour_white",
+            "colour_gold"
+          ]
+        }
+      ]
+    },
+    "corporation_de_giessen_corps_teutonia": {
+      "id": "corporation_de_giessen_corps_teutonia",
+      "shortName": "Corps Teutonia",
+      "longName": "Corps Teutonia",
+      "addressId": "address_giessen_1",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1839",
+      "organisationIds": [
+        "organisation_kscv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_green",
+            "colour_red_crimson",
+            "colour_gold"
+          ]
+        }
+      ]
+    },
+    "corporation_de_giessen_giessener_wingolf": {
+      "id": "corporation_de_giessen_giessener_wingolf",
+      "shortName": "Gießener Wingolf",
+      "longName": "Gießener Wingolf",
+      "addressId": "address_giessen_4",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 1,
+      "foundationDate": "1852",
+      "organisationIds": [
+        "organisation_wb"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_black",
+            "colour_white",
+            "colour_gold"
+          ]
+        }
+      ]
+    },
+    "corporation_de_giessen_landsmannschaft_darmstadtia": {
+      "id": "corporation_de_giessen_landsmannschaft_darmstadtia",
+      "shortName": "Landsmannschaft Darmstadtia",
+      "longName": "Landsmannschaft Darmstadtia",
+      "addressId": "address_giessen_6",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1882-02-11",
+      "organisationIds": [
+        "organisation_cc"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_purple",
+            "colour_white",
+            "colour_red"
+          ]
+        }
+      ]
+    },
+    "corporation_de_giessen_vkdst_hasso_rhenania": {
+      "id": "corporation_de_giessen_vkdst_hasso_rhenania",
+      "shortName": "VKDSt Hasso-Rhenania",
+      "longName": "VKDSt Hasso-Rhenania",
+      "addressId": "address_giessen_7",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 1,
+      "foundationDate": "1883",
+      "organisationIds": [
+        "organisation_cv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_yellow",
+            "colour_white",
+            "colour_red"
+          ]
+        }
+      ]
+    },
+    "corporation_de_greifswald_corps_marchia": {
+      "id": "corporation_de_greifswald_corps_marchia",
+      "shortName": "Corps Marchia",
+      "longName": "Corps Marchia",
+      "addressId": "address_greifswald_0",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1881",
+      "organisationIds": [
+        "organisation_wsc"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_pink",
+            "colour_white",
+            "colour_pink"
+          ]
+        }
+      ]
+    },
+    "corporation_de_göttingen_corps_hannovera": {
+      "id": "corporation_de_göttingen_corps_hannovera",
+      "shortName": "Corps Hannovera",
+      "longName": "Corps Hannovera",
+      "addressId": "address_göttingen_0",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1809",
+      "organisationIds": [
+        "organisation_kscv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_red",
+            "colour_blue",
+            "colour_gold"
+          ]
+        }
+      ]
+    },
+    "corporation_de_halle_saale_hallenser_wingolf": {
+      "id": "corporation_de_halle_saale_hallenser_wingolf",
+      "shortName": "Hallenser Wingolf",
+      "longName": "Hallenser Wingolf",
+      "addressId": "address_halle_saale_0",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 1,
+      "foundationDate": "1844",
+      "organisationIds": [
+        "organisation_wb"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_black",
+            "colour_white",
+            "colour_gold"
+          ]
+        }
+      ]
+    },
+    "corporation_de_halle_saale_landsmannschaft_vitebergia": {
+      "id": "corporation_de_halle_saale_landsmannschaft_vitebergia",
+      "shortName": "Landsmannschaft Vitebergia",
+      "longName": "Landsmannschaft Vitebergia",
+      "addressId": "address_halle_saale_1",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1860",
+      "organisationIds": [
+        "organisation_cc"
+      ],
+      "indicatorColourId": "ind_grey"
+    },
+    "corporation_de_hamburg_corps_irminsul": {
+      "id": "corporation_de_hamburg_corps_irminsul",
+      "shortName": "Corps Irminsul",
+      "longName": "Corps Irminsul",
+      "addressId": "address_hamburg_0",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1880",
+      "organisationIds": [
+        "organisation_wsc"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_blue_light",
+            "colour_silver",
+            "colour_black"
+          ]
+        }
+      ]
+    },
+    "corporation_de_hannover_corps_hannovera": {
+      "id": "corporation_de_hannover_corps_hannovera",
+      "shortName": "Corps Hannovera",
+      "longName": "Corps Hannovera",
+      "addressId": "address_hannover_0",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1866",
+      "organisationIds": [
+        "organisation_wsc"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_red",
+            "colour_white",
+            "colour_black"
+          ]
+        }
+      ]
+    },
+    "corporation_de_hannover_hannoversche_burschenschaft_arminia": {
+      "id": "corporation_de_hannover_hannoversche_burschenschaft_arminia",
+      "shortName": "Hannoversche Burschenschaft Arminia",
+      "longName": "Hannoversche Burschenschaft Arminia",
+      "addressId": "address_hannover_1",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 2,
+      "foundationDate": "1898",
+      "organisationIds": [
+        "organisation_adb"
+      ],
+      "indicatorColourId": "ind_grey"
+    },
+    "corporation_de_heidelberg_akademisch_theologische_verbindung_wartburg": {
+      "id": "corporation_de_heidelberg_akademisch_theologische_verbindung_wartburg",
+      "shortName": "Akademisch Theologische Verbindung Wartburg",
+      "longName": "Akademisch Theologische Verbindung Wartburg",
+      "addressId": "address_heidelberg_7",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 1,
+      "foundationDate": "1863",
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_purple",
+            "colour_white",
+            "colour_green"
+          ]
+        }
+      ]
+    },
+    "corporation_de_heidelberg_alte_leipziger_landsmannschaft_afrania": {
+      "id": "corporation_de_heidelberg_alte_leipziger_landsmannschaft_afrania",
+      "shortName": "Alte Leipziger Landsmannschaft Afrania",
+      "longName": "Alte Leipziger Landsmannschaft Afrania",
+      "addressId": "address_heidelberg_2",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1839",
+      "organisationIds": [
+        "organisation_cc"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_green",
+            "colour_white",
+            "colour_gold"
+          ]
+        }
+      ]
+    },
+    "corporation_de_heidelberg_burschenschaft_allemannia": {
+      "id": "corporation_de_heidelberg_burschenschaft_allemannia",
+      "shortName": "Burschenschaft Allemannia",
+      "longName": "Burschenschaft Allemannia",
+      "addressId": "address_heidelberg_5",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1856",
+      "organisationIds": [
+        "organisation_sk"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_red",
+            "colour_white",
+            "colour_black"
+          ]
+        }
+      ]
+    },
+    "corporation_de_heidelberg_burschenschaft_frankonia": {
+      "id": "corporation_de_heidelberg_burschenschaft_frankonia",
+      "shortName": "Burschenschaft Frankonia",
+      "longName": "Burschenschaft Frankonia",
+      "addressId": "address_heidelberg_6",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 2,
+      "foundationDate": "1856",
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_gold",
+            "colour_black",
+            "colour_red",
+            "colour_gold"
+          ]
+        }
+      ]
+    },
+    "corporation_de_heidelberg_corps_rhenania": {
+      "id": "corporation_de_heidelberg_corps_rhenania",
+      "shortName": "Corps Rhenania",
+      "longName": "Corps Rhenania",
+      "addressId": "address_heidelberg_3",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1849",
+      "organisationIds": [
+        "organisation_kscv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_blue",
+            "colour_white",
+            "colour_red"
+          ]
+        }
+      ]
+    },
+    "corporation_de_heidelberg_corps_saxo_borussia": {
+      "id": "corporation_de_heidelberg_corps_saxo_borussia",
+      "shortName": "Corps Saxo-Borussia",
+      "longName": "Corps Saxo-Borussia",
+      "addressId": "address_heidelberg_1",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1820",
+      "organisationIds": [
+        "organisation_kscv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_white",
+            "colour_green",
+            "colour_black",
+            "colour_white"
+          ]
+        }
+      ]
+    },
+    "corporation_de_heidelberg_corps_suevia": {
+      "id": "corporation_de_heidelberg_corps_suevia",
+      "shortName": "Corps Suevia",
+      "longName": "Corps Suevia",
+      "addressId": "address_heidelberg_0",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1810",
+      "organisationIds": [
+        "organisation_kscv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_white",
+            "colour_yellow",
+            "colour_black"
+          ]
+        }
+      ]
+    },
+    "corporation_de_heidelberg_corps_thuringia": {
+      "id": "corporation_de_heidelberg_corps_thuringia",
+      "shortName": "Corps Thuringia",
+      "longName": "Corps Thuringia",
+      "addressId": "address_heidelberg_17",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1908",
+      "organisationIds": [
+        "organisation_wsc"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_black",
+            "colour_red_crimson",
+            "colour_white"
+          ]
+        }
+      ]
+    },
+    "corporation_de_heidelberg_heidelberger_wingolf": {
+      "id": "corporation_de_heidelberg_heidelberger_wingolf",
+      "shortName": "Heidelberger Wingolf",
+      "longName": "Heidelberger Wingolf",
+      "addressId": "address_heidelberg_4",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 1,
+      "foundationDate": "1851",
+      "organisationIds": [
+        "organisation_wb"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_blue",
+            "colour_white",
+            "colour_gold"
+          ]
+        }
+      ]
+    },
+    "corporation_de_heidelberg_kdstv_arminia": {
+      "id": "corporation_de_heidelberg_kdstv_arminia",
+      "shortName": "KDStV Arminia",
+      "longName": "KDStV Arminia",
+      "addressId": "address_heidelberg_15",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 1,
+      "foundationDate": "1887",
+      "organisationIds": [
+        "organisation_cv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_black",
+            "colour_white",
+            "colour_blue"
+          ]
+        }
+      ]
+    },
+    "corporation_de_heidelberg_kdstv_ferdinandea_prag": {
+      "id": "corporation_de_heidelberg_kdstv_ferdinandea_prag",
+      "shortName": "KDStV Ferdinandea Prag",
+      "longName": "KDStV Ferdinandea Prag",
+      "addressId": "address_heidelberg_14",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 1,
+      "foundationDate": "1886",
+      "organisationIds": [
+        "organisation_cv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_black",
+            "colour_white",
+            "colour_orange"
+          ]
+        }
+      ]
+    },
+    "corporation_de_heidelberg_kstv_palatia": {
+      "id": "corporation_de_heidelberg_kstv_palatia",
+      "shortName": "KStV Palatia",
+      "longName": "KStV Palatia",
+      "addressId": "address_heidelberg_9",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 1,
+      "foundationDate": "1872",
+      "organisationIds": [
+        "organisation_kv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_red",
+            "colour_gold",
+            "colour_blue_light"
+          ]
+        }
+      ]
+    },
+    "corporation_de_heidelberg_landsmannschaft_teutonia_heidelberg_rostock": {
+      "id": "corporation_de_heidelberg_landsmannschaft_teutonia_heidelberg_rostock",
+      "shortName": "Landsmannschaft Teutonia Heidelberg-Rostock",
+      "longName": "Landsmannschaft Teutonia Heidelberg-Rostock",
+      "addressId": "address_heidelberg_12",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1883",
+      "organisationIds": [
+        "organisation_cc"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_red",
+            "colour_white",
+            "colour_purple"
+          ]
+        }
+      ]
+    },
+    "corporation_de_heidelberg_turnerschaft_ghibellinia": {
+      "id": "corporation_de_heidelberg_turnerschaft_ghibellinia",
+      "shortName": "Turnerschaft Ghibellinia",
+      "longName": "Turnerschaft Ghibellinia",
+      "addressId": "address_heidelberg_13",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1886",
+      "organisationIds": [
+        "organisation_cc"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_green_moss",
+            "colour_white",
+            "colour_pink"
+          ]
+        }
+      ]
+    },
+    "corporation_de_heidelberg_verbindung_leonensia": {
+      "id": "corporation_de_heidelberg_verbindung_leonensia",
+      "shortName": "Verbindung Leonensia",
+      "longName": "Verbindung Leonensia",
+      "addressId": "address_heidelberg_8",
+      "coloursPrinciple": 3,
+      "fencingPrinciple": 2,
+      "foundationDate": "1871",
+      "organisationIds": [
+        "organisation_mr"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_blue",
+            "colour_gold",
+            "colour_red"
+          ]
+        }
+      ]
+    },
+    "corporation_de_heidelberg_verbindung_rupertia": {
+      "id": "corporation_de_heidelberg_verbindung_rupertia",
+      "shortName": "Verbindung Rupertia",
+      "longName": "Verbindung Rupertia",
+      "addressId": "address_heidelberg_10",
+      "coloursPrinciple": 3,
+      "fencingPrinciple": 1,
+      "foundationDate": "1873",
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_red",
+            "colour_white",
+            "colour_red"
+          ]
+        }
+      ]
+    },
+    "corporation_de_heidelberg_vineta": {
+      "id": "corporation_de_heidelberg_vineta",
+      "shortName": "Vineta",
+      "longName": "Vineta",
+      "addressId": "address_heidelberg_11",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 2,
+      "foundationDate": "1879",
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_blue_light",
+            "colour_white",
+            "colour_black"
+          ]
+        }
+      ]
+    },
+    "corporation_de_heidelberg_wkstv_unitas_ruperto_carola": {
+      "id": "corporation_de_heidelberg_wkstv_unitas_ruperto_carola",
+      "shortName": "WKStV Unitas Ruperto Carola",
+      "longName": "WKStV Unitas Ruperto Carola",
+      "addressId": "address_heidelberg_16",
+      "coloursPrinciple": 3,
+      "fencingPrinciple": 1,
+      "foundationDate": "1900",
+      "organisationIds": [
+        "organisation_uv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_gold",
+            "colour_blue",
+            "colour_white"
+          ]
+        }
+      ]
+    },
+    "corporation_de_jena_corps_saxonia": {
+      "id": "corporation_de_jena_corps_saxonia",
+      "shortName": "Corps Saxonia",
+      "longName": "Corps Saxonia",
+      "addressId": "address_jena_0",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1805-02-13",
+      "motto": "Virtuti semper corona!",
+      "organisationIds": [
+        "organisation_kscv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_blue_dark",
+            "colour_blue_light",
+            "colour_white"
+          ]
+        }
+      ]
+    },
+    "corporation_de_karlsruhe_burschenschaft_teutonia": {
+      "id": "corporation_de_karlsruhe_burschenschaft_teutonia",
+      "shortName": "Burschenschaft Teutonia",
+      "longName": "Burschenschaft Teutonia",
+      "addressId": "address_karlsruhe_1",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 2,
+      "foundationDate": "1843",
+      "organisationIds": [
+        "organisation_adb"
+      ],
+      "indicatorColourId": "ind_grey"
+    },
+    "corporation_de_karlsruhe_corps_franconia": {
+      "id": "corporation_de_karlsruhe_corps_franconia",
+      "shortName": "Corps Franconia",
+      "longName": "Corps Franconia",
+      "addressId": "address_karlsruhe_0",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1839",
+      "organisationIds": [
+        "organisation_wsc"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_green",
+            "colour_white",
+            "colour_red"
+          ]
+        }
+      ]
+    },
+    "corporation_de_karlsruhe_corps_friso_cheruskia": {
+      "id": "corporation_de_karlsruhe_corps_friso_cheruskia",
+      "shortName": "Corps Friso-Cheruskia",
+      "longName": "Corps Friso-Cheruskia",
+      "addressId": "address_karlsruhe_2",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1860",
+      "organisationIds": [
+        "organisation_wsc"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_blue_light",
+            "colour_white",
+            "colour_blue_dark"
+          ]
+        }
+      ]
+    },
+    "corporation_de_kiel_akademische_turnverbindung_ditmarsia": {
+      "id": "corporation_de_kiel_akademische_turnverbindung_ditmarsia",
+      "shortName": "Akademische Turnverbindung Ditmarsia",
+      "longName": "Akademische Turnverbindung Ditmarsia",
+      "addressId": "address_kiel_2",
+      "coloursPrinciple": 3,
+      "fencingPrinciple": 1,
+      "foundationDate": "1890",
+      "organisationIds": [
+        "organisation_atb"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_green",
+            "colour_white",
+            "colour_gold"
+          ]
+        }
+      ]
+    },
+    "corporation_de_kiel_corps_holsatia": {
+      "id": "corporation_de_kiel_corps_holsatia",
+      "shortName": "Corps Holsatia",
+      "longName": "Corps Holsatia",
+      "addressId": "address_kiel_0",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1813",
+      "organisationIds": [
+        "organisation_kscv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_red",
+            "colour_white",
+            "colour_red"
+          ]
+        }
+      ]
+    },
+    "corporation_de_kiel_landsmannschaft_troglodytia": {
+      "id": "corporation_de_kiel_landsmannschaft_troglodytia",
+      "shortName": "Landsmannschaft Troglodytia",
+      "longName": "Landsmannschaft Troglodytia",
+      "addressId": "address_kiel_1",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1864",
+      "organisationIds": [
+        "organisation_cc"
+      ],
+      "indicatorColourId": "ind_grey"
+    },
+    "corporation_de_königsberg_preussen_corps_masovia": {
+      "id": "corporation_de_königsberg_preussen_corps_masovia",
+      "shortName": "Corps Masovia",
+      "longName": "Corps Masovia",
+      "addressId": "address_königsberg_preussen_0",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 0,
+      "foundationDate": "1830-06-14",
+      "organisationIds": [
+        "organisation_kscv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_blue_light",
+            "colour_white",
+            "colour_red"
+          ]
+        }
+      ]
+    },
+    "corporation_de_leipzig_corps_lusatia": {
+      "id": "corporation_de_leipzig_corps_lusatia",
+      "shortName": "Corps Lusatia",
+      "longName": "Corps Lusatia",
+      "addressId": "address_leipzig_0",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1807",
+      "organisationIds": [
+        "organisation_kscv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_blue",
+            "colour_gold",
+            "colour_red"
+          ]
+        }
+      ]
+    },
+    "corporation_de_leipzig_corps_saxonia": {
+      "id": "corporation_de_leipzig_corps_saxonia",
+      "shortName": "Corps Saxonia",
+      "longName": "Corps Saxonia",
+      "addressId": "address_leipzig_1",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1812",
+      "organisationIds": [
+        "organisation_kscv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_blue_dark",
+            "colour_blue_light",
+            "colour_white"
+          ]
+        }
+      ]
+    },
+    "corporation_de_leipzig_corps_thuringia": {
+      "id": "corporation_de_leipzig_corps_thuringia",
+      "shortName": "Corps Thuringia",
+      "longName": "Corps Thuringia",
+      "addressId": "address_leipzig_2",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1847",
+      "organisationIds": [
+        "organisation_kscv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_red_crimson",
+            "colour_white",
+            "colour_black"
+          ]
+        }
+      ]
+    },
+    "corporation_de_mainz_vkdst_hasso_rhenania": {
+      "id": "corporation_de_mainz_vkdst_hasso_rhenania",
+      "shortName": "VKDSt Hasso-Rhenania",
+      "longName": "VKDSt Hasso-Rhenania",
+      "addressId": "address_mainz_0",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 1,
+      "foundationDate": "1946",
+      "organisationIds": [
+        "organisation_cv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_red",
+            "colour_white",
+            "colour_yellow"
+          ]
+        }
+      ]
+    },
+    "corporation_de_marburg_landsmannschaft_hasso_borussia": {
+      "id": "corporation_de_marburg_landsmannschaft_hasso_borussia",
+      "shortName": "Landsmannschaft Hasso-Borussia",
+      "longName": "Landsmannschaft Hasso-Borussia",
+      "addressId": "address_marburg_0",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1856",
+      "organisationIds": [
+        "organisation_cc"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_black",
+            "colour_white",
+            "colour_blue_light"
+          ]
+        }
+      ]
+    },
+    "corporation_de_münchen_corps_germania": {
+      "id": "corporation_de_münchen_corps_germania",
+      "shortName": "Corps Germania",
+      "longName": "Corps Germania",
+      "addressId": "address_münchen_2",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1863-11-14",
+      "organisationIds": [
+        "organisation_wsc"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_blue",
+            "colour_gold",
+            "colour_red"
+          ]
+        }
+      ]
+    },
+    "corporation_de_münchen_corps_palatia": {
+      "id": "corporation_de_münchen_corps_palatia",
+      "shortName": "Corps Palatia",
+      "longName": "Corps Palatia",
+      "addressId": "address_münchen_0",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1813-06-20",
+      "organisationIds": [
+        "organisation_kscv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_red",
+            "colour_blue",
+            "colour_white"
+          ]
+        }
+      ]
+    },
+    "corporation_de_münchen_corps_suevo_guestphalia": {
+      "id": "corporation_de_münchen_corps_suevo_guestphalia",
+      "shortName": "Corps Suevo-Guestphalia",
+      "longName": "Corps Suevo-Guestphalia",
+      "addressId": "address_münchen_3",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1877-12-10",
+      "organisationIds": [
+        "organisation_wsc"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_black",
+            "colour_white",
+            "colour_green"
+          ]
+        }
+      ]
+    },
+    "corporation_de_münchen_kbstv_rhaetia": {
+      "id": "corporation_de_münchen_kbstv_rhaetia",
+      "shortName": "KBStV Rhaetia",
+      "longName": "KBStV Rhaetia",
+      "addressId": "address_münchen_4",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 1,
+      "foundationDate": "1881-07-23",
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_red",
+            "colour_white",
+            "colour_blue_light"
+          ]
+        }
+      ]
+    },
+    "corporation_de_münchen_landsmannschaft_hansea_auf_dem_wels": {
+      "id": "corporation_de_münchen_landsmannschaft_hansea_auf_dem_wels",
+      "shortName": "Landsmannschaft Hansea auf dem Wels",
+      "longName": "Landsmannschaft Hansea auf dem Wels",
+      "addressId": "address_münchen_1",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1853-07-17",
+      "organisationIds": [
+        "organisation_cc"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_green",
+            "colour_silver",
+            "colour_black"
+          ]
+        }
+      ]
+    },
+    "corporation_de_münster_akademische_ruderverbindung_westfalen": {
+      "id": "corporation_de_münster_akademische_ruderverbindung_westfalen",
+      "shortName": "Akademische Ruderverbindung Westfalen",
+      "longName": "Akademische Ruderverbindung Westfalen",
+      "addressId": "address_münster_3",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 2,
+      "foundationDate": "1891",
+      "organisationIds": [
+        "organisation_arb"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_blue_light",
+            "colour_white",
+            "colour_blue_dark"
+          ]
+        }
+      ]
+    },
+    "corporation_de_münster_kdstv_sauerlandia": {
+      "id": "corporation_de_münster_kdstv_sauerlandia",
+      "shortName": "KDStV Sauerlandia",
+      "longName": "KDStV Sauerlandia",
+      "addressId": "address_münster_0",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 1,
+      "foundationDate": "1847",
+      "organisationIds": [
+        "organisation_cv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_blue",
+            "colour_white",
+            "colour_green"
+          ]
+        }
+      ]
+    },
+    "corporation_de_münster_kdstv_winfridia_breslau": {
+      "id": "corporation_de_münster_kdstv_winfridia_breslau",
+      "shortName": "KDStV Winfridia Breslau",
+      "longName": "KDStV Winfridia Breslau",
+      "addressId": "address_münster_1",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 1,
+      "foundationDate": "1856",
+      "organisationIds": [
+        "organisation_cv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_green",
+            "colour_red",
+            "colour_gold"
+          ]
+        }
+      ]
+    },
+    "corporation_de_münster_kstv_markomannia": {
+      "id": "corporation_de_münster_kstv_markomannia",
+      "shortName": "KStV Markomannia",
+      "longName": "KStV Markomannia",
+      "addressId": "address_münster_4",
+      "coloursPrinciple": 3,
+      "fencingPrinciple": 1,
+      "foundationDate": "1901",
+      "organisationIds": [
+        "organisation_kv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_black",
+            "colour_gold",
+            "colour_red"
+          ]
+        }
+      ]
+    },
+    "corporation_de_münster_vkdst_saxonia": {
+      "id": "corporation_de_münster_vkdst_saxonia",
+      "shortName": "VKDSt Saxonia",
+      "longName": "VKDSt Saxonia",
+      "addressId": "address_münster_2",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 1,
+      "foundationDate": "1863",
+      "organisationIds": [
+        "organisation_cv"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_red",
+            "colour_white",
+            "colour_green"
+          ]
+        }
+      ]
+    },
+    "corporation_de_rostock_rostocker_wingolf": {
+      "id": "corporation_de_rostock_rostocker_wingolf",
+      "shortName": "Rostocker Wingolf",
+      "longName": "Rostocker Wingolf",
+      "addressId": "address_rostock_0",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 1,
+      "foundationDate": "1850-06-01",
+      "organisationIds": [
+        "organisation_wb"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_black",
+            "colour_white",
+            "colour_gold"
+          ]
+        }
+      ]
+    },
+    "corporation_de_stuttgart_burschenschaft_alemannia": {
+      "id": "corporation_de_stuttgart_burschenschaft_alemannia",
+      "shortName": "Burschenschaft Alemannia",
+      "longName": "Burschenschaft Alemannia",
+      "addressId": "address_stuttgart_0",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 2,
+      "foundationDate": "1866",
+      "organisationIds": [
+        "organisation_adb"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_black",
+            "colour_gold",
+            "colour_red"
+          ]
+        }
+      ]
+    },
+    "corporation_de_stuttgart_corps_germania_hohenheim": {
+      "id": "corporation_de_stuttgart_corps_germania_hohenheim",
+      "shortName": "Corps Germania Hohenheim",
+      "longName": "Corps Germania Hohenheim",
+      "addressId": "address_stuttgart_1",
+      "coloursPrinciple": 5,
+      "fencingPrinciple": 4,
+      "foundationDate": "1871",
+      "organisationIds": [
+        "organisation_wsc"
+      ],
+      "indicatorColourId": "ind_grey",
+      "colours": [
+        {
+          "colourIds": [
+            "colour_black",
+            "colour_white",
+            "colour_red"
+          ]
+        }
+      ]
+    }
+  },
+  "countries": {
+    "country_at": {
+      "id": "country_at",
+      "isoCode": "at",
+      "translationKey": "COUNTRY_AT",
+      "name": "Österreich",
+      "cityIds": [
+        "city_at_wien",
+        "city_at_innsbruck"
+      ]
+    },
+    "country_de": {
+      "id": "country_de",
+      "isoCode": "de",
+      "translationKey": "COUNTRY_DE",
+      "name": "Deutschland",
+      "cityIds": [
+        "city_de_münchen",
+        "city_de_aachen",
+        "city_de_berlin",
+        "city_de_bonn",
+        "city_de_breslau",
+        "city_de_darmstadt",
+        "city_de_dresden",
+        "city_de_duisburg",
+        "city_de_düsseldorf",
+        "city_de_erlangen",
+        "city_de_essen",
+        "city_de_frankfurt_am_main",
+        "city_de_freiburg_im_breisgau",
+        "city_de_giessen",
+        "city_de_greifswald",
+        "city_de_göttingen",
+        "city_de_halle_saale",
+        "city_de_hamburg",
+        "city_de_hannover",
+        "city_de_heidelberg",
+        "city_de_jena",
+        "city_de_karlsruhe",
+        "city_de_kiel",
+        "city_de_königsberg_preussen",
+        "city_de_leipzig",
+        "city_de_mainz",
+        "city_de_marburg",
+        "city_de_münster",
+        "city_de_rostock",
+        "city_de_stuttgart"
+      ]
+    }
+  },
+  "organisations": {
+    "organisation_adb": {
+      "id": "organisation_adb",
+      "abbreviation": "ADB",
+      "name": "Allgemeine Deutsche Burschenschaft",
+      "mapDisplayableIds": [
+        "corporation_de_darmstadt_alte_darmstädter_burschenschaft_germania",
+        "corporation_de_freiburg_im_breisgau_burschenschaft_teutonia",
+        "corporation_de_giessen_burschenschaft_germania",
+        "corporation_de_hannover_hannoversche_burschenschaft_arminia",
+        "corporation_de_karlsruhe_burschenschaft_teutonia",
+        "corporation_de_stuttgart_burschenschaft_alemannia"
+      ]
+    },
+    "organisation_ag": {
+      "id": "organisation_ag",
+      "abbreviation": "AG  )",
+      "name": "AG  )",
+      "mapDisplayableIds": []
+    },
+    "organisation_akd_fliegerring": {
+      "id": "organisation_akd_fliegerring",
+      "abbreviation": "Akd. Fliegerring",
+      "name": "Akademische Fliegerschaft",
+      "mapDisplayableIds": []
+    },
+    "organisation_allgemeine_deutsche_burschenschaft": {
+      "id": "organisation_allgemeine_deutsche_burschenschaft",
+      "abbreviation": "Allgemeine Deutsche Burschenschaft",
+      "name": "Allgemeine Deutsche Burschenschaft",
+      "mapDisplayableIds": []
+    },
+    "organisation_apr": {
+      "id": "organisation_apr",
+      "abbreviation": "APR",
+      "name": "Allgemeiner Pennäler Ring",
+      "mapDisplayableIds": []
+    },
+    "organisation_arb": {
+      "id": "organisation_arb",
+      "abbreviation": "ARB",
+      "name": "Akademischer Ruderbund",
+      "mapDisplayableIds": [
+        "corporation_de_münster_akademische_ruderverbindung_westfalen"
+      ]
+    },
+    "organisation_asc": {
+      "id": "organisation_asc",
+      "abbreviation": "ASC",
+      "name": "Askanischer Senioren-Convent",
+      "mapDisplayableIds": []
+    },
+    "organisation_atb": {
+      "id": "organisation_atb",
+      "abbreviation": "ATB",
+      "name": "Akademischer Turnbund",
+      "mapDisplayableIds": [
+        "corporation_de_kiel_akademische_turnverbindung_ditmarsia"
+      ]
+    },
+    "organisation_atbö": {
+      "id": "organisation_atbö",
+      "abbreviation": "ATBÖ",
+      "name": "Akademischer Turnbund in Österreich",
+      "mapDisplayableIds": []
+    },
+    "organisation_atv": {
+      "id": "organisation_atv",
+      "abbreviation": "ATV",
+      "name": "Akademischer Turnbund",
+      "mapDisplayableIds": []
+    },
+    "organisation_bamberger_cc": {
+      "id": "organisation_bamberger_cc",
+      "abbreviation": "Bamberger CC",
+      "name": "Bamberger CC",
+      "mapDisplayableIds": []
+    },
+    "organisation_bc": {
+      "id": "organisation_bc",
+      "abbreviation": "BC",
+      "name": "Burschenbunds-Convent",
+      "mapDisplayableIds": []
+    },
+    "organisation_bdc": {
+      "id": "organisation_bdc",
+      "abbreviation": "BDC",
+      "name": "BDC",
+      "mapDisplayableIds": []
+    },
+    "organisation_bdic": {
+      "id": "organisation_bdic",
+      "abbreviation": "BDIC",
+      "name": "BDIC – Korporationsverband an deutschen Hochschulen",
+      "mapDisplayableIds": []
+    },
+    "organisation_bfwv": {
+      "id": "organisation_bfwv",
+      "abbreviation": "BFWV",
+      "name": "BFWV",
+      "mapDisplayableIds": []
+    },
+    "organisation_bg": {
+      "id": "organisation_bg",
+      "abbreviation": "BG  )",
+      "name": "BG  )",
+      "mapDisplayableIds": []
+    },
+    "organisation_bja": {
+      "id": "organisation_bja",
+      "abbreviation": "BJA",
+      "name": "BJA",
+      "mapDisplayableIds": []
+    },
+    "organisation_bphv": {
+      "id": "organisation_bphv",
+      "abbreviation": "BPhV",
+      "name": "Baltischer Philisterverband",
+      "mapDisplayableIds": []
+    },
+    "organisation_bremgarten_kartell": {
+      "id": "organisation_bremgarten_kartell",
+      "abbreviation": "Bremgarten-Kartell",
+      "name": "Bremgarten-Kartell",
+      "mapDisplayableIds": []
+    },
+    "organisation_cc": {
+      "id": "organisation_cc",
+      "abbreviation": "CC",
+      "name": "Coburger Convent",
+      "mapDisplayableIds": [
+        "corporation_de_münchen_landsmannschaft_hansea_auf_dem_wels",
+        "corporation_de_aachen_landsmannschaft_pomerania_halle_aachen",
+        "corporation_de_giessen_landsmannschaft_darmstadtia",
+        "corporation_de_halle_saale_landsmannschaft_vitebergia",
+        "corporation_de_heidelberg_alte_leipziger_landsmannschaft_afrania",
+        "corporation_de_heidelberg_landsmannschaft_teutonia_heidelberg_rostock",
+        "corporation_de_heidelberg_turnerschaft_ghibellinia",
+        "corporation_de_kiel_landsmannschaft_troglodytia",
+        "corporation_de_marburg_landsmannschaft_hasso_borussia"
+      ]
+    },
+    "organisation_ccb": {
+      "id": "organisation_ccb",
+      "abbreviation": "CCB",
+      "name": "CCB",
+      "mapDisplayableIds": []
+    },
+    "organisation_cdc": {
+      "id": "organisation_cdc",
+      "abbreviation": "CDC",
+      "name": "CDC",
+      "mapDisplayableIds": []
+    },
+    "organisation_cnk": {
+      "id": "organisation_cnk",
+      "abbreviation": "CNK",
+      "name": "Convent der Nautischen Kameradschaften",
+      "mapDisplayableIds": []
+    },
+    "organisation_coburger_convent": {
+      "id": "organisation_coburger_convent",
+      "abbreviation": "Coburger Convent",
+      "name": "Coburger Convent",
+      "mapDisplayableIds": []
+    },
+    "organisation_convent_freischlagender_corporationen": {
+      "id": "organisation_convent_freischlagender_corporationen",
+      "abbreviation": "Convent Freischlagender Corporationen",
+      "name": "Convent Freischlagender Corporationen",
+      "mapDisplayableIds": []
+    },
+    "organisation_corporationenconvent_st_gallen": {
+      "id": "organisation_corporationenconvent_st_gallen",
+      "abbreviation": "Corporationenconvent St. Gallen",
+      "name": "Corporationenconvent St. Gallen",
+      "mapDisplayableIds": []
+    },
+    "organisation_cv": {
+      "id": "organisation_cv",
+      "abbreviation": "CV",
+      "name": "Cartellverband der katholischen deutschen Studentenverbindungen",
+      "mapDisplayableIds": [
+        "corporation_de_berlin_kdstv_borusso_saxonia",
+        "corporation_de_bonn_kdstv_staufia",
+        "corporation_de_breslau_kdstv_winfridia",
+        "corporation_de_darmstadt_kdstv_nassovia",
+        "corporation_de_duisburg_kdstv_elbmark_tetschen_liebwerd_zu_duisburg",
+        "corporation_de_essen_kdstv_elbmark_tetschen_liebwerd_zu_duisburg",
+        "corporation_de_freiburg_im_breisgau_kdstv_ripuaria",
+        "corporation_de_giessen_vkdst_hasso_rhenania",
+        "corporation_de_heidelberg_kdstv_ferdinandea_prag",
+        "corporation_de_heidelberg_kdstv_arminia",
+        "corporation_de_mainz_vkdst_hasso_rhenania",
+        "corporation_de_münster_kdstv_sauerlandia",
+        "corporation_de_münster_kdstv_winfridia_breslau",
+        "corporation_de_münster_vkdst_saxonia"
+      ]
+    },
+    "organisation_cv_befreundet": {
+      "id": "organisation_cv_befreundet",
+      "abbreviation": "CV-befreundet",
+      "name": "CV-befreundet",
+      "mapDisplayableIds": []
+    },
+    "organisation_db": {
+      "id": "organisation_db",
+      "abbreviation": "DB",
+      "name": "Deutsche Burschenschaft",
+      "mapDisplayableIds": [
+        "corporation_de_düsseldorf_ahb_rhenania_salingia"
+      ]
+    },
+    "organisation_dcsv": {
+      "id": "organisation_dcsv",
+      "abbreviation": "DCSV",
+      "name": "Deutsche Christliche Studentenvereinigung",
+      "mapDisplayableIds": []
+    },
+    "organisation_dg": {
+      "id": "organisation_dg",
+      "abbreviation": "DG",
+      "name": "Deutsche Gildenschaft",
+      "mapDisplayableIds": []
+    },
+    "organisation_dgm": {
+      "id": "organisation_dgm",
+      "abbreviation": "DGM",
+      "name": "DGM",
+      "mapDisplayableIds": []
+    },
+    "organisation_dl": {
+      "id": "organisation_dl",
+      "abbreviation": "DL",
+      "name": "Deutsche Landsmannschaft",
+      "mapDisplayableIds": []
+    },
+    "organisation_ds": {
+      "id": "organisation_ds",
+      "abbreviation": "DS",
+      "name": "Deutsche Sängerschaft",
+      "mapDisplayableIds": []
+    },
+    "organisation_dvaf": {
+      "id": "organisation_dvaf",
+      "abbreviation": "DVAF",
+      "name": "DVAF",
+      "mapDisplayableIds": []
+    },
+    "organisation_dw": {
+      "id": "organisation_dw",
+      "abbreviation": "DW",
+      "name": "Deutsche Wehrschaft",
+      "mapDisplayableIds": []
+    },
+    "organisation_dwv": {
+      "id": "organisation_dwv",
+      "abbreviation": "DWV",
+      "name": "Deutscher Wissenschafter-Verband",
+      "mapDisplayableIds": []
+    },
+    "organisation_ekv": {
+      "id": "organisation_ekv",
+      "abbreviation": "EKV",
+      "name": "Europäischer Kartellverband",
+      "mapDisplayableIds": []
+    },
+    "organisation_falkensteinerbund": {
+      "id": "organisation_falkensteinerbund",
+      "abbreviation": "Falkensteinerbund",
+      "name": "Falkensteinerbund",
+      "mapDisplayableIds": []
+    },
+    "organisation_fb": {
+      "id": "organisation_fb",
+      "abbreviation": "FB",
+      "name": "Falkensteinerbund",
+      "mapDisplayableIds": []
+    },
+    "organisation_freie_akademische_burschenschaft": {
+      "id": "organisation_freie_akademische_burschenschaft",
+      "abbreviation": "Freie Akademische Burschenschaft",
+      "name": "Freie Akademische Burschenschaft",
+      "mapDisplayableIds": []
+    },
+    "organisation_freie_kurie_des_ekv": {
+      "id": "organisation_freie_kurie_des_ekv",
+      "abbreviation": "freie Kurie des EKV",
+      "name": "freie Kurie des EKV",
+      "mapDisplayableIds": []
+    },
+    "organisation_freier_akademischer_turnverein": {
+      "id": "organisation_freier_akademischer_turnverein",
+      "abbreviation": "Freier Akademischer Turnverein",
+      "name": "Freier Akademischer Turnverein",
+      "mapDisplayableIds": []
+    },
+    "organisation_fédé_wallonne": {
+      "id": "organisation_fédé_wallonne",
+      "abbreviation": "Fédé Wallonne",
+      "name": "Fédé Wallonne",
+      "mapDisplayableIds": []
+    },
+    "organisation_gymnasialturnvereine": {
+      "id": "organisation_gymnasialturnvereine",
+      "abbreviation": "Gymnasialturnvereine",
+      "name": "Gymnasialturnvereine",
+      "mapDisplayableIds": []
+    },
+    "organisation_helvetia": {
+      "id": "organisation_helvetia",
+      "abbreviation": "Helvetia",
+      "name": "Schweizerische Studentenverbindung Helvetia",
+      "mapDisplayableIds": []
+    },
+    "organisation_hv": {
+      "id": "organisation_hv",
+      "abbreviation": "HV",
+      "name": "Hochland-Verband der katholischen neudeutschen Verbindungen",
+      "mapDisplayableIds": []
+    },
+    "organisation_im_freundeskreis_der_ndb": {
+      "id": "organisation_im_freundeskreis_der_ndb",
+      "abbreviation": "im \"Freundeskreis\" der NDB",
+      "name": "im \"Freundeskreis\" der NDB",
+      "mapDisplayableIds": []
+    },
+    "organisation_jüdisch_akademische_verbindung": {
+      "id": "organisation_jüdisch_akademische_verbindung",
+      "abbreviation": "Jüdisch-akademische Verbindung",
+      "name": "Jüdisch-akademische Verbindung",
+      "mapDisplayableIds": []
+    },
+    "organisation_kajc": {
+      "id": "organisation_kajc",
+      "abbreviation": "KAJC",
+      "name": "KAJC",
+      "mapDisplayableIds": []
+    },
+    "organisation_kartell_mit_halleriana_bernensis": {
+      "id": "organisation_kartell_mit_halleriana_bernensis",
+      "abbreviation": "Kartell mit Halleriana Bernensis",
+      "name": "Kartell mit Halleriana Bernensis",
+      "mapDisplayableIds": []
+    },
+    "organisation_kartell_schweizerischer_kantonsschüler": {
+      "id": "organisation_kartell_schweizerischer_kantonsschüler",
+      "abbreviation": "Kartell Schweizerischer Kantonsschüler-",
+      "name": "Kartell Schweizerischer Kantonsschüler-",
+      "mapDisplayableIds": []
+    },
+    "organisation_kc": {
+      "id": "organisation_kc",
+      "abbreviation": "KC",
+      "name": "Kartell-Convent",
+      "mapDisplayableIds": []
+    },
+    "organisation_kdazv": {
+      "id": "organisation_kdazv",
+      "abbreviation": "KdAZV",
+      "name": "KdAZV",
+      "mapDisplayableIds": []
+    },
+    "organisation_kdc": {
+      "id": "organisation_kdc",
+      "abbreviation": "KDC",
+      "name": "KDC",
+      "mapDisplayableIds": []
+    },
+    "organisation_kjv": {
+      "id": "organisation_kjv",
+      "abbreviation": "KJV",
+      "name": "Kartell Jüdischer Verbindungen",
+      "mapDisplayableIds": []
+    },
+    "organisation_kscv": {
+      "id": "organisation_kscv",
+      "abbreviation": "KSCV",
+      "name": "Kösener Senioren-Convents-Verband",
+      "mapDisplayableIds": [
+        "corporation_de_münchen_corps_palatia",
+        "corporation_de_berlin_corps_marchia",
+        "corporation_de_freiburg_im_breisgau_corps_palatia_guestphalia",
+        "corporation_de_freiburg_im_breisgau_corps_hasso_borussia",
+        "corporation_de_giessen_corps_starkenburgia",
+        "corporation_de_giessen_corps_teutonia",
+        "corporation_de_giessen_corps_normannia_halle",
+        "corporation_de_göttingen_corps_hannovera",
+        "corporation_de_heidelberg_corps_suevia",
+        "corporation_de_heidelberg_corps_saxo_borussia",
+        "corporation_de_heidelberg_corps_rhenania",
+        "corporation_at_innsbruck_corps_gothia",
+        "corporation_de_jena_corps_saxonia",
+        "corporation_de_kiel_corps_holsatia",
+        "corporation_de_königsberg_preussen_corps_masovia",
+        "corporation_de_leipzig_corps_lusatia",
+        "corporation_de_leipzig_corps_saxonia",
+        "corporation_de_leipzig_corps_thuringia"
+      ]
+    },
+    "organisation_kv": {
+      "id": "organisation_kv",
+      "abbreviation": "KV",
+      "name": "Kartellverband katholischer deutscher Studentenvereine",
+      "mapDisplayableIds": [
+        "corporation_de_heidelberg_kstv_palatia",
+        "corporation_de_münster_kstv_markomannia"
+      ]
+    },
+    "organisation_kvhv": {
+      "id": "organisation_kvhv",
+      "abbreviation": "KVHV",
+      "name": "Katholiek Vlaams Hoogstudenten Verbond",
+      "mapDisplayableIds": []
+    },
+    "organisation_kvsr": {
+      "id": "organisation_kvsr",
+      "abbreviation": "KVSR",
+      "name": "KVSR",
+      "mapDisplayableIds": []
+    },
+    "organisation_köl": {
+      "id": "organisation_köl",
+      "abbreviation": "KÖL",
+      "name": "Akademischer Bund Katholisch-Österreichischer Landsmannschaften",
+      "mapDisplayableIds": []
+    },
+    "organisation_landsmannschaftlicher_sc": {
+      "id": "organisation_landsmannschaftlicher_sc",
+      "abbreviation": "Landsmannschaftlicher SC",
+      "name": "Landsmannschaftlicher SC",
+      "mapDisplayableIds": []
+    },
+    "organisation_lg": {
+      "id": "organisation_lg",
+      "abbreviation": "LG  )",
+      "name": "LG  )",
+      "mapDisplayableIds": []
+    },
+    "organisation_lv": {
+      "id": "organisation_lv",
+      "abbreviation": "LV",
+      "name": "LV",
+      "mapDisplayableIds": []
+    },
+    "organisation_lvsv": {
+      "id": "organisation_lvsv",
+      "abbreviation": "LVSV",
+      "name": "LVSV",
+      "mapDisplayableIds": []
+    },
+    "organisation_mc": {
+      "id": "organisation_mc",
+      "abbreviation": "MC",
+      "name": "Mündener Convent forstakademischer Verbindungen",
+      "mapDisplayableIds": []
+    },
+    "organisation_mitglied_im_süddeutschen_kartell": {
+      "id": "organisation_mitglied_im_süddeutschen_kartell",
+      "abbreviation": "Mitglied im Süddeutschen Kartell",
+      "name": "Mitglied im Süddeutschen Kartell",
+      "mapDisplayableIds": []
+    },
+    "organisation_mk": {
+      "id": "organisation_mk",
+      "abbreviation": "MK",
+      "name": "Marburger Konvent",
+      "mapDisplayableIds": []
+    },
+    "organisation_mkv": {
+      "id": "organisation_mkv",
+      "abbreviation": "MKV",
+      "name": "Mittelschüler-Kartell-Verband",
+      "mapDisplayableIds": []
+    },
+    "organisation_mr": {
+      "id": "organisation_mr",
+      "abbreviation": "MR",
+      "name": "Miltenberger Ring",
+      "mapDisplayableIds": [
+        "corporation_de_heidelberg_verbindung_leonensia"
+      ]
+    },
+    "organisation_msc": {
+      "id": "organisation_msc",
+      "abbreviation": "MSC",
+      "name": "Mittweidaer Senioren-Cartell",
+      "mapDisplayableIds": []
+    },
+    "organisation_msk_leuven": {
+      "id": "organisation_msk_leuven",
+      "abbreviation": "MSK-Leuven )",
+      "name": "MSK-Leuven )",
+      "mapDisplayableIds": []
+    },
+    "organisation_mwr": {
+      "id": "organisation_mwr",
+      "abbreviation": "MWR",
+      "name": "Miltenberger Ring",
+      "mapDisplayableIds": []
+    },
+    "organisation_nctc": {
+      "id": "organisation_nctc",
+      "abbreviation": "NCTC",
+      "name": "NCTC",
+      "mapDisplayableIds": []
+    },
+    "organisation_ndb": {
+      "id": "organisation_ndb",
+      "abbreviation": "NDB",
+      "name": "Neue Deutsche Burschenschaft",
+      "mapDisplayableIds": []
+    },
+    "organisation_ndk": {
+      "id": "organisation_ndk",
+      "abbreviation": "NdK",
+      "name": "NdK",
+      "mapDisplayableIds": []
+    },
+    "organisation_neuedb": {
+      "id": "organisation_neuedb",
+      "abbreviation": "NeueDB",
+      "name": "Neue Deutsche Burschenschaft",
+      "mapDisplayableIds": []
+    },
+    "organisation_nsc": {
+      "id": "organisation_nsc",
+      "abbreviation": "NSC",
+      "name": "Naumburger Senioren-Convent",
+      "mapDisplayableIds": []
+    },
+    "organisation_nsv": {
+      "id": "organisation_nsv",
+      "abbreviation": "NSV",
+      "name": "Nationalistische Studentenvereniging",
+      "mapDisplayableIds": []
+    },
+    "organisation_ohne": {
+      "id": "organisation_ohne",
+      "abbreviation": "ohne",
+      "name": "ohne",
+      "mapDisplayableIds": []
+    },
+    "organisation_osc": {
+      "id": "organisation_osc",
+      "abbreviation": "OSC",
+      "name": "OSC",
+      "mapDisplayableIds": []
+    },
+    "organisation_ostschweizer_kartell": {
+      "id": "organisation_ostschweizer_kartell",
+      "abbreviation": "Ostschweizer Kartell",
+      "name": "Ostschweizer Kartell",
+      "mapDisplayableIds": []
+    },
+    "organisation_ovg": {
+      "id": "organisation_ovg",
+      "abbreviation": "OVG  )",
+      "name": "OVG  )",
+      "mapDisplayableIds": []
+    },
+    "organisation_pk": {
+      "id": "organisation_pk",
+      "abbreviation": "PK",
+      "name": "PK",
+      "mapDisplayableIds": []
+    },
+    "organisation_präsidial_convent": {
+      "id": "organisation_präsidial_convent",
+      "abbreviation": "Präsidial-Convent",
+      "name": "Präsidial-Convent",
+      "mapDisplayableIds": []
+    },
+    "organisation_psc": {
+      "id": "organisation_psc",
+      "abbreviation": "PSC",
+      "name": "PSC",
+      "mapDisplayableIds": []
+    },
+    "organisation_rkab": {
+      "id": "organisation_rkab",
+      "abbreviation": "RKAB",
+      "name": "Ring Katholischer Deutscher Burschenschaften",
+      "mapDisplayableIds": []
+    },
+    "organisation_rkdb": {
+      "id": "organisation_rkdb",
+      "abbreviation": "RKDB",
+      "name": "Ring Katholischer Deutscher Burschenschaften",
+      "mapDisplayableIds": []
+    },
+    "organisation_rsc": {
+      "id": "organisation_rsc",
+      "abbreviation": "RSC",
+      "name": "Rudolstädter Senioren-Convent",
+      "mapDisplayableIds": []
+    },
+    "organisation_rv": {
+      "id": "organisation_rv",
+      "abbreviation": "RV",
+      "name": "Rothenburger Verband Schwarzer Verbindungen",
+      "mapDisplayableIds": []
+    },
+    "organisation_rvc": {
+      "id": "organisation_rvc",
+      "abbreviation": "RVC",
+      "name": "RVC",
+      "mapDisplayableIds": []
+    },
+    "organisation_sat": {
+      "id": "organisation_sat",
+      "abbreviation": "SAT",
+      "name": "Akademische Turnerschaft Alemannia Basel",
+      "mapDisplayableIds": []
+    },
+    "organisation_sb": {
+      "id": "organisation_sb",
+      "abbreviation": "SB",
+      "name": "Schwarzburgbund",
+      "mapDisplayableIds": []
+    },
+    "organisation_schw_stv": {
+      "id": "organisation_schw_stv",
+      "abbreviation": "Schw. StV  )",
+      "name": "Schw. StV  )",
+      "mapDisplayableIds": []
+    },
+    "organisation_schweizerische_akademische_turnerschaft": {
+      "id": "organisation_schweizerische_akademische_turnerschaft",
+      "abbreviation": "Schweizerische Akademische Turnerschaft",
+      "name": "Schweizerische Akademische Turnerschaft",
+      "mapDisplayableIds": []
+    },
+    "organisation_schweizerischer_studentenverein": {
+      "id": "organisation_schweizerischer_studentenverein",
+      "abbreviation": "Schweizerischer Studentenverein",
+      "name": "Schweizerischer Studentenverein",
+      "mapDisplayableIds": []
+    },
+    "organisation_schweizerischer_waffenring": {
+      "id": "organisation_schweizerischer_waffenring",
+      "abbreviation": "Schweizerischer Waffenring",
+      "name": "Schweizerischer Waffenring",
+      "mapDisplayableIds": []
+    },
+    "organisation_schweizerischer_zofingerverein": {
+      "id": "organisation_schweizerischer_zofingerverein",
+      "abbreviation": "Schweizerischer Zofingerverein",
+      "name": "Schweizerischer Zofingerverein",
+      "mapDisplayableIds": []
+    },
+    "organisation_scpl": {
+      "id": "organisation_scpl",
+      "abbreviation": "SCPL",
+      "name": "Akademischer Bund Katholisch-Österreichischer Landsmannschaften",
+      "mapDisplayableIds": []
+    },
+    "organisation_scv": {
+      "id": "organisation_scv",
+      "abbreviation": "SCV",
+      "name": "SCV",
+      "mapDisplayableIds": []
+    },
+    "organisation_sk": {
+      "id": "organisation_sk",
+      "abbreviation": "SK",
+      "name": "Süddeutsches Kartell",
+      "mapDisplayableIds": [
+        "corporation_de_heidelberg_burschenschaft_allemannia"
+      ]
+    },
+    "organisation_sk_leuven": {
+      "id": "organisation_sk_leuven",
+      "abbreviation": "SK-Leuven",
+      "name": "SK-Leuven",
+      "mapDisplayableIds": []
+    },
+    "organisation_société_d_étudiants_de_belles_lettres": {
+      "id": "organisation_société_d_étudiants_de_belles_lettres",
+      "abbreviation": "Société d’Étudiants de Belles-Lettres",
+      "name": "Société d’Étudiants de Belles-Lettres",
+      "mapDisplayableIds": []
+    },
+    "organisation_ssh": {
+      "id": "organisation_ssh",
+      "abbreviation": "SSH",
+      "name": "Schweizerische Studentenverbindung Helvetia",
+      "mapDisplayableIds": []
+    },
+    "organisation_stella_helvetica": {
+      "id": "organisation_stella_helvetica",
+      "abbreviation": "Stella Helvetica",
+      "name": "Stella Helvetica",
+      "mapDisplayableIds": []
+    },
+    "organisation_stv": {
+      "id": "organisation_stv",
+      "abbreviation": "StV",
+      "name": "Schweizerischer Studentenverein",
+      "mapDisplayableIds": []
+    },
+    "organisation_sv": {
+      "id": "organisation_sv",
+      "abbreviation": "SV",
+      "name": "Sondershäuser Verband",
+      "mapDisplayableIds": [
+        "corporation_de_bonn_amv_makaria",
+        "corporation_de_erlangen_amv_fridericiana"
+      ]
+    },
+    "organisation_swr": {
+      "id": "organisation_swr",
+      "abbreviation": "SWR",
+      "name": "Schweizerischer Waffenring",
+      "mapDisplayableIds": []
+    },
+    "organisation_tcv": {
+      "id": "organisation_tcv",
+      "abbreviation": "TCV",
+      "name": "Technischer Cartell-Verband",
+      "mapDisplayableIds": []
+    },
+    "organisation_tcv_seit_1963": {
+      "id": "organisation_tcv_seit_1963",
+      "abbreviation": "TCV seit 1963",
+      "name": "TCV seit 1963",
+      "mapDisplayableIds": []
+    },
+    "organisation_union_of_christian_students": {
+      "id": "organisation_union_of_christian_students",
+      "abbreviation": "Union of Christian Students",
+      "name": "Union of Christian Students",
+      "mapDisplayableIds": []
+    },
+    "organisation_unitas": {
+      "id": "organisation_unitas",
+      "abbreviation": "Unitas",
+      "name": "Unitas-Verband",
+      "mapDisplayableIds": []
+    },
+    "organisation_uv": {
+      "id": "organisation_uv",
+      "abbreviation": "UV",
+      "name": "Verband der Wissenschaftlichen Katholischen Studentenvereine Unitas",
+      "mapDisplayableIds": [
+        "corporation_de_heidelberg_wkstv_unitas_ruperto_carola"
+      ]
+    },
+    "organisation_vak": {
+      "id": "organisation_vak",
+      "abbreviation": "VaK",
+      "name": "VaK",
+      "mapDisplayableIds": []
+    },
+    "organisation_vasv": {
+      "id": "organisation_vasv",
+      "abbreviation": "VASV",
+      "name": "Akademischer Seglerverein",
+      "mapDisplayableIds": []
+    },
+    "organisation_vc": {
+      "id": "organisation_vc",
+      "abbreviation": "VC",
+      "name": "Vertreter-Convent",
+      "mapDisplayableIds": []
+    },
+    "organisation_vcs": {
+      "id": "organisation_vcs",
+      "abbreviation": "VCS",
+      "name": "Vereinigung christlicher farbentragender Studentinnen in Österreich",
+      "mapDisplayableIds": []
+    },
+    "organisation_vdb": {
+      "id": "organisation_vdb",
+      "abbreviation": "VDB",
+      "name": "Verband Deutscher Burschen",
+      "mapDisplayableIds": []
+    },
+    "organisation_vdst": {
+      "id": "organisation_vdst",
+      "abbreviation": "VDSt",
+      "name": "Verband der Vereine Deutscher Studenten",
+      "mapDisplayableIds": []
+    },
+    "organisation_verbandsfrei_zuvor_bdic": {
+      "id": "organisation_verbandsfrei_zuvor_bdic",
+      "abbreviation": "verbandsfrei zuvor BDIC",
+      "name": "verbandsfrei zuvor BDIC",
+      "mapDisplayableIds": []
+    },
+    "organisation_vfm": {
+      "id": "organisation_vfm",
+      "abbreviation": "VFM",
+      "name": "Verband farbentragender Mädchen",
+      "mapDisplayableIds": []
+    },
+    "organisation_vkc": {
+      "id": "organisation_vkc",
+      "abbreviation": "VKC",
+      "name": "VKC",
+      "mapDisplayableIds": []
+    },
+    "organisation_vkdst": {
+      "id": "organisation_vkdst",
+      "abbreviation": "VKDSt",
+      "name": "Verband der katholischen deutschen Studentinnenvereine",
+      "mapDisplayableIds": []
+    },
+    "organisation_vlv": {
+      "id": "organisation_vlv",
+      "abbreviation": "VLV",
+      "name": "VLV",
+      "mapDisplayableIds": []
+    },
+    "organisation_vstd": {
+      "id": "organisation_vstd",
+      "abbreviation": "VStD",
+      "name": "VStD",
+      "mapDisplayableIds": []
+    },
+    "organisation_vtak": {
+      "id": "organisation_vtak",
+      "abbreviation": "VTaK",
+      "name": "VTaK",
+      "mapDisplayableIds": []
+    },
+    "organisation_vvdst": {
+      "id": "organisation_vvdst",
+      "abbreviation": "VVDSt",
+      "name": "Verband der Vereine Deutscher Studenten",
+      "mapDisplayableIds": [
+        "corporation_de_bonn_vdst_zu_bonn"
+      ]
+    },
+    "organisation_vvdst_kv": {
+      "id": "organisation_vvdst_kv",
+      "abbreviation": "VVDSt-KV",
+      "name": "Verband der Vereine Deutscher Studenten",
+      "mapDisplayableIds": []
+    },
+    "organisation_wb": {
+      "id": "organisation_wb",
+      "abbreviation": "WB",
+      "name": "Wingolfsbund",
+      "mapDisplayableIds": [
+        "corporation_de_giessen_giessener_wingolf",
+        "corporation_de_halle_saale_hallenser_wingolf",
+        "corporation_de_heidelberg_heidelberger_wingolf",
+        "corporation_de_rostock_rostocker_wingolf"
+      ]
+    },
+    "organisation_wig": {
+      "id": "organisation_wig",
+      "abbreviation": "WIG",
+      "name": "Weimarer Interessengemeinschaft",
+      "mapDisplayableIds": []
+    },
+    "organisation_wingolf": {
+      "id": "organisation_wingolf",
+      "abbreviation": "Wingolf",
+      "name": "Wingolfsbund",
+      "mapDisplayableIds": []
+    },
+    "organisation_wingolfsbund": {
+      "id": "organisation_wingolfsbund",
+      "abbreviation": "Wingolfsbund",
+      "name": "Wingolfsbund",
+      "mapDisplayableIds": []
+    },
+    "organisation_winterthurer_konvent": {
+      "id": "organisation_winterthurer_konvent",
+      "abbreviation": "Winterthurer Konvent",
+      "name": "Winterthurer Konvent",
+      "mapDisplayableIds": []
+    },
+    "organisation_wjsc": {
+      "id": "organisation_wjsc",
+      "abbreviation": "WJSC",
+      "name": "Wernigeroder Jagdkorporationen Senioren-Convent",
+      "mapDisplayableIds": []
+    },
+    "organisation_wk": {
+      "id": "organisation_wk",
+      "abbreviation": "WK",
+      "name": "Wartburg-Kartell Akademisch-Evangelischer Verbindungen",
+      "mapDisplayableIds": []
+    },
+    "organisation_wkv": {
+      "id": "organisation_wkv",
+      "abbreviation": "WKV",
+      "name": "Deutscher Wissenschafter-Verband",
+      "mapDisplayableIds": []
+    },
+    "organisation_wsc": {
+      "id": "organisation_wsc",
+      "abbreviation": "WSC",
+      "name": "Weinheimer Senioren-Convent",
+      "mapDisplayableIds": [
+        "corporation_de_münchen_corps_germania",
+        "corporation_de_münchen_corps_suevo_guestphalia",
+        "corporation_de_dresden_corps_altsachsen",
+        "corporation_de_greifswald_corps_marchia",
+        "corporation_de_hamburg_corps_irminsul",
+        "corporation_de_hannover_corps_hannovera",
+        "corporation_de_heidelberg_corps_thuringia",
+        "corporation_de_karlsruhe_corps_franconia",
+        "corporation_de_karlsruhe_corps_friso_cheruskia",
+        "corporation_de_stuttgart_corps_germania_hohenheim"
+      ]
+    },
+    "organisation_wv": {
+      "id": "organisation_wv",
+      "abbreviation": "WV",
+      "name": "Waidhofener Verband",
+      "mapDisplayableIds": []
+    },
+    "organisation_wvg": {
+      "id": "organisation_wvg",
+      "abbreviation": "WVG  )",
+      "name": "WVG  )",
+      "mapDisplayableIds": []
+    },
+    "organisation_z": {
+      "id": "organisation_z",
+      "abbreviation": "Z",
+      "name": "Schweizerischer Zofingerverein",
+      "mapDisplayableIds": []
+    },
+    "organisation_zofingerverein": {
+      "id": "organisation_zofingerverein",
+      "abbreviation": "Zofingerverein",
+      "name": "Schweizerischer Zofingerverein",
+      "mapDisplayableIds": []
+    },
+    "organisation_zpka": {
+      "id": "organisation_zpka",
+      "abbreviation": "ZPKA",
+      "name": "ZPKA",
+      "mapDisplayableIds": []
+    },
+    "organisation_zpka_1921_1933": {
+      "id": "organisation_zpka_1921_1933",
+      "abbreviation": "ZPKA 1921–1933",
+      "name": "ZPKA 1921–1933",
+      "mapDisplayableIds": []
+    },
+    "organisation_zpka_1921_max_1939": {
+      "id": "organisation_zpka_1921_max_1939",
+      "abbreviation": "ZPKA 1921-max. 1939",
+      "name": "ZPKA 1921-max. 1939",
+      "mapDisplayableIds": []
+    },
+    "organisation_zpka_1922_max_1939": {
+      "id": "organisation_zpka_1922_max_1939",
+      "abbreviation": "ZPKA 1922-max. 1939",
+      "name": "ZPKA 1922-max. 1939",
+      "mapDisplayableIds": []
+    },
+    "organisation_zpka_ab_1921": {
+      "id": "organisation_zpka_ab_1921",
+      "abbreviation": "ZPKA ab 1921",
+      "name": "ZPKA ab 1921",
+      "mapDisplayableIds": []
+    },
+    "organisation_zpka_seit_1921": {
+      "id": "organisation_zpka_seit_1921",
+      "abbreviation": "ZPKA seit 1921",
+      "name": "ZPKA seit 1921",
+      "mapDisplayableIds": []
+    },
+    "organisation_zuvor_bdic": {
+      "id": "organisation_zuvor_bdic",
+      "abbreviation": "zuvor BDIC",
+      "name": "zuvor BDIC",
+      "mapDisplayableIds": []
+    },
+    "organisation_zuvor_im_ckv": {
+      "id": "organisation_zuvor_im_ckv",
+      "abbreviation": "zuvor im CKV",
+      "name": "zuvor im CKV",
+      "mapDisplayableIds": []
+    },
+    "organisation_zuvor_im_kdv": {
+      "id": "organisation_zuvor_im_kdv",
+      "abbreviation": "zuvor im KDV",
+      "name": "zuvor im KDV",
+      "mapDisplayableIds": []
+    },
+    "organisation_zuvor_im_kv": {
+      "id": "organisation_zuvor_im_kv",
+      "abbreviation": "zuvor im KV",
+      "name": "zuvor im KV",
+      "mapDisplayableIds": []
+    },
+    "organisation_zuvor_im_präsidialkonvent": {
+      "id": "organisation_zuvor_im_präsidialkonvent",
+      "abbreviation": "zuvor im Präsidialkonvent",
+      "name": "zuvor im Präsidialkonvent",
+      "mapDisplayableIds": []
+    },
+    "organisation_zuvor_im_vkst": {
+      "id": "organisation_zuvor_im_vkst",
+      "abbreviation": "zuvor im VKSt",
+      "name": "zuvor im VKSt",
+      "mapDisplayableIds": []
+    },
+    "organisation_zuvor_psc": {
+      "id": "organisation_zuvor_psc",
+      "abbreviation": "zuvor PSC",
+      "name": "zuvor PSC",
+      "mapDisplayableIds": []
+    },
+    "organisation_öcv": {
+      "id": "organisation_öcv",
+      "abbreviation": "ÖCV",
+      "name": "Österreichischer Cartellverband",
+      "mapDisplayableIds": [
+        "corporation_at_wien_köstv_rudolfina"
+      ]
+    },
+    "organisation_ökv": {
+      "id": "organisation_ökv",
+      "abbreviation": "ÖKV",
+      "name": "Österreichischer Kartellverband",
+      "mapDisplayableIds": []
+    },
+    "organisation_öpr": {
+      "id": "organisation_öpr",
+      "abbreviation": "ÖPR",
+      "name": "Österreichischer Pennäler Ring",
+      "mapDisplayableIds": []
+    }
+  }
+}
